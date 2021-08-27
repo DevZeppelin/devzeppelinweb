@@ -1,0 +1,26 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+/* purgecss end ignore */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.btn {
+    @apply bg-yellow border-2 p-4 rounded-lg text-primary font-bold ;
+}
+
+.btn:hover {
+    @apply bg-darkGray text-yellow border-2 border-yellow font-extrabold transform scale-110 transition duration-500 cursor-pointer;
+}
+
+.service-h2 {
+    @apply text-xl text-yellow font-bold mb-2;
+}
+
+.indexGridImageText {
+    @apply w-full text-primary border-b-2 border-yellow h-10 absolute bg-yellow top-0 z-10 pt-2 hover:bg-yellow uppercase font-bold text-sm md:text-base;
+}
+
+
+.gridImage {
+    @apply border-2 border-yellow;
+}
