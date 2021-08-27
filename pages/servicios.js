@@ -38,65 +38,65 @@ const Servicios = () => {
                    Estamos actualizados en el mundo de la informática. En Dev Zeppelin somos estudiantes permanentes lo que nos permite estar al tanto de todo lo nuevo y animarnos a aprender nuevas tecnologías para mejorar la calidad de nuestro servicio. Nuestro objetivo es que tu página web sea la más rápida que se pueda encontrar en el mercado.
                   </p>
                 </div>
-                <Fade big>
+               
+                   
                   <div className="flex flex-wrap -m-4">
-                    <ServiciosItem
-                      titulo={"Asesoramiento tecnológico"}
-                      icono={
-                        <FiCpu className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Diseño y fabricación de páginas Web"}
-                      icono={
-                        <AiOutlineBuild className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Tu página web en forma de Aplicación Movil"}
-                      icono={
-                        <IoMdAppstore className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Diseño de logos e imágenes promocionales"}
-                      icono={
-                        <SiMaterialdesign className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-
-                    <ServiciosItem
-                      titulo={"Modernización de sitios web antiguos"}
-                      icono={
-                        <DiModernizr className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Montaje de tiendas electrónicas"}
-                      icono={
-                        <SiShopify className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Invitaciones a eventos en forma de página Web"}
-                      icono={
-                        <GiPartyPopper className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Aplicaciones y sistemas específicos y avanzados"}
-                      icono={
-                        <MdSettingsSystemDaydream className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
-                    <ServiciosItem
-                      titulo={"Asesoría y consultoria de Criptomonedas y Bitcoin"}
-                      icono={
-                        <IoLogoBitcoin className="mx-auto text-4xl text-yellow" />
-                      }
-                    />
+                        <ServiciosItem
+                          titulo={"Asesoramiento tecnológico"}
+                          icono={
+                            <FiCpu className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Diseño y fabricación de páginas Web"}
+                          icono={
+                            <AiOutlineBuild className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Tu página web en forma de Aplicación Movil"}
+                          icono={
+                            <IoMdAppstore className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Diseño de logos e imágenes promocionales"}
+                          icono={
+                            <SiMaterialdesign className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Modernización de sitios web antiguos"}
+                          icono={
+                            <DiModernizr className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Montaje de tiendas electrónicas"}
+                          icono={
+                            <SiShopify className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Invitaciones a eventos en forma de página Web"}
+                          icono={
+                            <GiPartyPopper className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Aplicaciones y sistemas específicos y avanzados"}
+                          icono={
+                            <MdSettingsSystemDaydream className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
+                        <ServiciosItem
+                          titulo={"Asesoría y consultoria de Criptomonedas y Bitcoin"}
+                          icono={
+                            <IoLogoBitcoin className="mx-auto text-4xl text-yellow" />
+                          }
+                        />
                   </div>
-                </Fade>
+                    
               </div>
             </section>
           </div>

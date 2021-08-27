@@ -11,6 +11,7 @@ import {AiFillGoogleCircle} from "react-icons/ai"
 import {SiMaterialdesign} from "react-icons/si"
 import {FaShopify} from "react-icons/fa"
 import {GiPartyPopper} from "react-icons/gi"
+
 import Fade from "react-reveal/Fade";
 
 //Comilla invertida ````````
@@ -149,7 +150,7 @@ export default function Home() {
                   Déjanos tu nombre, teléfono o correo electrónico y nos
                   comunicaremos contigo a la brevedad
                 </p>
-                <Fade right>
+                <Fade bottom>
                   <Link href="/contacto">
                     <button className="btn">Te Llamamos!</button>
                   </Link>

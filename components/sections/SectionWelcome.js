@@ -47,7 +47,10 @@ const SectionWelcome = () => {
             </p>
             <p>
               El tiempo es dinero. Elevá tus ventas. ¡Dale a tus usuarios una experiencia increíble!
-            </p>            
+            </p>   
+            <Link href="/contacto">
+              <button className="btn hidden md:flex">Escribinos HOY</button>
+            </Link>         
 
          
           </div>

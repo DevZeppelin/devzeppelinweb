@@ -14,32 +14,43 @@ const QuienesSomos = () => {
       <Layout classQuienesSomos={"bg-secundary text-yellow"}>
         <section className="text-lightGray">
           <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
-            <h1 className="text-4xl font-bold text-yellow uppercase">La empresa</h1>
+            <h1 className="text-4xl font-bold text-yellow uppercase">
+              La empresa
+            </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="text-center space-y-8 md:space-y-4 p-8 md:p-16">
-              <h2 className="text-2xl font-extrabold text-yellow">Nuestra empresa</h2>
+              <h2 className="text-2xl font-extrabold text-yellow">
+                Nuestra empresa
+              </h2>
               <div className="bg-yellow w-32 h-1 mx-auto"></div>
-              <p>
-               En Dev Zeppelin pensamos en elevar tu marca entregando una presencia deigital excelente. 
-              </p>
-              <p>
-               Utilizamos la última tecnología "punta de lanza" para mantenernos actualizados y ser competentes en el mercado. Nos enfocamos en proveer las últimas funcionalidades para que tu sitio web resalte contra el resto.
-              </p>
-              <p>
-                <strong>Dev Zeppelin</strong> es una empresa dedicada a brindar soluciones web y de
-                tecnología, con una amplia cantidad de servicios orientados a
-                satisfacer las más exigentes demandas del sector. Para nosotros los
-                clientes son el principal objetivo, y centramos todos nuestros esfuerzos
-                para lograr una relación que nos permita establecer compromisos
-                a largo plazo.
-              </p>
-              <p>
-                <strong>Dev Zeppelin</strong> entiende, que el valor agregado que puede aportar
-                se encuentra en el profesionalismo e idoneidad de nuestros recursos
-                humanos, buscando así, las mejores opciones tecnológicas y humanas para cada necesidad.
-                
-              </p>
+              <Fade big>
+                <p>
+                  En Dev Zeppelin pensamos en elevar tu marca entregando una
+                  presencia deigital excelente.
+                </p>
+                <p>
+                  Utilizamos la última tecnología "punta de lanza" para
+                  mantenernos actualizados y ser competentes en el mercado. Nos
+                  enfocamos en proveer las últimas funcionalidades para que tu
+                  sitio web resalte contra el resto.
+                </p>
+                <p>
+                  <strong>Dev Zeppelin</strong> es una empresa dedicada a
+                  brindar soluciones web y de tecnología, con una amplia
+                  cantidad de servicios orientados a satisfacer las más
+                  exigentes demandas del sector. Para nosotros los clientes son
+                  el principal objetivo, y centramos todos nuestros esfuerzos
+                  para lograr una relación que nos permita establecer
+                  compromisos a largo plazo.
+                </p>
+                <p>
+                  <strong>Dev Zeppelin</strong> entiende, que el valor agregado
+                  que puede aportar se encuentra en el profesionalismo e
+                  idoneidad de nuestros recursos humanos, buscando así, las
+                  mejores opciones tecnológicas y humanas para cada necesidad.
+                </p>
+              </Fade>
             </div>
             <div className="my-auto">
               <img
@@ -56,8 +67,13 @@ const QuienesSomos = () => {
               <BiCheckShield className="mx-auto text-4xl text-yellow" />
               <h2 className="text-2xl text-yellow">Nuestra Visión</h2>
               <p>
-              Brindar el mejor servicio web a nivel global. Entregar a nuestros clientes servicios web de calidad que faciliten e impulsen sus respectivos negocios hacia el éxito. Brindar asesoramient y herramientas para que puedan hacer uso de las últimas tecnologías a su favor. Transmitir valores como el respeto, responsabilidad, honestidad, calidad y eficiencia necesaria para lograr confianza. 
-
+                Brindar el mejor servicio web a nivel global. Entregar a
+                nuestros clientes servicios web de calidad que faciliten e
+                impulsen sus respectivos negocios hacia el éxito. Brindar
+                asesoramient y herramientas para que puedan hacer uso de las
+                últimas tecnologías a su favor. Transmitir valores como el
+                respeto, responsabilidad, honestidad, calidad y eficiencia
+                necesaria para lograr confianza.
               </p>
             </div>
           </Fade>
@@ -66,7 +82,11 @@ const QuienesSomos = () => {
               <FaEye className="mx-auto text-4xl text-yellow " />
               <h2 className="text-2xl text-yellow">Nuestro Misión</h2>
               <p>
-              Realizar trabajos con alto nivel de compromiso, seguridad y transparencia. Nuestro desafío es atender de manera responsable los requerimientos y en lo posible superar las expectativas. Avanzar para buscar los mejores acuerdos y ser la alternativa que da tranquilidad frente a una inversión.
+                Realizar trabajos con alto nivel de compromiso, seguridad y
+                transparencia. Nuestro desafío es atender de manera responsable
+                los requerimientos y en lo posible superar las expectativas.
+                Avanzar para buscar los mejores acuerdos y ser la alternativa
+                que da tranquilidad frente a una inversión.
               </p>
             </div>
           </Fade>

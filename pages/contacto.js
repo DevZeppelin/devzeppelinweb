@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import MainBarButton from "../components/MainBarButton";
-import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import Fade from "react-reveal/Fade";
 
@@ -73,7 +73,7 @@ const Contacto = () => {
             ></iframe>
           </div>
           <div className="container px-5 py-24 mx-auto flex">
-            <Fade right>
+            <Fade bottom>
               <div className="lg:w-1/3 md:w-1/2 bg-yellow-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
                 <h2 className="text-yellow text-xl mb-1 font-extrabold title-font">
                   Contactanos!
