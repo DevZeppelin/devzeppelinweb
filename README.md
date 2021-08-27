@@ -1,4 +1,4 @@
-_App disponible en : https://tecnicos-ya.vercel.app/_
+_App disponible en : https://www.devzeppelin.ar
 
 ## DevZeppelin WEBS 🚀
 

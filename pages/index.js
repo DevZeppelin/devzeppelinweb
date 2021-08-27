@@ -24,11 +24,11 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta
           name="description"
-          content="tecnicos ya, tecnicos, empresa, mendoza, pc, soluciones, tecnologia, informatica, digital, servicios informaticos"
+          content="dev zeppelin, web pages, paginas web, servicios web, paginas rapidas, adminsitrables, webs modernas, velocidad, optimizacion, perfomance, react, next, tailwind, programacion, sitio web, webs unicas "
         />
         <meta
           name="keywords"
-          content="tecnicos ya, tecnicos, pc, soluciones, tecnologia, informatica, digital, servicios informaticos, mendoza, argentina, it"
+          content="dev zeppelin, web pages, paginas web, servicios web, paginas rapidas, adminsitrables, webs modernas, velocidad, optimizacion, perfomance, react, next, tailwind, programacion, sitio web, webs unicas"
         />
         <meta name="author" content="Gino Pietrobon" />
       </Head>
