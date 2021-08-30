@@ -16,7 +16,7 @@ const TopMainScreen = () => {
         />
       </Link>
 
-      <div className="hidden md:flex justify-between space-x-4 text-center my-auto p-4">
+      <div className="hidden md:flex justify-between space-x-4 text-center my-auto p-4 text-lg">
         
         <MainBarButton
           logo={<FaWhatsapp className=" text-yellow text-4xl flex my-auto m-3" />}

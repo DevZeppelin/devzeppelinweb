@@ -31,7 +31,7 @@ const Servicios = () => {
               <div className="p-6 md:p-24 py-16 mx-auto">               
             
                 <div className="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-                  <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 mt-20 text-yellow">
+                  <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 mt-6 text-yellow">
                     Variedad de servicios
                   </h1>
                   <p className="lg:w-1/2 w-full text-lg px-2 md:px-32  text-lightGray leading-relaxed text-opacity-80">

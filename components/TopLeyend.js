@@ -11,7 +11,7 @@ const TopLeyend = () => {
   return (
     <div className="flex justify-center md:justify-between pt-2 text-lightGray md:bg-darkGray">
       <div className="hidden md:flex px-12">
-        <p className="text-sm font-bold tracking-widest my-auto font-prompt uppercase text-yellow">
+        <p className="text-sm font-bold tracking-widest my-auto font-righteous uppercase text-yellow">
           webs 100% perfomance
         </p>
       </div>

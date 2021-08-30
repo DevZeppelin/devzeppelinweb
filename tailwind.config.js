@@ -24,7 +24,7 @@ module.exports = {
             },
             fontFamily : {
                 body : ['Heebo'],
-                'prompt' : ['Prompt']
+                'righteous' : ['Righteous']
             },
             backgroundImage: theme => ({
                 'hero': "url('/01-sm.png')",  
