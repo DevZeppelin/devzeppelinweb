@@ -60,7 +60,7 @@ const Footer = () => {
 
         <div className="text-xl">
           <h2 className="font-extrabold">Síguenos!</h2>
-          <div className="flex flex-wrap justify-between m-8 gap-4 text-4xl w-36 ">
+          <div className="flex flex-wrap justify-between m-8 gap-4 text-4xl w-46 md:w-24 ">
           <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
@@ -96,19 +96,7 @@ const Footer = () => {
             >
               <FiTwitter className="hover:text-yellow" />
             </button>
-          </a>
-
-          <a href="https://www.facebook.com/Gini77o"
-          target="_blank"
-          rel="noopener">
-            <button
-              aria-label="go to my fabecook"
-              
-              alt="facebook-logo"
-            >
-              <FaFacebook className="hover:text-yellow" />
-            </button>
-          </a>
+          </a>        
 
           
           <a href="https://www.linkedin.com/in/gino-pietrobon"
@@ -123,17 +111,7 @@ const Footer = () => {
             </button>
           </a>
 
-          <a href="mailto:gino.b.pietrobon@gmail.com"
-           target="_blank"
-           rel="noopener">
-            <button
-              aria-label="send me a mail"
-             
-              alt="gmail-logo"
-            >
-              <FiMail className="hover:text-yellow" />
-            </button>
-          </a>
+         
           </div>
         </div>
       </div>

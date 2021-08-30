@@ -37,10 +37,10 @@ export default function Home() {
         <SectionWelcome />
         <section>
           <div className="space-y-2 text-center p-12 px-8 md:px-32 pt-8 bg-yellow">
-            <h1 className="font-bold text-2xl tracking-wider text-secundary uppercase">
+            <h1 className="font-bold text-lg md:text-2xl tracking-wider text-secundary uppercase">
               Revolucioná tu negocio a tarvés de la tecnología
             </h1>
-            <p className="text-secundary text-lg">
+            <p className="text-secundary md:text-lg">
               Nuestras páginas cumplen con todas las exigencias en cuanto a{" "}
               <i>perfomance</i>, accesibilidad, buenas prácticas y SEO; todo lo
               necesario para aparecer en los primeros lugares de los buscadores

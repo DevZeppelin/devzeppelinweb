@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from 'next/script';
 import Layout from "../components/Layout";
 import MainBarButton from "../components/MainBarButton";
 import { FaWhatsapp } from "react-icons/fa";
@@ -14,12 +15,13 @@ const Contacto = () => {
       </Head>
       <Layout classContacto={"bg-secundary text-yellow"}>
         <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
-          <h1 className="text-4xl font-bold text-yellow uppercase">Contactanos</h1>
+          <h1 className="text-4xl font-bold text-yellow uppercase">
+            Contactanos
+          </h1>
         </div>
-        <div className="text-center space-y-6 pt-12 text-lightGray">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2 md:p-16 ">
-            
+        <div className="text-center pt-6 text-lightGray">
+          <h2 className="text-2xl pt-6 p-4">¡Animate a dar un paso hacia el futuro!</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2 md:p-8 ">
             <Fade big>
               <div>
                 <a
@@ -32,7 +34,6 @@ const Contacto = () => {
                       <FaWhatsapp className="text-yellow text-2xl md:text-6xl flex my-auto m-4" />
                     }
                     text="Whatsapp SMS y llamadas"
-                   
                     description2="+5492616708100"
                     classType="text-yellow text-2xl my-2"
                   />
@@ -59,6 +60,24 @@ const Contacto = () => {
             </Fade>
           </div>
         </div>
+
+
+        <section className="pt-16">
+          <h2 className="text-center text-yellow text-3xl p-4">Reservá una reunión con nostoros</h2>
+
+          <div
+            className="calendly-inline-widget h-20 my-2"
+            data-url="https://calendly.com/devzeppelin/reunion-consulta-personal?background_color=383838&text_color=f7f7f7&primary_color=c9ff00"
+            
+          ></div>
+          <Script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            strategy="afterInteractive"
+            
+          />
+        </section>
+       
         <section className="text-yellow-400 bg-yellow-900 body-font relative">
           <div className="absolute inset-0 bg-yellow-900">
             <iframe
@@ -75,7 +94,7 @@ const Contacto = () => {
           <div className="container px-5 py-24 mx-auto flex">
             <Fade bottom>
               <div className="lg:w-1/3 md:w-1/2 bg-yellow-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
-                <h2 className="text-yellow text-xl mb-1 font-extrabold title-font">
+                <h2 className="text-black text-xl mb-1 font-extrabold title-font">
                   Contactanos!
                 </h2>
                 <p className="leading-relaxed mb-5 font-bold">
@@ -111,12 +130,24 @@ const Contacto = () => {
                 </div>
                 <button className="btn">Enviar</button>
                 <p className="text-xs text-yellow-400 text-opacity-90 mt-3">
-                 Dev Zeppelin. Webs 100% perfomance.
+                  Dev Zeppelin. Webs 100% perfomance.
                 </p>
               </div>
             </Fade>
           </div>
         </section>
+
+
+        <style jsx>{`      
+
+            .calendly-inline-widget {
+              min-width : 320px ;
+              min-height: 800px ;
+              display: 'flex',
+
+              
+            }
+        `}</style>
       </Layout>
     </div>
   );

@@ -37,8 +37,7 @@ const SectionWelcome = () => {
               Elevá tu marca personal al eXtremo
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
-            <p className="text-base">
-              {" "}
+            <p>              
               Damos a tu marca excelente presencia en la Web luciendo profesional ante los ojos del mundo.
             </p>
 
@@ -49,7 +48,7 @@ const SectionWelcome = () => {
               El tiempo es dinero. Elevá tus ventas. ¡Dale a tus usuarios una experiencia increíble!
             </p>   
             <Link href="/contacto">
-              <button className="btn hidden md:flex">Escribinos HOY</button>
+              <button className="btn">Escribinos ahora</button>
             </Link>         
 
          
