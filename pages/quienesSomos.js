@@ -27,7 +27,7 @@ const QuienesSomos = () => {
               <Fade big>
                 <p>
                   En Dev Zeppelin pensamos en elevar tu marca entregando una
-                  presencia deigital excelente.
+                  presencia digital excelente.
                 </p>
                 <p>
                   Utilizamos la última tecnología "punta de lanza" para
