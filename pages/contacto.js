@@ -12,6 +12,12 @@ const Contacto = () => {
       <Head>
         <title>Contacto</title>
         <link rel="icon" href="/favicon.ico" />
+        <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"            
+            async
+            
+          />
       </Head>
       <Layout classContacto={"bg-secundary text-yellow"}>
         <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
@@ -70,12 +76,13 @@ const Contacto = () => {
             data-url="https://calendly.com/devzeppelin/reunion-consulta-personal?background_color=383838&text_color=f7f7f7&primary_color=c9ff00"
             
           ></div>
-          <Script
+        {/*   <Script
             type="text/javascript"
             src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="afterInteractive"
+            strategy="beforelazyOnloadInteractive"
+            async
             
-          />
+          /> */}
         </section>
        
         <section className="text-yellow-400 bg-yellow-900 body-font relative">

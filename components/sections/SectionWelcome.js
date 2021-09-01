@@ -34,7 +34,7 @@ const SectionWelcome = () => {
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base md:text-lg xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
           <div className="first-block text-lightGray space-y-4 md:space-y-5 p-6 md:p-10 my-auto bg-secundary z-40 opacity-80 md:opacity-100 h-full">
             <h1 className="font-yellow text-yellow text-xl md:text-3xl font-righteous">
-              Elevá tu marca personal al eXtremo
+              Tu marca al eXtremo
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
             <p>              
