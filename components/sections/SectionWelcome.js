@@ -32,7 +32,7 @@ const SectionWelcome = () => {
     <section>
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base md:text-lg xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
-          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-10 z-40 xs:bg-opacity-80 sm:bg-opacity-80 md:bg-opacity-100 bg-secundary">
+          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-10 z-40 bg-secundary bg-opacity-80">
             <h1 className="font-yellow text-yellow text-xl md:text-3xl font-righteous">
               Tu marca al eXtremo
             </h1>

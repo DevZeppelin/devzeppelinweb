@@ -1,7 +1,7 @@
 .background-overlay {
   background-image: linear-gradient(270deg, rgba(150, 150, 150, 0) 71%, #545454 0%);
   background-color: transparent;
-  opacity: 85%;
+  opacity: 1;
   transition: background 3s, border-radius 0.3s, opacity 3s;
   height: 35rem;
   
