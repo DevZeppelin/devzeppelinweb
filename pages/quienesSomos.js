@@ -64,7 +64,7 @@ const QuienesSomos = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-16 px-8 md:px-32 pb-16 text-center text-lightGray">
           <Fade bottom>
             <div className="space-y-4">
-              <BiCheckShield className="mx-auto text-4xl text-yellow" />
+              <FaEye className="mx-auto text-4xl text-yellow" />
               <h2 className="text-2xl text-yellow">Nuestra Visión</h2>
               <p>
                 Brindar el mejor servicio web a nivel global. Entregar a
@@ -79,7 +79,7 @@ const QuienesSomos = () => {
           </Fade>
           <Fade bottom>
             <div className="space-y-4">
-              <FaEye className="mx-auto text-4xl text-yellow " />
+              <BiCheckShield className="mx-auto text-4xl text-yellow " />
               <h2 className="text-2xl text-yellow">Nuestro Misión</h2>
               <p>
                 Realizar trabajos con alto nivel de compromiso, seguridad y

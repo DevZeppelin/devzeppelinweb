@@ -32,7 +32,7 @@ const SectionWelcome = () => {
     <section>
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base md:text-lg xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
-          <div className="first-block text-lightGray space-y-4 md:space-y-5 p-6 md:p-10 my-auto bg-secundary z-40 opacity-80 md:opacity-100 h-full">
+          <div className="first-block text-lightGray space-y-4 md:space-y-5 p-6 md:p-10 my-auto bg-secundary z-40 opacity-70 md:opacity-100 h-full">
             <h1 className="font-yellow text-yellow text-xl md:text-3xl font-righteous">
               Tu marca al eXtremo
             </h1>
@@ -42,13 +42,13 @@ const SectionWelcome = () => {
             </p>
 
             <p>
-              <b>¡Basta de webs viejas y lentas!</b> Utilizamos la última tecnología por lo que nuestras páginas son ultra rápidas y optimizadas.
+              <b>¡Dev Zeppelin NO es Wordpress!</b> Programamos usando tecnología de última generación por lo que nuestras páginas son modernas, rápidas y optimizadas.
             </p>
             <p>
-              El tiempo es dinero. Elevá tus ventas. ¡Dale a tus usuarios una experiencia increíble!
+              El tiempo es dinero. Elevá tus ventas. <b>¡Dale a tus usuarios una experiencia increíble!</b>
             </p>   
             <Link href="/contacto">
-              <button className="btn">Escribinos ahora</button>
+              <button className="btn opacity-100">Escribinos ahora</button>
             </Link>         
 
          

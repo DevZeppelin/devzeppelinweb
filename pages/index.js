@@ -41,10 +41,10 @@ export default function Home() {
               Revolucioná tu negocio a tarvés de la tecnología
             </h1>
             <p className="text-secundary md:text-lg">
-              Nuestras páginas cumplen con todas las exigencias en cuanto a{" "}
-              <i>perfomance</i>, accesibilidad, buenas prácticas y SEO; todo lo
+              Nuestras páginas <strong>NO están hechas con WordPress</strong>. Las construímos íntegramente con tecnologías que permiten lograr casi un 100% de: 
+              <i> perfomance</i>, accesibilidad, buenas prácticas y SEO; todo lo
               necesario para aparecer en los primeros lugares de los buscadores
-              más famosos y sin pagar nada extra
+              de manera orgánica.
             </p>
           </div>
         </section>
@@ -88,7 +88,7 @@ export default function Home() {
             <Fade bottom>
               <div className="relative">
                 <div className="indexGridImageText">
-                  Diseño, colores, imágenes HD y logo
+                  Diseño, color, fotos y logo HD
                 </div>
                 <img
                   src="/gridImg/03.png"
@@ -100,7 +100,7 @@ export default function Home() {
             <Fade bottom>
               <div className="relative">
                 <div className="indexGridImageText">
-                  Primeros lugares en las búsquedas
+                  Primeros lugares en Google
                 </div>
                 <img
                   src="/gridImg/04.png"
