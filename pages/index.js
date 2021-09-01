@@ -68,7 +68,7 @@ export default function Home() {
                   <img
                     src="/gridImg/01.png"
                     alt="development icon logo dev zeppelin webs pages www perfomance "
-                    className="gridImage imagen-filtro"
+                    className="gridImage imagen-filtro w-full"
                   />
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function Home() {
                 <img
                   src="/gridImg/02.png"
                   alt="development icon logo dev zeppelin webs pages www perfomance "
-                  className="gridImage imagen-filtro"
+                  className="gridImage imagen-filtro w-full"
                 />
               </div>
             </Fade>
@@ -93,7 +93,7 @@ export default function Home() {
                 <img
                   src="/gridImg/03.png"
                   alt="development icon logo dev zeppelin webs pages www perfomance "
-                  className="gridImage imagen-filtro"
+                  className="gridImage imagen-filtro w-full"
                 />
               </div>
             </Fade>
@@ -105,7 +105,7 @@ export default function Home() {
                 <img
                   src="/gridImg/04.png"
                   alt="development icon logo dev zeppelin webs pages www perfomance "
-                  className="gridImage imagen-filtro"
+                  className="gridImage imagen-filtro w-full"
                 />
               </div>
             </Fade>
@@ -115,7 +115,7 @@ export default function Home() {
                 <img
                   src="/gridImg/05.png"
                   alt="development icon logo dev zeppelin webs pages www perfomance "
-                  className="gridImage imagen-filtro"
+                  className="gridImage imagen-filtro w-full"
                 />
               </div>
             </Fade>
@@ -125,7 +125,7 @@ export default function Home() {
                 <img
                   src="/gridImg/06.png"
                   alt="development icon logo dev zeppelin webs pages www perfomance "
-                  className="gridImage imagen-filtro"
+                  className="gridImage imagen-filtro w-full"
                 />
               </div>
             </Fade>
@@ -135,7 +135,7 @@ export default function Home() {
                 <img
                   src="/gridImg/07.png"
                   alt="development icon logo dev zeppelin webs pages www perfomance "
-                  className="gridImage imagen-filtro"
+                  className="gridImage imagen-filtro w-full"
                 />
               </div>
             </Fade>

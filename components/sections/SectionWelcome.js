@@ -32,7 +32,7 @@ const SectionWelcome = () => {
     <section>
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base md:text-lg xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
-          <div className="first-block text-lightGray space-y-4 md:space-y-5 p-6 md:p-10 my-auto bg-secundary z-40 opacity-70 md:opacity-100 h-full">
+          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-10 bg-secundary z-40 sm:opacity-75 md:opacity-100">
             <h1 className="font-yellow text-yellow text-xl md:text-3xl font-righteous">
               Tu marca al eXtremo
             </h1>
@@ -50,6 +50,10 @@ const SectionWelcome = () => {
             <Link href="/contacto">
               <button className="btn opacity-100">Escribinos ahora</button>
             </Link>         
+            <div>
+              <img>
+              </img>
+            </div>
 
          
           </div>
