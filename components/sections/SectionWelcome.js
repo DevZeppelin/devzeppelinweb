@@ -33,7 +33,7 @@ const SectionWelcome = () => {
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
           <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-8 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
-            <h1 className="font-yellow text-yellow text-2xl mt-1 font-righteous">
+            <h1 className="font-yellow text-yellow text-2xl md:text-3xl mt-1 font-righteous">
               Agregá tecnología a tu negocio
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
