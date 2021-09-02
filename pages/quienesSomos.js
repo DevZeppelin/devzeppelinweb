@@ -55,7 +55,7 @@ const QuienesSomos = () => {
             <div className="my-auto">
               <img
                 src="logo.png"
-                alt="development icon logo dev zeppelin webs pages www perfomance "
+                alt="development big logo dev zeppelin webs pages www perfomance "
                 className="p-8"
               />
             </div>

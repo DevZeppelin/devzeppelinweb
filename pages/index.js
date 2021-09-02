@@ -67,7 +67,7 @@ export default function Home() {
                   </div>
                   <img
                     src="/gridImg/01.png"
-                    alt="development icon logo dev zeppelin webs pages www perfomance "
+                    alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
                     className="gridImage imagen-filtro w-full"
                   />
                 </div>
@@ -80,7 +80,7 @@ export default function Home() {
                 </div>
                 <img
                   src="/gridImg/02.png"
-                  alt="development icon logo dev zeppelin webs pages www perfomance "
+                  alt="development code book coffee dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
                 />
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
                 <img
                   src="/gridImg/03.png"
-                  alt="development icon logo dev zeppelin webs pages www perfomance "
+                  alt="development design figma colors html dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
                 />
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
                 <img
                   src="/gridImg/04.png"
-                  alt="development icon logo dev zeppelin webs pages www perfomance "
+                  alt="development google search first places dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
                 />
               </div>
@@ -114,7 +114,7 @@ export default function Home() {
                 <div className="indexGridImageText">App Movil</div>
                 <img
                   src="/gridImg/05.png"
-                  alt="development icon logo dev zeppelin webs pages www perfomance "
+                  alt="development mobile app play store android ios react native dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
                 />
               </div>
@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="indexGridImageText">Diseño responsivo</div>
                 <img
                   src="/gridImg/06.png"
-                  alt="development icon logo dev zeppelin webs pages www perfomance "
+                  alt="development responsive design dev zeppelin webs pages"
                   className="gridImage imagen-filtro w-full"
                 />
               </div>
@@ -134,7 +134,7 @@ export default function Home() {
                 <div className="indexGridImageText">e-commerce con Shopify</div>
                 <img
                   src="/gridImg/07.png"
-                  alt="development icon logo dev zeppelin webs pages www perfomance "
+                  alt="development ecommerce shopify e shop visa dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
                 />
               </div>

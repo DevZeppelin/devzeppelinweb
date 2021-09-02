@@ -32,9 +32,9 @@ const SectionWelcome = () => {
     <section>
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base md:text-lg xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
-          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-10 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
+          <div className="first-block text-lightGray space-y-6 md:space-y-10 p-6 md:p-10 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
             <h1 className="font-yellow text-yellow text-xl md:text-3xl mt-2 font-righteous">
-              Tu marca al eXtremo
+              Sumá tecnología a tu negocio
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
             <p>              
@@ -51,8 +51,7 @@ const SectionWelcome = () => {
               <button className="btn">Escribinos ahora</button>
             </Link>         
             <div>
-              <img>
-              </img>
+              
             </div>
 
          
@@ -67,16 +66,16 @@ const SectionWelcome = () => {
                 <input type="radio" name="radio-btn" id="radio4" ref={radio4} />
                 {/*Slides images Start*/}
                 <div className="slide first">
-                  <img src="01.png" alt="" />
+                  <img src="01.png" alt="pc computer outfit freedom green picture beautiful country" />
                 </div>
                 <div className="slide">
-                  <img src="02.png" alt="" />
+                  <img src="02.png" alt="people interacting with ypur web optimus ultra perfomance and great" />
                 </div>
                 <div className="slide">
-                  <img src="03.png" alt="" />
+                  <img src="03.png" alt="mac pc computer lightning colors big dream" />
                 </div>
                 <div className="slide">
-                  <img src="04.png" alt="" />
+                  <img src="04.png" alt="pc desk your home your work about internet www" />
                 </div>
                 {/*Automatic Navigation Start*/}
                 <div className="navigation-auto">

@@ -10,7 +10,7 @@ const TopMainScreen = () => {
       <Link href="/">
         <img
           src="logo.png"
-          alt="dev zeppelin"
+          alt="dev zeppelin logo hyper webs gino pietrobon"
           height="200"
           width="200"
         />
@@ -33,7 +33,7 @@ const TopMainScreen = () => {
         />
 
         <Link href="/contacto">
-          <p className="rounded-lg p-4 text-xl my-auto btn">Te llamamos!</p>
+          <p className="rounded-lg p-4 text-xl my-auto btn">Contactanos</p>
         </Link>
       </div>
     </div>

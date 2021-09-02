@@ -8,7 +8,7 @@ const WhatsappIcon = () => {
     >
       <img
         src="whatsapp.png"
-        alt="development icon logo dev zeppelin webs pages www perfomance "
+        alt="whatsapp icon logo dev zeppelin webs pages www perfomance "
         height="50"
         width="50"
         className="fixed bottom-3 md:bottom-10 right-3 md:right-10 cursor-pointer z-40"
