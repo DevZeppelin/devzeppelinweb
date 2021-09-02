@@ -26,12 +26,10 @@ module.exports = {
                 body : ['Heebo'],
                 'righteous' : ['Righteous']
             },
-            backgroundImage: theme => ({
-               
+            backgroundImage: theme => ({               
                 'hero-big': "url('/01.webp')",  
                 'hero-bigger': "url('/bgImage.webp')",  
-                'hero-pages': "url('/bgPages.webp')",  
-                        
+                'hero-pages': "url('/bgPages.webp')"                         
                })
         },
         grayscale: {

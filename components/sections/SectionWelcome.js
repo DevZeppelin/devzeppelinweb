@@ -31,10 +31,10 @@ const SectionWelcome = () => {
   return (
     <section>
       <div>
-        <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base md:text-lg xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
-          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-10 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
-            <h1 className="font-yellow text-yellow text-xl md:text-3xl mt-2 font-righteous">
-              Sumá tecnología a tu negocio
+        <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
+          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-8 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
+            <h1 className="font-yellow text-yellow text-2xl mt-1 font-righteous">
+              Agregá tecnología a tu negocio
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
             <p>              
@@ -45,7 +45,7 @@ const SectionWelcome = () => {
               <b>¡Dev Zeppelin NO utiliza WordPress!</b> Programamos usando tecnología de última generación por lo que nuestras páginas son modernas, rápidas y optimizadas.
             </p>
             <p>
-              El tiempo es dinero. Elevá tus ventas. <b>¡Dale a tus usuarios una experiencia increíble!</b>
+              El tiempo es dinero. Elevá tus ventas dando a tus usuarios <b>una experiencia increíble</b>
             </p>   
             <Link href="/contacto">
               <button className="btn">Escribinos ahora</button>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Script from 'next/script';
+
 import Layout from "../components/Layout";
 import MainBarButton from "../components/MainBarButton";
 import { FaWhatsapp } from "react-icons/fa";
@@ -76,13 +76,7 @@ const Contacto = () => {
             data-url="https://calendly.com/devzeppelin/reunion-consulta-personal?background_color=383838&text_color=f7f7f7&primary_color=c9ff00"
             
           ></div>
-        {/*   <Script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="beforelazyOnloadInteractive"
-            async
-            
-          /> */}
+        
         </section>
        
         <section className="text-yellow-400 bg-yellow-900 body-font relative">
@@ -137,7 +131,7 @@ const Contacto = () => {
                 </div>
                 <button className="btn">Enviar</button>
                 <p className="text-xs text-yellow-400 text-opacity-90 mt-3">
-                  Dev Zeppelin. Webs 100% perfomance.
+                  Dev Zeppelin. Webs 100% perfomance elevando tu negocio a través de la tecnología.
                 </p>
               </div>
             </Fade>

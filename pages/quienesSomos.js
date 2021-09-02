@@ -15,7 +15,7 @@ const QuienesSomos = () => {
         <section className="text-lightGray">
           <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
             <h1 className="text-4xl font-bold text-yellow uppercase">
-              La empresa
+              nuestra empresa
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -80,7 +80,7 @@ const QuienesSomos = () => {
           <Fade bottom>
             <div className="space-y-4">
               <BiCheckShield className="mx-auto text-4xl text-yellow " />
-              <h2 className="text-2xl text-yellow">Nuestro Misión</h2>
+              <h2 className="text-2xl text-yellow">Nuestra Misión</h2>
               <p>
                 Realizar trabajos con alto nivel de compromiso, seguridad y
                 transparencia. Nuestro desafío es atender de manera responsable
