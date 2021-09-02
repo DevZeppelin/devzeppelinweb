@@ -66,9 +66,11 @@ export default function Home() {
                     Webs de última tecnología
                   </div>
                   <img
-                    src="/gridImg/01.png"
+                    src="/gridImg/01.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
                     className="gridImage imagen-filtro w-full"
+                    width="400"
+                    height="270"
                   />
                 </div>
               </div>
@@ -79,9 +81,11 @@ export default function Home() {
                   Administrá tu contenido
                 </div>
                 <img
-                  src="/gridImg/02.png"
+                  src="/gridImg/02.webp"
                   alt="development code book coffee dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
+                  width="400"
+                  height="270"
                 />
               </div>
             </Fade>
@@ -91,9 +95,11 @@ export default function Home() {
                   Diseño, color, fotos y logo HD
                 </div>
                 <img
-                  src="/gridImg/03.png"
+                  src="/gridImg/03.webp"
                   alt="development design figma colors html dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
+                  width="400"
+                  height="270"
                 />
               </div>
             </Fade>
@@ -103,9 +109,11 @@ export default function Home() {
                   Primeros lugares en Google
                 </div>
                 <img
-                  src="/gridImg/04.png"
+                  src="/gridImg/04.webp"
                   alt="development google search first places dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
+                  width="400"
+                  height="270"
                 />
               </div>
             </Fade>
@@ -113,9 +121,11 @@ export default function Home() {
               <div className="relative">
                 <div className="indexGridImageText">App Movil</div>
                 <img
-                  src="/gridImg/05.png"
+                  src="/gridImg/05.webp"
                   alt="development mobile app play store android ios react native dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
+                  width="400"
+                  height="270"
                 />
               </div>
             </Fade>
@@ -123,9 +133,11 @@ export default function Home() {
               <div className="relative">
                 <div className="indexGridImageText">Diseño responsivo</div>
                 <img
-                  src="/gridImg/06.png"
+                  src="/gridImg/06.webp"
                   alt="development responsive design dev zeppelin webs pages"
                   className="gridImage imagen-filtro w-full"
+                  width="400"
+                  height="270"
                 />
               </div>
             </Fade>
@@ -133,9 +145,11 @@ export default function Home() {
               <div className="relative">
                 <div className="indexGridImageText">e-commerce con Shopify</div>
                 <img
-                  src="/gridImg/07.png"
+                  src="/gridImg/07.webp"
                   alt="development ecommerce shopify e shop visa dev zeppelin webs pages www perfomance "
                   className="gridImage imagen-filtro w-full"
+                  width="400"
+                  height="270"
                 />
               </div>
             </Fade>

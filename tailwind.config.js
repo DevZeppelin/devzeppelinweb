@@ -27,13 +27,11 @@ module.exports = {
                 'righteous' : ['Righteous']
             },
             backgroundImage: theme => ({
-                'hero': "url('/01-sm.png')",  
-                'hero-big': "url('/01.png')",  
-                'hero-bigger': "url('/bgImage.png')",  
-                'hero-pages': "url('/bgPages.png')",  
-                'hero-welcome1' : "url('/01-welcome.png')" ,             
-                'hero-welcome2' : "url('/02-welcome.png')"  ,            
-                'hero-welcome3' : "url('/03-welcome.png')"              
+               
+                'hero-big': "url('/01.webp')",  
+                'hero-bigger': "url('/bgImage.webp')",  
+                'hero-pages': "url('/bgPages.webp')",  
+                        
                })
         },
         grayscale: {

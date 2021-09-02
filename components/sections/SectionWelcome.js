@@ -66,16 +66,16 @@ const SectionWelcome = () => {
                 <input type="radio" name="radio-btn" id="radio4" ref={radio4} />
                 {/*Slides images Start*/}
                 <div className="slide first">
-                  <img src="01.png" alt="pc computer outfit freedom green picture beautiful country" />
+                  <img src="01.webp" alt="pc computer outfit freedom green picture beautiful country" />
                 </div>
                 <div className="slide">
-                  <img src="02.png" alt="people interacting with ypur web optimus ultra perfomance and great" />
+                  <img src="02.webp" alt="people interacting with ypur web optimus ultra perfomance and great" />
                 </div>
                 <div className="slide">
-                  <img src="03.png" alt="mac pc computer lightning colors big dream" />
+                  <img src="03.webp" alt="mac pc computer lightning colors big dream" />
                 </div>
                 <div className="slide">
-                  <img src="04.png" alt="pc desk your home your work about internet www" />
+                  <img src="04.webp" alt="pc desk your home your work about internet www" />
                 </div>
                 {/*Automatic Navigation Start*/}
                 <div className="navigation-auto">
