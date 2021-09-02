@@ -7,7 +7,7 @@ const WhatsappIcon = () => {
       rel="noopener"
     >
       <img
-        src="whatsapp.png"
+        src="whatsapp.webp"
         alt="whatsapp icon logo dev zeppelin webs pages www perfomance "
         height="50"
         width="50"
