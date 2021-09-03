@@ -5,7 +5,7 @@
 @import "tailwindcss/utilities";
 
 .btn {
-    @apply bg-yellow border-2 p-4 rounded-lg text-primary font-bold ;
+    @apply bg-yellow border-2 p-4 rounded-lg text-primary font-bold;
 }
 
 .btn:hover {

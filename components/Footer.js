@@ -60,7 +60,7 @@ const Footer = () => {
 
         <div className="text-xl">
           <h2 className="font-extrabold">Síguenos!</h2>
-          <div className="flex flex-wrap justify-between m-8 gap-4 text-4xl w-46 md:w-24 ">
+          <div className="flex flex-wrap justify-between p-6 md:p-10 md:pr-40 mx-4 gap-4 text-4xl w-42 md:w-26 ">
           <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"

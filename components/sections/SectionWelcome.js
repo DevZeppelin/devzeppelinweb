@@ -32,7 +32,7 @@ const SectionWelcome = () => {
     <section>
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base xs:px-2 sm:px-6 md:px-24 bg-yellow background-overlay">
-          <div className="first-block text-lightGray space-y-6 md:space-y-8 p-6 md:p-8 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
+          <div className="first-block text-lightGray space-y-6 md:space-y-10 p-6 md:p-8 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
             <h1 className="font-yellow text-yellow text-2xl md:text-3xl mt-1 font-righteous">
               Agregá tecnología a tu negocio
             </h1>
@@ -48,7 +48,7 @@ const SectionWelcome = () => {
               El tiempo es dinero. Elevá tus ventas dando a tus usuarios <b>una experiencia increíble</b>
             </p>   
             <Link href="/contacto">
-              <button className="btn">Escribinos ahora</button>
+              <button className="btn opacity-100 uppercase">Escribinos ahora</button>
             </Link>         
             <div>
               
