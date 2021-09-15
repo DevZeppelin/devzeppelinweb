@@ -7,7 +7,7 @@ import {
   FaFacebook,
   FaLinkedinIn,
   FaGithub,
-  FaPhone
+  FaPhone,
 } from "react-icons/fa";
 import Link from "next/dist/client/link";
 
@@ -23,14 +23,13 @@ const Footer = () => {
                 alt="development icon logo dev zeppelin webs pages www perfomance "
                 height="160"
                 width="280"
-            
               />
             </div>
           </Link>
         </div>
         <div className="text-lg">
           <h2 className="font-extrabold">¡Contactanos hoy!</h2>
-          
+
           <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
@@ -42,7 +41,6 @@ const Footer = () => {
               }
               text="Whatsapp, SMS o llamadas"
               description2="+5492616708100"
-              
               classType="text-yellow"
             />
           </a>
@@ -50,79 +48,76 @@ const Footer = () => {
             href="mailto:gino.b.pietrobon@gmail.com"
             target="_blank"
             rel="noopener"
-          ><MainBarButton
-            logo={<FiMail className="text-yellow text-2xl flex my-auto m-2" />}
-            text="Correo electrónico"
-            description2="gino.b.pietrobon@gmail.com"
-            classType="text-yellow"
-          /></a>
+          >
+            <MainBarButton
+              logo={
+                <FiMail className="text-yellow text-2xl flex my-auto m-2" />
+              }
+              text="Correo electrónico"
+              description2="gino.b.pietrobon@gmail.com"
+              classType="text-yellow"
+            />
+          </a>
         </div>
 
         <div className="text-xl">
           <h2 className="font-extrabold">Síguenos!</h2>
           <div className="flex flex-wrap justify-between p-6 md:p-10 md:pr-40 mx-4 gap-4 text-4xl w-42 md:w-26 ">
-          <a
-            href="https://api.whatsapp.com/send?phone=5492616708100"
-            target="_blank"
-            rel="noopener"
-          >
-            <button
-              aria-label="go to my whatsapp"              
-              alt="whatsapp-logo"
+            <a
+              href="https://api.whatsapp.com/send?phone=5492616708100"
+              target="_blank"
+              rel="noopener"
             >
-              <FaWhatsapp className="hover:text-yellow" />
-            </button>
-          </a>
+              <button aria-label="go to my whatsapp" alt="whatsapp-logo">
+                <FaWhatsapp className="hover:text-yellow" />
+              </button>
+            </a>
 
-          <a href="https://www.instagram.com/moonwatcher.dev/"
-            target="_blank"
-            rel="noopener">
-            <button
-              aria-label="go to my instagram"
-              
-              alt="instagram-logo"
+            <a
+              href="https://www.instagram.com/moonwatcher.dev/"
+              target="_blank"
+              rel="noopener"
             >
-              <FaInstagram className="hover:text-yellow" />
-            </button>
-          </a>
+              <button aria-label="go to my instagram" alt="instagram-logo">
+                <FaInstagram className="hover:text-yellow" />
+              </button>
+            </a>
 
-          <a href="https://www.twitter.com/moonwatcher73/"
-          target="_blank"
-          rel="noopener">
-            <button
-              aria-label="go to my twitter"
-              
-              alt="twitter-logo"
+            <a
+              href="https://www.twitter.com/moonwatcher73/"
+              target="_blank"
+              rel="noopener"
             >
-              <FiTwitter className="hover:text-yellow" />
-            </button>
-          </a>        
+              <button aria-label="go to my twitter" alt="twitter-logo">
+                <FiTwitter className="hover:text-yellow" />
+              </button>
+            </a>
 
-          
-          <a href="https://www.linkedin.com/in/gino-pietrobon"
-          target="_blank"
-          rel="noopener">
-            <button
-              aria-label="go to my linked in"
-              
-              alt="linkedin-logo"
+            <a
+              href="https://www.linkedin.com/in/gino-pietrobon"
+              target="_blank"
+              rel="noopener"
             >
-              <FaLinkedinIn className="hover:text-yellow" />
-            </button>
-          </a>
-
-         
+              <button aria-label="go to my linked in" alt="linkedin-logo">
+                <FaLinkedinIn className="hover:text-yellow" />
+              </button>
+            </a>
           </div>
         </div>
       </div>
       <div className="p-4 text-sm bg-primary text-lightGray z-50">
         <p>
           Make with &#128153; in Mendoza, Argentina by{" "}
-          <a href="https://moonblog.ar" target="_blank" rel="noopener" className="font-bold text-yellow">
+          <a
+            href="https://moonblog.ar"
+            target="_blank"
+            rel="noopener"
+            className="font-bold text-yellow"
+          >
             Dev Zeppelin
           </a>
         </p>
-         All rights reserved. &copy; &nbsp; {new Date().getFullYear()}
+        All rights reserved. &copy; &nbsp; {new Date().getFullYear()}
       </div>
     </div>
   );
