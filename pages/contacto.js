@@ -1,4 +1,5 @@
 import Head from "next/head";
+import emailjs from "emailjs-com"
 
 import Layout from "../components/Layout";
 import MainBarButton from "../components/MainBarButton";
@@ -7,6 +8,20 @@ import { FiMail } from "react-icons/fi";
 import Fade from "react-reveal/Fade";
 
 const Contacto = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_sj28bhq', 'template_63hecpe', e.target, 'user_32Nh0XQNE3OeiZzW1g5uH')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+      alert("Mensaje enviado correctamente")
+  }
+
   return (
     <div>
       <Head>
@@ -94,46 +109,76 @@ const Contacto = () => {
           </div>
           <div className="container px-5 py-24 mx-auto flex">
             <Fade bottom>
-              <div className="lg:w-1/3 md:w-1/2 bg-yellow-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
-                <h2 className="text-black text-xl mb-1 font-extrabold title-font">
-                  Contactanos!
-                </h2>
-                <p className="leading-relaxed mb-5 font-bold">
-                  Envíanos tu consulta y nos pondremos en contacto con vos en
-                  breve!
-                </p>
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="email"
-                    className="leading-7 text-sm text-yellow-400 font-bold"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full bg-yellow-800 rounded border border-yellow-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
+              <form onSubmit={sendEmail}>
+                <div className="lg:w-1/3 md:w-3/4 bg-yellow-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+                  <h2 className="text-black text-xl mb-1 font-extrabold title-font">
+                    Contactanos!
+                  </h2>
+                  <p className="leading-relaxed mb-5 font-bold">
+                    Envíanos tu consulta y nos pondremos en contacto con vos en
+                    breve!
+                  </p>
+                  <div className="relative mb-4">
+                    <label
+                      htmlFor="name"
+                      className="leading-7 text-sm text-yellow-400 font-bold"
+                    >
+                      Nombre
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="w-full bg-yellow-800 rounded border border-yellow-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div className="relative mb-4">
+                    <label
+                      htmlFor="email"
+                      className="leading-7 text-sm text-yellow-400 font-bold"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="w-full bg-yellow-800 rounded border border-yellow-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div className="relative mb-4">
+                    <label
+                      htmlFor="subject"
+                      className="leading-7 text-sm text-yellow-400 font-bold"
+                    >
+                      Asunto
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      className="w-full bg-yellow-800 rounded border border-yellow-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div className="relative mb-4">
+                    <label
+                      htmlFor="message"
+                      className="leading-7 text-sm text-yellow-400 font-bold"
+                    >
+                      Mensaje
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      className="w-full bg-yellow-800 rounded border border-yellow-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-yellow-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    ></textarea>
+                  </div>
+                  <button className="btn">Enviar</button>
+                  <p className="text-xs text-yellow-400 text-opacity-90 mt-3">
+                    Dev Zeppelin. Webs 100% perfomance elevando tu negocio a través de la tecnología.
+                  </p>
                 </div>
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="message"
-                    className="leading-7 text-sm text-yellow-400 font-bold"
-                  >
-                    Mensaje
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="w-full bg-yellow-800 rounded border border-yellow-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-yellow-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  ></textarea>
-                </div>
-                <button className="btn">Enviar</button>
-                <p className="text-xs text-yellow-400 text-opacity-90 mt-3">
-                  Dev Zeppelin. Webs 100% perfomance elevando tu negocio a través de la tecnología.
-                </p>
-              </div>
+              </form>
             </Fade>
           </div>
         </section>
