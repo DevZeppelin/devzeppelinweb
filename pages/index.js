@@ -334,6 +334,7 @@ export default function Home() {
         </section>
         {/* CSS Puro */}
         <style jsx>{`
+          
           .imagen-filtro {
             transition: all 0.4s ease;
           }

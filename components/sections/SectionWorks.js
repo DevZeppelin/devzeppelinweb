@@ -2,7 +2,7 @@ import Fade from "react-reveal/Fade";
 
 const SectionWorks = () => {
   return (
-    <section>
+    <section id="work">
       <div className="p-4 md:px-16 mx-auto pt-16 ">
         <h2 className="text-center text-3xl text-yellow my-8">
           ¡Algunos de nuestros trabajos!
