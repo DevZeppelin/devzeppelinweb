@@ -4,7 +4,7 @@ const SectionWorks = () => {
   return (
     <section id="work">
       <div className="p-4 md:px-16 mx-auto pt-16 ">
-        <h2 className="text-center text-3xl text-yellow my-8">
+        <h2 className="text-center text-3xl text-yellow my-8 pb-6">
           ¡Algunos de nuestros trabajos!
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
@@ -55,7 +55,7 @@ const SectionWorks = () => {
       <style jsx>{` 
       
         .animateImage:hover {
-            transform: scale(1.3);
+            transform: scale(1.2);
             padding: 0;
             transition: 1.5s
         }
