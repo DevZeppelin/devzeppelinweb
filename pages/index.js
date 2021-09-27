@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/dist/client/link";
 import Layout from "../components/Layout";
 import SectionWelcome from "../components/sections/SectionWelcome";
+import SectionWorks from "../components/sections/SectionWorks";
 
 import { IoIosSpeedometer } from "react-icons/io";
 import { BiBookContent } from "react-icons/bi";
@@ -48,6 +49,9 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+       
+
         <section>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-24 text-center fadeIn element">
             <Fade left>
@@ -207,6 +211,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <SectionWorks />
         <section>
           <div className="text-center pt-16">
             <h2 className="text-3xl font-bold pb-12 font-righteous text-yellow">
