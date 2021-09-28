@@ -9,7 +9,7 @@ const SectionWorks = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
           <Fade big>
-              <div className="p-2 md:p-16">
+              <div className="p-2 md:p-12">
                   <img
                     src="/responsiveImages/01.png"
                     alt="responsive image mobile tablet notebook widescreen responsive-design"
@@ -19,17 +19,17 @@ const SectionWorks = () => {
               </div>
           </Fade>
           <Fade big>
-          <div className="p-2 md:p-16">
+          <div className="p-2 md:p-12">
               <img
                 src="/responsiveImages/02.png"
                 alt="responsive image mobile tablet notebook widescreen responsive-design"
                 className="w-full  animateImage"
               />
-              <p className="text-lg text-yellow text-center pt-3 md:pt-8 uppercase font-bold">Escuela de programación</p>
+              <p className="text-lg text-yellow text-center pt-3 md:mt-8 uppercase font-bold">Escuela de programación</p>
           </div>
           </Fade>
           <Fade big>
-          <div className="p-2 md:p-16">
+          <div className="p-2 md:p-12">
               <img
                 src="/responsiveImages/03.png"
                 alt="responsive image mobile tablet notebook widescreen responsive-design"
@@ -39,7 +39,7 @@ const SectionWorks = () => {
           </div>
           </Fade>
           <Fade big>
-          <div className="p-2 md:p-16">
+          <div className="p-2 md:p-12">
               <img
                 src="/responsiveImages/04.png"
                 alt="responsive image mobile tablet notebook widescreen responsive-design"
