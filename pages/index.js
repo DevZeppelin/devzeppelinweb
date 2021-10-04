@@ -213,6 +213,7 @@ export default function Home() {
         </section>
 
         <SectionWorks />
+        
         <section>
           <div className="text-center pt-16">
             <h2 className="text-3xl font-bold pb-12 font-righteous text-yellow">

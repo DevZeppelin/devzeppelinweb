@@ -1,4 +1,5 @@
 import Fade from "react-reveal/Fade";
+import SectionWorkComponent from "../SectionWorkComponent";
 
 const SectionWorks = () => {
   return (
@@ -9,58 +10,35 @@ const SectionWorks = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
           <Fade big>
-              <div className="p-2 md:p-12">
-                  <img
-                    src="/responsiveImages/01.png"
-                    alt="responsive image mobile tablet notebook widescreen responsive-design"
-                    className="w-full  animateImage"
-                  />
-                  <p className="text-lg text-yellow text-center pt-3 md:pt-8 uppercase font-bold">Página de tecnología</p>
-              </div>
+            <SectionWorkComponent
+              src="/responsiveImages/01.png"
+              description="Empresa de tecnología"
+              web="www.tecnicosya.com.ar"
+            />
           </Fade>
           <Fade big>
-          <div className="p-2 md:p-12">
-              <img
-                src="/responsiveImages/02.png"
-                alt="responsive image mobile tablet notebook widescreen responsive-design"
-                className="w-full  animateImage"
-              />
-              <p className="text-lg text-yellow text-center pt-3 md:mt-8 uppercase font-bold">Escuela de programación</p>
-          </div>
+            <SectionWorkComponent
+              src="/responsiveImages/02.png"
+              description="Escuela de Programación"
+              web="www.code-obrero.vercel.app"
+            />
           </Fade>
           <Fade big>
-          <div className="p-2 md:p-12">
-              <img
-                src="/responsiveImages/03.png"
-                alt="responsive image mobile tablet notebook widescreen responsive-design"
-                className="w-full  animateImage"
-              />
-              <p className="text-lg text-yellow text-center pt-3 md:pt-8 uppercase font-bold">Tarjetas de invitación web</p>
-          </div>
+            <SectionWorkComponent
+              src="/responsiveImages/03.png"
+              description="Tarjeta de invitación Web"
+              web="devzeppelin.github.io/InvitacionWeb"
+            />
           </Fade>
           <Fade big>
-          <div className="p-2 md:p-12">
-              <img
-                src="/responsiveImages/04.png"
-                alt="responsive image mobile tablet notebook widescreen responsive-design"
-                className="w-full  animateImage"
-              />
-              <p className="text-lg text-yellow text-center pt-3 md:pt-8 uppercase font-bold">Blog personal</p>
-          </div>
+            <SectionWorkComponent
+              src="/responsiveImages/04.png"
+              description="Blog Personal"
+              web="www.moonblog.ar"
+            />
           </Fade>
-
-          
         </div>
       </div>
-      <style jsx>{` 
-      
-        .animateImage:hover {
-            transform: scale(1.2);
-            padding: 0;
-            transition: 1.5s
-        }
-        
-      `}</style>
     </section>
   );
 };
