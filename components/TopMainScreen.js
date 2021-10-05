@@ -33,14 +33,14 @@ const TopMainScreen = () => {
         </a>
 
         <a
-          href="mailto:gino.b.pietrobon@gmail.com"
+          href="mailto:devzeppelin.ar@gmail.com"
           target="_blank"
           rel="noopener"
         >
           <MainBarButton
             logo={<FiMail className="text-yellow text-4xl flex my-auto m-3" />}
             text="Correo electrónico"
-            description1="gino.b.pietrobon@gmail.com"
+            description1="devzeppelin.ar@gmail.com"
             classType="text-yellow font-bold"
           />
         </a>

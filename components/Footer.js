@@ -45,7 +45,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="mailto:gino.b.pietrobon@gmail.com"
+            href="mailto:devzeppelin.ar@gmail.com"
             target="_blank"
             rel="noopener"
           >
@@ -54,7 +54,7 @@ const Footer = () => {
                 <FiMail className="text-yellow text-2xl flex my-auto m-2" />
               }
               text="Correo electrónico"
-              description2="gino.b.pietrobon@gmail.com"
+              description2="devZeppelin.ar@gmail.com"
               classType="text-yellow"
             />
           </a>
@@ -109,7 +109,7 @@ const Footer = () => {
         <p>
           Make with &#128153; in Mendoza, Argentina by{" "}
           <a
-            href="https://moonblog.ar"
+            href="https://devzepelin.ar"
             target="_blank"
             rel="noopener"
             className="font-bold text-yellow"
