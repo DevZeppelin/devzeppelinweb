@@ -4,7 +4,7 @@ import {
   FaInstagram,
   FaFacebook,
   FaLinkedinIn,
-  FaGithub,
+  
 } from "react-icons/fa";
 
 const TopLeyend = () => {
@@ -26,6 +26,15 @@ const TopLeyend = () => {
               <FaWhatsapp className="hover:text-yellow" />
             </button>
           </a>
+          <a
+              href="https://www.facebook.com/devzeppelin/"
+              target="_blank"
+              rel="noopener"
+            >
+              <button aria-label="go to my facebook" alt="facebook-logo">
+                <FaFacebook className="hover:text-yellow" />
+              </button>
+            </a>
 
           <a
             href="https://www.instagram.com/moonwatcher.dev/"

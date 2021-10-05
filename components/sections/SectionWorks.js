@@ -9,28 +9,28 @@ const SectionWorks = () => {
           ¡Algunos de nuestros trabajos!
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
-          <Fade big>
+          <Fade bottom>
             <SectionWorkComponent
               src="/responsiveImages/01.png"
               description="Empresa de tecnología"
               web="www.tecnicosya.com.ar"
             />
           </Fade>
-          <Fade big>
+          <Fade bottom>
             <SectionWorkComponent
               src="/responsiveImages/02.png"
               description="Escuela de Programación"
               web="www.code-obrero.vercel.app"
             />
           </Fade>
-          <Fade big>
+          <Fade bottom>
             <SectionWorkComponent
               src="/responsiveImages/03.png"
               description="Tarjeta de invitación Web"
               web="devzeppelin.github.io/InvitacionWeb"
             />
           </Fade>
-          <Fade big>
+          <Fade bottom>
             <SectionWorkComponent
               src="/responsiveImages/04.png"
               description="Blog Personal"
