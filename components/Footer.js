@@ -62,7 +62,7 @@ const Footer = () => {
 
         <div className="text-xl">
           <h2 className="font-extrabold">Síguenos!</h2>
-          <div className="flex flex-wrap justify-between p-6 md:p-10m md:pr-30 mx-4 gap-4 text-4xl w-44 md:w-44 ">
+          <div className="flex flex-wrap justify-start p-6 md:p-10m md:pr-30 mx-4 gap-4 text-4xl w-44 md:w-44 ">
            
 
             <a
