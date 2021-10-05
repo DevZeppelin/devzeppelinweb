@@ -63,15 +63,7 @@ const Footer = () => {
         <div className="text-xl">
           <h2 className="font-extrabold">Síguenos!</h2>
           <div className="flex flex-wrap justify-between p-6 md:p-10m md:pr-30 mx-4 gap-4 text-4xl w-44 md:w-44 ">
-            <a
-              href="https://api.whatsapp.com/send?phone=5492616708100"
-              target="_blank"
-              rel="noopener"
-            >
-              <button aria-label="go to my whatsapp" alt="whatsapp-logo">
-                <FaWhatsapp className="hover:text-yellow" />
-              </button>
-            </a>
+           
 
             <a
               href="https://www.instagram.com/devzeppelin.ar/"
@@ -92,25 +84,9 @@ const Footer = () => {
               </button>
             </a>
 
-            <a
-              href="https://www.twitter.com/moonwatcher73/"
-              target="_blank"
-              rel="noopener"
-            >
-              <button aria-label="go to my twitter" alt="twitter-logo">
-                <FiTwitter className="hover:text-yellow" />
-              </button>
-            </a>
+           
 
-            <a
-              href="https://www.linkedin.com/in/gino-pietrobon"
-              target="_blank"
-              rel="noopener"
-            >
-              <button aria-label="go to my linked in" alt="linkedin-logo">
-                <FaLinkedinIn className="hover:text-yellow" />
-              </button>
-            </a>
+           
           </div>
         </div>
       </div>

@@ -46,25 +46,7 @@ const TopLeyend = () => {
             </button>
           </a>
 
-          <a
-            href="https://www.twitter.com/moonwatcher73/"
-            target="_blank"
-            rel="noopener"
-          >
-            <button aria-label="go to my twitter" alt="twitter-logo">
-              <FiTwitter className="hover:text-yellow" />
-            </button>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/gino-pietrobon"
-            target="_blank"
-            rel="noopener"
-          >
-            <button aria-label="go to my linked in" alt="linkedin-logo">
-              <FaLinkedinIn className="hover:text-yellow" />
-            </button>
-          </a>
+         
 
           <a
             href="mailto:gino.b.pietrobon@gmail.com"
