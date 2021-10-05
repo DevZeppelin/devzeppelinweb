@@ -6,9 +6,9 @@ const SectionWorkComponent = ({description, web, src}) => {
       <img
         src={src}
         alt="responsive image mobile tablet notebook widescreen responsive-design"
-        className="w-full  animateImage mb-7"
+        className="w-full  animateImage"
       />
-      <p className="text-lg text-yellow text-center uppercase font-bold">
+      <p className="text-lg text-yellow text-center uppercase font-bold ">
         {description}
       </p>
       <a href={`https://${web}`} rel="noopener" target="_blank">
@@ -17,6 +17,10 @@ const SectionWorkComponent = ({description, web, src}) => {
           </p>
       </a>
       <style jsx>{` 
+
+      .animateImage {
+        margin-bottom: 2rem
+      }
       
       .animateImage:hover {
           transform: scale(1.15);
