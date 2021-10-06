@@ -1,5 +1,5 @@
 import Fade from "react-reveal/Fade";
-import SectionWorkComponent from "../SectionWorkComponent";
+import SectionWorkComponent from "./SectionWorkComponent";
 
 const SectionWorks = () => {
   return (
