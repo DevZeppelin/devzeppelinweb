@@ -37,7 +37,7 @@ const TopLeyend = () => {
             </a>
 
           <a
-            href="https://www.instagram.com/moonwatcher.dev/"
+            href="https://www.instagram.com/devzeppelin.ar/"
             target="_blank"
             rel="noopener"
           >
@@ -49,7 +49,7 @@ const TopLeyend = () => {
          
 
           <a
-            href="mailto:gino.b.pietrobon@gmail.com"
+            href="mailto:devzeppelin.ar@gmail.com"
             target="_blank"
             rel="noopener"
           >
