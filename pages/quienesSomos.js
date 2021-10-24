@@ -31,7 +31,7 @@ const QuienesSomos = () => {
                   presencia digital excelente.
                 </p>
                 <p>
-                  Utilizamos la última tecnología "punta de lanza" para
+                  Utilizamos la última tecnología punta de lanza para
                   mantenernos actualizados y ser competentes en el mercado. Nos
                   enfocamos en proveer las últimas funcionalidades para que tu
                   sitio web resalte contra el resto.
