@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { BiCheckShield } from "react-icons/bi";
 import { FaEye } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
+import Image from "next/image"
 
 const QuienesSomos = () => {
   return (
@@ -52,11 +53,12 @@ const QuienesSomos = () => {
                 </p>
               </Fade>
             </div>
-            <div className="my-auto">
-              <img
-                src="logo.webp"
+            <div className="my-auto p-8">
+              <Image
+                src="/logo.webp"
                 alt="development big logo dev zeppelin webs pages www perfomance "
-                className="p-8"
+                width={500}
+                height={500}
               />
             </div>
           </div>

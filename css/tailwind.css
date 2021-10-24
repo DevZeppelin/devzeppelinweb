@@ -17,6 +17,6 @@
 }
 
 .indexGridImageText {
-    @apply w-full text-primary border-b-2 border-yellow h-10 absolute bg-yellow bottom-0 mt-8 z-10 hover:bg-yellow uppercase font-bold text-sm md:text-base;
+    @apply w-full text-primary border-b-2 border-yellow h-8 absolute bg-yellow bottom-0 z-10 hover:bg-yellow uppercase font-bold text-sm md:text-base text-center mt-4;
 }
 
