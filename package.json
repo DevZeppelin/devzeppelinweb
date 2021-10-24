@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
@@ -21,5 +22,9 @@
     "react-icons": "4.2.0",
     "react-reveal": "1.2.2",
     "tailwindcss": "2.2.7"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
   }
 }

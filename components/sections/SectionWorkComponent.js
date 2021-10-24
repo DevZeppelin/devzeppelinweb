@@ -14,7 +14,7 @@ const SectionWorkComponent = ({description, web, src}) => {
       <p className="text-lg text-yellow text-center uppercase font-bold ">
         {description}
       </p>
-      <a href={`https://${web}`} rel="noopener" target="_blank">
+      <a href={`https://${web}`} rel="noreferrer" target="_blank">
           <p className="text-base text-lightGray text-center pt-2 md:pt-3 font-bold">
             {web}
           </p>

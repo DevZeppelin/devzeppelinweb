@@ -16,7 +16,7 @@ const MobileNavBar = ({ open }) => {
         <Link href="/servicios">
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios 🛠</a>
         </Link>        
-        <a href="https://www.moonblog.ar" target="_blank" rel="noopener">
+        <a href="https://www.moonblog.ar" target="_blank" rel="noreferrer">
           <div className="mr-2 mt-5 px-3 hover:border-yellow">Blog 🙊</div>
         </a>        
 

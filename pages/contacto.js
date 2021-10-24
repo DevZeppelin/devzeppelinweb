@@ -48,7 +48,7 @@ const Contacto = () => {
                 <a
                   href="https://api.whatsapp.com/send?phone=5492616708100"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <MainBarButton
                     logo={
@@ -66,7 +66,7 @@ const Contacto = () => {
                 <a
                   href="mailto:devzeppelin.ar@gmail.com"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <MainBarButton
                     logo={

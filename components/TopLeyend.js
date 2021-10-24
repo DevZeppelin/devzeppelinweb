@@ -20,7 +20,7 @@ const TopLeyend = () => {
           <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <button aria-label="go to my whatsapp" alt="whatsapp-logo">
               <FaWhatsapp className="hover:text-yellow" />
@@ -29,7 +29,7 @@ const TopLeyend = () => {
           <a
               href="https://www.facebook.com/devzeppelin/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <button aria-label="go to my facebook" alt="facebook-logo">
                 <FaFacebook className="hover:text-yellow" />
@@ -39,7 +39,7 @@ const TopLeyend = () => {
           <a
             href="https://www.instagram.com/devzeppelin.ar/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <button aria-label="go to my instagram" alt="instagram-logo">
               <FaInstagram className="hover:text-yellow" />
@@ -51,7 +51,7 @@ const TopLeyend = () => {
           <a
             href="mailto:devzeppelin.ar@gmail.com"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <button aria-label="send me a mail" alt="gmail-logo">
               <FiMail className="hover:text-yellow" />

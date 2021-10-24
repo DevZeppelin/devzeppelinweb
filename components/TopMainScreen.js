@@ -26,7 +26,7 @@ const TopMainScreen = () => {
         <a
           href="https://api.whatsapp.com/send?phone=5492616708100"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <MainBarButton
             logo={
@@ -41,7 +41,7 @@ const TopMainScreen = () => {
         <a
           href="mailto:devzeppelin.ar@gmail.com"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <MainBarButton
             logo={<FiMail className="text-yellow text-4xl flex my-auto m-3" />}
