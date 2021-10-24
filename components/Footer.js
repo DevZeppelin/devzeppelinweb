@@ -12,13 +12,11 @@ const Footer = () => {
         <div className="flex justify-center my-auto">
           <Link href="/">
             <div className="block">
-              <img
+              <Image
                 src="/logo.webp"
                 alt="development icon logo dev zeppelin webs pages www perfomance "
                 height={200}
-                width={200}
-                layout="fill"
-                objectFit="cover"
+                width={200}                
               />
             </div>
     

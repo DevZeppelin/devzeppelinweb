@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Link from "next/dist/client/link";
+import Image from "next/image";
 
 const SectionWelcome = () => {
   let radio1 = useRef();
@@ -66,16 +66,16 @@ const SectionWelcome = () => {
                 <input type="radio" name="radio-btn" id="radio4" ref={radio4} />
                 {/*Slides images Start*/}
                 <div className="slide first">
-                  <img src="01.webp" alt="pc computer outfit freedom green picture beautiful country" />
+                  <Image width={600} height={800} src="/01.webp" alt="pc computer outfit freedom green picture beautiful country" />
                 </div>
                 <div className="slide">
-                  <img src="02.webp" alt="people interacting with ypur web optimus ultra perfomance and great" />
+                  <Image width={600} height={800} src="/02.webp" alt="people interacting with ypur web optimus ultra perfomance and great" />
                 </div>
                 <div className="slide">
-                  <img src="03.webp" alt="mac pc computer lightning colors big dream" />
+                  <Image width={600} height={800} src="/03.webp" alt="mac pc computer lightning colors big dream" />
                 </div>
                 <div className="slide">
-                  <img src="04.webp" alt="pc desk your home your work about internet www" />
+                  <Image width={600} height={800} src="/04.webp" alt="pc desk your home your work about internet www" />
                 </div>
                 {/*Automatic Navigation Start*/}
                 <div className="navigation-auto">
