@@ -1,14 +1,8 @@
 import MainBarButton from "./MainBarButton";
+import Image from "next/image";
 
-import { FiMail, FiTwitter } from "react-icons/fi";
-import {
-  FaWhatsapp,
-  FaInstagram,
-  FaFacebook,
-  FaLinkedinIn,
-  FaGithub,
-  FaPhone,
-} from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/dist/client/link";
 
 const Footer = () => {
@@ -19,12 +13,16 @@ const Footer = () => {
           <Link href="/">
             <div className="block">
               <img
-                src="logo.webp"
+                src="/logo.webp"
                 alt="development icon logo dev zeppelin webs pages www perfomance "
-                height="160"
-                width="280"
+                height={200}
+                width={200}
+                layout="fill"
+                objectFit="cover"
               />
             </div>
+    
+
           </Link>
         </div>
         <div className="text-lg">
@@ -63,8 +61,6 @@ const Footer = () => {
         <div className="text-xl">
           <h2 className="font-extrabold">Síguenos!</h2>
           <div className="flex flex-wrap justify-start p-6 md:p-10m md:pr-30 mx-4 gap-4 text-4xl w-44 md:w-44 ">
-           
-
             <a
               href="https://www.instagram.com/devzeppelin.ar/"
               target="_blank"
@@ -83,10 +79,6 @@ const Footer = () => {
                 <FaFacebook className="hover:text-yellow" />
               </button>
             </a>
-
-           
-
-           
           </div>
         </div>
       </div>
