@@ -34,7 +34,6 @@ export default function Home() {
         <SectionBackgroundFixed />
         <SectionWorks />
         <SectionServices />
-        
       </Layout>
     </div>
   );

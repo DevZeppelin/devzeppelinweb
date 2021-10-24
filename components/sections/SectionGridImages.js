@@ -8,7 +8,7 @@ const SectionGridImages = () => {
         <section>
 
        
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-24 text-center fadeIn element">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-24 text-center fadeIn element ">
             <Fade left>
               <div className="my-auto font-bold flex">
                 <div className="w-3 h-32 bg-yellow my-auto"></div>
@@ -112,6 +112,9 @@ const SectionGridImages = () => {
               </div>
             </Fade>
           </div>
+          
+         
+          
         </section>
     )
 }
