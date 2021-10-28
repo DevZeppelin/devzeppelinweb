@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import SectionWorkComponent from "../components/sections/SectionWorkComponent"
+import Fade from "react-reveal/Fade";
 
 import { IoMdAppstore, IoLogoBitcoin } from "react-icons/io";
 import { DiModernizr } from "react-icons/di";
@@ -10,23 +12,59 @@ import { SiMaterialdesign, SiShopify } from "react-icons/si";
 import { FiCpu } from "react-icons/fi";
 import { ServiciosItem } from "../components/ServiciosItem";
 
-import Fade from "react-reveal/Fade";
 
 const Servicios = () => {
   return (
     <div>
       <Head>
-        <title>Servicios</title>
+        <title>Servicios y Trabajos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout classServicios={"bg-secundary text-yellow"}>
         <div>
           <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
             <h1 className="text-4xl font-bold text-yellow uppercase">
-              Servicios
+              Servicios y Trabajos
             </h1>
           </div>
           <div>
+          <section id="work">
+          <div className="p-4 md:px-16 mx-auto pt-16 ">
+            <h2 className="text-center text-3xl text-yellow my-8 pb-6">
+              ¡Algunos de nuestros trabajos!
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/responsiveImages/01.png"
+                  description="Empresa de tecnología"
+                  web="www.tecnicosya.com.ar"
+                />
+              </Fade>
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/responsiveImages/02.png"
+                  description="Escuela de Programación"
+                  web="www.code-obrero.vercel.app"
+                />
+              </Fade>
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/responsiveImages/03.png"
+                  description="Tarjeta de invitación Web"
+                  web="devzeppelin.github.io/InvitacionWeb"
+                />
+              </Fade>
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/responsiveImages/04.png"
+                  description="Blog Personal"
+                  web="www.moonblog.ar"
+                />
+              </Fade>
+            </div>
+          </div>
+        </section>
             <section className="text-yellow-400 body-font">
               <div className="p-6 md:p-24 py-16 mx-auto">               
             

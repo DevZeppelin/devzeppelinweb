@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import SectionWelcome from "../components/sections/SectionWelcome";
-import SectionWorks from "../components/sections/SectionWorks";
-
 import SectionFirstFlayer from "../components/sections/SectionFirstFlayer";
 import SectionGridImages from "../components/sections/SectionGridImages";
 import SectionBackgroundFixed from "../components/sections/SectionBackgroundFixed";
@@ -32,7 +30,7 @@ export default function Home() {
         <SectionFirstFlayer />
         <SectionGridImages />
         <SectionBackgroundFixed />
-        <SectionWorks />
+       
         <SectionServices />
       </Layout>
     </div>

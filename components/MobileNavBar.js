@@ -14,7 +14,7 @@ const MobileNavBar = ({ open }) => {
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Quienes Somos 🙋‍♂️</a>
         </Link>
         <Link href="/servicios">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios 🛠</a>
+          <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios y Trabajos 🛠</a>
         </Link>        
         <a href="https://www.moonblog.ar" target="_blank" rel="noreferrer">
           <div className="mr-2 mt-5 px-3 hover:border-yellow">Blog 🙊</div>

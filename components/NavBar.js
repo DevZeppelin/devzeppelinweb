@@ -13,8 +13,9 @@ const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, class
           <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classQuienesSomos}`}>Quienes somos</a>
         </Link>
         <Link href="/servicios">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classServicios}`}>Servicios</a>
+          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classServicios}`}>Servicios y Trabajos </a>
         </Link> 
+        
         <a href="https://www.moonblog.ar" target="_blank" rel="noreferrer">
           <div className="px-3 hover:bg-secundary hover:text-yellow py-6">Blog</div>
         </a>        

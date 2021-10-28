@@ -10,8 +10,8 @@ const TopMainScreen = () => {
     <div className="flex px-2 md:px-24 text-yellow bg-secundary justify-center md:justify-between py-2">
       <Link href="/">
         <div className=''>
-          <Image
-            src='/logo.webp'
+        <Image
+            src='/logo.png'
             alt='dev zeppelin logo hyper webs gino pietrobon'
             layout='fixed' 
             objectFit='cover'
