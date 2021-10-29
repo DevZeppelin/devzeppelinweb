@@ -29,9 +29,9 @@ export default function Home() {
         <SectionWelcome />
         <SectionFirstFlayer />
         <SectionGridImages />
-        <SectionBackgroundFixed />
-       
+        <SectionBackgroundFixed />       
         <SectionServices />
+        
       </Layout>
     </div>
   );

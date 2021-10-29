@@ -1,6 +1,5 @@
 
 import Link from "next/dist/client/link";
-import Image from "next/image";
 
 const SectionWelcome = () => {
   return (
@@ -20,9 +19,7 @@ const SectionWelcome = () => {
             <p>
               <b>¡Dev Zeppelin NO utiliza WordPress!</b> Programamos usando
               tecnología de última generación por lo que nuestras páginas son
-              modernas, rápidas y optimizadas.
-            </p>
-            <p>
+              modernas, rápidas y optimizadas.          
               El tiempo es dinero. Elevá tus ventas dando a tus usuarios{" "}
               <b>una experiencia increíble</b>
             </p>
@@ -35,12 +32,10 @@ const SectionWelcome = () => {
           </div>
           
           <div className="slider-body flex-wrap absolute bottom-0 left-0 h-full md:relative md:h-auto">
-          <Image
+          <img
             src='/01.webp'
-            alt='dev zeppelin logo hyper webs gino pietrobon'
-            layout='fill' 
-            objectFit='cover'
-            
+            alt='dev zeppelin logo hyper webs gino pietrobon'   
+            className=" overflow-hidden w-full h-full"
           />
           </div>
         </div>

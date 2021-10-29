@@ -20,5 +20,9 @@ h2 {
   font-family: 'Righteous', cursive;
 }
 
+.textDark {
+  text-shadow: 0px 0px 4px black;
+}
+
 
 

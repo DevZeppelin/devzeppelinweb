@@ -36,7 +36,7 @@ const Contacto = () => {
       </Head>
       <Layout classContacto={"bg-secundary text-yellow"}>
         <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
-          <h1 className="text-4xl font-bold text-yellow uppercase">
+          <h1 className="text-4xl font-bold text-yellow uppercase textDark">
             Contactanos
           </h1>
         </div>

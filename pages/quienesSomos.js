@@ -15,7 +15,7 @@ const QuienesSomos = () => {
       <Layout classQuienesSomos={"bg-secundary text-yellow"}>
         <section className="text-lightGray">
           <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
-            <h1 className="text-4xl font-bold text-yellow uppercase">
+            <h1 className="text-4xl font-bold text-yellow uppercase textDark">
               nuestra empresa
             </h1>
           </div>

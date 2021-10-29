@@ -42,10 +42,7 @@ const SectionBackgroundFixed = () => {
 
           .textLight {
             text-shadow: 1px 2px 4px white;
-          }
-          .textDark {
-            text-shadow: 0px 0px 4px black;
-          }
+          }          
         `}</style>
       </section>
     )
