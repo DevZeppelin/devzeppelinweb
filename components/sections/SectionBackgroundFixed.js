@@ -39,7 +39,6 @@ const SectionBackgroundFixed = () => {
           </div>
         </div>
         <style jsx>{`  
-
           .textLight {
             text-shadow: 1px 2px 4px white;
           }          

@@ -5,7 +5,7 @@ const SectionWelcome = () => {
   return (
     <section>
       <div>
-        <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-base xs:px-2 sm:px-6 md:px-24 bg-primary">
+        <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-lg xs:px-2 sm:px-6 md:px-12 bg-primary">
           <div className="first-block text-lightGray space-y-6 md:space-y-10 p-6 md:p-8 my-auto bg-secundary z-40 opacity-80 md:opacity-95 h-full">
             <h1 className="font-yellow text-yellow text-2xl md:text-3xl mt-1 font-righteous">
               Agregá tecnología a tu negocio
@@ -36,6 +36,8 @@ const SectionWelcome = () => {
             src='/01.webp'
             alt='dev zeppelin logo hyper webs gino pietrobon'   
             className=" overflow-hidden w-full h-full"
+            height="810"
+            width="705"
           />
           </div>
         </div>
