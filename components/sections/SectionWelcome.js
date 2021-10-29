@@ -36,7 +36,7 @@ const SectionWelcome = () => {
             src='/01.webp'
             alt='dev zeppelin logo hyper webs gino pietrobon'   
             className=" overflow-hidden w-full h-full"
-            height="810"
+            height="705"
             width="705"
           />
           </div>
