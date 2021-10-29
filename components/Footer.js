@@ -13,7 +13,7 @@ const Footer = () => {
           <Link href="/">
             <div className="block">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="development icon logo dev zeppelin webs pages www perfomance "
                 height={200}
                 width={200}                

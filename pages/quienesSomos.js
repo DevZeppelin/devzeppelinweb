@@ -55,7 +55,7 @@ const QuienesSomos = () => {
             </div>
             <div className="my-auto p-8">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="development big logo dev zeppelin webs pages www perfomance "
                 width={500}
                 height={500}
