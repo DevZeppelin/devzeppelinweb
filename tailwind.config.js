@@ -10,17 +10,13 @@ module.exports = {
             colors : {
                 primary : '#0D0D0D',
                 secundary: '#222224',
-                yellow: '#F5D244',                
-                green: '#107300',
-                lightgreen: '#E83838',
+                yellow: '#F5D244', 
                 gray: '#545454',
                 lightGray: '#D9D4D0',
                 darkGray: '#333',
-                lowContrast: '#EBDF7B' ,
-                background: '#d6d4d4',
-                backgroundSecundary: '#B6E094',
-                blue: '#04558A',
-                darkBlue: '#043453'
+                lowContrast: '#EBDF7B' 
+               
+                
             },
             fontFamily : {
                 body : ['Heebo'],

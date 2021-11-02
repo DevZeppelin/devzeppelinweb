@@ -34,10 +34,7 @@ const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, class
         </button>
       </div>
 
-      <div className=" flex justify-end">
-        <div className="bg-yellow w-16 md:w-64 transform skew-x-12 m-0 translate-x-12 md:translate-x-56 overflow-hidden"></div>        
-        <div className=" bg-yellow w-16 md:w-64 transform  m-0 overflow-hidden"></div>        
-      </div>
+     
     </div>
   );
 };

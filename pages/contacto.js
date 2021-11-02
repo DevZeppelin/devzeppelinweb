@@ -88,7 +88,7 @@ const Contacto = () => {
 
           <div
             className="calendly-inline-widget h-20 my-2"
-            data-url="https://calendly.com/devzeppelin/reunion-consulta-personal?background_color=383838&text_color=f7f7f7&primary_color=c9ff00"
+            data-url="https://calendly.com/devzeppelin/reunion-consulta-personal?background_color=0D0D0D&text_color=f7f7f7&primary_color=c9ff00"
             
           ></div>
         
