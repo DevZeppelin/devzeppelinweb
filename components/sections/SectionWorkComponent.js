@@ -1,14 +1,13 @@
-import Image from "next/image";
+
 
 const SectionWorkComponent = ({description, web, src}) => {
   return (
     <div className="p-6 md:p-16">
       <div className="w-full animateImage">
-        <Image
+        <img
           src={src}
           alt="responsive image mobile tablet notebook widescreen responsive-design"
-          width={500}
-          height={300}
+         
         />
       </div>
       <p className="text-lg text-yellow text-center uppercase font-bold ">

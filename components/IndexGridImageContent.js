@@ -1,16 +1,16 @@
-import Image from "next/image";
+
 
 export const IndexGridImageContent = ({ src, alt }) => {
   return (
     <div className="relative border-2 border-yellow" >
      
-        <div className="h-60 imagen-filtro">
-          <div className="">
-            <Image
+        <div className="h-60 imagen-filtro overflow-hidden">
+          <div>
+            <img
             src={src}
-            alt={alt}            
-            layout="fill"
-            objectFit="fill" />
+            alt={alt}
+            />          
+            
           </div>
         </div>
       

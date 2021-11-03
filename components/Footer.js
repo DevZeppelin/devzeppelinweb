@@ -1,5 +1,5 @@
 import MainBarButton from "./MainBarButton";
-import Image from "next/image";
+
 
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
@@ -12,11 +12,11 @@ const Footer = () => {
         <div className="flex justify-center my-auto">
           <Link href="/">
             <div className="block">
-              <Image
+              <img
                 src="/logo.webp"
-                alt="development icon logo dev zeppelin webs pages www perfomance "
-                height={200}
-                width={200}                
+                alt="development icon logo dev zeppelin webs pages www perfomance "    
+                width="200"
+                height="200"                       
               />
             </div>
     
