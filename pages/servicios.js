@@ -30,8 +30,8 @@ const Servicios = () => {
           <div>
           <section id="work">
           <div className="p-4 md:px-16 mx-auto pt-16 ">
-            <h2 className="text-center text-3xl text-yellow my-8 pb-6">
-              ¡Algunos de nuestros trabajos!
+            <h2 className="text-center text-4xl text-yellow my-8 pb-6">
+              Páginas Web de muestra:
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
               <Fade bottom>
@@ -67,8 +67,8 @@ const Servicios = () => {
         </section>
         <section id="work">
           <div className="p-4 md:px-16 mx-auto pt-16 ">
-            <h2 className="text-center text-3xl text-yellow my-8 pb-6">
-              ¡Algunas de nuestras aplicaciones web!
+            <h2 className="text-center text-4xl text-yellow my-8 pb-6">
+              Aplicaciones Web de muestra:
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
               <Fade bottom>
