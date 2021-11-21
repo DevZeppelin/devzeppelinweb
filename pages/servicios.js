@@ -65,6 +65,37 @@ const Servicios = () => {
             </div>
           </div>
         </section>
+        <section id="work">
+          <div className="p-4 md:px-16 mx-auto pt-16 ">
+            <h2 className="text-center text-3xl text-yellow my-8 pb-6">
+              ¡Algunas de nuestras aplicaciones web!
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/apps/gastapp.png"
+                  description="App de calcular gastos personales"
+                  web="presupuesto-app-psi.vercel.app"
+                />
+              </Fade>
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/apps/turnon.png"
+                  description="App de Turnos"
+                  web="administrador-de-turnos.vercel.app/"
+                />
+              </Fade>
+              <Fade bottom>
+                <SectionWorkComponent
+                  src="/apps/bb.png"
+                  description="Generador de frases de Breaking Bad"
+                  web="breakingbad-beige.vercel.app"
+                />
+              </Fade>
+              
+            </div>
+          </div>
+        </section>
             <section className="text-yellow-400 body-font">
               <div className="p-6 md:p-24 py-16 mx-auto">               
             
