@@ -83,7 +83,7 @@ const Footer = () => {
       </div>
       <div className="p-4 text-sm bg-primary text-lightGray z-50">
         <p>
-          Make with &#128153; in Mendoza, Argentina by{" "}
+          Make with &#128153; in Mendoza, Argentina by Gino from{" "}
           <a
             href="https://devzepelin.ar"
             target="_blank"
