@@ -3,7 +3,7 @@ import { useState } from "react";
 import helper from "../components/tourist/helper";
 import Footer from "../components/Footer";
 
-const tourist = () => {
+const Tourist = () => {
   const [openEmergency, setOpenEmergency] = useState(false);
   const [openHospitals, setOpenHospitals] = useState(false);
   const [openOfficial, setOpenOfficial] = useState(false);
@@ -19,7 +19,10 @@ const tourist = () => {
         <p className="p-6 text-xl">{helper.eng.welcomeDescription}</p>
       </section>
       <div>
-        <h1 className="text-3xl text-center">Useful numberS!</h1>
+      <div className="mt-12">
+        <img src="/tourist/phone-book.png" className="w-24 h-24 mx-auto" />
+          <h1 className="text-3xl text-center">Useful numberS!</h1>
+      </div>
 
         <section id="emergency-numbers" className="text-center mx-2 md:mx-16 my-4 mt-12">
           <h2
@@ -95,4 +98,4 @@ const tourist = () => {
   );
 };
 
-export default tourist;
+export default Tourist;
