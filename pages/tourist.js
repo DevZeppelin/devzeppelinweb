@@ -9,20 +9,18 @@ const Tourist = () => {
   const [openOfficial, setOpenOfficial] = useState(false);
 
   const [language, setLanguage] = useState(helper.eng)
-
   
-  const classNameFlag = "m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer"
   const classNameButton =
     "text-2xl cursor-pointer border-2 rounded-lg hover:bg-lightGray p-6 mx-4 md:mx-24";
 
   return (
     <div className="tourist-body">
       <div className="flex gap-2 md:gap-4 justify-center p-2">
-        <img onClick={()=>setLanguage(helper.eng)} src="/tourist/eng.png" className={classNameFlag} />
-        <img onClick={()=>setLanguage(helper.fra)} src="/tourist/fra.png" className={classNameFlag} />
-        <img onClick={()=>setLanguage(helper.ale)} src="/tourist/ale.png" className={classNameFlag} />
-        <img onClick={()=>setLanguage(helper.jap)} src="/tourist/jap.png" className={classNameFlag} />
-        <img onClick={()=>setLanguage(helper.por)} src="/tourist/por.png" className={classNameFlag} />
+        <img onClick={()=>setLanguage(helper.eng)} src="/tourist/eng.png" className="m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer" />
+        <img onClick={()=>setLanguage(helper.fra)} src="/tourist/fra.png" className="m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer" />
+        <img onClick={()=>setLanguage(helper.ale)} src="/tourist/ale.png" className="m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer" />
+        <img onClick={()=>setLanguage(helper.jap)} src="/tourist/jap.png" className="m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer" />
+        <img onClick={()=>setLanguage(helper.por)} src="/tourist/por.png" className="m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer" />
        
       </div>
       <section id="welcome" className="text-center p-4 pt-16 md:p-16">
