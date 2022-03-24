@@ -8,20 +8,32 @@ const Tourist = () => {
   const [openHospitals, setOpenHospitals] = useState(false);
   const [openOfficial, setOpenOfficial] = useState(false);
 
+  const [language, setLanguage] = useState(helper.eng)
+
+  
+  const classNameFlag = "m-2 w-8 h-8 md:w-16 md:h-16 border-2 rounded-full cursor-pointer"
   const classNameButton =
     "text-2xl cursor-pointer border-2 rounded-lg hover:bg-lightGray p-6 mx-4 md:mx-24";
 
   return (
     <div className="tourist-body">
+      <div className="flex gap-2 md:gap-4 justify-center p-2">
+        <img onClick={()=>setLanguage(helper.eng)} src="/tourist/eng.png" className={classNameFlag} />
+        <img onClick={()=>setLanguage(helper.fra)} src="/tourist/fra.png" className={classNameFlag} />
+        <img onClick={()=>setLanguage(helper.ale)} src="/tourist/ale.png" className={classNameFlag} />
+        <img onClick={()=>setLanguage(helper.jap)} src="/tourist/jap.png" className={classNameFlag} />
+        <img onClick={()=>setLanguage(helper.por)} src="/tourist/por.png" className={classNameFlag} />
+       
+      </div>
       <section id="welcome" className="text-center p-4 pt-16 md:p-16">
-        <h1 className="text-4xl animate-bounce">{helper.eng.welcomeTitle}</h1>
+        <h1 className="text-4xl animate-bounce">{language.welcomeTitle}</h1>
         <img src="/tourist/logo.png" className="w-full h-full  md:w-1/3 md:h-1/3 mx-auto" />
-        <p className="p-6 text-xl">{helper.eng.welcomeDescription}</p>
+        <p className="p-6 px-2 md:px-24 text-xl">{language.welcomeDescription}</p>
       </section>
       <div>
       <div className="mt-12">
         <img src="/tourist/phone-book.png" className="w-24 h-24 mx-auto" />
-          <h1 className="text-3xl text-center">Useful numberS!</h1>
+          <h1 className="text-3xl text-center">{language.numbersTitle}</h1>
       </div>
 
         <section id="emergency-numbers" className="text-center mx-2 md:mx-16 my-4 mt-12">
@@ -29,12 +41,12 @@ const Tourist = () => {
             onClick={() => setOpenEmergency(!openEmergency)}
             className={classNameButton}
           >
-            {helper.eng.numbers[0].title}
+            {language.numbers[0].title}
           </h2>
 
           {openEmergency ? (
             <div className="grid grid-cols-1 md:grid-cols-3 p-2 md:p-12">
-              {helper.eng.numbers[0].data.map((item) => (
+              {language.numbers[0].data.map((item) => (
                 <PhoneCard
                   key={item.title}
                   title={item.title}
@@ -52,11 +64,11 @@ const Tourist = () => {
             onClick={() => setOpenHospitals(!openHospitals)}
             className={classNameButton}
           >
-            {helper.eng.numbers[1].title}
+            {language.numbers[1].title}
           </h2>
           {openHospitals ? (
             <div className="grid grid-cols-1 md:grid-cols-3 p-2 md:p-12">
-              {helper.eng.numbers[1].data.map((item) => (
+              {language.numbers[1].data.map((item) => (
                 <PhoneCard
                   key={item.title}
                   title={item.title}
@@ -74,12 +86,12 @@ const Tourist = () => {
             onClick={() => setOpenOfficial(!openOfficial)}
             className={classNameButton}
           >
-            {helper.eng.numbers[2].title}
+            {language.numbers[2].title}
           </h2>
 
           {openOfficial ? (
             <div className="grid grid-cols-1 md:grid-cols-3 p-2 md:p-12">
-              {helper.eng.numbers[2].data.map((item) => (
+              {language.numbers[2].data.map((item) => (
                 <PhoneCard
                   key={item.title}
                   title={item.title}
