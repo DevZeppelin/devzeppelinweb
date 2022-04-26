@@ -15,7 +15,7 @@ const SectionServices = () => {
         <section>
           <div className="text-center pt-16">
             <h2 className="text-3xl font-bold pb-12 font-righteous text-yellow">
-              ¿Por qué elegirnos?
+              ¿Por qué elegir DevZeppelin?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 md:px-32 pb-16 text-lightGray ">
               <Fade bottom>
@@ -25,9 +25,7 @@ const SectionServices = () => {
                     Calidad y velocidad
                   </h2>
                   <p>
-                    Construímos nuestros sitios con última tecnología, lo que
-                    garantiza escalabilidad, velocidad y modernización frente a
-                    la competencia.
+                    Entrega de productos digitales en tiempo y forma. Podés ver que para crear mis productos utilizo tecnologías punta de lanza. Casi todo lo que imaginés se puede hacer.
                   </p>
                 </div>
               </Fade>
@@ -35,13 +33,11 @@ const SectionServices = () => {
                 <div className="space-y-4 pb-6">
                   <BiBookContent className="text-6xl text-yellow mx-auto" />
                   <h2 className="uppercase text-yellow font-bold">
-                    Web adminsitrable
+                    Marketing Digital
                   </h2>
 
                   <p>
-                    Te permitimos manejar el contenido de tu web y te ayudamos a
-                    crear contenido, para generar tráfico lo que resulta en
-                    atraer clientes y aumentar las ventas
+                    Utilizá toda la fuerza de la revolución tecnológica a favor de tu marca. Llegá a lugares que nunca imaginaste llegar.
                   </p>
                 </div>
               </Fade>
@@ -49,13 +45,11 @@ const SectionServices = () => {
                 <div className="space-y-4 pb-6">
                   <BsTriangleFill className="text-6xl text-yellow mx-auto" />
                   <h2 className="uppercase text-yellow font-bold">
-                    Hosting y SSL Gratuitos
+                    Cartas QR para bares y restos
                   </h2>
 
                   <p>
-                    Por tiempo indefinido no tenés que pagar un hosting anual
-                    que almacene tu página. Nosotros nos encargamos de almacenar
-                    tu sitio en el mejor lugar y de forma gratuita.
+                   Mis cartas QR son las más originales y rápidas del mercado. No son fotos, sino que son interactivas. ¡Miralas y sacá tus conclusiones!
                   </p>
                 </div>
               </Fade>
@@ -63,12 +57,10 @@ const SectionServices = () => {
                 <div className="space-y-4 pb-6">
                   <CgScreenWide className="text-6xl text-yellow mx-auto" />
                   <h2 className="uppercase text-yellow font-bold">
-                    Responsive Design
+                    Diseño adaptable
                   </h2>
-
                   <p>
-                    Tu web se verá excelente y diferente dependiendo el
-                    dispositivo que la reproduzca, ya sea: Celular, Tablet, PC o
+                    El <i>Responsive design</i> hoy es imprescindible para todo el contenido digital. Me encargo de que todo el contenido creado se vea genial en : Celular, Tablet, PC o
                     cualqueir otro dispositivo
                   </p>
                 </div>
@@ -79,11 +71,8 @@ const SectionServices = () => {
                   <h2 className="uppercase text-yellow font-bold">
                     Imagen y Logo HD
                   </h2>
-
                   <p>
-                    Nos encargamos del diseño de varias imágenes HD y un logo
-                    moderno que entregue una imagen profesional y moderna de tu
-                    marca
+                    En el instagram de @devzeppelin podés ver varios trabajos y cómo las creaciones son originales y coloridas. Pasate por el IG y comprobalo vos mismo.
                   </p>
                 </div>
               </Fade>
@@ -91,13 +80,11 @@ const SectionServices = () => {
                 <div className="space-y-4 pb-6">
                   <AiFillGoogleCircle className="text-6xl text-yellow mx-auto" />
                   <h2 className="uppercase text-yellow font-bold">
-                    Buenas prácticas y SEO
+                    Primeros lugares en Google
                   </h2>
 
                   <p>
-                    Nuestra forma de programar cumple con las exigencias de los
-                    buscadores web para obtener el mejor puntaje en cuanto a
-                    SEO, Accesibilidad y buenas prácticas
+                    Te ayudo a que el nombre de tu empresa aparezca en las búsquedas, para atraer tráfico y nuevos clientes.
                   </p>
                 </div>
               </Fade>
@@ -105,13 +92,11 @@ const SectionServices = () => {
                 <div className="space-y-4 pb-6">
                   <FaShopify className="text-6xl text-yellow mx-auto" />
                   <h2 className="uppercase text-yellow font-bold">
-                    Shopify e-Commerce
+                    Tienda online
                   </h2>
 
                   <p>
-                    Nuestras web aplicadas a una tienda online son perfectas, ya
-                    que el tiempo y velocidad a la hora de realizar una compra
-                    por internet son lo más importante para el usuario
+                    ¡Mis web super rápidas combinadas con una tienda shopify son un misil de ventas automáticas!
                   </p>
                 </div>
               </Fade>
@@ -121,10 +106,8 @@ const SectionServices = () => {
                   <h2 className="uppercase text-yellow font-bold">
                     Tarjetas de invitación estilo WEB
                   </h2>
-
                   <p>
-                    ¿Te gusta ser original? Mirá nuestro diseño de invitaciones
-                    web totalmente personalizables, originales y prácticas.
+                   ¿Querés romeprla con las invitaciones QR más originales jamás vistas? Mirá algún ejemplo de nuestras invitaciones web
                   </p>
                 </div>
               </Fade>

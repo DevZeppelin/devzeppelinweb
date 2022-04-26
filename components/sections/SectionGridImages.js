@@ -13,8 +13,7 @@ const SectionGridImages = () => {
               <div className="my-auto font-bold flex">
                 <div className="w-3 h-32 bg-yellow my-auto"></div>
                 <p className="text-lg m-6 text-lightGray">
-                  FABRICAMOS PÁGINAS WEB ADMINISTRABLES, VELOCES, ESCALABLES Y
-                  OPTIMIZADAS PARA UNA EXCELENTE EXPERIENCIA DE USUARIO
+                  Brindamos soluciones tecnológicas de todo tipo, incluyendo diseño y marketing digital para potenciar tu marca al extremo
                 </p>
               </div>
             </Fade>
@@ -36,7 +35,7 @@ const SectionGridImages = () => {
             <Fade bottom>
               <div className="relative">
                 <div className="indexGridImageText">
-                  Administrá tu contenido
+                  Contenido administrable
                 </div>
 
                 <IndexGridImageContent 
@@ -70,7 +69,7 @@ const SectionGridImages = () => {
             </Fade>
             <Fade bottom>
               <div className="relative">
-                <div className="indexGridImageText">App Movil</div>
+                <div className="indexGridImageText">Aplicaciones Móviles</div>
                 <IndexGridImageContent 
                     src="/gridImg/05.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
@@ -79,7 +78,7 @@ const SectionGridImages = () => {
             </Fade>
             <Fade bottom>
               <div className="relative">
-                <div className="indexGridImageText">Diseño responsivo</div>
+                <div className="indexGridImageText">Diseño adaptable</div>
                 <IndexGridImageContent 
                     src="/gridImg/06.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
@@ -88,7 +87,7 @@ const SectionGridImages = () => {
             </Fade>
             <Fade bottom>
               <div className="relative">
-                <div className="indexGridImageText">e-commerce con Shopify</div>
+                <div className="indexGridImageText">Tiendas electrónicas</div>
                 <IndexGridImageContent 
                     src="/gridImg/07.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
@@ -98,15 +97,15 @@ const SectionGridImages = () => {
             <Fade bottom>
               <div className="m-6 space-y-4 md:space-y-4 text-center my-auto element">
                 <h2 className="font-bold text-xl font-righteous text-yellow">
-                  ¡Nosotros te llamamos!
+                  ¡Yo te contacto!
                 </h2>
                 <p className="text-lightGray">
-                  Déjanos tu nombre, teléfono o correo electrónico y nos
-                  comunicaremos contigo a la brevedad
+                  Dejame tu nombre, teléfono o correo electrónico y me
+                  comunicaré con vos a la brevedad
                 </p>
                 <Fade bottom>
                   <Link href="/contacto">
-                    <button className="btn">Te Llamamos!</button>
+                    <button className="btn">Te llamo!</button>
                   </Link>
                 </Fade>
               </div>

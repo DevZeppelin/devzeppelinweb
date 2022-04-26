@@ -37,7 +37,7 @@ const Contacto = () => {
       <Layout classContacto={"bg-secundary text-yellow"}>
         <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
           <h1 className="text-4xl font-bold text-yellow uppercase textDark">
-            Contactanos
+            ¡Contactame!
           </h1>
         </div>
         <div className="text-center pt-6 text-lightGray">
@@ -112,10 +112,10 @@ const Contacto = () => {
               <form onSubmit={sendEmail}>
                 <div className="lg:w-1/3 md:w-3/4 bg-yellow-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
                   <h2 className="text-black text-xl mb-1 font-extrabold title-font">
-                    Contactanos!
+                    Contactame!
                   </h2>
                   <p className="leading-relaxed mb-5 font-bold">
-                    Envíanos tu consulta y nos pondremos en contacto con vos en
+                    Enviame tu consulta y me pondré en contacto con vos en
                     breve!
                   </p>
                   <div className="relative mb-4">
@@ -175,7 +175,7 @@ const Contacto = () => {
                   </div>
                   <button className="btn">Enviar</button>
                   <p className="text-xs text-yellow-400 text-opacity-90 mt-3">
-                    Dev Zeppelin. Webs 100% perfomance elevando tu negocio a través de la tecnología.
+                    Dev Zeppelin. Soluciones tecnológicas para personas comunes.
                   </p>
                 </div>
               </form>

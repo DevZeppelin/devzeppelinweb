@@ -7,12 +7,8 @@ const SectionFirstFlayer = () => {
               Revolucioná tu negocio a través de la tecnología
             </h1>
             <p className="text-secundary md:text-lg">
-              Nuestras páginas <strong>NO están hechas con WordPress</strong>. Las construímos íntegramente con tecnologías que permiten lograr casi un 100% de: 
-              <i> perfomance</i>, accesibilidad, buenas prácticas y SEO; todo lo
-              necesario para aparecer en los primeros lugares de los buscadores
-              de manera orgánica.
             </p>
-          </div>
+          </div>r a la tecnología a tu negocio. Actualizate. Modernizá tus fotos, tus colores y tus ideas. DevZeppelin existe para ahcer más fácil este camino.
         </section>
     )
 }

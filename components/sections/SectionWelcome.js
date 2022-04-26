@@ -11,17 +11,16 @@ const SectionWelcome = () => {
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
             <p>
-              Damos a tu marca excelente presencia en la Web luciendo
-              profesional ante los ojos del mundo.
+              Tu marca con excelente presencia en la Web. Vos vendé, yo me encargo de tus redes, logos y tecnología.
             </p>
             <p>
-              Programamos usando tecnología de última generación por lo que
-              nuestras páginas son modernas, rápidas y optimizadas.
+              Con tecnología de última generación ayudo a tu negocio a crecer en el mundo de internet.
               
             </p>
              <p className="hidden md:block">
-             El tiempo es dinero. Elevá tus ventas dando a tus usuarios <b>una experiencia increíble</b>
+             Elevá tus ventas dando a tus usuarios <b>una experiencia increíble</b>, diferente, única.
              </p>
+             
             <Link href="/servicios">
               <button className="btn opacity-100 uppercase mt-6">
                 Algunos trabajos
