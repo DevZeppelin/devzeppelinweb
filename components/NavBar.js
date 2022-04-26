@@ -10,7 +10,7 @@ const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, class
           <a className={`px-3 hover:bg-secundary hover:text-yellow ml-24 py-6 ${classHome}`}>Home</a>
         </Link>
         <Link href="/quienesSomos">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classQuienesSomos}`}>Quienes somos</a>
+          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classQuienesSomos}`}>¿Qué es Dev Zeppelin?</a>
         </Link>
         <Link href="/servicios">
           <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classServicios}`}>Servicios y Trabajos </a>
@@ -22,7 +22,7 @@ const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, class
       
 
         <Link href="/contacto">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classContacto}`}>Contactanos</a>
+          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classContacto}`}>Contacto</a>
         </Link>
       </div>
       <div className="p-2 ml-2 md:hidden flex justify-start w-10 text-4xl">
