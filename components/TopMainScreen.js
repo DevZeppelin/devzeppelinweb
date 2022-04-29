@@ -1,5 +1,6 @@
-import Link from "next/dist/client/link";
+/* eslint-disable @next/next/no-img-element */
 
+import Link from "next/dist/client/link";
 import MainBarButton from "./MainBarButton";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
@@ -7,15 +8,13 @@ import { FiMail } from "react-icons/fi";
 const TopMainScreen = () => {
   return (
     <div className="flex px-2 md:px-24 text-yellow bg-secundary justify-center md:justify-between">
-      <Link href="/">       
-      
-          <img
-            src="logo.webp"
-            alt="dev zeppelin logo hyper webs gino pietrobon"
-            width="200"
-            height="200"
-          />
-       
+      <Link href="/">
+        <img
+          src="logo.webp"
+          alt="dev zeppelin logo hyper webs gino pietrobon"
+          width="200"
+          height="200"
+        />
       </Link>
 
       <div className="hidden md:flex justify-between space-x-4 text-center my-auto p-4 text-lg">

@@ -1,6 +1,5 @@
+/* eslint-disable @next/next/no-img-element */ 
 import MainBarButton from "./MainBarButton";
-
-
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/dist/client/link";
@@ -14,13 +13,11 @@ const Footer = () => {
             <div className="block">
               <img
                 src="/logo.webp"
-                alt="development icon logo dev zeppelin webs pages www perfomance "    
+                alt="development icon logo dev zeppelin webs pages www perfomance "
                 width="200"
-                height="200"                       
+                height="200"
               />
             </div>
-    
-
           </Link>
         </div>
         <div className="text-lg">
@@ -29,7 +26,6 @@ const Footer = () => {
           <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
-            
             rel="noreferrer"
           >
             <MainBarButton

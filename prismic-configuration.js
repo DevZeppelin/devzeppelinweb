@@ -1,6 +1,6 @@
 import Prismic from "prismic-javascript";
 
-export const apiEndpoint = "";
+export const apiEndpoint = "https://moonwatcher-dev.cdn.prismic.io/api/v2";
 
 export const accessToken = "";
 

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import PhoneCard from "../components/tourist/PhoneCard";
 import { useState } from "react";
 import helper from "../components/tourist/helper";

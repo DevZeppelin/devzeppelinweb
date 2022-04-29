@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
+
 const SectionWorkComponent = ({ description, web, src }) => {
   return (
     <div className="p-6 md:p-8">
       <a href={`https://${web}`} rel="noreferrer" target="_blank">
-        <div className=" w-96 animateImage mx-auto">
+    <div className="w-40 animateImage mx-auto">
           <img
             src={src}
             alt="responsive image mobile tablet notebook widescreen responsive-design"

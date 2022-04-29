@@ -10,15 +10,15 @@ const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, class
           <a className={`px-3 hover:bg-secundary hover:text-yellow ml-24 py-6 ${classHome}`}>Home</a>
         </Link>
         <Link href="/quienesSomos">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classQuienesSomos}`}>¿Qué es Dev Zeppelin?</a>
+          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classQuienesSomos}`}>Acerca de DZ</a>
         </Link>
         <Link href="/servicios">
           <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classServicios}`}>Servicios y Trabajos </a>
         </Link> 
         
-        <a href="https://www.moonblog.ar" target="_blank" rel="noreferrer">
-          <div className="px-3 hover:bg-secundary hover:text-yellow py-6">Blog</div>
-        </a>        
+        <Link href="/blog">
+          <a className="px-3 hover:bg-secundary hover:text-yellow py-6">Blog</a>
+        </Link>        
       
 
         <Link href="/contacto">

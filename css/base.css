@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
 /*TOURIST PAGE*/
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
@@ -8,8 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
- 
+body { 
   margin: 0;
   font-family: 'Sarabun', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,10 +16,10 @@ body {
   
 }
 h1 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Kanit', sans-serif;
 }
 h2 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Kanit', sans-serif;
 }
 
 .textDark {
