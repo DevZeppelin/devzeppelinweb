@@ -16,7 +16,7 @@ export default function Contacto() {
         <div className="contacto-main">
           <h2>  
          <a href="mailto:gino.b.pietrobon@gmail.com">
-              gino.b.pietrobon@gmail.com
+              ¡Click AQUÍ para mandarme un mail!
             </a>
           </h2>
           
@@ -74,6 +74,7 @@ export default function Contacto() {
         h2 {
           margin-top: 1em;
           margin-bottom: 1em;
+          font-size: 1.5rem
         }
 
         a>img {

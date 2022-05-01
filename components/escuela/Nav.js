@@ -13,9 +13,9 @@ export default function Nav() {
 
   return (
     <div className="nav-container" id="nav-container">
-     
+      <Link href="/escuela/" passHref>
         <img className="logo" src="/escuela/logo.webp" alt="logo code-obrero" />
-     
+      </Link>
 
       <div className="nav-titles">
         <span>•</span>
@@ -39,6 +39,10 @@ export default function Nav() {
         <span>•</span>
         <Link href="/escuela/contacto">
           <a>Contacto</a>
+        </Link>
+        <span>•</span>
+        <Link href="/blog">
+          <a>Blog</a>
         </Link>
         <span>•</span>
         <Link href="/">
@@ -78,6 +82,9 @@ export default function Nav() {
 
           <Link href="/escuela/contacto">
             <a>📬 Contacto</a>
+          </Link>
+          <Link href="/blog/">
+            <a>🐵 Blog</a>
           </Link>
           <Link href="/">
             <a>🦅 Volver a devZeppelin.ar</a>

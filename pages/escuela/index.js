@@ -120,11 +120,11 @@ export default function Index() {
 
         @media screen and (max-width: 700px) {
           .mainTitle {
-          font-size: 6em;          
+          font-size: 4em;          
         }
 
           h4 {
-            font-size: 1.8em
+            font-size: 1.4em
             
             
           }

@@ -8,20 +8,23 @@ export default function Criptomonedas() {
       MainTitle="Criptomonedas"
       Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
     >
-      
       <div className="container">
-      <img className="icon" src="/escuela/gafas.webp" alt="gafas lentes rosas png" />
-      <nav className="secondaryNav">
-        <a href="#usefulResources">
-          <button className="buttonSchool">Recursos útiles</button>
-        </a>
-        <a href="#frecuentQuestions">
-          <button className="buttonSchool">Preguntas frecuentes</button>
-        </a>
-        <a href="#altcoins">
-          <button className="buttonSchool">Altcoins</button>
-        </a>
-      </nav>
+        <img
+          className="icon"
+          src="/escuela/gafas.webp"
+          alt="gafas lentes rosas png"
+        />
+        <nav className="secondaryNav">
+          <a href="#usefulResources">
+            <button className="buttonSchool">Recursos útiles</button>
+          </a>
+          <a href="#frecuentQuestions">
+            <button className="buttonSchool">Preguntas frecuentes</button>
+          </a>
+          <a href="#altcoins">
+            <button className="buttonSchool">Altcoins</button>
+          </a>
+        </nav>
         <p>
           Si sos un curioso de la tecnología y la programación, te invito a leer
           esta pequeña introducción al mundo cripto.
@@ -31,38 +34,43 @@ export default function Criptomonedas() {
           experiencia personal en el tema.
         </p>
         <p>
-          <b>CONSEJO:</b> Si vas a invertir en el mundo de las Criptomonedas debes usar dinero
-          que estés dispuesto a perder y no dinero que necesitas en el corto
-          plazo.
+          <b>CONSEJO:</b> Si vas a invertir en el mundo de las Criptomonedas
+          debes usar dinero que estés dispuesto a perder y no dinero que
+          necesitas en el corto plazo.
         </p>
         <p>
-          <b>INTRODUCCIÓN:</b> El mundo Cripto es inmenso, interesante y es todo un cambio de
-          paradigma de cómo funciona el mundo financiero como lo conocemos.
-          Hoy existen alrededor de 4000 criptomonedas alternativas a Bitcoin
-          conocidas como “Altcoins”, pero para comprenderlas primero necesitamos
-          saber lo básico de la criptomoneda madre, <b>Bitcoin</b>.
+          <b>INTRODUCCIÓN:</b> El mundo Cripto es inmenso, interesante y es todo
+          un cambio de paradigma de cómo funciona el mundo financiero como lo
+          conocemos. Hoy existen alrededor de 4000 criptomonedas alternativas a
+          Bitcoin conocidas como “Altcoins”, pero para comprenderlas primero
+          necesitamos saber lo básico de la criptomoneda madre, <b>Bitcoin</b>.
         </p>
         <p>
           Les comparto un link de un curso gratuito para conocer desde cero lo
           más importante de Bitcoin, como funciona, y la importancia y peso de
           esta moneda en el mundo moderno.
         </p>
-        <button className="buttonSchool main" >
-          <a href="https://cursosbitcoin.com/cero" target="_blank" rel="noreferrer">
+        <button className="buttonSchool main">
+          <a
+            href="https://cursosbitcoin.com/cero"
+            target="_blank"
+            rel="noreferrer"
+          >
             Bitcoin desde cero (Gratis!)
           </a>
         </button>
 
         <img className="icon" src="/escuela/diamante.webp" alt="diamante png" />
-          <h2>En resumen:</h2>
-        
+        <h2>En resumen:</h2>
+
         <p>
           Bitcoin es una tecnología en donde todas las tranferencias de esta
           moneda quedan grabadas en una “Blockchain”, que sería como una base de
           datos gigante (50 GB aproximadamente) como si fuera una hoja de Exel
-          en donde se relaciona la cantidad de monedas transferidas con la billetera (wallet)
-          a la que le pertenecen. Luego de 10 años en funcionamiento, Bitcoin ha
-          demostrado ser segurro, transparente, efectivo, descentralizado y anónimo.
+          en donde se relaciona la cantidad de monedas transferidas con la
+          billetera (wallet) a la que le pertenecen. Luego de 10 años en
+          funcionamiento, Bitcoin ha demostrado ser segurro, transparente,
+          efectivo, descentralizado y anónimo.
         </p>
         <p>
           Lo revolucionario de esto es que alguien puede tranferir por ejemplo
@@ -70,8 +78,8 @@ export default function Criptomonedas() {
           pagar comisión, y de forma anónima sin interferencia de ningún banco.
         </p>
         <p>
-          <b>Lo malo:</b> Muchos hackers están a la cacería de brechas
-          de seguridad, intentando todo tipo de artimañas para robar las monedas
+          <b>Lo malo:</b> Muchos hackers están a la cacería de brechas de
+          seguridad, intentando todo tipo de artimañas para robar las monedas
           ajenas. Por esto es importante invertir en conocimiento y aprender
           técnicas que nos permitan cuidar nuestras monedas de la forma más
           segura posible.
@@ -81,13 +89,22 @@ export default function Criptomonedas() {
           que nos permiten tener la custodia de nuestras llaves privadas (quien
           tiene las llaves criptográficas tiene la moneda).
         </p>
-        <hr/>
-        <img id="usefulResources" className="icon" src="/escuela/dinosaurio.webp" alt="dinosaurio png" />
+        <hr />
+        <img
+          id="usefulResources"
+          className="icon"
+          src="/escuela/dinosaurio.webp"
+          alt="dinosaurio png"
+        />
         <h1>Recursos útiles</h1>
         <div className="recursos-utiles">
           <article>
             <button className="buttonSchool">
-              <a href="https://tradingview.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://tradingview.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Trading View
               </a>
             </button>
@@ -98,7 +115,11 @@ export default function Criptomonedas() {
           </article>
           <article>
             <button className="buttonSchool">
-              <a href="https://coinmarketcap.com/es/" target="_blank" rel="noreferrer">
+              <a
+                href="https://coinmarketcap.com/es/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Coin Market Cap
               </a>
             </button>
@@ -110,7 +131,11 @@ export default function Criptomonedas() {
           </article>
           <article>
             <button className="buttonSchool">
-              <a href="https://www.binance.com/es/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.binance.com/es/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Binance Exchanger
               </a>
             </button>
@@ -122,20 +147,29 @@ export default function Criptomonedas() {
           </article>
           <article>
             <button className="buttonSchool">
-              <a href="https://coinmonitor.info/" target="_blank" rel="noreferrer">
+              <a
+                href="https://coinmonitor.info/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Coin Monitor
               </a>
             </button>
             <p>
-              Ver de manera rápida el valor
-              actual de Bitcoin y de nuestra moneda local. También
-              ofrece información cruzada de cotizaciones y mejores precios en
-              las casas de intercambio (exchanges) más populares.
+              Ver de manera rápida el valor actual de Bitcoin y de nuestra
+              moneda local. También ofrece información cruzada de cotizaciones y
+              mejores precios en las casas de intercambio (exchanges) más
+              populares.
             </p>
           </article>
         </div>
-        <hr/>
-        <img id="frecuentQuestions" className="icon" src="/escuela/casete.webp" alt="casete png" />
+        <hr />
+        <img
+          id="frecuentQuestions"
+          className="icon"
+          src="/escuela/casete.webp"
+          alt="casete png"
+        />
         <h1>Preguntas frecuentes</h1>
         <h3>¿Esta moneda tiene inflación?</h3>
         <p>
@@ -189,8 +223,13 @@ export default function Criptomonedas() {
           estudies las empresas y proyectos, y sea tu decisión invertir en tal y
           cuál proyecto.
         </p>
-        <hr/>
-        <img id="altcoins" className="icon" src="/escuela/robot.webp" alt="robot png" />
+        <hr />
+        <img
+          id="altcoins"
+          className="icon"
+          src="/escuela/robot.webp"
+          alt="robot png"
+        />
         <h1>Altcoins</h1>
         <p>
           Conociendo lo básico de Bitcoin podemos hablar de algunas de las
@@ -198,7 +237,7 @@ export default function Criptomonedas() {
           nuevo campo. Básicamente las AltoVamos con algunas de ellas:
         </p>
 
-        <ul>
+        <ul className="px-0">
           <li>
             <b>Ethereum:</b> Este proyecto pertenece a una compañía que creó una
             Blockchain propia, en donde corre este proyecto y también otros
@@ -229,7 +268,7 @@ export default function Criptomonedas() {
             respecto a su valor inicial.
           </li>
         </ul>
-        <hr/>
+        <hr />
         <a href="#nav-container">
           <button className="buttonSchool">Ir arriba!</button>
         </a>
@@ -238,7 +277,7 @@ export default function Criptomonedas() {
         h1 {
           font-size: 2.6em;
           padding-top: 1.8;
-          padding-bottom: 1.1em
+          padding-bottom: 1.1em;
         }
 
         button.main {
@@ -259,11 +298,12 @@ export default function Criptomonedas() {
         .recursos-utiles {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          font-size: 0.9rem;
         }
 
         .recursos-utiles article {
           padding: 10px;
-          text-align: center
+          text-align: center;
         }
       `}</style>
     </Layout>

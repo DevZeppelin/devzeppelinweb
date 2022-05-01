@@ -47,7 +47,7 @@ const Layout = ({ ID, MainTitle, Footer, children }) => (
       .container {
         display: block;
         max-width: 2400px;
-        width: 80%;
+        width: 90%;
         text-align: justify;
         align-items: center;
         justify-content: center;
@@ -73,23 +73,23 @@ const Layout = ({ ID, MainTitle, Footer, children }) => (
         margin-top: 1em;
         padding-bottom: 5px;
         padding-left: 6px;
-        font-size: 2.5em;
+        font-size: 2.2em;
       }
 
       h2 {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.8em;
         margin: auto;
         margin-top: 1em;
       }
 
       h3 {
-        font-size: 1.4em;
+        font-size: 1.3em;
         padding-top: 16px;
       }
 
       a {
-        padding: 10px;
+        padding: 8px;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.1em;
@@ -98,14 +98,14 @@ const Layout = ({ ID, MainTitle, Footer, children }) => (
 
       p {
         padding: 15px 10px;
-        font-size: 1.2em;
+        font-size: 1em;
         color: var(--background);
       }
 
       li {
-        padding: 5px 40px;
+        padding: 3px 20px;
         margin: 0.5em;
-        font-size: 1.2em;
+        font-size: 1em;
         color: var(--background);
       }
 
@@ -142,14 +142,15 @@ const Layout = ({ ID, MainTitle, Footer, children }) => (
 
       ul,
       ol {
-        padding-inline-start: 20px;
+        padding-inline-start: 10px;
         padding: 0.1em;
       }
 
       .secondaryNav {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center
       }
 
       .secondaryNav button {
@@ -173,11 +174,11 @@ const Layout = ({ ID, MainTitle, Footer, children }) => (
           text-align: left;
         }
         p {
-          font-size: 1.6em;
+          font-size: 1.2em;
         }
 
         li {
-          font-size: 1.5em;
+          font-size: 1.2em;
         }
       }
     `}</style>
