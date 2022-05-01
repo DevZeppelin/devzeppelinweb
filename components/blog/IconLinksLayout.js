@@ -22,17 +22,17 @@ export default function IconLinksLayout({ state }) {
         </div>
 
         <div className="flex hover:text-secundaryBlog">
-          <a
-            className="flex"
-            href="https://code-obrero.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <abbr title="codeObrero ¡Empezá hoy a programar!">
-              <BiCodeAlt className=" text-3xl cursor-pointer " />
-            </abbr>
-            <span className="my-auto cursor-pointer mr-4 ml-1 ">Escuela Dev</span>
-          </a>
+          <Link href="/escuela" passHref>
+            <div className="flex hover:text-secundaryBlog">
+              <abbr title="CodeObrero. Escuela de programación">
+                <BiCodeAlt className=" text-3xl cursor-pointer " />
+              </abbr>
+
+              <span className="my-auto cursor-pointer mr-4 ml-1 ">
+                Escuela Dev
+              </span>
+            </div>
+          </Link>
         </div>
 
         <div className="flex">
