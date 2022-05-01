@@ -2,13 +2,13 @@
 
 export const IndexGridImageContent = ({ src, alt }) => {
   return (
-    <div className="relative border-2 border-yellow" >
+    <div className="relative border-2 border-yellow mt-6  " >
      
-        <div className="h-60 imagen-filtro overflow-hidden">
+        <div className="h-full imagen-filtro overflow-hidden">
           <div>
             <img
             src={src}
-            alt={alt}
+            alt={alt}           
             />          
             
           </div>

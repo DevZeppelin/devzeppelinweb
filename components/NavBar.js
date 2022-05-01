@@ -19,6 +19,9 @@ const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, class
         <Link href="/blog">
           <a className="px-3 hover:bg-secundary hover:text-yellow py-6">Blog</a>
         </Link>        
+        <Link href="/escuela">
+          <a className="px-3 hover:bg-secundary hover:text-yellow py-6">Escuela</a>
+        </Link>        
       
 
         <Link href="/contacto">

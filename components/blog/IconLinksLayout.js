@@ -9,7 +9,7 @@ export default function IconLinksLayout({ state }) {
     <Fragment>
       <div className={`${state}`}>
         <div className="flex">
-          <Link href="/tecnoticiero">
+          <Link href="/blog/tecnoticiero">
             <div className="flex hover:text-secundaryBlog">
               <abbr title="¡Potente buscador de noticias!">
                 <FiSearch className=" text-3xl cursor-pointer" />
@@ -41,7 +41,7 @@ export default function IconLinksLayout({ state }) {
               <abbr title="DevZeppelin. Webs 100% perfomance">
                 <GiZeppelin className="text-3xl cursor-pointer " />
               </abbr>
-              <span className="ml-1 my-auto cursor-pointer">
+              <span className="ml-1 my-auto cursor-pointer font-bold">
                 Volver a DevZeppelin.AR{" "}
               </span>
             </div>

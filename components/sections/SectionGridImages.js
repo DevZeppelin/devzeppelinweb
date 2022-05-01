@@ -21,7 +21,7 @@ const SectionGridImages = () => {
               <div className="relative">
                 <div className="indexGridContainer">
                   <div className="indexGridImageText">
-                    Webs de última tecnología
+                    Cartas QR
                   </div>
                  
                   <IndexGridImageContent 
@@ -35,7 +35,7 @@ const SectionGridImages = () => {
             <Fade bottom>
               <div className="relative">
                 <div className="indexGridImageText">
-                  Contenido administrable
+                  Instagram Personalizado
                 </div>
 
                 <IndexGridImageContent 
@@ -48,7 +48,7 @@ const SectionGridImages = () => {
             <Fade bottom>
               <div className="relative">
                 <div className="indexGridImageText">
-                  Diseño, color, fotos y logo HD
+                 Invitaciones y Posters
                 </div>
                 <IndexGridImageContent 
                     src="/gridImg/03.webp"
@@ -59,7 +59,7 @@ const SectionGridImages = () => {
             <Fade bottom>
               <div className="relative">
                 <div className="indexGridImageText">
-                  Primeros lugares en Google
+                  Fotos Editadas Originales
                 </div>
                 <IndexGridImageContent 
                     src="/gridImg/04.webp"
@@ -69,7 +69,7 @@ const SectionGridImages = () => {
             </Fade>
             <Fade bottom>
               <div className="relative">
-                <div className="indexGridImageText">Aplicaciones Móviles</div>
+                <div className="indexGridImageText">Invitaciones QR</div>
                 <IndexGridImageContent 
                     src="/gridImg/05.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
@@ -78,7 +78,7 @@ const SectionGridImages = () => {
             </Fade>
             <Fade bottom>
               <div className="relative">
-                <div className="indexGridImageText">Diseño adaptable</div>
+                <div className="indexGridImageText">Actualización de logos</div>
                 <IndexGridImageContent 
                     src="/gridImg/06.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
@@ -87,7 +87,7 @@ const SectionGridImages = () => {
             </Fade>
             <Fade bottom>
               <div className="relative">
-                <div className="indexGridImageText">Tiendas electrónicas</div>
+                <div className="indexGridImageText">Las mejores páginas Web</div>
                 <IndexGridImageContent 
                     src="/gridImg/07.webp"
                     alt="development code ide vscode linux dev zeppelin webs pages www perfomance "
@@ -95,8 +95,8 @@ const SectionGridImages = () => {
               </div>
             </Fade>
             <Fade bottom>
-              <div className="m-6 space-y-4 md:space-y-4 text-center my-auto element">
-                <h2 className="font-bold text-xl font-righteous text-yellow">
+              <div className="m-6 space-y-4 md:space-y-4 text-center my-auto element mt-4">
+                <h2 className="font-bold text-xl font-righteous text-yellow pt-6">
                   ¡Yo te contacto!
                 </h2>
                 <p className="text-lightGray">
