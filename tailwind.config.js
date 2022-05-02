@@ -31,7 +31,7 @@ module.exports = {
                 'green' : '#16C79A',
                 'lgreen' : '#6eeccd',
                 'dark' : '#19456B',
-                'blue' : '#11698E'
+                'bluePF' : '#11698E'
                 
             },
             fontFamily : {

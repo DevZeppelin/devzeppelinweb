@@ -8,8 +8,7 @@ import Networks from "../components/portafolio/Networks";
 import Introduction from "../components/portafolio/Introduction";
 
 export default function Home() {
-  console.log(GinoWorks);
-
+  
   return (
     <div>
       <Head>
