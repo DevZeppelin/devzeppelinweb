@@ -13,12 +13,9 @@ const SectionWelcome = () => {
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
             <p>
-              Tu marca con excelente presencia en la Web. Vos vendé, yo me encargo de tus redes, logos y tecnología.
+              Tu marca con excelente presencia en el mundo <i>internet</i>. Abastecete de las mejores imágenes, un logo moderno y tecnología a favor de hacerte las cosas más simples.
             </p>
-            <p>
-              Con tecnología de última generación ayudo a tu negocio a crecer en el mundo de internet.
-              
-            </p>
+            
              <p className="hidden md:block">
              Elevá tus ventas dando a tus usuarios <b>una experiencia increíble</b>, diferente, única.
              </p>
