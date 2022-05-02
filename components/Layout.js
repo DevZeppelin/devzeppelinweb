@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 import MobileNavBar from "./MobileNavBar";
 import WhatsappIcon from "./WhatsappIcon";
+import ProyectLinks from "./ProyectLinks";
 
 export default function Layout({ children, classHome, classQuienesSomos, classServicios, classContacto }) {
   const [open, setOpen] = useState(false);
@@ -16,10 +17,11 @@ export default function Layout({ children, classHome, classQuienesSomos, classSe
 
   return (
     <div className="bg-secundary">
-      <TopLeyend />
-      <TopMainScreen />
-      <NavBar toggleNav={toggleNav} classHome={classHome} classQuienesSomos={classQuienesSomos} classServicios={classServicios} classContacto={classContacto} />
+      <TopLeyend toggleNav={toggleNav} />
       <MobileNavBar open={open} />
+      <TopMainScreen />
+      <NavBar  classHome={classHome} classQuienesSomos={classQuienesSomos} classServicios={classServicios} classContacto={classContacto} />
+      <ProyectLinks classAdd="md:hidden"/>
 
       {children}
 

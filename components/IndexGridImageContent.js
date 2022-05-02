@@ -7,7 +7,7 @@ export const IndexGridImageContent = ({ src, alt }) => {
         <div className="h-full imagen-filtro overflow-hidden">
           <div>
             <img
-            src={src}
+            src={src} className="w-full"
             alt={alt}           
             />          
             

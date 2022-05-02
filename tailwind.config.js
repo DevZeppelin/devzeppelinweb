@@ -22,7 +22,16 @@ module.exports = {
                 secundaryBlog: '#13a89e',
                 lowContrastBlog: '#117F77' ,
                 backgroundBlog: '#d6d4d4',
-                backgroundSecundaryBlog: '#608b9b'               
+                backgroundSecundaryBlog: '#608b9b',  
+                
+                /*PORTAFOLIO*/
+                transparent: 'transparent',
+                current: 'currentColor',
+                'white': '#F8F1F1',
+                'green' : '#16C79A',
+                'lgreen' : '#6eeccd',
+                'dark' : '#19456B',
+                'blue' : '#11698E'
                 
             },
             fontFamily : {

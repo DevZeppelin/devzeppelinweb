@@ -3,6 +3,7 @@ import MainBarButton from "./MainBarButton";
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/dist/client/link";
+import ProyectLinks from "./ProyectLinks";
 
 const Footer = () => {
   return (
@@ -75,7 +76,10 @@ const Footer = () => {
               </button>
             </a>
           </div>
+          <ProyectLinks classAdd="mr-2 md:mr-16"/>
+
         </div>
+
       </div>
       <div className="p-4 text-sm bg-primary text-lightGray z-50">
         <p>

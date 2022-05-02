@@ -6,14 +6,24 @@ import {
   FaLinkedinIn,
   
 } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const TopLeyend = () => {
+
+const TopLeyend = ({toggleNav}) => {
   return (
     <div className="flex justify-center md:justify-between pt-2 text-lightGray md:bg-darkGray">
       <div className="hidden md:flex px-12">
         <p className="text-sm font-bold tracking-widest my-auto font-righteous uppercase text-yellow">
           Soluciones Tecnológicas
         </p>
+      </div>
+      <div className="p-2 ml-2 md:hidden absolute top-0 right-5 w-10 text-4xl">
+        <button
+          onClick={toggleNav}
+          aria-label="Hamburguer Button of Main Content"
+        >
+          <GiHamburgerMenu />
+        </button>
       </div>
       <div>
         <div className="text-xl space-x-3 pr-6">

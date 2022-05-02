@@ -1,9 +1,9 @@
-import Link from "next/dist/client/link";
+import Link from "next/link";
 
 const MobileNavBar = ({ open }) => {
   return (
     <div
-      className="absolute z-50 left-0 font-bold bg-secundary w-3/5 rounded-b-3xl"
+      className="absolute z-50 top-16 right-0 font-bold bg-secundary w-3/5 rounded-b-3xl border-2 border-yellow"
       style={{ display: open ? "block" : "none" }}
     >
       <div className="flex text-right flex-col text-base p-2 text-lowContrast mb-5">
@@ -16,13 +16,7 @@ const MobileNavBar = ({ open }) => {
         <Link href="/servicios">
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios y Trabajos 🛠</a>
         </Link>        
-        <Link href="/blog">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Blog 🙊</a>
-        </Link>        
-        <Link href="/escuela">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Escuela 🏫</a>
-        </Link>        
-
+      
         <Link href="/contacto">
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Contactame 📞</a>
         </Link>

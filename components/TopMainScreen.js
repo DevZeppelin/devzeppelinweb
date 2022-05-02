@@ -4,47 +4,24 @@ import Link from "next/dist/client/link";
 import MainBarButton from "./MainBarButton";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import ProyectLinks from "./ProyectLinks";
 
 const TopMainScreen = () => {
   return (
-    <div className="flex px-2 md:px-24 text-yellow bg-secundary justify-center md:justify-between">
+    <div className="flex my-4 p-10 md:p-0 px-2 md:px-24 text-yellow bg-secundary justify-center md:justify-between">
       <Link href="/">
         <img
           src="logo.webp"
           alt="dev zeppelin logo hyper webs gino pietrobon"
           width="200"
           height="200"
+          className="animate-logo"
         />
       </Link>
 
       <div className="hidden md:flex justify-between space-x-4 text-center my-auto p-4 text-lg">
-        <a
-          href="https://api.whatsapp.com/send?phone=5492616708100"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <MainBarButton
-            logo={
-              <FaWhatsapp className=" text-yellow text-4xl flex my-auto m-3" />
-            }
-            text="Whatsapp Chat!"
-            description2="+5492616708100"
-            classType="text-yellow"
-          />
-        </a>
-
-        <a
-          href="mailto:devzeppelin.ar@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <MainBarButton
-            logo={<FiMail className="text-yellow text-4xl flex my-auto m-3" />}
-            text="Correo electrónico"
-            description1="devzeppelin.ar@gmail.com"
-            classType="text-yellow"
-          />
-        </a>
+        
+        <ProyectLinks classAdd="mr-12" />
 
         <Link href="/contacto">
           <p className="rounded-lg p-4 text-xl my-auto btn">Contactame</p>

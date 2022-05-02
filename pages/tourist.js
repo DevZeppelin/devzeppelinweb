@@ -4,6 +4,7 @@ import { useState } from "react";
 import helper from "../components/tourist/helper";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import Link from 'next/link'
 
 const Tourist = () => {
   const [openEmergency, setOpenEmergency] = useState(false);
@@ -61,6 +62,12 @@ const Tourist = () => {
           onClick={() => setLanguage(helper.por)}
         />
       </div>
+      <Link href="/" passHref>
+            <div className="text-center font-bold text-primaryBlog cursor-pointer mt-2">
+              {" "}
+              Back to DevZeppelin.ar
+            </div>
+          </Link>
       <section id="welcome" className="text-center p-4 pt-16 md:p-16">
         <h1 className="text-4xl animate-bounce">{language.welcomeTitle}</h1>
         <img

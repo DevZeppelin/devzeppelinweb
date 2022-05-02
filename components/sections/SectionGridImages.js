@@ -13,7 +13,7 @@ const SectionGridImages = () => {
               <div className="my-auto font-bold flex">
                 <div className="w-3 h-32 bg-yellow my-auto"></div>
                 <p className="text-lg m-6 text-lightGray">
-                  Brindamos soluciones tecnológicas de todo tipo, incluyendo diseño y marketing digital para potenciar tu marca al extremo
+                  Programación, diseño y marketing digital para potenciar tu marca al extremo
                 </p>
               </div>
             </Fade>
