@@ -5,32 +5,15 @@ export const GinoWorks = {
       src: "../portafolio/logos/administrator.png",
       alt: "administrador de clientes crud",
       text: "Un panel de administración en donde se agregan, modifican y eliminan clientes de un sistema de datos",
-      code: "Página desarrollada con React.js, Vite y Tailwind CSS. Como base de datos utiliza JSON Server.",
+      code: "React.js + Vite + Tailwind CSS + Database: JSON Server",
       url: "https://administrador-de-clientes.vercel.app",
     },
-    {
-      name: "Carta QR para bares",
-      src: "../portafolio/logos/cartaqr.png",
-      alt: "carta qr bar restaurant",
-      text: "Proyecto de una Carta web, completa, con más opciones y personalización, súper rápida y administrable por el cliente",
-      code: "Página desarrollada con React.js, Next.js, Tailwind CSS y Prismic CMS (Para manejar el contenido desde una interfaz simple)",
-      url: "https://ejemplo-carta-qr.vercel.app",
-    },
-    {
-      name: "Catálogo de cabañas",
-      src: "../portafolio/logos/winehouse.png",
-      alt: "winehouse cañas mendoza",
-      text: "Catálogo para promocionar cabañas donde el usuario encuentra información como el precio del dólar, o el clima",
-      code: "Página desarrollada con React.js, Vite, Tailwind CSS",
-      url: "https://winehouse.vercel.app",
-    },
-
     {
       name: "Gastos y presupuestos",
       src: "../portafolio/logos/gastapp.png",
       alt: "app de gastos y presupuestos",
       text: "App que sirve para calcular gastos y presupuesto general",
-      code: "Aplicación desarrollada con React.js, y create-react-app",
+      code: "React.js (create-react-app) + Short ID",
       url: "https://presupuesto-app-psi.vercel.app/",
     },
     {
@@ -38,15 +21,15 @@ export const GinoWorks = {
       src: "../portafolio/logos/turnon.png",
       alt: "app de turnos",
       text: "App para agendar y administrar turnos, adaptable a cualqueir negocio",
-      code: "Aplicación desarrollada con React.js, y los datos se guardan de manera local a través de Local Storage",
+      code: "React.js + Database: Local Storage",
       url: "https://administrador-de-turnos.vercel.app/",
     },
     {
-      name: "Cotizador de Criptomonedas",
+      name: "Cotizador de Cripto$",
       src: "../portafolio/logos/cotizacripto.png",
       alt: "app de criptomodenas",
       text: "Aplicación web que cotiza criptomonedas a través de una API",
-      code: "App desarrollada con React.js, Emotion Styled Components, y Axios para consumir la API de criptomonedas",
+      code: "React.js + Emotion Styled Components + Axios (para consumir la API)",
       url: "https://cotizacripto.vercel.app/",
     },
     {
@@ -54,7 +37,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/climapp.png",
       alt: "app de clima",
       text: "Aplicación de clima donde el usuario ingresa ciudad y país, y esta entrega datos del clima",
-      code: "App desarrollada con React.js, Materialize CSS, y Fetch para consumir la API de clima",
+      code: "React.js + Materialize CSS + Fetch (para consumir la API)",
       url: "https://climapp-green.vercel.app/",
     },
     {
@@ -62,7 +45,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/breakingbad.png",
       alt: "app de frases de breaking bad",
       text: "Frases de Breaking Bad obtenidas aleatoriamente",
-      code: "App desarrollada con React.js, Emotion Styled Components, y Fetch para consumir la API de frases",
+      code: "React.js + Emotion Styled Components + Fetch (para consumir la API)",
       url: "https://breakingbad-beige.vercel.app/",
     },
     {
@@ -70,8 +53,16 @@ export const GinoWorks = {
       src: "../portafolio/logos/cotizaya.png",
       alt: "seguros cotizacion",
       text: "Cotizador de seguros, donde recibiendo diferentes parámetros calcula el precio del seguro seleccionado",
-      code: "App desarrollada con React.js y Emotion Styled Components",
+      code: "React.js + Emotion Styled Components",
       url: "https://cotizador-seguro.vercel.app/",
+    },
+    {
+      name: "Invitación Cumpleaños",
+      src: "../portafolio/logos/cumple.png",
+      alt: "invitacion qr",
+      text: "Invitación a cumpleaños luego de escanear un código QR",
+      code: "React.js + Vite + QR Code",
+      url: "https://invitacion-valentina.vercel.app/",
     },
   ],
   empresas: [
@@ -81,7 +72,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/criptobeer.png",
       alt: "criptobeer web page",
       text: "Emprendimiento mendocino de cerveza artesanal",
-      code: "Web ultra rápida, desarrollada con React.js, Vite, Tailwind CSS",
+      code: "React.js + Vite + Tailwind CSS",
       url: "https://criptobeer.ar",
     },
     {
@@ -89,7 +80,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/sannicolas.png",
       alt: "cercos san nicolas web page",
       text: "Empresa de cercos perimetrales y construcción en general",
-      code: "Web veloz, desarrollada con React.js, Next.js y Tailwind CSS",
+      code: "React.js + Next.js + Tailwind CSS",
       url: "https://cercosperimetralesyservicios-sn.com.ar",
     },
     {
@@ -97,7 +88,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/citroaventura.webp",
       alt: "citroaventura",
       text: "Web de aventureros recorriendo el mundo en su Citroen 3CV",
-      code: "Web veloz, desarrollada con React.js, Next.js y Tailwind CSS",
+      code: "React.js + Next.js + Tailwind CSS",
       url: "https://cercosperimetralesyservicios-sn.com.ar",
     },
     {
@@ -105,7 +96,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/tecnicosya.png",
       alt: "tecnicos ya",
       text: "Web de empresa de tecnología",
-      code: "Web veloz, desarrollada con React.js, Next.js y Tailwind CSS. Las animaciones son realizadas con React Reveal.",
+      code: "React.js + Next.js + Tailwind CSS + React Reveal (Scroll animations)",
       url: "https://www.tecnicosya.com.ar/",
     },
     {
@@ -113,17 +104,26 @@ export const GinoWorks = {
       src: "../portafolio/logos/powersis.png",
       alt: "powersis web page",
       text: "Empresa mendocina de tecnología (Mi primer web para un cliente)",
-      code: "Aplicación desarrollada con: HTML, CSS y JQuery. El formulario de contacto funciona a través de PHP",
+      code: "HTML + CSS + JQuery + PHP (formulario de contacto)",
       url: "https://powersis.com.ar",
     },
     
     {
-      name: "Web App para estudio de abogados",
+      name: "Web App para Abogados",
       src: "../portafolio/logos/abogados.png",
       alt: "app abogados ",
-      text: "Proyecto de Web App eficiente y velóz para brindar servicios de abogacía a la sociedad, ofreciendo servicios gratuitos y pagos",
-      code: "Página desarrollada con React.js, Next.js, Tailwind CSS y Prismic CMS (Para manejar el contenido)",
+      text: "Proyecto de Web App velóz para servicios de abogacía, ofreciendo servicios gratuitos y pagos",
+      code: "React.js + Next.js + Tailwind CSS + Prismic CMS (Adminsitrador de contenido)",
       url: "https://abogados-app.vercel.app/",
+    },
+
+    {
+      name: "Carta QR para bares",
+      src: "../portafolio/logos/cartaqr.png",
+      alt: "carta qr bar restaurant",
+      text: "Proyecto de una Carta web, completa, con más opciones y personalización, súper rápida y administrable por el cliente",
+      code: "React.js + Next.js + Tailwind CSS + Prismic CMS (Adminsitrador de contenido)",
+      url: "https://ejemplo-carta-qr.vercel.app",
     }
   ],
   proyectos: [
@@ -132,7 +132,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/devzeppelin.webp",
       alt: "gestoría de software y diseño dev zeppelin",
       text: "Proyecto personal de gestoría de software y diseño",
-      code: "Página desarrollada con React.js, Next.js, Tailwind CSS",
+      code: "React.js + Next.js + Tailwind CSS",
       url: "https://devzeppelin.ar",
     },
     {
@@ -140,7 +140,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/moonblog.png",
       alt: "moonblog blog personal de moonwatcher",
       text: "Blog personal donde publico ideas y artículos de interés general",
-      code: "Página desarrollada con React.js, Next.js, Tailwind CSS y Prismic CMS para manejar el contenido desde una interfaz simple",
+      code: "React.js + Next.js + Tailwind CSS + Prismic CMS (Adminsitrador de contenido)",
       url: "https://moonblog.ar",
     },
     {
@@ -148,8 +148,16 @@ export const GinoWorks = {
       src: "../portafolio/logos/codeobrero.webp",
       alt: "code obrero escuela de programacion by moonwatcher",
       text: "Mis consejos útiles para orientar en sus primeros pasos a quién quiera comenzar a estudiar programación",
-      code: "Página desarrollada con React.js, Next.js, y CSS puro",
+      code: "React.js + Next.js + Styled JSX",
       url: "https://code-obrero.vercel.app/",
+    },
+    {
+      name: "Catálogo de cabañas",
+      src: "../portafolio/logos/winehouse.png",
+      alt: "winehouse cañas mendoza",
+      text: "Catálogo para promocionar cabañas donde el usuario encuentra información como el precio del dólar, o el clima",
+      code: "React.js + Vite + Tailwind CSS",
+      url: "https://winehouse.vercel.app",
     }
 
   ],
@@ -159,7 +167,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/ginoweb.png",
       alt: "antiguo portfolio gino pietrobon",
       text: "Mi primer portfolio cuando empecé a estudiar programación",
-      code: "Página desarrollada con HTML, CSS, JQuery y PHP",
+      code: "HTML + CSS + JQuery + PHP",
       url: "https://devzeppelin.github.io/ginitopage/",
     },
     {
@@ -167,7 +175,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/invitaweb.png",
       alt: "invitaciones web gino pietrobon",
       text: "Proyecto para realizar invitaciones a eventos, estilo página web",
-      code: "Página desarrollada con HTML, CSS y JavaScript",
+      code: "HTML + CSS + JavaScript",
       url: "https://devzeppelin.github.io/InvitacionWeb/",
     },
     {
@@ -175,7 +183,7 @@ export const GinoWorks = {
       src: "../portafolio/logos/css.png",
       alt: "graphics css html gino pietrobon",
       text: "Realizando gráficos en movimiento con CSS y JavaScript",
-      code: "Página desarrollada con HTML, CSS y JavaScript",
+      code: "HTML + CSS + JavaScript",
       url: "https://devzeppelin.github.io/graphics-with-css-and-javascript/index.html",
     },
   ],

@@ -62,7 +62,7 @@ export default function Home() {
 
         <div className="text-center mt-24" id="works">
           <Title name="Aplicaciones Web" />
-          <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 mx-2 md:mx-8">
             {GinoWorks.apps.map((app) => (
               <Card
                 key={app.name}
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
 
           <Title name="Páginas web para empresas" />
-          <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 mx-2 md:mx-8">
             {GinoWorks.empresas.map((empresa) => (
               <Card
                 key={empresa.name}
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
 
           <Title name="Proyectos personales" />
-          <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 mx-2 md:mx-8">
             {GinoWorks.proyectos.map((proyecto) => (
               <Card
                 key={proyecto.name}
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
 
           <Title name="Mis primeros proyectos + antiguos" />
-          <div className="grid grid-cols-1 md:grid-cols-3 mx-2 md:mx-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 mx-2 md:mx-8">
             {GinoWorks.proyectosOld.map((proyecto) => (
               <Card
                 key={proyecto.name}
