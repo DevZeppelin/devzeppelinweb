@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Networks = () => {
-  return  <div className="flex justify-center p-6 mx-4 gap-8 text-4xl text-dark ">
+  return  <div className="flex justify-center p-6 mx-4 gap-8 text-4xl orange">
   <a
     href="https://www.facebook.com/almarockera100"
     target="_blank"

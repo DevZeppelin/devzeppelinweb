@@ -19,29 +19,39 @@ export default function Home() {
         <span>
           <Networks />
           <Link href="/" passHref>
-            <div className="text-center font-bold text-primaryBlog cursor-pointer">
+            <div className="text-center font-bold orange cursor-pointer">
               {" "}
               Volver a DevZeppelin.ar
             </div>
           </Link>
         </span>
         <div className="text-center m-6 mt-24">
-          <h1 className="text-6xl font-extrabold text-dark pb-12">
-            AlmaRockera 100%
-          </h1>
+          <h1 className="text-6xl font-extrabold pb-12">AlmaRockera 100%</h1>
         </div>
 
-        <div className="p-12 text-center mt-32  text-white bg-primaryBlog to-dark">
+        <div className="p-12 text-center mt-32  text-white bg-black to-dark">
           <h3 className="text-2xl font-bold">
             ¿Estás listo para andar el sendero del rock?
           </h3>
         </div>
+        <div className="flex justify-center mx-16 space-x-3 font-bold orange">
+          <a href="#radio">Radio</a>   <a href="#articulos">Artículos</a>  <a href="#renzo">RenzoFrases</a>
+        </div>
       </main>
 
-      <RenzoFrase />
+      <section id="radio">
+        <h3 className="text-3xl m-8 text-center font-extrabold text-black pb-12">
+          Radio
+        </h3>
+        <div className="text-center p-16 m-16 bg-white border-2 rounded-3xl">
+          <p className="text-2xl font-bold">
+            🔧🔨🛠⚙ Estamos trabajando en ello 🔧🔨🛠⚙
+          </p>
+        </div>
+      </section>
 
-      <section className="mx-10" >
-        <h3 className="text-3xl m-8 text-center font-extrabold text-dark pb-12">
+      <section id="articulos" className="mx-10">
+        <h3 className="text-3xl m-8 text-center font-extrabold text-black pb-12">
           Enlaces a nuestra Facebook Page
         </h3>
         <div className="grid md:grid-cols-2 gap-3">
@@ -49,10 +59,9 @@ export default function Home() {
             src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Falmarockera100%2Fposts%2Fpfbid02ji8d1dsR7ArhWQjzobEbpWtkApmFava3ZNLh7QV5WP8eNiYtMvEkdodpceDnCNppl&show_text=true&width=500"
             width="500"
             height="507"
-            s
             scrolling="no"
             frameBorder="0"
-            allowFullScreen="true"
+            allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
           <iframe
@@ -61,7 +70,7 @@ export default function Home() {
             height="507"
             scrolling="no"
             frameBorder="0"
-            allowFullScreen="true"
+            allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
           <iframe
@@ -70,7 +79,7 @@ export default function Home() {
             height="507"
             scrolling="no"
             frameBorder="0"
-            allowFullScreen="true"
+            allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
           <iframe
@@ -79,18 +88,25 @@ export default function Home() {
             height="507"
             scrolling="no"
             frameBorder="0"
-            allowFullScreen="true"
+            allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </div>
       </section>
 
-      <div className="m-12 text-center mt-32 text-dark">
-        <h3 className="text-2xl font-bold">¡Contactanos! 🤘🤘🤘</h3>
+      <section id="renzo">
+        <h3 className="text-3xl m-8 text-center font-extrabold text-black">
+          Renzo Frases
+        </h3>
+        <RenzoFrase />
+      </section>
+
+      <div className="m-12 text-center mt-16 bg-black p-4 rounded-3xl">
+        <h3 className="text-2xl font-bold ">¡Contactanos! 🤘🤘🤘</h3>
         <Networks />
       </div>
 
-      <footer className="text-center bg-dark text-white mt-12">
+      <footer className="text-center bg-black text-orange-500 mt-12">
         <a
           href="https://devzeppelin.ar"
           target="_blank"
@@ -103,14 +119,18 @@ export default function Home() {
       <style global jsx>{`
         html {
           background-image: -webkit-linear-gradient(
-            top left,
-
-            #1a4d2e 0%,
-            #ff9f29 6%,
-            #faf3e3 92%,
-            #000000 100%
+            top,
+            #000 0%,
+            #ff4301 50%,
+            #e45826 100%
           );
           scroll-behavior: smooth;
+        }
+        .orange,
+        h1,
+        h2,
+        h3 {
+          color: #ff4301;
         }
 
         body {
