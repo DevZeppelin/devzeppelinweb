@@ -10,7 +10,7 @@ const Networks = () => {
     rel="noreferrer"
   >
     <button aria-label="go to my rock facebook" alt="facebook-logo">
-      <FaFacebook className="hover:text-bluePF" />
+      <FaFacebook className="hover:text-alma4" />
     </button>
   </a>
   <a
@@ -19,7 +19,7 @@ const Networks = () => {
     rel="noreferrer"
   >
     <button aria-label="go to my facebook" alt="facebook-logo">
-      <AiOutlineMail className="hover:text-bluePF" />
+      <AiOutlineMail className="hover:text-alma4" />
     </button>
   </a>
   <a
@@ -28,7 +28,7 @@ const Networks = () => {
     rel="noreferrer"
   >
     <button aria-label="go to my facebook" alt="facebook-logo">
-      <FaWhatsapp className="hover:text-bluePF" />
+      <FaWhatsapp className="hover:text-alma4" />
     </button>
   </a>
 </div>;

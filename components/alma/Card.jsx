@@ -3,10 +3,10 @@ import React from "react";
 import Button from "./Button";
 import Fade from "react-reveal/Fade";
 
-const Card = ({ name, src, alt, text, code, url }) => {
+const Card = ({ name, src, alt, text, url }) => {
   return (
     <Fade left>
-      <div className="relative m-8 border-8 border-dark border-opacity-50 bg-gradient-to-b from-bluePF hover:to-lgreen to-white rounded-lg p-2">
+      <div className="relative bg-gradient-to-alma1 from-alma2 border-orange-600 m-8 border-4 rounded-3xl p-2">
         <h2 className="text-2xl p-2 text-white font-thin ">{name}</h2>
         <div className="h-40">
           <div className="flex justify-center align-middle rounded-md my-auto">
@@ -17,12 +17,12 @@ const Card = ({ name, src, alt, text, code, url }) => {
             />
           </div>
         </div>
-        <p className="text-base p-2 pb-3 h-32 italic"> {text}</p>
+        <p className="text-base p-2 pb-3 h-24 italic"> {text}</p>
         
         <div className="h-16 w-32 text-center ">
           <div className="absolute inset-x-0 bottom-0 h-16">
             <a href={url} target="_blank" rel="noreferrer">
-              <Button text="Visitar Sitio" />
+              <Button text="Ir al artículo"/>
             </a>
           </div>
         </div>

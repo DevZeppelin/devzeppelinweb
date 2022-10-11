@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+
 const RenzoFrase = () => {
   const [frase, setFrase] = useState("");
   const [error, setError] = useState(false);
@@ -34,7 +35,7 @@ const RenzoFrase = () => {
   return (
     <div className="text-center my-6 mx-4 md:mx-64 rounded-lg py-4">
       <button
-        className="p-4 m-2 text-white font-bold bg-black rounded-lg"
+        className="px-6 py-2 border-2 bg-black hover:from-alma1 to-alma2 hover:to-alma3 hover:scale-125 transition-transform rounded-lg text-white font-bold"
         onClick={() => getFrase()}
       >
         Oye, quiero mi frase diaria
