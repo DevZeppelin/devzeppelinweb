@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>DevZeppelin | Hacete ver</title>
+        <title>DevZeppelin | Soluciones tecnológicas</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8" />
         <meta

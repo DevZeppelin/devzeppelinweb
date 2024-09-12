@@ -15,9 +15,6 @@ _Esta página es ultra rápida. El navegador "nunca" recarga. El sitio entrega u
 
 
 ## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [ReactJS] - El mejor framework de JavaScript
 * [NextJS] - El mejor framework de React :)
 * [Tailwind CSS] - El mejor framework de CSS
