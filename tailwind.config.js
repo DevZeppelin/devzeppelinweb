@@ -32,7 +32,13 @@ module.exports = {
                 'green' : '#16C79A',
                 'lgreen' : '#6eeccd',
                 'dark' : '#19456B',
-                'bluePF' : '#11698E'
+                'bluePF' : '#11698E',
+
+                /*ALMA*/
+                'alma1': '#e45826',
+                'alma2': '#ff4301',
+                'alma3': '#2F2519',
+                'alma4': '#4A3F35'
                 
             },
             fontFamily : {
