@@ -6,7 +6,7 @@ const SectionFirstFlayer = () => {
           Soluciones Tecnológicas
         </h1>
         <p className="text-secundary md:text-lg">
-          ¡Digitalizate! Modernizá tus fotos, tus colores y tus ideas. Hace de la tecnología tu aliada para ganar clientes y crecer en el nuevo mundo.
+        Subite al tren del futuro. Tecnología + Ideas + Estrategia de marketing
         </p>
       </div>
     </section>

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
+//Componente inutilizado
 export const IndexGridImageContent = ({ src, alt }) => {
   return (
     <div className="relative border-2 border-yellow mt-10  " >

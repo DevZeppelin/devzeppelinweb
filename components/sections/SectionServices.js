@@ -17,7 +17,7 @@ const SectionServices = () => {
             <div className="space-y-4 pb-6">
               <IoIosSpeedometer className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Velocidad</h2>
-              <p>Intentaré resolver tu inquietud lo antes posible</p>
+              <p>No hay tiempo que perder</p>
             </div>
           </Fade>
           <Fade bottom>
@@ -25,7 +25,7 @@ const SectionServices = () => {
               <BiBookContent className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Estrategia</h2>
 
-              <p>Encuentro la forma de ganar clientes y visibilidad</p>
+              <p>El análisis correcto para la estrategia adecuada</p>
             </div>
           </Fade>
           <Fade bottom>
@@ -33,7 +33,7 @@ const SectionServices = () => {
               <BsTriangleFill className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Calidad</h2>
 
-              <p>Mis productos están construídos con última tecnología</p>
+              <p>IA + Última tecnología para conquistar el mercado</p>
             </div>
           </Fade>
           <Fade bottom>
@@ -43,7 +43,7 @@ const SectionServices = () => {
                Diseño
               </h2>
               <p>
-             Creo logos e imágenes acorde a lo nuevo y moderno
+             Mostremos la mejor cara. Clásico y moderno.
               </p>
             </div>
           </Fade>
