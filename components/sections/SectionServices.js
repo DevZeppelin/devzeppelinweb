@@ -1,4 +1,3 @@
-import Fade from "react-reveal/Fade";
 
 import { IoIosSpeedometer } from "react-icons/io";
 import { BiBookContent } from "react-icons/bi";
@@ -13,30 +12,23 @@ const SectionServices = () => {
           ¿Por qué elegir DevZeppelin?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 md:px-32 pb-16 text-lightGray ">
-          <Fade bottom>
             <div className="space-y-4 pb-6">
               <IoIosSpeedometer className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Velocidad</h2>
               <p>El mundo avanza rápido, no hay tiempo que perder</p>
             </div>
-          </Fade>
-          <Fade bottom>
             <div className="space-y-4 pb-6">
               <BiBookContent className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Estrategia</h2>
 
               <p>Saber que somos para saber a donde vamos</p>
             </div>
-          </Fade>
-          <Fade bottom>
             <div className="space-y-4 pb-6">
               <BsTriangleFill className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Calidad</h2>
 
               <p>IA + Tecnología punta de lanza para lograr objetivos de forma eficiente</p>
             </div>
-          </Fade>
-          <Fade bottom>
             <div className="space-y-4 pb-6">
               <CgScreenWide className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">
@@ -46,7 +38,6 @@ const SectionServices = () => {
              Mostremos nuestra mejor imagen al mundo 
               </p>
             </div>
-          </Fade>
          
           
          

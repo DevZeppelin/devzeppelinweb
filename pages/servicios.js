@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import SectionWorkComponent from "../components/sections/SectionWorkComponent"
-import Fade from "react-reveal/Fade";
 
 import { IoMdAppstore, IoLogoBitcoin } from "react-icons/io";
 import { DiModernizr } from "react-icons/di";
@@ -34,34 +33,26 @@ const Servicios = () => {
               Páginas Web de muestra:
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/responsiveImages/01.png"
                   description="Empresa de tecnología"
                   web="www.tecnicosya.com.ar"
                 />
-              </Fade>
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/responsiveImages/02.png"
                   description="Escuela de Programación"
                   web="www.code-obrero.vercel.app"
                 />
-              </Fade>
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/responsiveImages/03.png"
                   description="Tarjeta de invitación Web"
                   web="devzeppelin.github.io/InvitacionWeb"
                 />
-              </Fade>
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/responsiveImages/04.png"
                   description="Blog Personal"
                   web="www.moonblog.ar"
                 />
-              </Fade>
             </div>
           </div>
         </section>
@@ -71,27 +62,21 @@ const Servicios = () => {
               Aplicaciones Web de muestra:
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 md:space-y-0">
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/apps/gastapp.png"
                   description="App de calcular gastos personales"
                   web="presupuesto-app-psi.vercel.app"
                 />
-              </Fade>
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/apps/turnon.png"
                   description="App de Turnos"
                   web="administrador-de-turnos.vercel.app/"
                 />
-              </Fade>
-              <Fade bottom>
                 <SectionWorkComponent
                   src="/apps/bb.png"
                   description="Generador de frases de Breaking Bad"
                   web="breakingbad-beige.vercel.app"
                 />
-              </Fade>
               
             </div>
           </div>

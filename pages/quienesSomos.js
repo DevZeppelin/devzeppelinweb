@@ -3,7 +3,6 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import { BiCheckShield } from "react-icons/bi";
 import { FaEye } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
 
 
 const QuienesSomos = () => {
@@ -26,7 +25,6 @@ const QuienesSomos = () => {
                 Tecnología par aun mundo mejor
               </h2>
               <div className="bg-yellow w-32 h-1 mx-auto"></div>
-              <Fade big>
                 <p>
                   Dev Zeppelin es mi proyecto como estudiante de programación y tecnología, para sumir compromisos con proyectos reales que solucionen problemas a personas y emprendedores comunes.
                 </p>
@@ -37,7 +35,6 @@ const QuienesSomos = () => {
                   <strong>Dev Zeppelin</strong> utiliza lo más nuevo en tecnología y lo más orginal del diseño para marcar la diferencia de quienes me dan la oportunidad de ayudarlos. 
                 </p>
                 
-              </Fade>
             </div>
             <div className="my-auto p-8">
               <img
@@ -49,7 +46,6 @@ const QuienesSomos = () => {
           </div>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-16 px-8 md:px-32 pb-16 text-center text-lightGray">
-          <Fade bottom>
             <div className="space-y-4">
               <FaEye className="mx-auto text-4xl text-yellow" />
               <h2 className="text-2xl text-yellow">Visión</h2>
@@ -60,8 +56,6 @@ const QuienesSomos = () => {
                 respeto, responsabilidad, honestidad y calidad.
               </p>
             </div>
-          </Fade>
-          <Fade bottom>
             <div className="space-y-4">
               <BiCheckShield className="mx-auto text-4xl text-yellow " />
               <h2 className="text-2xl text-yellow">Misión</h2>
@@ -72,7 +66,6 @@ const QuienesSomos = () => {
                 Avanzar para buscar los mejores acuerdos y ser el recurso accesible para dar forma tecnológica a las ideas de las personas comunes.
               </p>
             </div>
-          </Fade>
         </section>
       </Layout>
     </div>

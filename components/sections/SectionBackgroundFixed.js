@@ -1,4 +1,3 @@
-import Fade from "react-reveal/Fade";
 import Link from "next/dist/client/link";
 
 const SectionBackgroundFixed = () => {
@@ -19,11 +18,9 @@ const SectionBackgroundFixed = () => {
             </div>
             <div></div>
 
-            <Fade big>
               <Link href="/contacto">
                 <button className="btn uppercase">Llamame</button>
               </Link>
-            </Fade>
           </div>
         </div>
         <style jsx>{`  

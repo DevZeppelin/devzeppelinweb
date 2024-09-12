@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Button from "./Button";
-import Fade from "react-reveal/Fade";
 
 const Card = ({ name, src, alt, text, code, url }) => {
   return (
-    <Fade left>
       <div className="relative m-2 border-8 border-dark border-opacity-50 bg-gradient-to-b from-bluePF hover:to-lgreen to-white rounded-lg p-2">
         <h2 className="text-2xl p-2 text-white font-thin ">{name}</h2>
         <div className="h-40">
@@ -29,7 +27,6 @@ const Card = ({ name, src, alt, text, code, url }) => {
           </div>
         </div>
       </div>
-    </Fade>
   );
 };
 

@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Button from "./Button";
-import Fade from "react-reveal/Fade";
 
 const Card = ({ name, src, alt, text, url }) => {
   return (
-    <Fade left>
       <div className="relative bg-gradient-to-alma1 from-alma2 border-orange-600 m-8 border-4 rounded-3xl p-2">
         <h2 className="text-2xl p-2 text-white font-thin ">{name}</h2>
         <div className="h-40">
@@ -27,7 +25,6 @@ const Card = ({ name, src, alt, text, url }) => {
           </div>
         </div>
       </div>
-    </Fade>
   );
 };
 
