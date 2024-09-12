@@ -15,27 +15,27 @@ const SectionServices = () => {
             <div className="space-y-4 pb-6">
               <IoIosSpeedometer className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Velocidad</h2>
-              <p>El mundo avanza rápido, no hay tiempo que perder</p>
+              <p>Te ayudo a adaptarte al nuevo mundo que avanza rápido, ¡No hay tiempo que perder!</p>
             </div>
             <div className="space-y-4 pb-6">
               <BiBookContent className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">Estrategia</h2>
 
-              <p>Saber que somos para saber a donde vamos</p>
+              <p>Te ayudo a descubrir el propósito y pasar en blanco la misión y visión de tu megpcio, para entender a donde se quiere llegar y cómo</p>
             </div>
             <div className="space-y-4 pb-6">
               <BsTriangleFill className="text-6xl text-yellow mx-auto" />
-              <h2 className="uppercase text-yellow font-bold">Calidad</h2>
+              <h2 className="uppercase text-yellow font-bold">Tecnología</h2>
 
-              <p>IA + Tecnología punta de lanza para lograr objetivos de forma eficiente</p>
+              <p>IA + nuevas tecnologías punta de lanza para mejorar tus procesos y llegar a los que querés llegar</p>
             </div>
             <div className="space-y-4 pb-6">
               <CgScreenWide className="text-6xl text-yellow mx-auto" />
               <h2 className="uppercase text-yellow font-bold">
-               Diseño
+               Diseño e imagen
               </h2>
               <p>
-             Mostremos nuestra mejor imagen al mundo 
+             Te ayudo a renovar la imagen de tu marca, para estar a la altura de las exigencias modernas
               </p>
             </div>
          

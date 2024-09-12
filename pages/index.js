@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>DevZeppelin | Tu marca + TecnologIA</title>
+        <title>DevZeppelin | TecnologIA a tu negocio</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8" />
         <meta
           name="description"
-          content="dev zeppelin, programación, softare, diseño, paginas web, sistemas, soluciones, tecnología, servicios web, paginas rapidas, adminsitrables, webs modernas, velocidad, optimizacion, perfomance, react, next, tailwind, programacion, sitio web, webs unicas "
+          content="dev zeppelin, marketing, ia, programación, softare, diseño, paginas web, sistemas, soluciones, tecnología, servicios web, paginas rapidas, adminsitrables, webs modernas, velocidad, optimizacion, perfomance, react, next, tailwind, programacion, sitio web, webs unicas "
         />
         <meta
           name="keywords"
-          content="dev zeppelin, programación, softare, diseño, paginas web, sistemas, soluciones, tecnología, servicios web, paginas rapidas, adminsitrables, webs modernas, velocidad, optimizacion, perfomance, react, next, tailwind, programacion, sitio web, webs unicas "
+          content="dev zeppelin, marketing, ia, programación, softare, diseño, paginas web, sistemas, soluciones, tecnología, servicios web, paginas rapidas, adminsitrables, webs modernas, velocidad, optimizacion, perfomance, react, next, tailwind, programacion, sitio web, webs unicas "
         />
         <meta name="author" content="Gino Pietrobon" />
       </Head>

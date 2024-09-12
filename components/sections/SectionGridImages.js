@@ -6,7 +6,7 @@ const SectionGridImages = () => {
     <section>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-24 text-center fadeIn element ">
           <div className="relative">
-            <HoverIconComponent file={<DiCodeigniter />} text="Descubrir la estrategia adecuada" />
+            <HoverIconComponent file={<DiCodeigniter />} text="Descubrir la estrategia adecuada según tu propósito" />
           </div>
           <div className="relative">
             <HoverIconComponent file={<DiCode />} text="Conquistar el nuevo mundo con la tecnología como aliada"/>

@@ -14,7 +14,7 @@ const TopLeyend = ({toggleNav}) => {
     <div className="flex justify-center md:justify-between pt-2 text-lightGray md:bg-darkGray">
       <div className="hidden md:flex px-12">
         <p className="text-sm font-bold tracking-widest my-auto font-righteous uppercase text-yellow">
-          Soluciones Tecnológicas
+          Repensemos tu marca frente al nuevo mundo
         </p>
       </div>
       <div className="p-2 ml-2 md:hidden absolute top-0 right-5 w-10 text-4xl">

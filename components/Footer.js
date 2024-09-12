@@ -22,7 +22,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="text-lg">
-          <h2 className="font-extrabold">¡Contactame hoy!</h2>
+          <h2 className="font-extrabold">Contactame</h2>
 
           <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
