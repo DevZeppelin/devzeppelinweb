@@ -53,8 +53,8 @@ const Servicios = () => {
                   />
                   <SectionWorkComponent
                     src="/responsiveImages/portafolio.png"
-                    description="Portafolio web"
-                    web="devzeppelinweb.vercel.app/portafolio"
+                    description="Radio Web"
+                    web="devzeppelinweb.vercel.app/almarockera"
 
                   />
                 </div>
@@ -74,7 +74,7 @@ const Servicios = () => {
                   <SectionWorkComponent
                     src="/apps/turist.png"
                     description="App Ayuda a turistas"
-                    web="barber-app-psi.vercel.app/"
+                    web="devzeppelinweb.vercel.app/tourist"
                   />
                   <SectionWorkComponent
                     src="/apps/winehouse.png"
@@ -89,7 +89,7 @@ const Servicios = () => {
                   <SectionWorkComponent
                     src="/apps/turnon.png"
                     description="App de Turnos"
-                    web="administrador-de-turnos.vercel.app/"
+                    web="barber-app-psi.vercel.app/"
                   />
 
                   <SectionWorkComponent
