@@ -7,7 +7,7 @@ import MobileNavBar from "./MobileNavBar";
 import WhatsappIcon from "./WhatsappIcon";
 import ProyectLinks from "./ProyectLinks";
 
-export default function Layout({ children, classHome, classQuienesSomos, classServicios, classContacto }) {
+export default function Layout({ children, classHome, classQuienesSomos, classServicios, classWebs, classContacto }) {
   const [open, setOpen] = useState(false);
 
   const toggleNav = (e) => {
@@ -20,7 +20,7 @@ export default function Layout({ children, classHome, classQuienesSomos, classSe
       <TopLeyend toggleNav={toggleNav} />
       <MobileNavBar open={open} />
       <TopMainScreen />
-      <NavBar  classHome={classHome} classQuienesSomos={classQuienesSomos} classServicios={classServicios} classContacto={classContacto} />
+      <NavBar  classHome={classHome} classQuienesSomos={classQuienesSomos} classServicios={classServicios} classWebs={classWebs} classContacto={classContacto} />
       <ProyectLinks classAdd="md:hidden"/>
 
       {children}

@@ -1,20 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Image from "next/image";
+
 const SectionWorkComponent = ({ description, web, src }) => {
   return (
-    <div className="p-6 md:p-8">
+    <div className="p-6 md:p-8 flex flex-col">
       <a href={`https://${web}`} rel="noreferrer" target="_blank">
-    <div className="w-40 animateImage mx-auto">
-          <img
+    <div className="relative w-full flex items-center justify-center animateImage mx-auto">
+          <Image
             src={src}
             alt="responsive image mobile tablet notebook widescreen responsive-design"
+            width={300}
+            height={200}
+            className="object-contain"
           />
         </div>
-        <p className="text-lg text-yellow text-center uppercase font-bold ">
+        <p className="text-lg text-yellow text-center font-bold mx-auto">
           {description}
-        </p>
-        <p className="text-base text-lightGray text-center pt-2 md:pt-3 font-bold">
-          {web}
         </p>
       </a>
       <style jsx>{`

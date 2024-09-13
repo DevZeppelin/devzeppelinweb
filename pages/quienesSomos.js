@@ -26,7 +26,7 @@ const QuienesSomos = () => {
               </h2>
               <div className="bg-yellow w-32 h-1 mx-auto"></div>
                 <p>
-                  Dev Zeppelin es mi proyecto como estudiante de programación y tecnología, para sumir compromisos con proyectos reales que solucionen problemas a personas y emprendedores comunes.
+                  Dev Zeppelin es mi proyecto como estudiante de programación y tecnología, comprometido con proyectos reales que solucionen problemas a personas y emprendedores comunes.
                 </p>
                 <p>
                   Creo firmemente que a través de la tecnología se pueden cambiar muchas cosas, por eso creé este proyecto para poder volcar mis esfuerzos y estudios en crear soluciones aplicando mis conocimientos en programación y tecnología.

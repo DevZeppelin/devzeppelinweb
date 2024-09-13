@@ -21,8 +21,8 @@ const ProyectLinks = ({ classAdd }) => {
       />
       <ProyectLinksComponent
         file={<FaWineGlassAlt />}
-        name="Tourist"
-        dir="/tourist"
+        name="CuantoCadaUno"
+        dir="cuantocadauno.vercel.app"
       />
     </div>
   );

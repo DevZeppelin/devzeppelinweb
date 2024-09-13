@@ -10,12 +10,15 @@ const MobileNavBar = ({ open }) => {
         <Link href="/">
           <a className="mr-2  mt-2 px-3 hover:border-yellow">Home 🏠</a>
         </Link>
+        <Link href="/webapps">
+          <a className="mr-2 mt-5 px-3 hover:border-yellow">Web y Apps 😎</a>
+        </Link>        
+        <Link href="/servicios">
+          <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios 🛠</a>
+        </Link>        
         <Link href="/quienesSomos">
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Acerca de DZ 🙋‍♂️</a>
         </Link>
-        <Link href="/servicios">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios y Trabajos 🛠</a>
-        </Link>        
       
         <Link href="/contacto">
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Contactame 📞</a>
