@@ -22,7 +22,7 @@ const NavBar = ({ classHome, classQuienesSomos, classWebs,classServicios, classC
         </Link>       
 
       </div>
-      f
+      
 
      
     </div>

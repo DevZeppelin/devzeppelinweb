@@ -8,7 +8,7 @@ import { BsBriefcaseFill } from "react-icons/bs";
 const ProyectLinks = ({ classAdd }) => {
   return (
     <div
-      className={`grid grid-cols-4 ${classAdd} gap-3 text-center justify-between mx-auto px-6 md:px-0  py-2 md:py-2 text-white text-sm`}
+      className={`grid grid-cols-4 ${classAdd} gap-2 text-center justify-between mx-auto px-2 md:px-0  py-2 md:py-2 text-white text-sm`}
     >
       <ProyectLinksComponent file={<GiMonkey />} name="Blog" dir="/blog" />
       <ProyectLinksComponent
@@ -23,7 +23,7 @@ const ProyectLinks = ({ classAdd }) => {
       />
       <ProyectLinksComponentExtern
         file={<FaWineGlassAlt />}
-        name="CuantoCadaUno"
+        name="Cuanto c/u?"
         dir="https://cuantocadauno.vercel.app"
       />
     </div>
