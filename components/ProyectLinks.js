@@ -1,9 +1,8 @@
 import ProyectLinksComponent from "./ProyectLinksComponent";
-import ProyectLinksComponentExtern from "./ProyectLinksComponentExtern";
-
 import { GiMonkey } from "react-icons/gi";
-import { FaSchool, FaWineGlassAlt } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa";
 import { BsBriefcaseFill } from "react-icons/bs";
+import { GiBattleGear } from "react-icons/gi";
 
 const ProyectLinks = ({ classAdd }) => {
   return (
@@ -21,10 +20,10 @@ const ProyectLinks = ({ classAdd }) => {
         name="Portafolio"
         dir="/portafolio"
       />
-      <ProyectLinksComponentExtern
-        file={<FaWineGlassAlt />}
-        name="Cuanto c/u?"
-        dir="https://cuantocadauno.vercel.app"
+      <ProyectLinksComponent
+        file={<GiBattleGear />}
+        name="Web Apps"
+        dir="/webapps#apps"
       />
     </div>
   );
