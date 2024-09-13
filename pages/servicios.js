@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
-import SectionWorkComponent from "../components/sections/SectionWorkComponent"
 
 import { IoMdAppstore } from "react-icons/io";
 import { ImEllo } from "react-icons/im";

@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link'
 
-const ProyectLinksComponent = ({ dir, file, name }) => {
+const ProyectLinksComponentExtern = ({ dir, file, name }) => {
   return (
-    <Link
+    <a
       href={dir}
-      passHref >
+      target='_blank'
+      rel='noopener noreferrer' >
 
       <div className='flex flex-col justify-end cursor-pointer'>
 
@@ -13,8 +13,8 @@ const ProyectLinksComponent = ({ dir, file, name }) => {
 
         <p>{name}</p>
       </div>
-    </Link>
+    </a>
   )
 }
 
-export default ProyectLinksComponent
+export default ProyectLinksComponentExtern
