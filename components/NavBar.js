@@ -1,6 +1,6 @@
 import Link from "next/dist/client/link";
 
-const NavBar = ({ classHome, classQuienesSomos, classWebs,classServicios, classContacto }) => {
+const NavBar = ({ classHome, classQuienesSomos, classWebs, classApps, classServicios, classContacto }) => {
   return (
     <div className="flex my-0 md:py-0 justify-between px-0 font-bold bg-yellow text-primary text-xl">
       <div className="hidden md:flex">
@@ -8,8 +8,11 @@ const NavBar = ({ classHome, classQuienesSomos, classWebs,classServicios, classC
         <Link href="/">
           <a className={`px-3 hover:bg-secundary hover:text-yellow ml-24 py-6 ${classHome}`}>Home</a>
         </Link>       
-        <Link href="/webapps">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classWebs}`}>Webs y Apps</a>
+        <Link href="/webs">
+          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classWebs}`}>Webs</a>
+        </Link>      
+        <Link href="/apps">
+          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classApps}`}>Apps</a>
         </Link>      
         <Link href="/servicios">
           <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classServicios}`}>Servicios</a>

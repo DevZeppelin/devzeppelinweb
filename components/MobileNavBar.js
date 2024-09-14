@@ -10,8 +10,11 @@ const MobileNavBar = ({ open }) => {
         <Link href="/">
           <a className="mr-2  mt-2 px-3 hover:border-yellow">Home 🏠</a>
         </Link>
-        <Link href="/webapps">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Web y Apps 😎</a>
+        <Link href="/webs">
+          <a className="mr-2 mt-5 px-3 hover:border-yellow">Webs 🕸</a>
+        </Link>        
+        <Link href="/apps">
+          <a className="mr-2 mt-5 px-3 hover:border-yellow">Apps 🐱‍👤</a>
         </Link>        
         <Link href="/servicios">
           <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios 🛠</a>

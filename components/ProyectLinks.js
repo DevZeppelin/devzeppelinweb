@@ -23,7 +23,7 @@ const ProyectLinks = ({ classAdd }) => {
       <ProyectLinksComponent
         file={<GiBattleGear />}
         name="Web Apps"
-        dir="/webapps#apps"
+        dir="/apps"
       />
     </div>
   );
