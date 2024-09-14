@@ -16,7 +16,9 @@ const Apps = () => {
           <div>
             <section id="apps">
               <div className="p-4 md:px-16 mx-auto pt-16 ">
-             
+              <h2 className="text-center text-4xl text-yellow my-8 pb-2 uppercase">
+                  WebApps de muestra
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 space-y-4 md:space-y-0">
                   <SectionWorkComponent
                     src="/apps/ccu.png"
