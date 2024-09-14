@@ -6,7 +6,7 @@ const SectionBackgroundFixed = () => {
       <div className="p-8 md:p-32 py-32 font-bold text-center bg-cover bg-hero-bigger bg-right bg-fixed grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-6">
           <h2 className="text-3xl font-righteous fadeIn text-yellow textDark">
-            Conquistemos clientes
+            Conquista de clientes
           </h2>
           <div className="text-primary space-y-3 text-lg textLight font-bold">
             <p>
