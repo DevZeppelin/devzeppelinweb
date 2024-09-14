@@ -12,14 +12,16 @@ const Webs = () => {
       </Head>
       <Layout classWebs={"bg-secundary text-yellow"}>
         <div>
-          
+
+          <div className="bg-hero-pages bg-cover text-center py-20 md:py-40">
+            <h1 className="text-4xl font-bold text-yellow uppercase textDark">
+              Páginas Web de muestra
+            </h1>
+          </div>
           <div>
 
             <section id="work">
               <div className="p-4 md:px-16 mx-auto pt-16 ">
-                <h2 className="text-center text-4xl text-yellow my-8 pb-2 uppercase">
-                  Páginas Web de muestra
-                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 space-y-4 md:space-y-0">
                   <SectionWorkComponent
                     src="/responsiveImages/01.png"
