@@ -133,7 +133,7 @@ export const GinoWorks = {
       alt: "gestoría de software y diseño dev zeppelin",
       text: "Proyecto personal de gestoría de software y diseño",
       code: "React.js + Next.js + Tailwind CSS",
-      url: "https://devzeppelin.ar",
+      url: "https://devzeppelin.com.ar",
     },
     {
       name: "Moonblog",

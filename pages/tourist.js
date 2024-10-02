@@ -65,7 +65,7 @@ const Tourist = () => {
       <Link href="/" passHref>
             <div className="text-center font-bold text-primaryBlog cursor-pointer mt-2">
               {" "}
-              Back to DevZeppelin.ar
+              Back to DevZeppelin.com.ar
             </div>
           </Link>
       <section id="welcome" className="text-center p-4 pt-16 md:p-16">

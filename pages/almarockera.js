@@ -23,7 +23,7 @@ export default function Home() {
           <Link href="/" passHref>
             <div className="text-center font-bold orange cursor-pointer">
               {" "}
-              Volver a DevZeppelin.ar
+              Volver a DevZeppelin.com.ar
             </div>
           </Link>
         </span>
@@ -136,7 +136,7 @@ export default function Home() {
 
       <footer className="text-center bg-black text-orange-500 mt-12">
         <a
-          href="https://devzeppelin.ar"
+          href="https://devzeppelin.com.ar"
           target="_blank"
           rel="noopener noreferrer"
         >

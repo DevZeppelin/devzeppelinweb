@@ -36,7 +36,7 @@ export default function Home({ blogs }) {
                   !
                 </h1>
                 <h2 className="text-xl pb-6">
-                  Soy <b>Gino</b> de DevZeppelin.ar y éste es mi Blog, donde
+                  Soy <b>Gino</b> de DevZeppelin.com.ar y éste es mi Blog, donde
                   encontrarás cosas como:
                 </h2>
                 <div className="md:grid grid-cols-2 gap-2">
