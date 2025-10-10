@@ -43,7 +43,7 @@ const BANDS = [
 
     local: "Rosario",
     src: "/alma/joistick.png",
-    url: "https://www.youtube.com/@elandamio7525",
+    url: "https://www.youtube.com/watch?v=hYUotHWycH8&list=RDhYUotHWycH8&start_radio=1",
   },
   {
     name: "El Andamio",
