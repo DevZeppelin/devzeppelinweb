@@ -40,8 +40,9 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex justify-center mx-16 space-x-3 font-bold orange uppercase">
-          <span href="#radio">Radio</span>
-          <span href="#articulos">Artículos</span> <span href="#renzo">RenzoFrases</span>
+          <Link href="#radio">Radio</Link>
+          <Link href="#rockomendadas">Rock o Mendadas</Link>
+          <Link href="#renzo">RenzoFrases</Link>
         </div>
       </main>
 
@@ -64,7 +65,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sponsors">
+      <section id="rockomendadas">
         <h3 className="text-3xl m-8  mt-24 text-center font-extrabold text-black pb-12">
           ROCK o Mendados!
         </h3>
