@@ -4,12 +4,12 @@ import {
   FaInstagram,
   FaFacebook,
   FaLinkedinIn,
-  
+
 } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 
-const TopLeyend = ({toggleNav}) => {
+const TopLeyend = ({ toggleNav }) => {
   return (
     <div className="flex justify-center md:justify-between pt-2 text-lightGray md:bg-darkGray">
       <div className="hidden md:flex px-12">
@@ -27,7 +27,7 @@ const TopLeyend = ({toggleNav}) => {
       </div>
       <div>
         <div className="text-xl space-x-3 pr-6">
-          <a
+          <span
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
             rel="noreferrer"
@@ -35,18 +35,18 @@ const TopLeyend = ({toggleNav}) => {
             <button aria-label="go to my whatsapp" alt="whatsapp-logo">
               <FaWhatsapp className="hover:text-yellow" />
             </button>
-          </a>
-          <a
-              href="https://www.facebook.com/devzeppelin/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button aria-label="go to my facebook" alt="facebook-logo">
-                <FaFacebook className="hover:text-yellow" />
-              </button>
-            </a>
+          </span>
+          <span
+            href="https://www.facebook.com/devzeppelin/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button aria-label="go to my facebook" alt="facebook-logo">
+              <FaFacebook className="hover:text-yellow" />
+            </button>
+          </span>
 
-          <a
+          <span
             href="https://www.instagram.com/devzeppelin.ar/"
             target="_blank"
             rel="noreferrer"
@@ -54,19 +54,19 @@ const TopLeyend = ({toggleNav}) => {
             <button aria-label="go to my instagram" alt="instagram-logo">
               <FaInstagram className="hover:text-yellow" />
             </button>
-          </a>
+          </span>
 
-         
 
-          <a
+
+          <span
             href="mailto:devzeppelin.ar@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <button aria-label="send me a mail" alt="gmail-logo">
+            <button aria-label="send me span mail" alt="gmail-logo">
               <FiMail className="hover:text-yellow" />
             </button>
-          </a>
+          </span>
         </div>
       </div>
     </div>

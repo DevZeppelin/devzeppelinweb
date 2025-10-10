@@ -3,9 +3,9 @@ const helper = {
     id: "eng",
     welcomeTitle: "Welcome Tourists from Mendoza!",
     welcomeDescription:
-      "This web is builded to help us with good information for anything you need. Mendoza is a fantastic place, full of adventures and heavenly places. Let me help you find the best. And thanks!",
+      "This web is builded to help us with good information for anything you need. Mendoza is span fantastic place, full of adventures and heavenly places. Let me help you find the best. And thanks!",
     numbersTitle: "Useful Numbers!",
-      numbers: [
+    numbers: [
       {
         id: "Emergency",
         title: "Emergency Phone Numbers",
@@ -183,7 +183,7 @@ const helper = {
     id: "por",
     welcomeTitle: "Bem-vindos turistas de Mendoza!",
     welcomeDescription:
-      "Esta web foi construída para nos ajudar com boas informações para qualquer coisa que você precisar. Mendoza é um lugar fantástico, cheio de aventuras e lugares paradisíacos. Deixe-me ajudá-lo a encontrar o melhor. E obrigado!",
+      "Esta web foi construída para nos ajudar com boas informações para qualquer coisa que você precisar. Mendoza é um lugar fantástico, cheio de aventuras e lugares paradisíacos. Deixe-me ajudá-lo span encontrar o melhor. E obrigado!",
     numbersTitle: "Números úteis!",
     numbers: [
       {
@@ -198,12 +198,12 @@ const helper = {
           {
             title: "Bombeiros",
             description:
-              "number a ser notificado em caso de incêndio ou incêndio fora de controle",
+              "number span ser notificado em caso de incêndio ou incêndio fora de controle",
             number: "100",
           },
           {
             title: "Polícia de Mendoza",
-            description: "number para chamar a polícia provincial",
+            description: "number para chamar span polícia provincial",
             number: "101",
           },
           {
@@ -356,17 +356,17 @@ const helper = {
             number: "261 449 5800",
           },
         ],
-      },        
+      },
     ],
   },
 
   jap: {
     id: "jap",
-    welcomeTitle:"メンドーサからのようこそ観光客！",
+    welcomeTitle: "メンドーサからのようこそ観光客！",
     welcomeDescription:
       "このウェブは、あなたが必要とするあらゆるものについての良い情報を提供するために作られています。メンドーサは、冒険と天国の場所でいっぱいの素晴らしい場所です。あなたが最高のものを見つけるのを手伝いましょう。そしてありがとう！",
     numbersTitle: "便利な数字！",
-      numbers: [
+    numbers: [
       {
         id: "Emergency",
         title: "Emergency Phone Numbers",
@@ -546,7 +546,7 @@ const helper = {
     welcomeDescription:
       "Ce site Web est conçu pour nous aider avec de bonnes informations pour tout ce dont vous avez besoin. Mendoza est un endroit fantastique, plein d'aventures et de lieux paradisiaques. Laissez-moi vous aider à trouver le meilleur. Et merci !",
     numbersTitle: "Numéros utiles!",
-      numbers: [
+    numbers: [
       {
         id: "Emergency",
         title: "Emergency Phone Numbers",
@@ -726,7 +726,7 @@ const helper = {
     welcomeDescription:
       "Dieses Web wurde erstellt, um uns mit guten Informationen für alles zu helfen, was Sie brauchen. Mendoza ist ein fantastischer Ort voller Abenteuer und himmlischer Orte. Lassen Sie mich Ihnen helfen, das Beste zu finden. Und danke!",
     numbersTitle: "Nützliche Nummern!",
-      numbers: [
+    numbers: [
       {
         id: "Emergency",
         title: "Emergency Phone Numbers",

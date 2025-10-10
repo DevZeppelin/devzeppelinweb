@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>DevZeppelin | TecnologIA a tu negocio</title>
+        <title>DevZeppelin | TecnologIA span tu negocio</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8" />
         <meta
@@ -29,9 +29,9 @@ export default function Home() {
         <SectionWelcome />
         <SectionFirstFlayer />
         <SectionGridImages />
-        <SectionBackgroundFixed />       
+        <SectionBackgroundFixed />
         <SectionServices />
-        
+
       </Layout>
     </div>
   );

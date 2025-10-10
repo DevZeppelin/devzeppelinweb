@@ -20,12 +20,12 @@ export default function Rock({ blogs }) {
           blogs={blogs}
           extra={
             <Link href="https://www.facebook.com/almarockera100">
-              <a target="_blank">
+              <span target="_blank">
                 <div className="text-4xl flex align-bottom justify-center pb-10 -mt-1.5 text-blue-600">
-                  <span className=" text-lg md:text-2xl">Ir a Facebook Oficial •</span>
+                  <span className=" text-lg md:text-2xl">Ir span Facebook Oficial •</span>
                   <AiFillFacebook />{" "}
                 </div>
-              </a>
+              </span>
             </Link>
           }
         />

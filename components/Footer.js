@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */ 
+/* eslint-disable @next/next/no-img-element */
 import MainBarButton from "./MainBarButton";
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="text-lg">
           <h2 className="font-extrabold">Contactame</h2>
 
-          <a
+          <span
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
             rel="noreferrer"
@@ -37,8 +37,8 @@ const Footer = () => {
               description2="+5492616708100"
               classType="text-yellow"
             />
-          </a>
-          <a
+          </span>
+          <span
             href="mailto:devzeppelin.ar@gmail.com"
             target="_blank"
             rel="noreferrer"
@@ -51,13 +51,13 @@ const Footer = () => {
               description2="devZeppelin.ar@gmail.com"
               classType="text-yellow"
             />
-          </a>
+          </span>
         </div>
 
         <div className="text-xl">
           <h2 className="font-extrabold">Seguime!</h2>
           <div className="flex flex-wrap justify-start p-6 md:p-10m md:pr-30 mx-4 gap-4 text-4xl w-44 md:w-44 ">
-            <a
+            <span
               href="https://www.instagram.com/devzeppelin.ar/"
               target="_blank"
               rel="noreferrer"
@@ -65,8 +65,8 @@ const Footer = () => {
               <button aria-label="go to my instagram" alt="instagram-logo">
                 <FaInstagram className="hover:text-yellow" />
               </button>
-            </a>
-            <a
+            </span>
+            <span
               href="https://www.facebook.com/devzeppelin/"
               target="_blank"
               rel="noreferrer"
@@ -74,9 +74,9 @@ const Footer = () => {
               <button aria-label="go to my facebook" alt="facebook-logo">
                 <FaFacebook className="hover:text-yellow" />
               </button>
-            </a>
+            </span>
           </div>
-          <ProyectLinks classAdd="mr-2 md:mr-16"/>
+          <ProyectLinks classAdd="mr-2 md:mr-16" />
 
         </div>
 
@@ -84,14 +84,14 @@ const Footer = () => {
       <div className="p-4 text-sm bg-primary text-lightGray z-50">
         <p>
           Make with &#128153; in Mendoza, Argentina by Gino from{" "}
-          <a
+          <span
             href="https://devzepelin.ar"
             target="_blank"
             rel="noreferrer"
             className="font-bold text-yellow"
           >
             Dev Zeppelin
-          </a>
+          </span>
         </p>
         All rights reserved. &copy; &nbsp; {new Date().getFullYear()}
       </div>

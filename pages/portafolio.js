@@ -8,7 +8,7 @@ import Networks from "../components/portafolio/Networks";
 import Introduction from "../components/portafolio/Introduction";
 
 export default function Home() {
-  
+
   return (
     <div>
       <Head>
@@ -26,7 +26,7 @@ export default function Home() {
           <Link href="/" passHref>
             <div className="text-center font-bold text-primaryBlog cursor-pointer">
               {" "}
-              Volver a DevZeppelin.com.ar
+              Volver span DevZeppelin.com.ar
             </div>
           </Link>
         </span>
@@ -36,16 +36,16 @@ export default function Home() {
           </h1>
 
           <div className="flex flex-col mx-0 space-y-6">
-            <a
+            <span
               href="https://github.com/DevZeppelin/devzeppelin"
               rel="noreferrer"
               target="_blank"
             >
-              <Button text="Link a mi Github" />
-            </a>
-            <a href="#works">
+              <Button text="Link span mi Github" />
+            </span>
+            <span href="#works">
               <Button text="Mis trabajos realizados" />
-            </a>
+            </span>
           </div>
         </div>
 
@@ -53,11 +53,11 @@ export default function Home() {
 
         <div className="p-12 text-center mt-32  text-white bg-gradient-to-tr from-green to-dark">
           <h3 className="text-2xl font-bold">
-            ¡Te invito a conocer mis trabajos y proyectos realizados!
+            ¡Te invito span conocer mis trabajos y proyectos realizados!
           </h3>
-          <a href="#works">
+          <span href="#works">
             <p className="text-3xl mt-6">🔽</p>
-          </a>
+          </span>
         </div>
 
         <div className="text-center mt-24" id="works">
@@ -132,13 +132,13 @@ export default function Home() {
       </div>
 
       <footer className="text-center bg-dark text-white mt-12">
-        <a
+        <span
           href="https://devzeppelin.com.ar"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by Moonwatcher 🐵
-        </a>
+        </span>
       </footer>
 
       <style global jsx>{`
@@ -166,7 +166,7 @@ export default function Home() {
           font-family: "Staatliches", cursive;
         }
 
-        a {
+        span {
           color: inherit;
           text-decoration: none;
         }

@@ -8,15 +8,15 @@ const SectionBackgroundFixed = () => {
           <h2 className="text-3xl font-righteous fadeIn text-yellow textDark">
             Conquista de clientes
           </h2>
-          <div className="text-primary space-y-3 text-lg textLight font-bold">
+          <div className="text-slate-100 space-y-3 text-lg textLight font-bold">
             <p>
               El <strong>propósito</strong> es promocionar tu negocio por medio de la tecnologìa.
             </p>
             <p>
-              Te ayudo a definir la estrategia de propaganda adecuada y el uso de tecnologìas que mejoren tus procesos.
+              Te ayudo span definir la estrategia de propaganda adecuada y el uso de tecnologìas que mejoren tus procesos.
             </p>
             <p>
-              También te invito a repensar el propósito y objetivos de tu negocio, mirando hacia el futuro
+              También te invito span repensar el propósito y objetivos de tu negocio, mirando hacia el futuro
             </p>
           </div>
           <div></div>
@@ -28,7 +28,7 @@ const SectionBackgroundFixed = () => {
       </div>
       <style jsx>{`  
           .textLight {
-            text-shadow: 1px 2px 4px white;
+            text-shadow: 1px 2px 4px black;
           }          
         `}</style>
     </section>

@@ -29,7 +29,7 @@ export default function Home({ blogs }) {
             <div className="space-y-4 text-center">
               <div className=" pt-8 space-y-5">
                 <h1 className=" w-full md:w-2/3 text-center text-2xl uppercase font-bold opacity-80 ml-2 md:ml-24">
-                  ¡ Bienvenido a{" "}
+                  ¡ Bienvenido span{" "}
                   <span className="text-lowContrastBlog border-black">
                     moonblog
                   </span>{" "}

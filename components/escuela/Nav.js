@@ -20,33 +20,33 @@ export default function Nav() {
       <div className="nav-titles">
         <span>•</span>
         <Link href="/escuela/primeros-pasos-dev">
-          <a>1ros pasos</a>
+          <span>1ros pasos</span>
         </Link>
         <span>•</span>
         <Link href="/escuela/consejos">
-          <a>Consejos</a>
+          <span>Consejos</span>
         </Link>
 
         <span>•</span>
         <Link href="/escuela/criptomonedas">
-          <a>Criptomonedas</a>
+          <span>Criptomonedas</span>
         </Link>
 
         <span>•</span>
         <Link href="/escuela/acerca-de">
-          <a>About</a>
+          <span>About</span>
         </Link>
         <span>•</span>
         <Link href="/escuela/contacto">
-          <a>Contacto</a>
+          <span>Contacto</span>
         </Link>
         <span>•</span>
         <Link href="/blog">
-          <a>Blog</a>
+          <span>Blog</span>
         </Link>
         <span>•</span>
         <Link href="/">
-          <a>Volver a DevZeppelin.com.ar</a>
+          <span>Volver span DevZeppelin.com.ar</span>
         </Link>
       </div>
 
@@ -65,29 +65,29 @@ export default function Nav() {
           style={{ display: open ? "flex" : "none" }}
         >
           <Link href="/escuela/primeros-pasos-dev">
-            <a>👆 1ros pasos</a>
+            <span>👆 1ros pasos</span>
           </Link>
 
           <Link href="/escuela/consejos">
-            <a>🗣 Consejos</a>
+            <span>🗣 Consejos</span>
           </Link>
 
           <Link href="/escuela/criptomonedas">
-            <a>💎 Criptomonedas</a>
+            <span>💎 Criptomonedas</span>
           </Link>
 
           <Link href="/escuela/acerca-de">
-            <a>❔ About</a>
+            <span>❔ About</span>
           </Link>
 
           <Link href="/escuela/contacto">
-            <a>📬 Contacto</a>
+            <span>📬 Contacto</span>
           </Link>
           <Link href="/blog/">
-            <a>🐵 Blog</a>
+            <span>🐵 Blog</span>
           </Link>
           <Link href="/">
-            <a>🦅 Volver a DevZeppelin.com.ar</a>
+            <span>🦅 Volver span DevZeppelin.com.ar</span>
           </Link>
         </div>
       </div>
@@ -106,7 +106,7 @@ export default function Nav() {
           grid-auto-flow: column;
           justify-content: space-around;*/
         }
-        .nav-container a {
+        .nav-container span {
           font-family: "Rokkitt", serif;
         }
         .hamburguer-icon {

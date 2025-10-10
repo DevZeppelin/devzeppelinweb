@@ -24,7 +24,7 @@ export default function Home() {
           <Link href="/" passHref>
             <div className="text-center font-bold orange cursor-pointer">
               {" "}
-              Volver a DevZeppelin.com.ar
+              Volver span DevZeppelin.com.ar
             </div>
           </Link>
         </span>
@@ -40,8 +40,8 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex justify-center mx-16 space-x-3 font-bold orange uppercase">
-          <a href="#radio">Radio</a>
-          <a href="#articulos">Artículos</a> <a href="#renzo">RenzoFrases</a>
+          <span href="#radio">Radio</span>
+          <span href="#articulos">Artículos</span> <span href="#renzo">RenzoFrases</span>
         </div>
       </main>
 
@@ -87,7 +87,7 @@ export default function Home() {
           <Card
             name="Chantas"
             local="Mendoza"
-            text="Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando a sus seguidores."
+            text="Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando span sus seguidores."
             src="/alma/chantas.png"
             url="https://youtu.be/_DuSYXKUuXk?si=yVcM75VVsQvqXkZQ"
           />
@@ -101,7 +101,7 @@ export default function Home() {
           <Card
             name="La chancha muda"
             local="Buenos Aires"
-            text="La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, a inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería."
+            text="La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, span inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería."
             src="/alma/lachancha.png"
             url="https://www.youtube.com/watch?v=QyBMBotKKSw&list=PLjdp01j6sK4gxLMYsaYxuAltWaaZ1sr7d"
           />
@@ -128,13 +128,13 @@ export default function Home() {
       </div>
 
       <footer className="text-center bg-black text-orange-500 mt-12">
-        <a
+        <span
           href="https://devzeppelin.com.ar"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by Moonwatcher 🐵
-        </a>
+        </span>
       </footer>
 
       <Footer />
@@ -164,7 +164,7 @@ export default function Home() {
             sans-serif;
         }
 
-        a {
+        span {
           color: inherit;
           text-decoration: none;
         }

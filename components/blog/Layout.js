@@ -25,9 +25,9 @@ export default function Layout({ children }) {
     <div>
       <div className="px-2 md:px-24 bg-primaryBlog text-white flex justify-between h-16">
         <Link href="/blog/">
-          <a className="text-background text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundaryBlog">
+          <span className="text-background text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundaryBlog">
             <GiMonkey className="inline text-4xl mr-4" /> moonwatcher.dev
-          </a>
+          </span>
         </Link>
 
         <IconLinksLayout state={"hidden md:flex items-center"} />
@@ -44,110 +44,110 @@ export default function Layout({ children }) {
       >
         <div className="flex text-right flex-col text-base p-2 text-backgroundBlog mb-5">
           <Link href="/blog">
-            <a className="mr-2  mt-2 px-3 hover:border-black">Home 🏠</a>
+            <span className="mr-2  mt-2 px-3 hover:border-black">Home 🏠</span>
           </Link>
           <Link href="/news">
-            <a className="mr-2 mt-5 px-3 hover:border-black">
+            <span className="mr-2 mt-5 px-3 hover:border-black">
               Noticias &#128240;
-            </a>
+            </span>
           </Link>
           <Link href="/blog/blog">
-            <a className="mr-2 mt-5 px-3 hover:border-black">Blog &#128053;</a>
+            <span className="mr-2 mt-5 px-3 hover:border-black">Blog &#128053;</span>
           </Link>
           <Link href="/blog/dev">
-            <a className="mr-2 mt-5 px-3 hover:border-black">Programación &#128187;</a>
+            <span className="mr-2 mt-5 px-3 hover:border-black">Programación &#128187;</span>
           </Link>
           <Link href="/blog/cripto">
-            <a className="mr-2 mt-5 px-3 hover:border-black">
+            <span className="mr-2 mt-5 px-3 hover:border-black">
               Criptomonedas &#128184;
-            </a>
+            </span>
           </Link>
           <Link href="/blog/politica">
-            <a className="mr-2 mt-5 px-3 hover:border-black">
+            <span className="mr-2 mt-5 px-3 hover:border-black">
               Política &#128188;
-            </a>
+            </span>
           </Link>
           <Link href="/blog/escritos">
-            <a className="mr-2 mt-5 px-3 hover:border-black">
+            <span className="mr-2 mt-5 px-3 hover:border-black">
               Escritos &#9997;
-            </a>
+            </span>
           </Link>
           <Link href="/blog/rock">
-            <a className="mr-2 mt-5 px-3 hover:border-black">Rock &#127928;</a>
+            <span className="mr-2 mt-5 px-3 hover:border-black">Rock &#127928;</span>
           </Link>
           <Link href="/blog/river">
-            <a className="mr-2 mt-5 px-3 hover:border-black">River 🐔</a>
+            <span className="mr-2 mt-5 px-3 hover:border-black">River 🐔</span>
           </Link>
         </div>
       </div>
 
       <div className="hidden md:flex justify-center px-2 md:px-24 bg-backgroundSecundaryBlog text-backgroundBlog border-b border-black text-base">
         <Link href="/blog">
-          <a className="mr-6  mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6  mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Home
-          </a>
+          </span>
         </Link>
         <Link href="/blog/news">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Noticias
-          </a>
+          </span>
         </Link>
         <Link href="/blog/blog">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Blog
-          </a>
+          </span>
         </Link>
         <Link href="/blog/dev">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Programación
-          </a>
+          </span>
         </Link>
         <Link href="/blog/cripto">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Criptomonedas
-          </a>
+          </span>
         </Link>
         <Link href="/blog/politica">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Política
-          </a>
+          </span>
         </Link>
         <Link href="/blog/escritos">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Escritos
-          </a>
+          </span>
         </Link>
         <Link href="/blog/rock">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-secundaryBlog">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-secundaryBlog">
             Rock
-          </a>
+          </span>
         </Link>
         <Link href="/blog/river">
-          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
+          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
             River
-          </a>
+          </span>
         </Link>
       </div>
 
       <div className="md:hidden flex flex-col mx-auto">
-        
+
         <div>
           <IconLinksLayout
-            state={"flex md:hidden text-center flex-col mt-4 pl-6 text-primaryBlog text-sm align-middle"}            
+            state={"flex md:hidden text-center flex-col mt-4 pl-6 text-primaryBlog text-sm align-middle"}
           />
         </div>
       </div>
 
       {children}
-      
+
 
       <div id="footer" className="bg-primaryBlog text-white text-xl px-6 md:px-24 flex flex-col py-10 mt-8">
-        
+
         <div
           id="contacto"
           className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center"
         >
-          <a
+          <span
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
             rel="noreferrer"
@@ -160,9 +160,9 @@ export default function Layout({ children }) {
             >
               <FaWhatsapp className="hover:text-green-700" />
             </button>
-          </a>
+          </span>
 
-          <a href="https://www.instagram.com/moonwatcher.dev/">
+          <span href="https://www.instagram.com/moonwatcher.dev/">
             <button
               aria-label="go to my instagram"
               target="_blank"
@@ -171,9 +171,9 @@ export default function Layout({ children }) {
             >
               <FaInstagram className="hover:text-purple-700" />
             </button>
-          </a>
+          </span>
 
-          <a href="https://www.twitter.com/moonwatcher73/">
+          <span href="https://www.twitter.com/moonwatcher73/">
             <button
               aria-label="go to my twitter"
               target="_blank"
@@ -182,9 +182,9 @@ export default function Layout({ children }) {
             >
               <FiTwitter className="hover:text-blue-500" />
             </button>
-          </a>
+          </span>
 
-          <a href="https://www.facebook.com/Gini77o">
+          <span href="https://www.facebook.com/Gini77o">
             <button
               aria-label="go to my fabecook"
               target="_blank"
@@ -193,9 +193,9 @@ export default function Layout({ children }) {
             >
               <FaFacebook className="hover:text-blue-800" />
             </button>
-          </a>
+          </span>
 
-          <a href="https://github.com/DevZeppelin">
+          <span href="https://github.com/DevZeppelin">
             <button
               aria-label="go to my github"
               target="_blank"
@@ -204,9 +204,9 @@ export default function Layout({ children }) {
             >
               <FaGithub className="hover:text-red-400" />
             </button>
-          </a>
+          </span>
 
-          <a href="https://www.linkedin.com/in/gino-pietrobon">
+          <span href="https://www.linkedin.com/in/gino-pietrobon">
             <button
               aria-label="go to my linked in"
               target="_blank"
@@ -215,18 +215,18 @@ export default function Layout({ children }) {
             >
               <FaLinkedinIn className="hover:text-green-400" />
             </button>
-          </a>
+          </span>
 
-          <a href="mailto:gino.b.pietrobon@gmail.com">
+          <span href="mailto:gino.b.pietrobon@gmail.com">
             <button
-              aria-label="send me a mail"
+              aria-label="send me span mail"
               target="_blank"
               rel="noopener"
               alt="gmail-logo"
             >
               <FiMail className="hover:text-red-600" />
             </button>
-          </a>
+          </span>
         </div>
 
         <div className="mt-10 text-sm max-w-2xl">

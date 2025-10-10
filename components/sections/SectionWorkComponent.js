@@ -5,8 +5,8 @@ import Image from "next/image";
 const SectionWorkComponent = ({ description, web, src }) => {
   return (
     <div className="p-6 md:p-8 flex flex-col">
-      <a href={`https://${web}`} rel="noreferrer" target="_blank">
-    <div className="relative w-full flex items-center justify-center animateImage mx-auto">
+      <span href={`https://${web}`} rel="noreferrer" target="_blank">
+        <div className="relative w-full flex items-center justify-center animateImage mx-auto">
           <Image
             src={src}
             alt="responsive image mobile tablet notebook widescreen responsive-design"
@@ -18,7 +18,7 @@ const SectionWorkComponent = ({ description, web, src }) => {
         <p className="text-lg text-yellow text-center font-bold mx-auto">
           {description}
         </p>
-      </a>
+      </span>
       <style jsx>{`
         .animateImage {
           margin-bottom: 2rem;

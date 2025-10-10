@@ -8,23 +8,23 @@ const MobileNavBar = ({ open }) => {
     >
       <div className="flex text-right flex-col text-base p-2 text-lowContrast mb-5">
         <Link href="/">
-          <a className="mr-2  mt-2 px-3 hover:border-yellow">Home 🏠</a>
+          <span className="mr-2  mt-2 px-3 hover:border-yellow">Home 🏠</span>
         </Link>
         <Link href="/webs">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Webs 🕸</a>
-        </Link>        
-        <Link href="/apps">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Apps 🐱‍👤</a>
-        </Link>        
-        <Link href="/servicios">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Servicios 🛠</a>
-        </Link>        
-        <Link href="/quienesSomos">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Acerca de DZ 🙋‍♂️</a>
+          <span className="mr-2 mt-5 px-3 hover:border-yellow">Webs 🕸</span>
         </Link>
-      
+        <Link href="/apps">
+          <span className="mr-2 mt-5 px-3 hover:border-yellow">Apps 🐱‍👤</span>
+        </Link>
+        <Link href="/servicios">
+          <span className="mr-2 mt-5 px-3 hover:border-yellow">Servicios 🛠</span>
+        </Link>
+        <Link href="/quienesSomos">
+          <span className="mr-2 mt-5 px-3 hover:border-yellow">Acerca de DZ 🙋‍♂️</span>
+        </Link>
+
         <Link href="/contacto">
-          <a className="mr-2 mt-5 px-3 hover:border-yellow">Contactame 📞</a>
+          <span className="mr-2 mt-5 px-3 hover:border-yellow">Contactame 📞</span>
         </Link>
       </div>
     </div>

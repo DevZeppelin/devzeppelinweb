@@ -2,32 +2,32 @@ import Link from "next/dist/client/link";
 
 const NavBar = ({ classHome, classQuienesSomos, classWebs, classApps, classServicios, classContacto }) => {
   return (
-    <div className="flex my-0 md:py-0 justify-between px-0 font-bold bg-yellow text-primary text-xl">
-      <div className="hidden md:flex">
-        
+    <div className="flex md:py-0 justify-between align-middle px-0 font-bold bg-yellow text-primary text-xl my-auto">
+      <div className="hidden md:flex h-24 justify-center align-middle items-center">
+
         <Link href="/">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow ml-24 py-6 ${classHome}`}>Home</a>
-        </Link>       
+          <span className={`px-3 hover:bg-secundary hover:text-yellow ml-24 py-9 ${classHome}`}>Home</span>
+        </Link>
         <Link href="/webs">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classWebs}`}>Webs</a>
-        </Link>      
+          <span className={`px-3 hover:bg-secundary hover:text-yellow py-9 ${classWebs}`}>Webs</span>
+        </Link>
         <Link href="/apps">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classApps}`}>Apps</a>
-        </Link>      
+          <span className={`px-3 hover:bg-secundary hover:text-yellow py-9 ${classApps}`}>Apps</span>
+        </Link>
         <Link href="/servicios">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classServicios}`}>Servicios</a>
-        </Link>      
+          <span className={`px-3 hover:bg-secundary hover:text-yellow py-9 ${classServicios}`}>Servicios</span>
+        </Link>
         <Link href="/quienesSomos">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classQuienesSomos}`}>Acerca de DZ</a>
-        </Link>         
+          <span className={`px-3 hover:bg-secundary hover:text-yellow py-9 ${classQuienesSomos}`}>Acerca de DZ</span>
+        </Link>
         <Link href="/contacto">
-          <a className={`px-3 hover:bg-secundary hover:text-yellow py-6 ${classContacto}`}>Contacto</a>
-        </Link>       
+          <span className={`px-3 hover:bg-secundary hover:text-yellow py-9 ${classContacto}`}>Contacto</span>
+        </Link>
 
       </div>
-      
 
-     
+
+
     </div>
   );
 };

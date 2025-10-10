@@ -88,7 +88,7 @@ const Layout = ({ ID, MainTitle, Footer, children }) => (
         padding-top: 16px;
       }
 
-      a {
+      span {
         padding: 8px;
         text-decoration: none;
         font-weight: bold;

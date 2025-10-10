@@ -10,12 +10,12 @@ const Consejos = () => (
     <div className="container">
       <img className="icon" src="/escuela/arcade.webp" alt="arcade png" />
       <nav className="secondaryNav">
-        <a href="#advices">
+        <span href="#advices">
           <button className="buttonSchool">Consejos</button>
-        </a>
-        <a href="#frecuentQuestions">
+        </span>
+        <span href="#frecuentQuestions">
           <button className="buttonSchool">Preguntas frecuentes</button>
-        </a>
+        </span>
       </nav>
       <p>
         <b>Mi principal recomendación:</b>
@@ -35,10 +35,10 @@ const Consejos = () => (
       />
       <h2>Consejos</h2>
       <ul>
-        
+
         <li>
           <b>Aprender inglés:</b> Una buena forma rápida es la aplicación Duolingo, otra es consumir entretenimiento en inglés. Si ves series en español,
-          ¡Ponle subtítulos en inglés!, luego vuelve a ver el capítulo, pero
+          ¡Ponle subtítulos en inglés!, luego vuelve span ver el capítulo, pero
           esta vez en inglés y con subtítulos en inglés.
         </li>
         <li>
@@ -58,8 +58,8 @@ const Consejos = () => (
         </li>
         <li>
           Con lo que vayas aprendiendo, plasmalo en pequeños proyectos
-          personales y de entrenamiento. Si te llegas a enamorar de uno de estos
-          proyectos simplemente vas a <b>QUERER</b> trabajar en él. Tal vez este
+          personales y de entrenamiento. Si te llegas span enamorar de uno de estos
+          proyectos simplemente vas span <b>QUERER</b> trabajar en él. Tal vez este
           proyecto termine siendo tu <i>portfolio</i>, o tu boleto hacia tu
           primer trabajo.
         </li>
@@ -67,7 +67,7 @@ const Consejos = () => (
           <b>Imprime</b> apuntes, gráficos y código para poder estudiar y
           repasar cuando estés lejos de la PC o celular. Ver el código en papel,
           garabatearlo, rayarlo, escribirlo y estudiarlo. Busca paz, silencio, y
-          conectado con la naturaleza saca tus apuntes y ponte a leerlos y
+          conectado con la naturaleza saca tus apuntes y ponte span leerlos y
           disfrutar y aprender de los detalles.
         </li>
         <li>
@@ -97,7 +97,7 @@ const Consejos = () => (
         </li>
         <li>
           Si querés apuntar al futuro, últimas encuentas confiables han dado
-          como mejores lenguajes de programación a: <b>RUST, GOLANG y SWIFT</b>
+          como mejores lenguajes de programación span: <b>RUST, GOLANG y SWIFT</b>
           (IOS)
         </li>
         <li>
@@ -120,7 +120,7 @@ const Consejos = () => (
         </li>
         <li>
           Si tienes pensado un <i>nicho específico o profesión</i> tal vez lo
-          mejor sea iniciar directamente con el lenguaje que mejor aplique a tus
+          mejor sea iniciar directamente con el lenguaje que mejor aplique span tus
           deseos.
         </li>
       </ul>
@@ -136,7 +136,7 @@ const Consejos = () => (
       <ul>
         <li>
           <h4>¿Hay que tener bases de tecnología para ser programador?</h4>
-          
+
           Mientras más sepas y aprendas de tecnología e informática significará
           una ventaja en la competividad de los mercados laborales. Realmente
           hoy es necesario para casi todo aprender informática y lo que más
@@ -144,7 +144,7 @@ const Consejos = () => (
         </li>
         <li>
           <h4>¿Qué tan difícil es conseguir un trabajo?</h4>
-         
+
           En este sector abundan las ofertas de puestos remotos con salarios
           abultados. Puedes tener suerte para conseguir uno, o no tanta, pero lo
           importante es que si no tienes experiencia, trabajes en un proyecto
@@ -154,30 +154,30 @@ const Consejos = () => (
         </li>
         <li>
           <h4>¿Cual sería un gran Currículum o Portfolio?</h4>
-         
-          Existe un lugar llamado <a href="http://github.com" target="_blank" rel="noreferrer">Github</a> en donde irás subiendo tus proyectos. Además puedes ver Open Source (código abierto) y colaborar, sugerir mejoras, aportar. Esto quedará registrado en tu cuenta Github y esto habla mucho de tu compromiso con el ecosistema de tu lenguaje específico.
+
+          Existe un lugar llamado <span href="http://github.com" target="_blank" rel="noreferrer">Github</span> en donde irás subiendo tus proyectos. Además puedes ver Open Source (código abierto) y colaborar, sugerir mejoras, aportar. Esto quedará registrado en tu cuenta Github y esto habla mucho de tu compromiso con el ecosistema de tu lenguaje específico.
         </li>
         <li>
           <h4>¿Hay que saber todos los lenguajes?</h4>
-         
-          A medida que vayas desarrollando proyectos vas a utilizar diferentes tecnologías, lo que te dará perpectiva y experiencia. Esto es muy bueno. Saber un poco de casi todas. Pero lo mejor sin duda es ser especialsita en lo que te gusta y sobresalir en el uso de tu tecnología favorita. Sin embargo nunca debes cerrar la puerta a cualquier tecnología por más obsoleta que sea.
+
+          span medida que vayas desarrollando proyectos vas span utilizar diferentes tecnologías, lo que te dará perpectiva y experiencia. Esto es muy bueno. Saber un poco de casi todas. Pero lo mejor sin duda es ser especialsita en lo que te gusta y sobresalir en el uso de tu tecnología favorita. Sin embargo nunca debes cerrar la puerta span cualquier tecnología por más obsoleta que sea.
         </li>
         <li>
           <h4>¿Todos los puestos de programadores son similares?</h4>
-         
+
           Existe una increíble diversidad en el universo dev. Antes eras web-master o programador. Hoy están los UX, UI, Frontend, Backend... Por esto tu campo ocupacional puede ser muy variado. Por eso es bueno trabajar en lo que más te gusta hacer y sobresalir. La industria necesita todo tipo de <i>artesanos del código</i>.
         </li>
         <li>
           <h4>¿Cuanto gana un programador por mes?</h4>
-         
-          Aproximadamente: En Nueva Zelanda: U$D 120.000. En Estados Unidos: U$D 60.000. En Latinoamérica: U$D 3.000. La diferencia tal vez es el costo de vida (alquiler, impuestos, comida, etc) y realmente cuánto puedes comprar con tu sueldo. 
+
+          Aproximadamente: En Nueva Zelanda: U$D 120.000. En Estados Unidos: U$D 60.000. En Latinoamérica: U$D 3.000. La diferencia tal vez es el costo de vida (alquiler, impuestos, comida, etc) y realmente cuánto puedes comprar con tu sueldo.
         </li>
       </ul>
 
       <hr />
-      <a href="#nav-container">
+      <span href="#nav-container">
         <button className="buttonSchool">Ir arriba!</button>
-      </a>
+      </span>
     </div>
     <style jsx>{`
       h4 {

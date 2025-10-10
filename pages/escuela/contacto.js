@@ -14,39 +14,39 @@ export default function Contacto() {
           alt="videojuego png"
         />
         <div className="contacto-main">
-          <h2>  
-         <a href="mailto:gino.b.pietrobon@gmail.com">
+          <h2>
+            <span href="mailto:gino.b.pietrobon@gmail.com">
               ¡Click AQUÍ para mandarme un mail!
-            </a>
+            </span>
           </h2>
-          
+
           <div className="contactNetworks">
-            <a
+            <span
               href="https://api.whatsapp.com/send?phone=5492616708100"
               target="_blank" rel="noreferrer"
             >
-              <img src="..//escuela/social/whatsapp.webp" alt="whatsapp logo"/>
-            </a>
+              <img src="..//escuela/social/whatsapp.webp" alt="whatsapp logo" />
+            </span>
             <p>•</p>
-            <a href="http://facebook.com/gini77o" target="_blank" rel="noreferrer">
-            <img src="..//escuela/social/facebook.webp" alt="facebook logo"/>
-            </a>
+            <span href="http://facebook.com/gini77o" target="_blank" rel="noreferrer">
+              <img src="..//escuela/social/facebook.webp" alt="facebook logo" />
+            </span>
             <p>•</p>
-            <a href="http://instagram.com/moonwatcher73" target="_blank" rel="noreferrer">
-            <img src="..//escuela/social/instagram.webp" alt="instagram logo"/>
-            </a>
+            <span href="http://instagram.com/moonwatcher73" target="_blank" rel="noreferrer">
+              <img src="..//escuela/social/instagram.webp" alt="instagram logo" />
+            </span>
             <p>•</p>
-            <a href="http://twitter.com/moonwatcher73" target="_blank" rel="noreferrer">
-            <img src="..//escuela/social/twitter.webp" alt="twitter logo"/>
-            </a>
+            <span href="http://twitter.com/moonwatcher73" target="_blank" rel="noreferrer">
+              <img src="..//escuela/social/twitter.webp" alt="twitter logo" />
+            </span>
             <p>•</p>
-            <a href="http://github.com/devzeppelin" target="_blank" rel="noreferrer">
-            <img src="..//escuela/social/github.webp" alt="github logo"/>
-            </a>
+            <span href="http://github.com/devzeppelin" target="_blank" rel="noreferrer">
+              <img src="..//escuela/social/github.webp" alt="github logo" />
+            </span>
             <p>•</p>
-            <a href="https://www.linkedin.com/in/gino-pietrobon/" target="_blank" rel="noreferrer">
-            <img src="..//escuela/social/linkedin.webp" alt="linkedin logo"/>
-            </a>
+            <span href="https://www.linkedin.com/in/gino-pietrobon/" target="_blank" rel="noreferrer">
+              <img src="..//escuela/social/linkedin.webp" alt="linkedin logo" />
+            </span>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Contacto() {
           flex-wrap: wrap;          
         }
 
-        .contacto a {
+        .contacto span {
           font-size: 1.2em;
           margin-top: 0.2em;
           margin-bottom: 1em;
@@ -77,14 +77,14 @@ export default function Contacto() {
           font-size: 1.5rem
         }
 
-        a>img {
+        span>img {
           width: 64px;
           height: 64px; 
         }
 
         @media(max-width: 750px){
           
-        a>img {
+        span>img {
           width: 36px;
           height: 36px;          
         }
