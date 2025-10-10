@@ -66,7 +66,7 @@ export default function Home() {
 
       <section id="sponsors">
         <h3 className="text-3xl m-8  mt-24 text-center font-extrabold text-black pb-12">
-          ROCK o' Mendados!
+          ROCK o Mendados!
         </h3>
         <div className="grid md:grid-cols-3 mx-16">
 
