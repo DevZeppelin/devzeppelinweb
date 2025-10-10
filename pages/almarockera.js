@@ -47,7 +47,7 @@ const BANDS = [
   },
   {
     name: "El Andamio",
-    recomienda: "almarockera",
+    recomienda: "adriel",
     categoria: "muy under",
 
     local: "Mendoza",
@@ -98,7 +98,7 @@ const BANDS = [
 
     local: "Buenos Aires",
     text:
-      "La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, a inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería.",
+      "La Chancha Muda se formó en ''Parque Chacabuco' a inicios del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice el batero.",
     src: "/alma/lachancha.png",
     url: "https://www.youtube.com/watch?v=QyBMBotKKSw&list=PLjdp01j6sK4gxLMYsaYxuAltWaaZ1sr7d",
   },
@@ -117,20 +117,82 @@ const BANDS = [
 ];
 
 export default function Home() {
-  // 2) Estado de filtro. "Todos" (string vacío) es el valor por defecto
-  const [selectedLocal, setSelectedLocal] = useState("");
+  // ====== Helpers ======
+  const norm = (v) => (v ?? "").toString().trim();
+  const eqi = (a, b) => norm(a).toLowerCase() === norm(b).toLowerCase();
 
-  // 3) Localidades únicas (orden alfabético) – se calculan una sola vez
+  // ====== Estados de filtros ======
+  const [selectedLocal, setSelectedLocal] = useState("");
+  const [selectedCategoria, setSelectedCategoria] = useState("");
+  const [selectedRecomienda, setSelectedRecomienda] = useState("");
+
+  // ====== Opciones únicas ======
   const locals = useMemo(() => {
-    const set = new Set(BANDS.map((b) => b.local.trim()));
-    return ["", ...Array.from(set).sort((a, b) => a.localeCompare(b))]; // "" = Todos
+    const set = new Set(BANDS.map((b) => norm(b.local)).filter(Boolean));
+    return ["", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
   }, []);
 
-  // 4) Lista filtrada en base al estado
+  const categorias = useMemo(() => {
+    const set = new Set(BANDS.map((b) => norm(b.categoria)).filter(Boolean));
+    return ["", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+  }, []);
+
+  // Recomendaciones: usamos el valor literal del campo "recomienda" (p.ej. "Sí", "No", "true", "Destacada", etc.)
+  const recomendaciones = useMemo(() => {
+    const set = new Set(BANDS.map((b) => norm(b.recomienda)).filter(Boolean));
+    return ["", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+  }, []);
+
+  // ====== Filtrado ======
   const filtered = useMemo(() => {
-    if (!selectedLocal) return BANDS;
-    return BANDS.filter((b) => b.local.toLowerCase() === selectedLocal.toLowerCase());
-  }, [selectedLocal]);
+    return BANDS.filter((b) => {
+      const matchLocal =
+        !selectedLocal || eqi(b.local, selectedLocal);
+
+      const matchCategoria =
+        !selectedCategoria || eqi(b.categoria, selectedCategoria);
+
+      const matchRecomienda =
+        !selectedRecomienda || eqi(b.recomienda, selectedRecomienda);
+
+      return matchLocal && matchCategoria && matchRecomienda;
+    });
+  }, [selectedLocal, selectedCategoria, selectedRecomienda]);
+
+  // ====== UI ======
+  const Chip = ({ active, onClick, children }) => (
+    <button
+      onClick={onClick}
+      className={`px-3 py-1 rounded-full border transition-all text-sm ${active
+        ? "bg-white text-black border-white"
+        : "bg-transparent text-white border-white/30 hover:border-white"
+        }`}
+      aria-pressed={active}
+    >
+      {children}
+    </button>
+  );
+
+  const resetFilters = () => {
+    setSelectedLocal("");
+    setSelectedCategoria("");
+    setSelectedRecomienda("");
+  };
+
+  const NavBar = () => (
+    <nav className="sticky top-0 z-50 backdrop-blur bg-black/70 border-b border-white/10">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3">
+          <span className="hidden md:block text-white font-extrabold tracking-wide">El Rock, vos y yo.</span>
+        </Link>
+        <div className="flex items-center gap-6 text-orange-500 uppercase text-sm font-bold">
+          <Link href="#radio" className="hover:text-white">Radio</Link>
+          <Link href="#rockomendadas" className="hover:text-white">Rockomendaciones</Link>
+          <Link href="#renzo" className="hover:text-white">RenzoFrases</Link>
+        </div>
+      </div>
+    </nav>
+  );
 
   return (
     <div>
@@ -143,34 +205,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <span>
-          <Networks />
-          <Link href="/" passHref>
-            <div className="text-center font-bold orange cursor-pointer">
-              Volver a DevZeppelin.com.ar
-            </div>
-          </Link>
-        </span>
+      <NavBar />
+
+      <main className="max-w-6xl mx-auto">
         <div className="flex flex-col text-center m-4 mt-12">
           <Image
             src="/alma/logo.png"
             width={400}
             height={400}
-            className="mx-auto" />
+            className="mx-auto"
+            alt="Logo Alma Rockera"
+          />
         </div>
 
-        <div className="p-12 text-center mt-32 text-white bg-black to-dark">
+        <div className="p-12 text-center mt-16 text-white bg-black rounded-2xl mx-4">
           <h3 className="text-2xl font-bold">¿Estás listo para andar el sendero del rock?</h3>
-        </div>
-        <div className="flex justify-center mx-16 space-x-4 font-bold text-orange-600 uppercase text-xl">
-          <Link href="#radio">Radio</Link>
-          <Link href="#rockomendadas">Rockomendaciones</Link>
-          <Link href="#renzo">RenzoFrases</Link>
         </div>
       </main>
 
-      <section id="radio" className="pb-16">
+      <section id="radio" className="pb-16 max-w-6xl mx-auto">
         <h3 className="text-3xl m-8 mt-24 text-center font-extrabold text-black">Radio</h3>
         <div className="mx-2 md:mx-16">
           <h2 className="text-center text-2xl">Undinamo Rock</h2>
@@ -182,59 +235,128 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="rockomendadas">
+      <section id="rockomendadas" className="max-w-6xl mx-auto">
         <h3 className="text-3xl m-8 mt-24 text-center font-extrabold text-black pb-6">
           Rockomendaciones
         </h3>
 
-        {/* 5) Barra de filtros */}
-        <div className="mx-6 md:mx-16 mb-8">
-          <div className="bg-black text-white rounded-2xl p-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div className="font-bold text-lg">Filtrar por local</div>
-            <div className="flex items-center gap-3 flex-wrap">
-              {/* Select simple */}
-              <label className="text-sm opacity-80" htmlFor="local-select">
-                Localidad:
-              </label>
-              <select
-                id="local-select"
-                className="text-black rounded-xl px-3 py-2"
-                value={selectedLocal}
-                onChange={(e) => setSelectedLocal(e.target.value)}
-              >
-                {locals.map((loc) => (
-                  <option key={loc || "todos"} value={loc}>
-                    {loc || "Todos"}
-                  </option>
-                ))}
-              </select>
+        {/* Barra de filtros */}
+        <div className="mx-4 md:mx-0 mb-8">
+          <div className="bg-black text-white rounded-2xl p-4 flex flex-col gap-6">
+            {/* FILTRO LOCAL */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div className="font-bold text-lg">Filtrar por local</div>
+              <div className="flex items-center gap-3 flex-wrap">
+                <label className="text-sm opacity-80" htmlFor="local-select">Localidad:</label>
+                <select
+                  id="local-select"
+                  className="text-black rounded-xl px-3 py-2"
+                  value={selectedLocal}
+                  onChange={(e) => setSelectedLocal(e.target.value)}
+                >
+                  {locals.map((loc) => (
+                    <option key={`loc-${loc || "todos"}`} value={loc}>
+                      {loc || "Todos"}
+                    </option>
+                  ))}
+                </select>
 
-
-              {/* Chips de acceso rápido */}
-              <div className="flex gap-2 flex-wrap">
-                {locals.map((loc) => (
-                  <button
-                    key={`chip-${loc || "todos"}`}
-                    onClick={() => setSelectedLocal(loc)}
-                    className={`px-3 py-1 rounded-full border transition-all text-sm ${selectedLocal === loc
-                      ? "bg-white text-black border-white"
-                      : "bg-transparent text-white border-white/30 hover:border-white"
-                      }`}
-                    aria-pressed={selectedLocal === loc}
-                  >
-                    {loc || "Todos"}
-                  </button>
-                ))}
+                <div className="flex gap-2 flex-wrap">
+                  {locals.map((loc) => (
+                    <Chip
+                      key={`chip-local-${loc || "todos"}`}
+                      active={selectedLocal === loc}
+                      onClick={() => setSelectedLocal(loc)}
+                    >
+                      {loc || "Todos"}
+                    </Chip>
+                  ))}
+                </div>
               </div>
+            </div>
+
+            {/* FILTRO CATEGORÍA */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div className="font-bold text-lg">Filtrar por categoría</div>
+              <div className="flex items-center gap-3 flex-wrap">
+                <label className="text-sm opacity-80" htmlFor="categoria-select">Categoría:</label>
+                <select
+                  id="categoria-select"
+                  className="text-black rounded-xl px-3 py-2"
+                  value={selectedCategoria}
+                  onChange={(e) => setSelectedCategoria(e.target.value)}
+                >
+                  {categorias.map((c) => (
+                    <option key={`cat-${c || "todas"}`} value={c}>
+                      {c || "Todas"}
+                    </option>
+                  ))}
+                </select>
+
+                <div className="flex gap-2 flex-wrap">
+                  {categorias.map((c) => (
+                    <Chip
+                      key={`chip-cat-${c || "todas"}`}
+                      active={selectedCategoria === c}
+                      onClick={() => setSelectedCategoria(c)}
+                    >
+                      {c || "Todas"}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* FILTRO RECOMIENDA */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div className="font-bold text-lg">Filtrar por recomendado</div>
+              <div className="flex items-center gap-3 flex-wrap">
+                <label className="text-sm opacity-80" htmlFor="recomienda-select">Recomienda:</label>
+                <select
+                  id="recomienda-select"
+                  className="text-black rounded-xl px-3 py-2"
+                  value={selectedRecomienda}
+                  onChange={(e) => setSelectedRecomienda(e.target.value)}
+                >
+                  {recomendaciones.map((r) => (
+                    <option key={`rec-${r || "todos"}`} value={r}>
+                      {r || "Todos"}
+                    </option>
+                  ))}
+                </select>
+
+                <div className="flex gap-2 flex-wrap">
+                  {recomendaciones.map((r) => (
+                    <Chip
+                      key={`chip-rec-${r || "todos"}`}
+                      active={selectedRecomienda === r}
+                      onClick={() => setSelectedRecomienda(r)}
+                    >
+                      {r || "Todos"}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Reset */}
+            <div className="flex justify-end">
+              <button
+                onClick={resetFilters}
+                className="px-4 py-2 rounded-xl border border-white/30 hover:border-white transition"
+                title="Borrar filtros"
+              >
+                Limpiar filtros
+              </button>
             </div>
           </div>
         </div>
 
-        {/* 6) Grilla filtrada */}
-        <div className="grid md:grid-cols-3 mx-6 md:mx-16 gap-6">
+        {/* Grilla */}
+        <div className="grid md:grid-cols-3 mx-4 md:mx-0 gap-6">
           {filtered.map((band) => (
             <Card
-              key={`${band.name}-${band.local}`}
+              key={`${norm(band.name)}-${norm(band.local)}-${norm(band.categoria)}-${norm(band.recomienda)}`}
               name={band.name}
               local={band.local}
               text={band.text}
@@ -242,27 +364,23 @@ export default function Home() {
               url={band.url}
               recomienda={band.recomienda}
               categoria={band.categoria}
-
-
             />
           ))}
 
           {filtered.length === 0 && (
             <div className="col-span-full text-center bg-white rounded-2xl p-8">
-              <p className="text-black">
-                No hay resultados para <span className="font-bold">{selectedLocal}</span>.
-              </p>
+              <p className="text-black">No hay resultados con los filtros seleccionados.</p>
             </div>
           )}
         </div>
       </section>
 
-      <section id="renzo">
+      <section id="renzo" className="max-w-6xl mx-auto">
         <h3 className="text-3xl m-8 mt-16 text-center font-extrabold text-black">Renzo Frases</h3>
         <RenzoFrase />
       </section>
 
-      <div className="m-12 text-center mt-16 bg-black p-4 rounded-3xl">
+      <div className="m-12 text-center mt-16 bg-black p-4 rounded-3xl max-w-6xl mx-auto">
         <h3 className="text-2xl font-bold ">¡Contactanos! 🤘🤘🤘</h3>
         <Networks />
       </div>
@@ -291,7 +409,6 @@ export default function Home() {
         h3 {
           color: #ff4301;
         }
-
         body {
           padding: 0;
           margin: 0;
@@ -299,12 +416,10 @@ export default function Home() {
             Roboto, Oxygen, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
-
         a {
           color: inherit;
           text-decoration: none;
         }
-
         * {
           box-sizing: border-box;
         }
