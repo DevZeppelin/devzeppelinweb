@@ -226,7 +226,7 @@ const PrimerosPasosDev = () => (
       </p>
       <p>
         La idea de codeObrero es justamente ser un ancla, una puesta span tierra
-        para siempre poder volver span ubicarnos en el universo de la programación
+        para siempre poder volver a ubicarnos en el universo de la programación
         sin perder el norte.
       </p>
 

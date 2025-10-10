@@ -42,7 +42,7 @@ export default function IconLinksLayout({ state }) {
                 <GiZeppelin className="text-3xl cursor-pointer " />
               </abbr>
               <span className="ml-1 my-auto cursor-pointer font-bold">
-                Volver span DevZeppelin.com.ar{" "}
+                Volver a DevZeppelin.com.ar{" "}
               </span>
             </div>
           </Link>

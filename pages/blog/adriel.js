@@ -22,7 +22,7 @@ export default function Escritos({ blogs }) {
           <div className="flex justify-center">
             <button className="bg-primaryBlog text-white py-3 px-10 my-4 text-lg uppercase rounded-md">
               {" "}
-              Volver span Escritos 👈
+              Volver a Escritos 👈
             </button>
           </div>
         </Link>

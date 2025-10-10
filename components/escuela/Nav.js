@@ -46,7 +46,7 @@ export default function Nav() {
         </Link>
         <span>•</span>
         <Link href="/">
-          <span>Volver span DevZeppelin.com.ar</span>
+          <span>Volver a DevZeppelin.com.ar</span>
         </Link>
       </div>
 
@@ -87,7 +87,7 @@ export default function Nav() {
             <span>🐵 Blog</span>
           </Link>
           <Link href="/">
-            <span>🦅 Volver span DevZeppelin.com.ar</span>
+            <span>🦅 Volver a DevZeppelin.com.ar</span>
           </Link>
         </div>
       </div>

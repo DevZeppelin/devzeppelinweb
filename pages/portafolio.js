@@ -26,7 +26,7 @@ export default function Home() {
           <Link href="/" passHref>
             <div className="text-center font-bold text-primaryBlog cursor-pointer">
               {" "}
-              Volver span DevZeppelin.com.ar
+              Volver a DevZeppelin.com.ar
             </div>
           </Link>
         </span>
