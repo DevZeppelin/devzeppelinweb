@@ -219,7 +219,7 @@ export default function Layout({ children }) {
 
           <span href="mailto:gino.b.pietrobon@gmail.com">
             <button
-              aria-label="send me span mail"
+              aria-label="send me a mail"
               target="_blank"
               rel="noopener"
               alt="gmail-logo"

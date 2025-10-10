@@ -8,6 +8,8 @@ import Card from "../components/alma/Card";
 import Footer from "../components/Footer";
 
 // 1) Llevar los datos a una estructura que podamos filtrar fácilmente
+//tallando, maldita suerte, heroicos sobrevivientes
+//agregar categoria, como super under, under, conocidos, estrellas, algo asi
 const BANDS = [
   {
     name: "El Andamio",
@@ -29,7 +31,7 @@ const BANDS = [
     name: "Chantas",
     local: "Mendoza",
     text:
-      "Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando span sus seguidores.",
+      "Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando a sus seguidores.",
     src: "/alma/chantas.png",
     url: "https://youtu.be/_DuSYXKUuXk?si=yVcM75VVsQvqXkZQ",
   },
@@ -45,7 +47,7 @@ const BANDS = [
     name: "La chancha muda",
     local: "Buenos Aires",
     text:
-      "La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, span inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería.",
+      "La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, a inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería.",
     src: "/alma/lachancha.png",
     url: "https://www.youtube.com/watch?v=QyBMBotKKSw&list=PLjdp01j6sK4gxLMYsaYxuAltWaaZ1sr7d",
   },
@@ -238,7 +240,7 @@ export default function Home() {
             sans-serif;
         }
 
-        span {
+        a {
           color: inherit;
           text-decoration: none;
         }

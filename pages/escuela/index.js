@@ -43,7 +43,7 @@ export default function Index() {
         />
 
         <p>
-          Cuando quise comenzar span estudiar <strong>programación</strong> me
+          Cuando quise comenzar a estudiar <strong>programación</strong> me
           sentí abrumado y desconsertado por tanta información. Me estanqué y
           sentía que necesitaba <i>algo o alguien</i> que me ayudara y
           acompañara en mis primeros pasos.
@@ -68,7 +68,7 @@ export default function Index() {
         <p>
           Quiero ser ese amigo que te dió un valioso consejo y unas palabras de
           guía. Si realmente esto es lo que querés y te gustaría ser
-          programador, quiero generar esa <b>chispa</b> que dé arranque span ese
+          programador, quiero generar esa <b>chispa</b> que dé arranque a ese
           tren hacia un futuro profesional y competitivo.
         </p>
         <p>
@@ -78,7 +78,7 @@ export default function Index() {
           Nunca dejar de aprender, no estancarse y conformarse con el
           conocimiento obtenido. En el mundo tecnológico todo cambia muy rápido
           y hay que estar preparados para surfear las olas del cambio. El
-          objetivo es adquirir bases sólidas que nos ayudarán span tomar buenas
+          objetivo es adquirir bases sólidas que nos ayudarán a tomar buenas
           decisiones.
         </p>
 

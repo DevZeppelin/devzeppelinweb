@@ -40,7 +40,7 @@ const Apps = () => {
                   />
                   <SectionWorkComponent
                     src="/apps/turist.png"
-                    description="App Ayuda span turistas"
+                    description="App Ayuda a turistas"
                     web="devzeppelinweb.vercel.app/tourist"
                   />
                   <SectionWorkComponent

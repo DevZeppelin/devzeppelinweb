@@ -37,7 +37,7 @@ const Servicios = () => {
                     Variedad de servicios
                   </h1>
                   <p className="lg:w-1/2 w-full text-lg px-2 md:px-32  text-lightGray leading-relaxed text-opacity-80">
-                    Estamos actualizados en el mundo de la informática. En Dev Zeppelin somos estudiantes permanentes lo que nos permite estar al tanto de todo lo nuevo y animarnos span aprender nuevas tecnologías para mejorar la calidad de nuestro servicio. Nuestro objetivo es que tu página web sea la más rápida que se pueda encontrar en el mercado.
+                    Estamos actualizados en el mundo de la informática. En Dev Zeppelin somos estudiantes permanentes lo que nos permite estar al tanto de todo lo nuevo y animarnos a aprender nuevas tecnologías para mejorar la calidad de nuestro servicio. Nuestro objetivo es que tu página web sea la más rápida que se pueda encontrar en el mercado.
                   </p>
                 </div>
 

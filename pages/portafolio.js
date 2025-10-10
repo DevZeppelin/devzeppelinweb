@@ -41,7 +41,7 @@ export default function Home() {
               rel="noreferrer"
               target="_blank"
             >
-              <Button text="Link span mi Github" />
+              <Button text="Link a mi Github" />
             </span>
             <span href="#works">
               <Button text="Mis trabajos realizados" />
@@ -53,7 +53,7 @@ export default function Home() {
 
         <div className="p-12 text-center mt-32  text-white bg-gradient-to-tr from-green to-dark">
           <h3 className="text-2xl font-bold">
-            ¡Te invito span conocer mis trabajos y proyectos realizados!
+            ¡Te invito a conocer mis trabajos y proyectos realizados!
           </h3>
           <span href="#works">
             <p className="text-3xl mt-6">🔽</p>
@@ -166,7 +166,7 @@ export default function Home() {
           font-family: "Staatliches", cursive;
         }
 
-        span {
+        a {
           color: inherit;
           text-decoration: none;
         }

@@ -13,13 +13,13 @@ const SectionWelcome = () => {
             </h1>
             <div className="h-1 w-64 bg-yellow  mx-auto"></div>
             <p>
-              Te invito span repensar los objetivos de tu empresa para encontrar la estrategia correcta para hacer frente al nuevo mundo empresarial.
+              Te invito a repensar los objetivos de tu empresa para encontrar la estrategia correcta para hacer frente al nuevo mundo empresarial.
             </p>
             <p>
-              Sumá presencia en <i>internet</i> con el asesoramiento correcto. Mostremos tu mejor imágen con toda la tecnología span favor.
+              Sumá presencia en <i>internet</i> con el asesoramiento correcto. Mostremos tu mejor imágen con toda la tecnología a favor.
             </p>
             <p className="hidden md:block">
-              Hagamos llegar span tu negocio span todos esos rincones usando la estrategia indicada.
+              Hagamos llegar a tu negocio a todos esos rincones usando la estrategia indicada.
             </p>
 
             <Link href="/servicios">

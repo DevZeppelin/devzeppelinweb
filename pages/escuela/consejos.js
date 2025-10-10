@@ -38,7 +38,7 @@ const Consejos = () => (
 
         <li>
           <b>Aprender inglés:</b> Una buena forma rápida es la aplicación Duolingo, otra es consumir entretenimiento en inglés. Si ves series en español,
-          ¡Ponle subtítulos en inglés!, luego vuelve span ver el capítulo, pero
+          ¡Ponle subtítulos en inglés!, luego vuelve a ver el capítulo, pero
           esta vez en inglés y con subtítulos en inglés.
         </li>
         <li>
@@ -58,8 +58,8 @@ const Consejos = () => (
         </li>
         <li>
           Con lo que vayas aprendiendo, plasmalo en pequeños proyectos
-          personales y de entrenamiento. Si te llegas span enamorar de uno de estos
-          proyectos simplemente vas span <b>QUERER</b> trabajar en él. Tal vez este
+          personales y de entrenamiento. Si te llegas a enamorar de uno de estos
+          proyectos simplemente vas a <b>QUERER</b> trabajar en él. Tal vez este
           proyecto termine siendo tu <i>portfolio</i>, o tu boleto hacia tu
           primer trabajo.
         </li>
@@ -67,7 +67,7 @@ const Consejos = () => (
           <b>Imprime</b> apuntes, gráficos y código para poder estudiar y
           repasar cuando estés lejos de la PC o celular. Ver el código en papel,
           garabatearlo, rayarlo, escribirlo y estudiarlo. Busca paz, silencio, y
-          conectado con la naturaleza saca tus apuntes y ponte span leerlos y
+          conectado con la naturaleza saca tus apuntes y ponte a leerlos y
           disfrutar y aprender de los detalles.
         </li>
         <li>
@@ -120,7 +120,7 @@ const Consejos = () => (
         </li>
         <li>
           Si tienes pensado un <i>nicho específico o profesión</i> tal vez lo
-          mejor sea iniciar directamente con el lenguaje que mejor aplique span tus
+          mejor sea iniciar directamente con el lenguaje que mejor aplique a tus
           deseos.
         </li>
       </ul>
@@ -160,7 +160,7 @@ const Consejos = () => (
         <li>
           <h4>¿Hay que saber todos los lenguajes?</h4>
 
-          span medida que vayas desarrollando proyectos vas span utilizar diferentes tecnologías, lo que te dará perpectiva y experiencia. Esto es muy bueno. Saber un poco de casi todas. Pero lo mejor sin duda es ser especialsita en lo que te gusta y sobresalir en el uso de tu tecnología favorita. Sin embargo nunca debes cerrar la puerta span cualquier tecnología por más obsoleta que sea.
+          a medida que vayas desarrollando proyectos vas a utilizar diferentes tecnologías, lo que te dará perpectiva y experiencia. Esto es muy bueno. Saber un poco de casi todas. Pero lo mejor sin duda es ser especialsita en lo que te gusta y sobresalir en el uso de tu tecnología favorita. Sin embargo nunca debes cerrar la puerta a cualquier tecnología por más obsoleta que sea.
         </li>
         <li>
           <h4>¿Todos los puestos de programadores son similares?</h4>

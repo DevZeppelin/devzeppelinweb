@@ -12,7 +12,7 @@ const SectionGridImages = () => {
           <HoverIconComponent file={<DiCode />} text="Conquistar el nuevo mundo con la tecnología como aliada" />
         </div>
         <div className="relative">
-          <HoverIconComponent file={<DiAndroid />} text="Toda la fuerza de la innovación y la IA span tu favor" />
+          <HoverIconComponent file={<DiAndroid />} text="Toda la fuerza de la innovación y la IA a tu favor" />
         </div>
       </div>
     </section>

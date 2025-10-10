@@ -21,7 +21,7 @@ const Contacto = () => {
           </h1>
         </div>
         <div className="text-center pt-6 text-lightGray">
-          <h2 className="text-2xl pt-6 p-4">¡Animate span dar un paso hacia el futuro!</h2>
+          <h2 className="text-2xl pt-6 p-4">¡Animate a dar un paso hacia el futuro!</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2 md:p-8 ">
             <div>
               <span

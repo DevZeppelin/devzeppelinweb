@@ -3,7 +3,7 @@ const helper = {
     id: "eng",
     welcomeTitle: "Welcome Tourists from Mendoza!",
     welcomeDescription:
-      "This web is builded to help us with good information for anything you need. Mendoza is span fantastic place, full of adventures and heavenly places. Let me help you find the best. And thanks!",
+      "This web is builded to help us with good information for anything you need. Mendoza is a fantastic place, full of adventures and heavenly places. Let me help you find the best. And thanks!",
     numbersTitle: "Useful Numbers!",
     numbers: [
       {
@@ -183,7 +183,7 @@ const helper = {
     id: "por",
     welcomeTitle: "Bem-vindos turistas de Mendoza!",
     welcomeDescription:
-      "Esta web foi construída para nos ajudar com boas informações para qualquer coisa que você precisar. Mendoza é um lugar fantástico, cheio de aventuras e lugares paradisíacos. Deixe-me ajudá-lo span encontrar o melhor. E obrigado!",
+      "Esta web foi construída para nos ajudar com boas informações para qualquer coisa que você precisar. Mendoza é um lugar fantástico, cheio de aventuras e lugares paradisíacos. Deixe-me ajudá-lo a encontrar o melhor. E obrigado!",
     numbersTitle: "Números úteis!",
     numbers: [
       {
@@ -198,12 +198,12 @@ const helper = {
           {
             title: "Bombeiros",
             description:
-              "number span ser notificado em caso de incêndio ou incêndio fora de controle",
+              "number a ser notificado em caso de incêndio ou incêndio fora de controle",
             number: "100",
           },
           {
             title: "Polícia de Mendoza",
-            description: "number para chamar span polícia provincial",
+            description: "number para chamar a polícia provincial",
             number: "101",
           },
           {

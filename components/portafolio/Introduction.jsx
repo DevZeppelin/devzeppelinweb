@@ -14,7 +14,7 @@ const Introduction = () => {
         <p className="p-6">
           ¡Hola! Mi nombre es <strong>Gino Pietrobon</strong>, soy{" "}
           <i>Técnico Universitario en Redes y Telecomunicaciones</i>, y sueño
-          con trabajar aportando valor span un equipo tecnológico
+          con trabajar aportando valor a un equipo tecnológico
         </p>
       </div>
       <div>

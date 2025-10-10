@@ -26,7 +26,7 @@ export default function Criptomonedas() {
           </span>
         </nav>
         <p>
-          Si sos un curioso de la tecnología y la programación, te invito span leer
+          Si sos un curioso de la tecnología y la programación, te invito a leer
           esta pequeña introducción al mundo cripto.
         </p>
         <p>
@@ -34,8 +34,8 @@ export default function Criptomonedas() {
           experiencia personal en el tema.
         </p>
         <p>
-          <b>CONSEJO:</b> Si vas span invertir en el mundo de las Criptomonedas
-          debes usar dinero que estés dispuesto span perder y no dinero que
+          <b>CONSEJO:</b> Si vas a invertir en el mundo de las Criptomonedas
+          debes usar dinero que estés dispuesto a perder y no dinero que
           necesitas en el corto plazo.
         </p>
         <p>
@@ -68,17 +68,17 @@ export default function Criptomonedas() {
           moneda quedan grabadas en una “Blockchain”, que sería como una base de
           datos gigante (50 GB aproximadamente) como si fuera una hoja de Exel
           en donde se relaciona la cantidad de monedas transferidas con la
-          billetera (wallet) span la que le pertenecen. Luego de 10 años en
+          billetera (wallet) a la que le pertenecen. Luego de 10 años en
           funcionamiento, Bitcoin ha demostrado ser segurro, transparente,
           efectivo, descentralizado y anónimo.
         </p>
         <p>
           Lo revolucionario de esto es que alguien puede tranferir por ejemplo
-          U$D 10.000 de Argentina span Japón, en un muy breve tiempo, casi sin
+          U$D 10.000 de Argentina a Japón, en un muy breve tiempo, casi sin
           pagar comisión, y de forma anónima sin interferencia de ningún banco.
         </p>
         <p>
-          <b>Lo malo:</b> Muchos hackers están span la cacería de brechas de
+          <b>Lo malo:</b> Muchos hackers están a la cacería de brechas de
           seguridad, intentando todo tipo de artimañas para robar las monedas
           ajenas. Por esto es importante invertir en conocimiento y aprender
           técnicas que nos permitan cuidar nuestras monedas de la forma más
@@ -110,7 +110,7 @@ export default function Criptomonedas() {
             </button>
             <p>
               Página para ver gráficas, crear lista de seguimiento de activos
-              que nos interesan y ver cómo se comportan en el día span día.
+              que nos interesan y ver cómo se comportan en el día a día.
             </p>
           </article>
           <article>
@@ -175,14 +175,14 @@ export default function Criptomonedas() {
         <p>
           Al existir una cantidad limitada de bitcoins, esta no genera
           inflación, porque no puede existir ni un bitcoin más de los
-          establecidos en su creación. El máximo que va span existir en el mundo es
+          establecidos en su creación. El máximo que va a existir en el mundo es
           de 21 millones de monedas, lo que explica lo elevado de su precio.
         </p>
         <h3>¿Donde puedo comprar criptomonedas?</h3>
         <p>
           Existen varias palataformas como Binance, Bitso, Coinbase, y otros
           muchos más, que nos permiten comprar con dinero común tanto Bitcoin
-          como otras Altcoins y luego nos permiten tranferirlas span nuestra
+          como otras Altcoins y luego nos permiten tranferirlas a nuestra
           billetera.
         </p>
         <h3>¿Se puede comprar Bitcoin en fracciones?</h3>
@@ -198,13 +198,13 @@ export default function Criptomonedas() {
           Cripto está lleno de oportunidades y de riesgos. Por eso es muy
           importante invertir en conocimiento, cursos y capacitarse en
           informática y tecnología. Mientras más sepamos de tecnología mejor
-          dominaremos las herramientas y plataformas span utilizar.
+          dominaremos las herramientas y plataformas a utilizar.
         </p>
         <p>
           Si aprendemos lo básico de trading sabremos cuando está bajo el precio
           de una moneda (momento de comprar) y cuando está en un pico, momento
           ideal para vender. También se puede hacer holding, que es almacenar
-          una moneda en forma de ahorro apostando span su futuro.
+          una moneda en forma de ahorro apostando a su futuro.
         </p>
 
         <h3>¿Se puede vivir de esto?</h3>
@@ -217,7 +217,7 @@ export default function Criptomonedas() {
         </p>
 
         <p>
-          <b>CONSEJO:</b> Nadie puede decirte que moneda va span explotar en su
+          <b>CONSEJO:</b> Nadie puede decirte que moneda va a explotar en su
           precio, y si te lo dicen tal vez están promocionando una moneda para
           incrementar su valor. Por eso es importante que vos investigues,
           estudies las empresas y proyectos, y sea tu decisión invertir en tal y
@@ -239,13 +239,13 @@ export default function Criptomonedas() {
 
         <ul className="px-0">
           <li>
-            <b>Ethereum:</b> Este proyecto pertenece span una compañía que creó una
+            <b>Ethereum:</b> Este proyecto pertenece a una compañía que creó una
             Blockchain propia, en donde corre este proyecto y también otros
             proyectos de Altcoins corren sobre esta red. Lo más importante de
             ETH es que implementó el uso de “Contratos inteligentes” que serían
             contratos programados para ejecutar acciones de manera automática en
             caso de cumplimiento o incumplimiento del contrato. Es la segunda
-            criptomoneda más famosa y su valor asciende casi span 2000 dolares por
+            criptomoneda más famosa y su valor asciende casi a 2000 dolares por
             moneda.
           </li>
           <li>
@@ -254,9 +254,9 @@ export default function Criptomonedas() {
             proyecto y un crecimiento considerable sostenido en el tiempo.
           </li>
           <li>
-            <b>Cardano:</b> Este proyecto es una alternativa span la red de
-            Etherium, solo que span diferencia de ETH, Cardano ha demostrado haber
-            desarrollado una base más solida respecto span su propia Blockchain, lo
+            <b>Cardano:</b> Este proyecto es una alternativa a la red de
+            Etherium, solo que a diferencia de ETH, Cardano ha demostrado haber
+            desarrollado una base más solida respecto a su propia Blockchain, lo
             que promete un ascenso sostenido en el campo Cripto.
           </li>
           <li>
@@ -265,7 +265,7 @@ export default function Criptomonedas() {
             que descargando el código de bitcoin y alterando los valores es muy
             sencillo crear una criptomoneda. Increíblemente esta moneda logró
             consolidarse entre las más queridas y hoy su valor está muy alto
-            respecto span su valor inicial.
+            respecto a su valor inicial.
           </li>
         </ul>
         <hr />

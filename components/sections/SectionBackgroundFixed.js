@@ -13,10 +13,10 @@ const SectionBackgroundFixed = () => {
               El <strong>propósito</strong> es promocionar tu negocio por medio de la tecnologìa.
             </p>
             <p>
-              Te ayudo span definir la estrategia de propaganda adecuada y el uso de tecnologìas que mejoren tus procesos.
+              Te ayudo a definir la estrategia de propaganda adecuada y el uso de tecnologìas que mejoren tus procesos.
             </p>
             <p>
-              También te invito span repensar el propósito y objetivos de tu negocio, mirando hacia el futuro
+              También te invito a repensar el propósito y objetivos de tu negocio, mirando hacia el futuro
             </p>
           </div>
           <div></div>
