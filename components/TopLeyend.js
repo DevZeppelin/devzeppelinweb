@@ -63,7 +63,7 @@ const TopLeyend = ({ toggleNav }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <button aria-label="send me span mail" alt="gmail-logo">
+            <button aria-label="send me a mail" alt="gmail-logo">
               <FiMail className="hover:text-yellow" />
             </button>
           </span>

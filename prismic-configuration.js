@@ -4,7 +4,7 @@ export const apiEndpoint = "https://moonwatcher-dev.cdn.prismic.io/api/v2";
 
 export const accessToken = "";
 
-// creating span prismic client  object
+// creating a prismic client  object
 
 export const Client = (req = null) =>
   Prismic.client(apiEndpoint, createClientOptions(req, accessToken));

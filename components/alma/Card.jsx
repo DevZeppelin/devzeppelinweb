@@ -3,12 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 
-const Card = ({ name, src, alt, text, url, local }) => {
+const Card = ({ name, src, alt, text, url, local, recomienda }) => {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-b from-zinc-900 to-zinc-800 text-white shadow-lg">
       {/* Título + Local */}
       <header className="px-4 pt-5 md:px-6">
         <h2 className="text-2xl font-bold uppercase tracking-wide">{name}</h2>
+        <p className="text-xs text-slate-600">Recomendado por {recomienda}</p>
 
         {local && (
           <div className="mt-2 inline-flex items-center gap-2 rounded-full bg-zinc-700/50 px-3 py-1 text-xs text-zinc-200">

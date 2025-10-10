@@ -12,15 +12,55 @@ import Footer from "../components/Footer";
 //agregar categoria, como super under, under, conocidos, estrellas, algo asi
 const BANDS = [
   {
+    name: "Maldita Suerte",
+    recomienda: "adriel",
+    categoria: "conocidos",
+    local: "Buenos Aires",
+    text: "Banda de mataderos. Suenan como los hijos oficiales de La Renga.",
+    src: "/alma/maldita.png",
+    url: "https://www.youtube.com/watch?v=HJ8qv2gnAjI",
+  }, {
+    name: "Tallando el elefante",
+    recomienda: "javi (general)",
+    categoria: "conocidos",
+
+    local: "Buenos Aires",
+    src: "/alma/tallando.png",
+    url: "https://www.youtube.com/watch?v=A5C5-VsHZwk&list=PL2r6j3Ysf-6iz8tDPm1FXbqDl4v0U-FEf&index=12",
+  }, {
+    name: "Guillermina",
+    recomienda: "adriel",
+    categoria: "conocidos",
+
+    local: "Buenos Aires",
+    src: "/alma/guillermina.png",
+    url: "https://www.youtube.com/watch?v=jMGEwWuz0CM",
+  },
+  {
+    name: "Joistick",
+    recomienda: "genaro",
+    categoria: "under",
+
+    local: "Rosario",
+    src: "/alma/joistick.png",
+    url: "https://www.youtube.com/@elandamio7525",
+  },
+  {
     name: "El Andamio",
+    recomienda: "almarockera",
+    categoria: "muy under",
+
     local: "Mendoza",
     text: "Banda local mendocina de jovenes estudiantes manufactuando Rock",
     src: "/alma/andamio.png",
-    url: "https://www.youtube.com/@elandamio7525",
+    url: "https://www.youtube.com/watch?v=X_PqP4muRos&list=RDX_PqP4muRos&start_radio=1",
   },
 
   {
     name: "Arido",
+    recomienda: "adriel",
+    categoria: "muy under",
+
     local: "Mendoza",
     text:
       "Banda de Maetal muy potente, si uno no sabe que es mendocina diría que es una banda internacional. El cantante y líder tristemente falleció.",
@@ -29,6 +69,10 @@ const BANDS = [
   },
   {
     name: "Chantas",
+    categoria: "under",
+
+    recomienda: "gino",
+
     local: "Mendoza",
     text:
       "Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando a sus seguidores.",
@@ -37,6 +81,9 @@ const BANDS = [
   },
   {
     name: "Nagual",
+    recomienda: "gino",
+    categoria: "conocidos",
+
     local: "Buenos Aires",
     text:
       "Banda emergente de rock poderoso, buenas letras y con un público que cada vez se expande más.",
@@ -45,6 +92,10 @@ const BANDS = [
   },
   {
     name: "La chancha muda",
+    categoria: "conocidos",
+
+    recomienda: "gino",
+
     local: "Buenos Aires",
     text:
       "La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, a inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería.",
@@ -53,6 +104,10 @@ const BANDS = [
   },
   {
     name: "La Máquina del Tío Pedro",
+    recomienda: "adriel",
+    categoria: "de galpon",
+
+
     local: "Mendoza",
     text:
       "Rock de galpón. Solo una vez tocaron en un bar. Mal sonido en sus temas. Mucho cariño de su comunidad.",
@@ -110,7 +165,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center mx-16 space-x-4 font-bold text-orange-600 uppercase text-xl">
           <Link href="#radio">Radio</Link>
-          <Link href="#rockomendadas">Rock o Mendadas</Link>
+          <Link href="#rockomendadas">Rockomendaciones</Link>
           <Link href="#renzo">RenzoFrases</Link>
         </div>
       </main>
@@ -129,7 +184,7 @@ export default function Home() {
 
       <section id="rockomendadas">
         <h3 className="text-3xl m-8 mt-24 text-center font-extrabold text-black pb-6">
-          ROCK o Mendados!
+          Rockomendaciones
         </h3>
 
         {/* 5) Barra de filtros */}
@@ -153,6 +208,7 @@ export default function Home() {
                   </option>
                 ))}
               </select>
+
 
               {/* Chips de acceso rápido */}
               <div className="flex gap-2 flex-wrap">
@@ -184,6 +240,10 @@ export default function Home() {
               text={band.text}
               src={band.src}
               url={band.url}
+              recomienda={band.recomienda}
+              categoria={band.categoria}
+
+
             />
           ))}
 
