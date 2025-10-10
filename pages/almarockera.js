@@ -5,6 +5,7 @@ import RenzoFrase from "../components/alma/RenzoFrase";
 import Card from "../components/alma/Card";
 import Footer from "../components/Footer"
 
+
 export default function Home() {
   return (
     <div>
@@ -28,8 +29,9 @@ export default function Home() {
           </Link>
         </span>
         <div className="text-center m-6 mt-24">
-          <h1 className="text-4xl md:text-6xl font-extrabold pb-12">AlmaRockera 100%</h1>
-          
+          <h1 className="text-4xl md:text-6xl font-extrabold pb-12">
+            AlmaRockera 100%
+          </h1>
         </div>
 
         <div className="p-12 text-center mt-32  text-white bg-black to-dark">
@@ -39,8 +41,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center mx-16 space-x-3 font-bold orange uppercase">
           <a href="#radio">Radio</a>
-          <a href="#articulos">Artículos</a>{" "}
-          <a href="#renzo">RenzoFrases</a>
+          <a href="#articulos">Artículos</a> <a href="#renzo">RenzoFrases</a>
         </div>
       </main>
 
@@ -65,63 +66,55 @@ export default function Home() {
 
       <section id="sponsors">
         <h3 className="text-3xl m-8  mt-24 text-center font-extrabold text-black pb-12">
-          Sponsors
-          <div className="grid md:grid-cols-3 mx-16">
-            <img className="my-auto m-4 p-4" src="/alma/lmdtp.png" />
-            <img className="my-auto m-4 p-4" src="/alma/suena.png" />
-            <img className="my-auto m-4 p-4" src="/alma/andamio.png" />
-            
-            
-          </div>
+          ROCK o' Mendados!
         </h3>
+        <div className="grid md:grid-cols-3 mx-16">
 
-      </section>
+          <Card
+            name="El Andamio"
+            local="Mendoza"
+            text="Banda local mendocina de jovenes estudiantes manufactuando Rock"
+            src="/alma/andamio.png"
+            url="https://www.youtube.com/@elandamio7525"
+          />
+          <Card
+            name="Arido"
+            local="Mendoza"
+            text="Banda de Maetal muy potente, si uno no sabe que es mendocina diría que es una banda internacional. El cantante y líder tristemente falleció."
+            src="/alma/arido.png"
+            url="https://www.youtube.com/watch?v=kzoy0808YF4&list=RDkzoy0808YF4&start_radio=1"
+          />
+          <Card
+            name="Chantas"
+            local="Mendoza"
+            text="Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando a sus seguidores."
+            src="/alma/chantas.png"
+            url="https://youtu.be/_DuSYXKUuXk?si=yVcM75VVsQvqXkZQ"
+          />
+          <Card
+            name="Nagual"
+            local="Buenos Aires"
+            text="Banda emergente de rock poderoso, buenas letras y con un público que cada vez se expande más."
+            src="/alma/nagual.png"
+            url="https://youtu.be/STqO1sEvMfU?si=pJwpzrGtpe4uEVs4"
+          />
+          <Card
+            name="La chancha muda"
+            local="Buenos Aires"
+            text="La Chancha Muda se formó en ''Parque Chacabuco' , un barrio porteño en Argentina, a inicios de la década del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice Diego Chiaradía, quien lleva el ritmo de las canciones en la batería."
+            src="/alma/lachancha.png"
+            url="https://www.youtube.com/watch?v=QyBMBotKKSw&list=PLjdp01j6sK4gxLMYsaYxuAltWaaZ1sr7d"
+          />
+          <Card
+            name="La Máquina del Tío Pedro"
+            local="Mendoza"
+            text="Rock de galpón. Solo una vez tocaron en un bar. Mal sonido en sus temas. Mucho cariño de su comunidad."
+            src="/alma/lmdtp.png"
+            url="https://www.youtube.com/watch?v=LaBBheQH8hs&list=RDLaBBheQH8hs&start_radio=1&pp=ygUYbGEgbWFxdWluYSBkbGUgdGlvIHBlZHJvoAcB"
+          />
 
-      <section id="articulos" className="mx-10 text-center">
-        <h3 className="text-3xl m-8 text-center font-extrabold text-black">
-          Enlaces a nuestra Facebook Page
-        </h3>
-        <div className="grid md:grid-cols-3 gap-3">
-          <Card
-            name="Simplemente Luca"
-            text="Entrevista exclusiva a Luca Prodan en VH1"
-            src="/alma/luca.png"
-            url="https://www.facebook.com/almarockera100/posts/pfbid02ji8d1dsR7ArhWQjzobEbpWtkApmFava3ZNLh7QV5WP8eNiYtMvEkdodpceDnCNppl"
-          />
-          <Card
-            name="Diez enojos del Indio"
-            text="¡Se puso bravo el Pelado!"
-            src="/alma/indio.png"
-            url="https://www.facebook.com/almarockera100/posts/pfbid0UcACSVgPvbrzAxGXVmS3RCYjJ3z47DCaqjyVi7xBmgdcY9cZg5qbWh1EsjnGk6PEl"
-          />
-          <Card
-            name="El tema que quedó afuera"
-            text="Este tema quedó afuera del último disco de Los Redondos: Momo Sampler (2000). Una joyita que hoy ve la luz..."
-            src="/alma/momo.png"
-            url="https://www.facebook.com/almarockera100/posts/pfbid04B3mjSbjZUrxHwm4Sp7JpJTCmRbsqTPaJdWKRviurAd6nuL54vChogVVBt3dBv6ol"
-          />
-          <Card
-            name="Pity Fernandez y el Tachero"
-            text="Gracias señor tachero, gracias señor Piti, gracias señor D10s, ¡gracias señor 10! "
-            src="/alma/piti.png"
-            url="https://www.facebook.com/almarockera100/posts/pfbid02azvgA6TzUAeg1UHmk1UQgVKur9bHsfAHeJbLAdCmp4385EKLEXGB3r3Vysgtwd51l"
-          />
-          <Card
-            name="Tremenda Versión"
-            text="Soy Quién No ha de Morir - Romaphonic"
-            src="/alma/morir.png"
-            url="https://www.facebook.com/almarockera100/posts/pfbid0EJVMqbKTG8EVQ5tGCbArfv4LuWsEbEKWUwsD433TLznzFXWGR5n68edCbGzUHzmKl"
-          />
-          <Card
-            name="Padre e Hijo"
-            text="Korneta Suárez y Eli a Dúo (Los Gardelitos)"
-            src="/alma/gardelitos.png"
-            url="https://www.facebook.com/almarockera100/posts/pfbid02qtLn3d3HzmfouUr4asT5i1enrNUKATkbxJbM5fjwvFNZdmg8fdDUWRwz3t6RyNByl"
-          />
-          
         </div>
       </section>
-
       <section id="renzo">
         <h3 className="text-3xl m-8 mt-16 text-center font-extrabold text-black">
           Renzo Frases
@@ -143,8 +136,8 @@ export default function Home() {
           Powered by Moonwatcher 🐵
         </a>
       </footer>
-      
-      <Footer/>
+
+      <Footer />
 
       <style global jsx>{`
         html {
@@ -171,7 +164,6 @@ export default function Home() {
             sans-serif;
         }
 
-        
         a {
           color: inherit;
           text-decoration: none;
