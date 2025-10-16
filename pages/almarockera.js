@@ -8,7 +8,7 @@ import Card from "../components/alma/Card";
 import Footer from "../components/Footer";
 
 // 1) Llevar los datos a una estructura que podamos filtrar fácilmente
-//tallando, maldita suerte, heroicos sobrevivientes
+//la mocosa (gustavo), etiqueta, la cumparsita 92,    
 //agregar categoria, como super under, under, conocidos, estrellas, algo asi
 const BANDS = [
   {
@@ -103,11 +103,58 @@ const BANDS = [
     url: "https://www.youtube.com/watch?v=QyBMBotKKSw&list=PLjdp01j6sK4gxLMYsaYxuAltWaaZ1sr7d",
   },
   {
+    name: "Heroicos Sobrevivientes",
+    categoria: "conocidos",
+    recomienda: "adriel",
+    local: "Buenos Aires",
+    text:
+      "Rocanroll andrajoso anteriores a Viejas Locas. Excelente banda.",
+    src: "/alma/heroicos.png",
+    url: "https://www.youtube.com/watch?v=jQ5kCasSQlo&list=RDjQ5kCasSQlo&start_radio=1",
+  },
+  {
+    name: "Autos Robados",
+    categoria: "under",
+
+    recomienda: "gino",
+
+    local: "Buenos Aires",
+    text:
+      "Nueva banda porteña rocanrolera que la está rompiendo. Dicen que agotó entradas en 30 minutos. ¿Nueva banda revelación?",
+    src: "/alma/autosrobados.png",
+    url: "https://www.youtube.com/watch?v=CtB-A-vBryM&list=RDEMcQ1rSH9wxLSlQVaCObphZA&start_radio=1",
+  },
+  {
+    name: "La Condena de Caín",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text: "",
+    src: "/alma/lacondena.png",
+    url: "https://www.youtube.com/watch?v=dHbuLVHvWkY&list=RDdHbuLVHvWkY&start_radio=1",
+  },
+  {
+    name: "Perro Indio",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text: "",
+    src: "/alma/perroindio.png",
+    url: "https://www.youtube.com/watch?v=z5VHK4FP8s4&list=RDz5VHK4FP8s4&start_radio=1",
+  },
+  {
+    name: "Más sola que Carola",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text: "",
+    src: "/alma/massola.png",
+    url: "https://www.youtube.com/watch?v=DezPrdtSBvk&list=RDDezPrdtSBvk&start_radio=1",
+  },
+  {
     name: "La Máquina del Tío Pedro",
     recomienda: "adriel",
     categoria: "de galpon",
-
-
     local: "Mendoza",
     text:
       "Rock de galpón. Solo una vez tocaron en un bar. Mal sonido en sus temas. Mucho cariño de su comunidad.",
