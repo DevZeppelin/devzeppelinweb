@@ -24,7 +24,7 @@ export default function Home({ blogs }) {
         <meta name="author" content="Gino Pietrobon" />
       </Head>
       <Layout>
-        <div className="flex mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto mt-12 md:mt-0">
+        <div className="flex bg-white mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto mt-12 md:mt-0">
           <div className="flex flex-col w-4/5 md:w-1/2 mt-6 ml-8 md:ml-16 md:mt-4">
             <div className="space-y-4 text-center">
               <div className=" pt-8 space-y-5">

@@ -1,30 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/dist/client/link";
-import MainBarButton from "./MainBarButton";
-import { FaWhatsapp } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
 import ProyectLinks from "./ProyectLinks";
 
 const TopMainScreen = () => {
   return (
-    <div className="flex my-4 p-10 md:p-0 px-2 md:px-24 text-yellow bg-secundary justify-center md:justify-between">
+    <div
+      className="relative flex my-0 px-6 md:px-24 py-4 bg-secundary justify-center md:justify-between items-center cyber-grid-bg overflow-hidden"
+      style={{ borderBottom: '1px solid rgba(245, 210, 68, 0.15)' }}
+    >
+      {/* Decorative corner accent */}
+      <span
+        className="absolute top-0 left-0 w-16 h-16 pointer-events-none"
+        style={{
+          background: 'linear-gradient(135deg, rgba(245,210,68,0.12) 0%, transparent 60%)',
+        }}
+      />
+
       <Link href="/">
         <img
           src="logo.webp"
           alt="dev zeppelin logo hyper webs gino pietrobon"
-          width="200"
-          height="200"
-          className="animate-logo"
+          width="180"
+          height="180"
+          className="animate-logo cursor-pointer"
         />
       </Link>
 
-      <div className="hidden md:flex justify-between space-x-4 text-center my-auto p-4 text-lg">
-        
-        <ProyectLinks classAdd="mr-12" />
+      <div className="hidden md:flex justify-between items-center space-x-8">
+        <ProyectLinks classAdd="mr-8" />
 
         <Link href="/contacto">
-          <p className="rounded-lg p-4 text-xl my-auto btn">Contactame</p>
+          <span className="btn cursor-pointer whitespace-nowrap">
+            Contactame
+          </span>
         </Link>
       </div>
     </div>

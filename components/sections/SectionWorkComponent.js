@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 
 import Image from "next/image";
 
 const SectionWorkComponent = ({ description, web, src }) => {
   return (
     <div className="p-6 md:p-8 flex flex-col">
-      <span href={`https://${web}`} rel="noreferrer" target="_blank">
+      <Link href={`https://${web}`} rel="noreferrer" target="_blank">
         <div className="relative w-full flex items-center justify-center animateImage mx-auto">
           <Image
             src={src}
@@ -18,7 +19,7 @@ const SectionWorkComponent = ({ description, web, src }) => {
         <p className="text-lg text-yellow text-center font-bold mx-auto">
           {description}
         </p>
-      </span>
+      </Link>
       <style jsx>{`
         .animateImage {
           margin-bottom: 2rem;

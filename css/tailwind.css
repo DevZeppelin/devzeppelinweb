@@ -4,19 +4,51 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* ─── Cyberpunk button ────────────────────────────────── */
+
 .btn {
-    @apply bg-yellow border-2 p-4 rounded-lg text-primary font-bold;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #F5D244;
+  color: #F5D244;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  padding: 0.75rem 1.75rem;
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn:hover {
-    @apply bg-darkGray text-yellow border-2 border-yellow font-extrabold transform scale-110 transition duration-500 cursor-pointer;
+  background: #F5D244;
+  color: #080808;
+  box-shadow: 0 0 22px rgba(245, 210, 68, 0.55), 0 0 44px rgba(245, 210, 68, 0.2);
+  transform: translateY(-2px);
 }
+
+/* ─── Service heading ─────────────────────────────────── */
 
 .service-h2 {
-    @apply text-xl text-yellow font-bold mb-2;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: #F5D244;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px rgba(245, 210, 68, 0.5);
 }
+
+/* ─── Grid image caption bar ──────────────────────────── */
 
 .indexGridImageText {
-    @apply w-full text-yellow border-b-2 border-yellow h-8 absolute bg-darkGray -bottom-8 z-10 hover:bg-yellow uppercase font-bold text-sm md:text-base text-center mt-8;
+  @apply w-full text-yellow border-b-2 border-yellow h-8 absolute bg-darkGray -bottom-8 z-10 hover:bg-yellow uppercase font-bold text-sm md:text-base text-center mt-8;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+.indexGridImageText:hover {
+  color: #080808;
+  box-shadow: 0 0 12px rgba(245, 210, 68, 0.4);
+}

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function BlogLayout({ tag, title, blogs, extra }) {
   return (
     <div>
-      <div className="flex">
+      <div className="flex bg-white">
         <div className="flex flex-col md:w-2/3 ml-4 md:ml-24 mr-4 md:mr-20 text-center">
           <h1 className=" text-2xl font-bold md:text-3xl text-center my-8 mb-4 md:mb-16">
             {title}
@@ -67,7 +67,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
 
           <h1
             className="text-xl uppercase font-bold text-primaryBlog mb-10 ml-24"
-            
+
           >
             Índice
           </h1>

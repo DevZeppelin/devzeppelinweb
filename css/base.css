@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
 /*TOURIST PAGE*/
@@ -12,55 +13,259 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-
-
 html {
   scroll-behavior: smooth;
 }
 
-body { 
+body {
   margin: 0;
   font-family: 'Sarabun', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: yellowscale;
-  
-}
-
-.animate-logo {
-  position: relative;
-  animation: animate 5s infinite;
-}
-
-@keyframes animate {
-  0% {   
-    transform: scale(1);
-  } 
-  
-  50% {
-    
-    transform: scale(1.1);    
-  }
-  
-  
-  100% {
-    transform: scale(1);
-  }
-  
-  
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #080808;
 }
 
 h1 {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 h2 {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
+
+/* ─── Cyberpunk utilities ─────────────────────────────── */
+
+.glass {
+  background: rgba(22, 22, 30, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 210, 68, 0.18);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(245, 210, 68, 0.08);
+}
+
+.glass-dark {
+  background: rgba(8, 8, 8, 0.8);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 210, 68, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.glow-text {
+  text-shadow:
+    0 0 8px rgba(245, 210, 68, 0.8),
+    0 0 20px rgba(245, 210, 68, 0.4);
+}
+
+.glow-border {
+  border: 1px solid rgba(245, 210, 68, 0.45);
+  box-shadow:
+    0 0 12px rgba(245, 210, 68, 0.25),
+    inset 0 0 12px rgba(245, 210, 68, 0.05);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glow-border:hover {
+  border-color: #F5D244;
+  box-shadow:
+    0 0 22px rgba(245, 210, 68, 0.5),
+    inset 0 0 16px rgba(245, 210, 68, 0.08);
+}
+
+.cyber-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #F5D244, transparent);
+  opacity: 0.6;
+}
+
+.cyber-line-v {
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #F5D244, transparent);
+  opacity: 0.4;
+}
+
+.cyber-grid-bg {
+  background-image:
+    linear-gradient(rgba(245, 210, 68, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 210, 68, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Clip cyberpunk diagonal shape */
+.clip-cyber {
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+/* ─── Logo animation ──────────────────────────────────── */
+
+.animate-logo {
+  position: relative;
+  animation: logoFloat 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(245, 210, 68, 0.35));
+  transition: filter 0.3s ease;
+}
+
+.animate-logo:hover {
+  filter: drop-shadow(0 0 16px rgba(245, 210, 68, 0.7));
+}
+
+@keyframes logoFloat {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); filter: drop-shadow(0 0 14px rgba(245, 210, 68, 0.6)); }
+  100% { transform: scale(1); }
+}
+
+/* ─── Fade-in scroll animation ────────────────────────── */
+
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* ─── Glow pulse for icons ────────────────────────────── */
+
+@keyframes glowPulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(245, 210, 68, 0.4)); }
+  50%       { filter: drop-shadow(0 0 14px rgba(245, 210, 68, 0.9)); }
+}
+
+.icon-glow {
+  animation: glowPulse 2.5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.icon-glow:hover {
+  transform: scale(1.15);
+}
+
+/* ─── Nav link glow underline ─────────────────────────── */
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #F5D244;
+  box-shadow: 0 0 8px rgba(245, 210, 68, 0.8);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+/* ─── Scroll-reveal animations ───────────────────────── */
+
+/*
+  Usage:
+    className={`reveal from-bottom ${visible ? 'visible' : ''}`}
+  Add from-left / from-right / from-scale as variants.
+  Add d1–d4 for staggered delays.
+*/
+
+.reveal {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  transition-duration: 0.75s;
+}
+
+.reveal.from-bottom { transform: translateY(32px); }
+.reveal.from-left   { transform: translateX(-40px); }
+.reveal.from-right  { transform: translateX(40px); }
+.reveal.from-scale  { transform: scale(0.9) translateY(16px); }
+.reveal.from-fade   { transform: none; }
+
+.reveal.visible {
+  opacity: 1;
+  transform: none !important;
+}
+
+/* Stagger delays */
+.reveal.d1 { transition-delay: 0.08s; }
+.reveal.d2 { transition-delay: 0.18s; }
+.reveal.d3 { transition-delay: 0.28s; }
+.reveal.d4 { transition-delay: 0.40s; }
+.reveal.d5 { transition-delay: 0.52s; }
+
+/* ─── Ambient floating orbs ───────────────────────────── */
+
+@keyframes orbDrift {
+  0%, 100% { transform: translate(0px, 0px) scale(1);    }
+  33%       { transform: translate(18px, -22px) scale(1.06); }
+  66%       { transform: translate(-14px, 10px) scale(0.96); }
+}
+
+@keyframes orbDriftB {
+  0%, 100% { transform: translate(0px, 0px) scale(1);    }
+  40%       { transform: translate(-20px, 16px) scale(1.04); }
+  70%       { transform: translate(12px, -10px) scale(0.98); }
+}
+
+.cyber-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.cyber-orb-a { animation: orbDrift  12s ease-in-out infinite; }
+.cyber-orb-b { animation: orbDriftB 16s ease-in-out infinite 1s; }
+.cyber-orb-c { animation: orbDrift  20s ease-in-out infinite 4s reverse; }
+
+/* ─── Subtle scanline sweep on hero ──────────────────── */
+
+@keyframes scanSweep {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.4; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.scan-sweep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(245, 210, 68, 0.4), transparent);
+  animation: scanSweep 6s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ─── Hero gradient animation ─────────────────────────── */
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(-45deg, #080808, #16161e, #0f0f18, #1a1a28);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* ─── Legacy textDark ─────────────────────────────────── */
 
 .textDark {
-  text-shadow: 0px 0px 4px black;  
+  text-shadow: 0 0 4px black, 0 0 12px rgba(245, 210, 68, 0.25);
 }
 
-/*TOURIST*/
+/* ─── Tourist section (unchanged) ────────────────────── */
 
 .tourist-body h1 {
   font-family: 'Palette Mosaic', cursive;
@@ -75,12 +280,8 @@ h2 {
 .tourist-body {
   background-image: -webkit-linear-gradient(
     top left,
-   
     #9ADCFF 0%,
     #FFF89A 50%,
     #FFB2A6 100%
   );
 }
-
-
-

@@ -9,22 +9,24 @@ module.exports = {
         },
         extend: {
             colors : {
-                /*DevZeppelin*/
-                primary : '#0D0D0D',
-                secundary: '#222224',
-                yellow: '#F5D244', 
+                /*DevZeppelin - Cyberpunk*/
+                primary : '#080808',
+                secundary: '#16161e',
+                yellow: '#F5D244',
                 gray: '#545454',
-                lightGray: '#D9D4D0',
-                darkGray: '#333',
-                lowContrast: '#EBDF7B',
+                lightGray: '#c8c4c0',
+                darkGray: '#1a1a28',
+                lowContrast: '#f0e870',
+                cyberBlue: '#00d4ff',
+                cyberMid: '#0f0f18',
 
                 /*BLOG*/
                 primaryBlog : '#0e364e',
                 secundaryBlog: '#13a89e',
                 lowContrastBlog: '#117F77' ,
                 backgroundBlog: '#d6d4d4',
-                backgroundSecundaryBlog: '#608b9b',  
-                
+                backgroundSecundaryBlog: '#608b9b',
+
                 /*PORTAFOLIO*/
                 transparent: 'transparent',
                 current: 'currentColor',
@@ -39,29 +41,28 @@ module.exports = {
                 'alma2': '#ff4301',
                 'alma3': '#2F2519',
                 'alma4': '#4A3F35'
-                
             },
             fontFamily : {
-                body : ['Heebo'],
-                /*'righteous' : ['Righteous']*/
+                body : ['Sarabun', 'sans-serif'],
+                heading: ['Orbitron', 'sans-serif'],
             },
-            backgroundImage: theme => ({               
-                'hero-big': "url('/01.webp')",  
-                'hero-bigger': "url('/bgImage.webp')",  
-                'hero-pages': "url('/bgPages.webp')"                         
-               })
+            backgroundImage: theme => ({
+                'hero-big': "url('/01.webp')",
+                'hero-bigger': "url('/bgImage.webp')",
+                'hero-pages': "url('/bgPages.webp')"
+            }),
+            transitionDuration: {
+                '400': '400ms',
+            },
         },
         grayscale: {
             100: '100%',
         },
-        grayscale: ['hover']
     },
-    
+
     variants: {
-       
         borderColor: ["hover", "focus"],
-        borderStyle: ['hover', 'focus'], 
-          
+        borderStyle: ['hover', 'focus'],
     },
     plugins: []
 }

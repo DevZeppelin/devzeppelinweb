@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="bg-white">
         <span>
           <Networks />
           <Link href="/" passHref>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="m-12 text-center mt-32 text-dark">
+      <div className="m-12 text-center mt-32 text-dark bg-white">
         <h3 className="text-2xl font-bold">
           ¡Gracias por recorrer mis trabajos! Para cualquier tipo de consulta no
           dudes en escribirme 😊
@@ -131,7 +131,7 @@ export default function Home() {
         <Networks />
       </div>
 
-      <footer className="text-center bg-dark text-white mt-12">
+      <footer className="text-center text-white mt-12">
         <span
           href="https://devzeppelin.com.ar"
           target="_blank"

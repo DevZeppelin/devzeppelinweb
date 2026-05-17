@@ -1,73 +1,86 @@
-import { FiMail, FiTwitter } from "react-icons/fi";
-import {
-  FaWhatsapp,
-  FaInstagram,
-  FaFacebook,
-  FaLinkedinIn,
-
-} from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 
 const TopLeyend = ({ toggleNav }) => {
   return (
-    <div className="flex justify-center md:justify-between pt-2 text-lightGray md:bg-darkGray">
-      <div className="hidden md:flex px-12">
-        <p className="text-sm font-bold tracking-widest my-auto font-righteous uppercase text-yellow">
+    <div
+      className="flex justify-center md:justify-between items-center px-4 md:px-8 py-2 bg-primary relative"
+      style={{ borderBottom: '1px solid rgba(245, 210, 68, 0.1)' }}
+    >
+      {/* Tagline desktop */}
+      <div className="hidden md:flex items-center space-x-3">
+        <span
+          className="w-6 h-px"
+          style={{ background: 'linear-gradient(to right, transparent, #F5D244)' }}
+        />
+        <p
+          className="text-xs font-bold tracking-widest text-yellow uppercase"
+          style={{ fontFamily: 'Orbitron, sans-serif', letterSpacing: '0.18em' }}
+        >
           Repensemos tu marca frente al nuevo mundo
         </p>
       </div>
-      <div className="p-2 ml-2 md:hidden absolute top-0 right-5 w-10 text-4xl">
+
+      {/* Hamburger mobile */}
+      <div className="md:hidden absolute top-1 right-4 text-2xl text-yellow">
         <button
           onClick={toggleNav}
-          aria-label="Hamburguer Button of Main Content"
+          aria-label="Menú principal"
+          className="transition-all duration-300 hover:text-lowContrast"
+          style={{ filter: 'drop-shadow(0 0 6px rgba(245,210,68,0.5))' }}
         >
           <GiHamburgerMenu />
         </button>
       </div>
-      <div>
-        <div className="text-xl space-x-3 pr-6">
-          <span
-            href="https://api.whatsapp.com/send?phone=5492616708100"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button aria-label="go to my whatsapp" alt="whatsapp-logo">
-              <FaWhatsapp className="hover:text-yellow" />
-            </button>
-          </span>
-          <span
-            href="https://www.facebook.com/devzeppelin/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button aria-label="go to my facebook" alt="facebook-logo">
-              <FaFacebook className="hover:text-yellow" />
-            </button>
-          </span>
 
-          <span
-            href="https://www.instagram.com/devzeppelin.ar/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button aria-label="go to my instagram" alt="instagram-logo">
-              <FaInstagram className="hover:text-yellow" />
-            </button>
-          </span>
-
-
-
-          <span
-            href="mailto:devzeppelin.ar@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button aria-label="send me a mail" alt="gmail-logo">
-              <FiMail className="hover:text-yellow" />
-            </button>
-          </span>
-        </div>
+      {/* Social icons */}
+      <div className="flex items-center space-x-4 text-lg text-lightGray">
+        <a
+          href="https://api.whatsapp.com/send?phone=5492616708100"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="WhatsApp"
+          className="transition-all duration-300 hover:text-yellow"
+          style={{ transition: 'color 0.3s, filter 0.3s' }}
+          onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(245,210,68,0.8))'}
+          onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+        >
+          <FaWhatsapp />
+        </a>
+        <a
+          href="https://www.facebook.com/devzeppelin/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Facebook"
+          className="transition-all duration-300 hover:text-yellow"
+          onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(245,210,68,0.8))'}
+          onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+        >
+          <FaFacebook />
+        </a>
+        <a
+          href="https://www.instagram.com/devzeppelin.ar/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          className="transition-all duration-300 hover:text-yellow"
+          onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(245,210,68,0.8))'}
+          onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="mailto:devzeppelin.ar@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Email"
+          className="transition-all duration-300 hover:text-yellow"
+          onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(245,210,68,0.8))'}
+          onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+        >
+          <FiMail />
+        </a>
       </div>
     </div>
   );
