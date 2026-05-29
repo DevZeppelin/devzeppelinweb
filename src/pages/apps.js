@@ -20,8 +20,8 @@ const Apps = () => {
           </div>
           <div>
             <section id="apps">
-              <div className="p-4 md:px-16 mx-auto pt-16 ">
-                <div className="grid grid-cols-1 md:grid-cols-3 space-y-4 md:space-y-0">
+              <div className="p-4 md:px-16 mx-auto pt-16 max-w-7xl">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <SectionWorkComponent
                     src="/apps/ccu.png"
                     description="App para sacar la cuenta en los asados"

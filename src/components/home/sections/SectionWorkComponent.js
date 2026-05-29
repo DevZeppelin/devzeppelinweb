@@ -1,36 +1,28 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-
 import Image from "next/image";
 
 const SectionWorkComponent = ({ description, web, src }) => {
   return (
-    <div className="p-6 md:p-8 flex flex-col">
-      <Link href={`https://${web}`} rel="noreferrer" target="_blank">
-        <div className="relative w-full flex items-center justify-center animateImage mx-auto">
+    <div className="p-3 md:p-4">
+      <Link
+        href={`https://${web}`}
+        rel="noreferrer"
+        target="_blank"
+        className="group flex h-full flex-col rounded-2xl border border-yellow/15 bg-primary/40 p-5 transition-all duration-300 hover:border-yellow/50 hover:bg-primary/60"
+      >
+        <div className="relative h-44 w-full">
           <Image
             src={src}
-            alt="responsive image mobile tablet notebook widescreen responsive-design"
-            width={300}
-            height={200}
-            className="object-contain"
+            alt={description}
+            fill
+            sizes="(max-width: 850px) 100vw, 33vw"
+            className="object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
-        <p className="text-lg text-yellow text-center font-bold mx-auto">
+        <p className="mt-5 text-center text-base font-semibold text-yellow/90">
           {description}
         </p>
       </Link>
-      <style jsx>{`
-        .animateImage {
-          margin-bottom: 2rem;
-        }
-
-        .animateImage:hover {
-          transform: scale(1.15);
-          padding: 0;
-          transition: 1.5s;
-        }
-      `}</style>
     </div>
   );
 };
