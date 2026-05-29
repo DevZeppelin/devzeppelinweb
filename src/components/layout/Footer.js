@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import MainBarButton from "./MainBarButton";
+import MainBarButton from "@/components/ui/MainBarButton";
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import Link from "next/dist/client/link";

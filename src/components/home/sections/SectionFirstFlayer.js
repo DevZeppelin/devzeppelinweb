@@ -1,4 +1,4 @@
-import { useInView } from "../../hooks/useInView";
+import { useInView } from "@/hooks/useInView";
 
 const SectionFirstFlayer = () => {
   const [ref, visible] = useInView(0.2);

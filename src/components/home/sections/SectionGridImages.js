@@ -1,6 +1,6 @@
 import { DiCodeigniter, DiAndroid, DiCode } from "react-icons/di";
-import HoverIconComponent from "../HoverIconComponent";
-import { useInView } from "../../hooks/useInView";
+import HoverIconComponent from "@/components/ui/HoverIconComponent";
+import { useInView } from "@/hooks/useInView";
 
 const cards = [
   {

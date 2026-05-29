@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import PhoneCard from "../components/tourist/PhoneCard";
+import PhoneCard from "@/components/tourist/PhoneCard";
 import { useState } from "react";
-import helper from "../components/tourist/helper";
-import Footer from "../components/Footer";
+import helper from "@/components/tourist/helper";
+import Footer from "@/components/layout/Footer";
 import Image from "next/image";
 import Link from 'next/link'
 

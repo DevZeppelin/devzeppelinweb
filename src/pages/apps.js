@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
-import SectionWorkComponent from "../components/sections/SectionWorkComponent"
+import Layout from "@/components/layout/Layout";
+import SectionWorkComponent from "@/components/home/sections/SectionWorkComponent"
 
 
 const Apps = () => {

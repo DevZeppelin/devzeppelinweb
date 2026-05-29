@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "../../components/escuela/Layout";
+import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
 
 const PrimerosPasosDev = () => (
@@ -10,12 +10,12 @@ const PrimerosPasosDev = () => (
     <div className="container" id="top">
       <img className="icon" src="/escuela/diamante.webp" alt="diamante png" />
       <nav className="secondaryNav">
-        <span href="#firstLanguages">
+        <a href="#firstLanguages">
           <button className="buttonSchool">Mis primeros lenguajes</button>
-        </span>
-        <span href="#route">
+        </a>
+        <a href="#route">
           <button className="buttonSchool">Ruta de aprendizaje</button>
-        </span>
+        </a>
       </nav>
       <p>
         Cuando comencé me sentía en una jungla. Muchos senderos en los que no
@@ -89,12 +89,12 @@ const PrimerosPasosDev = () => (
         <li>Aplicaciones móviles (React Native)</li>
         <li>Videojuegos (usando librerías de JS)</li>
       </ul>
-      <span
+      <a
         href="https://www.youtube.com/watch?v=qY2JD78kShQ&t=268s"
         target="_blank" rel="noreferrer"
       >
         <button className="buttonSchool">¿Qué se puede hacer con Javascript? (VIDEO)</button>
-      </span>
+      </a>
 
       <img className="icon" src="/escuela/computadora.webp" alt="computadora png" />
 
@@ -159,9 +159,9 @@ const PrimerosPasosDev = () => (
         enfrente de la pantalla.
       </p>
       <button className="buttonSchool">
-        <span href="https://ed.team/cursos/programacion" target="_blank" rel="noreferrer">
+        <a href="https://ed.team/cursos/programacion" target="_blank" rel="noreferrer">
           Curso de programación desde cero de ED.team (Gratis!)
-        </span>
+        </a>
       </button>
       <hr />
       <h2>2</h2>
@@ -172,12 +172,12 @@ const PrimerosPasosDev = () => (
         construir mucho e ir agregando y quitando cosas.
       </p>
       <button className="buttonSchool">
-        <span
+        <a
           href="https://www.udemy.com/course/diseno-web-desde-cero-para-principiantes-gratis/"
           target="_blank" rel="noreferrer"
         >
           Crear Una Página Web Desde Cero con HTML y CSS [2020] (Gratis!)
-        </span>
+        </a>
       </button>
       <hr />
       <h2>3</h2>
@@ -206,9 +206,9 @@ const PrimerosPasosDev = () => (
       </ul>
 
       <button className="buttonSchool">
-        <span href="https://www.sololearn.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.sololearn.com/" target="_blank" rel="noreferrer">
           SoloLearn app! (Gratis!)
-        </span>
+        </a>
       </button>
       <hr />
       <h2>4</h2>
@@ -231,14 +231,14 @@ const PrimerosPasosDev = () => (
       </p>
 
       <button className="buttonSchool">
-        <span href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
           YouTube
-        </span>
+        </a>
       </button>
       <hr />
-      <span href="#nav-container">
+      <a href="#nav-container">
         <button className="buttonSchool">Ir arriba!</button>
-      </span>
+      </a>
     </div>
 
   </Layout>

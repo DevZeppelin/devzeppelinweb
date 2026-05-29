@@ -2,7 +2,7 @@ import { IoIosSpeedometer } from "react-icons/io";
 import { BiBookContent } from "react-icons/bi";
 import { BsTriangleFill } from "react-icons/bs";
 import { CgScreenWide } from "react-icons/cg";
-import { useInView } from "../../hooks/useInView";
+import { useInView } from "@/hooks/useInView";
 
 const services = [
   {

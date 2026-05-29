@@ -2,10 +2,10 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-import Networks from "../components/alma/Networks";
-import RenzoFrase from "../components/alma/RenzoFrase";
-import Card from "../components/alma/Card";
-import Footer from "../components/Footer";
+import Networks from "@/components/alma/Networks";
+import RenzoFrase from "@/components/alma/RenzoFrase";
+import Card from "@/components/alma/Card";
+import Footer from "@/components/layout/Footer";
 
 // 1) Llevar los datos a una estructura que podamos filtrar fácilmente
 //la mocosa (gustavo), etiqueta, la cumparsita 92,    
@@ -433,9 +433,9 @@ export default function Home() {
       </div>
 
       <footer className="text-center bg-black text-orange-500 mt-12">
-        <span href="https://devzeppelin.com.ar" target="_blank" rel="noopener noreferrer">
+        <a href="https://devzeppelin.com.ar" target="_blank" rel="noopener noreferrer">
           Powered by Moonwatcher 🐵
-        </span>
+        </a>
       </footer>
 
       <Footer />

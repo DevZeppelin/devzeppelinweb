@@ -147,7 +147,7 @@ export default function Layout({ children }) {
           id="contacto"
           className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center"
         >
-          <span
+          <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
             rel="noreferrer"
@@ -160,9 +160,9 @@ export default function Layout({ children }) {
             >
               <FaWhatsapp className="hover:text-green-700" />
             </button>
-          </span>
+          </a>
 
-          <span href="https://www.instagram.com/moonwatcher.dev/">
+          <a href="https://www.instagram.com/moonwatcher.dev/">
             <button
               aria-label="go to my instagram"
               target="_blank"
@@ -171,9 +171,9 @@ export default function Layout({ children }) {
             >
               <FaInstagram className="hover:text-purple-700" />
             </button>
-          </span>
+          </a>
 
-          <span href="https://www.twitter.com/moonwatcher73/">
+          <a href="https://www.twitter.com/moonwatcher73/">
             <button
               aria-label="go to my twitter"
               target="_blank"
@@ -182,9 +182,9 @@ export default function Layout({ children }) {
             >
               <FiTwitter className="hover:text-blue-500" />
             </button>
-          </span>
+          </a>
 
-          <span href="https://www.facebook.com/Gini77o">
+          <a href="https://www.facebook.com/Gini77o">
             <button
               aria-label="go to my fabecook"
               target="_blank"
@@ -193,9 +193,9 @@ export default function Layout({ children }) {
             >
               <FaFacebook className="hover:text-blue-800" />
             </button>
-          </span>
+          </a>
 
-          <span href="https://github.com/DevZeppelin">
+          <a href="https://github.com/DevZeppelin">
             <button
               aria-label="go to my github"
               target="_blank"
@@ -204,9 +204,9 @@ export default function Layout({ children }) {
             >
               <FaGithub className="hover:text-red-400" />
             </button>
-          </span>
+          </a>
 
-          <span href="https://www.linkedin.com/in/gino-pietrobon">
+          <a href="https://www.linkedin.com/in/gino-pietrobon">
             <button
               aria-label="go to my linked in"
               target="_blank"
@@ -215,9 +215,9 @@ export default function Layout({ children }) {
             >
               <FaLinkedinIn className="hover:text-green-400" />
             </button>
-          </span>
+          </a>
 
-          <span href="mailto:gino.b.pietrobon@gmail.com">
+          <a href="mailto:gino.b.pietrobon@gmail.com">
             <button
               aria-label="send me a mail"
               target="_blank"
@@ -226,7 +226,7 @@ export default function Layout({ children }) {
             >
               <FiMail className="hover:text-red-600" />
             </button>
-          </span>
+          </a>
         </div>
 
         <div className="mt-10 text-sm max-w-2xl">

@@ -1,4 +1,4 @@
-import Nav from "../../components/escuela/Nav";
+import Nav from "@/components/escuela/Nav";
 
 const Layout = ({ ID, MainTitle, Footer, children }) => (
   <div className={ID} id={ID}>

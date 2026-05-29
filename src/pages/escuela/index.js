@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "../../components/escuela/Layout";
+import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
 
 export default function Index() {
@@ -13,9 +13,9 @@ export default function Index() {
         <h1 className="mainTitle">codeObrero</h1>
         <h4>by Gino Pietrobon</h4>
 
-        <span href="#index">
+        <a href="#index">
           <button className="buttonSchool">¿De qué se trata esto?</button>
-        </span>
+        </a>
       </header>
 
       <div className="container index" id="index">

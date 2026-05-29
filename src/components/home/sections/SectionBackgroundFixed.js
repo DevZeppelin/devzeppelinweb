@@ -1,5 +1,5 @@
 import Link from "next/dist/client/link";
-import { useInView } from "../../hooks/useInView";
+import { useInView } from "@/hooks/useInView";
 
 const SectionBackgroundFixed = () => {
   const [ref, visible] = useInView(0.15);

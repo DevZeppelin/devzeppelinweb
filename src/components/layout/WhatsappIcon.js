@@ -2,7 +2,7 @@
 
 const WhatsappIcon = () => {
   return (
-    <span
+    <a
       href="https://api.whatsapp.com/send?phone=5492616708100"
       target="_blank"
       rel="noreferrer"
@@ -14,7 +14,7 @@ const WhatsappIcon = () => {
 
         />
       </div>
-    </span>
+    </a>
   );
 };
 

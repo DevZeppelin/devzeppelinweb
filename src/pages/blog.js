@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Layout from "../components/blog/Layout";
+import Layout from "@/components/blog/Layout";
 import Link from "next/link";
 import { ImPencil2, ImBook } from "react-icons/im";
 import { GoRadioTower } from "react-icons/go";

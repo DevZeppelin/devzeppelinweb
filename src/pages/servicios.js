@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "@/components/layout/Layout";
 
 import { IoMdAppstore } from "react-icons/io";
 import { ImEllo } from "react-icons/im";
@@ -10,7 +10,7 @@ import { GiPartyPopper } from "react-icons/gi";
 import { MdSettingsSystemDaydream } from "react-icons/md";
 import { SiMaterialdesign } from "react-icons/si";
 import { FiCpu } from "react-icons/fi";
-import { ServiciosItem } from "../components/ServiciosItem";
+import { ServiciosItem } from "@/components/ui/ServiciosItem";
 
 
 const Servicios = () => {

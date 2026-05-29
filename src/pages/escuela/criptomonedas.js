@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "../../components/escuela/Layout";
+import Layout from "@/components/escuela/Layout";
 
 export default function Criptomonedas() {
   return (
@@ -15,15 +15,15 @@ export default function Criptomonedas() {
           alt="gafas lentes rosas png"
         />
         <nav className="secondaryNav">
-          <span href="#usefulResources">
+          <a href="#usefulResources">
             <button className="buttonSchool">Recursos útiles</button>
-          </span>
-          <span href="#frecuentQuestions">
+          </a>
+          <a href="#frecuentQuestions">
             <button className="buttonSchool">Preguntas frecuentes</button>
-          </span>
-          <span href="#altcoins">
+          </a>
+          <a href="#altcoins">
             <button className="buttonSchool">Altcoins</button>
-          </span>
+          </a>
         </nav>
         <p>
           Si sos un curioso de la tecnología y la programación, te invito a leer
@@ -51,13 +51,13 @@ export default function Criptomonedas() {
           esta moneda en el mundo moderno.
         </p>
         <button className="buttonSchool main">
-          <span
+          <a
             href="https://cursosbitcoin.com/cero"
             target="_blank"
             rel="noreferrer"
           >
             Bitcoin desde cero (Gratis!)
-          </span>
+          </a>
         </button>
 
         <img className="icon" src="/escuela/diamante.webp" alt="diamante png" />
@@ -100,13 +100,13 @@ export default function Criptomonedas() {
         <div className="recursos-utiles">
           <article>
             <button className="buttonSchool">
-              <span
+              <a
                 href="https://tradingview.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 Trading View
-              </span>
+              </a>
             </button>
             <p>
               Página para ver gráficas, crear lista de seguimiento de activos
@@ -115,13 +115,13 @@ export default function Criptomonedas() {
           </article>
           <article>
             <button className="buttonSchool">
-              <span
+              <a
                 href="https://coinmarketcap.com/es/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Coin Market Cap
-              </span>
+              </a>
             </button>
             <p>
               Página para ver un ranking de criptomonedas con respecto al
@@ -131,13 +131,13 @@ export default function Criptomonedas() {
           </article>
           <article>
             <button className="buttonSchool">
-              <span
+              <a
                 href="https://www.binance.com/es/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Binance Exchanger
-              </span>
+              </a>
             </button>
             <p>
               Uno de los exchanger más grandel del mundo, para que veas el
@@ -147,13 +147,13 @@ export default function Criptomonedas() {
           </article>
           <article>
             <button className="buttonSchool">
-              <span
+              <a
                 href="https://coinmonitor.info/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Coin Monitor
-              </span>
+              </a>
             </button>
             <p>
               Ver de manera rápida el valor actual de Bitcoin y de nuestra
@@ -269,9 +269,9 @@ export default function Criptomonedas() {
           </li>
         </ul>
         <hr />
-        <span href="#nav-container">
+        <a href="#nav-container">
           <button className="buttonSchool">Ir arriba!</button>
-        </span>
+        </a>
       </div>
       <style jsx>{`
         h1 {

@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Head from "next/head";
-import Layout from "../../components/blog/Layout";
+import Layout from "@/components/blog/Layout";
 import Prismic from "prismic-javascript";
-import { Client } from "../../prismic-configuration";
-import BlogLayout from "../../components/blog/BlogLayout";
+import { Client } from "@/lib/prismic";
+import BlogLayout from "@/components/blog/BlogLayout";
 import { AiFillFacebook } from "react-icons/ai";
 
 export default function Rock({ blogs }) {

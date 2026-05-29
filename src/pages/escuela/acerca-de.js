@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "../../components/escuela/Layout";
+import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
 
 const AcercaDe = () => (

@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Layout from "../components/Layout";
-import MainBarButton from "../components/MainBarButton";
+import Layout from "@/components/layout/Layout";
+import MainBarButton from "@/components/ui/MainBarButton";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
@@ -24,7 +24,7 @@ const Contacto = () => {
           <h2 className="text-2xl pt-6 p-4">¡Animate a dar un paso hacia el futuro!</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2 md:p-8 ">
             <div>
-              <span
+              <a
                 href="https://api.whatsapp.com/send?phone=5492616708100"
                 target="_blank"
                 rel="noreferrer"
@@ -37,10 +37,10 @@ const Contacto = () => {
                   description2="+5492616708100"
                   classType="text-yellow text-2xl my-2"
                 />
-              </span>
+              </a>
             </div>
             <div>
-              <span
+              <a
                 href="mailto:devzeppelin.ar@gmail.com"
                 target="_blank"
                 rel="noreferrer"
@@ -53,7 +53,7 @@ const Contacto = () => {
                   description2="devZeppelin.ar@gmail.com"
                   classType="text-yellow text-xl my-2"
                 />
-              </span>
+              </a>
             </div>
           </div>
         </div>

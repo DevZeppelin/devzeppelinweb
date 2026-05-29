@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "@/components/layout/Layout";
 import { BiCheckShield } from "react-icons/bi";
 import { FaEye } from "react-icons/fa";
 

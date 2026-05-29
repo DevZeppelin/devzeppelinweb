@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
-import SectionWelcome from "../components/sections/SectionWelcome";
-import SectionFirstFlayer from "../components/sections/SectionFirstFlayer";
-import SectionGridImages from "../components/sections/SectionGridImages";
-import SectionBackgroundFixed from "../components/sections/SectionBackgroundFixed";
-import SectionServices from "../components/sections/SectionServices";
+import Layout from "@/components/layout/Layout";
+import SectionWelcome from "@/components/home/sections/SectionWelcome";
+import SectionFirstFlayer from "@/components/home/sections/SectionFirstFlayer";
+import SectionGridImages from "@/components/home/sections/SectionGridImages";
+import SectionBackgroundFixed from "@/components/home/sections/SectionBackgroundFixed";
+import SectionServices from "@/components/home/sections/SectionServices";
 
 export default function Home() {
   return (

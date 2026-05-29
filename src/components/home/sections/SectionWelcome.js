@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/dist/client/link";
-import { useInView } from "../../hooks/useInView";
+import { useInView } from "@/hooks/useInView";
 
 const SectionWelcome = () => {
   const [textRef, textVisible] = useInView(0.1);

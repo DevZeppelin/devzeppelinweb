@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Layout from "../../components/escuela/Layout";
+import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
 
 const Consejos = () => (
@@ -10,12 +10,12 @@ const Consejos = () => (
     <div className="container">
       <img className="icon" src="/escuela/arcade.webp" alt="arcade png" />
       <nav className="secondaryNav">
-        <span href="#advices">
+        <a href="#advices">
           <button className="buttonSchool">Consejos</button>
-        </span>
-        <span href="#frecuentQuestions">
+        </a>
+        <a href="#frecuentQuestions">
           <button className="buttonSchool">Preguntas frecuentes</button>
-        </span>
+        </a>
       </nav>
       <p>
         <b>Mi principal recomendación:</b>
@@ -155,7 +155,7 @@ const Consejos = () => (
         <li>
           <h4>¿Cual sería un gran Currículum o Portfolio?</h4>
 
-          Existe un lugar llamado <span href="http://github.com" target="_blank" rel="noreferrer">Github</span> en donde irás subiendo tus proyectos. Además puedes ver Open Source (código abierto) y colaborar, sugerir mejoras, aportar. Esto quedará registrado en tu cuenta Github y esto habla mucho de tu compromiso con el ecosistema de tu lenguaje específico.
+          Existe un lugar llamado <a href="http://github.com" target="_blank" rel="noreferrer">Github</a> en donde irás subiendo tus proyectos. Además puedes ver Open Source (código abierto) y colaborar, sugerir mejoras, aportar. Esto quedará registrado en tu cuenta Github y esto habla mucho de tu compromiso con el ecosistema de tu lenguaje específico.
         </li>
         <li>
           <h4>¿Hay que saber todos los lenguajes?</h4>
@@ -175,9 +175,9 @@ const Consejos = () => (
       </ul>
 
       <hr />
-      <span href="#nav-container">
+      <a href="#nav-container">
         <button className="buttonSchool">Ir arriba!</button>
-      </span>
+      </a>
     </div>
     <style jsx>{`
       h4 {

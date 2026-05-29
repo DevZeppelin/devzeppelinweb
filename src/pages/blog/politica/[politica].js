@@ -1,7 +1,7 @@
-import { Client } from "../../../prismic-configuration";
-import Layout from "../../../components/blog/Layout";
+import { Client } from "@/lib/prismic";
+import Layout from "@/components/blog/Layout";
 import Head from "next/head";
-import SlugLayout from "../../../components/blog/SlugLayout";
+import SlugLayout from "@/components/blog/SlugLayout";
 
 export default function PoliticaSlug({ article }) {
   return (

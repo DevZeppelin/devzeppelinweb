@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import Router from "next/router";
-import Layout from "../../components/blog/Layout";
+import Layout from "@/components/blog/Layout";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
@@ -96,17 +96,17 @@ export default function News({ news }) {
 
           {news.map((n, i) => (
             <p key={i} className="p-2">
-              <span
+              <a
                 href={n.url}
                 target="_blank"
                 rel="noreferrer"
                 className="text-xl font-bold text-primaryBlog"
               >
                 {i + 1 + ". "}
-              </span>
-              <span href={n.url} target="_blank" rel="noreferrer">
+              </a>
+              <a href={n.url} target="_blank" rel="noreferrer">
                 {n.title}
-              </span>{" "}
+              </a>{" "}
               <span className="opacity-40">
                 ({n.created_at.substring(8, 10)}/
                 {n.created_at.substring(5, 7)}/{n.created_at.substring(0, 4)})
