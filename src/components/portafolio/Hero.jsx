@@ -13,7 +13,7 @@ export default function Hero() {
         <div>
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-yellow bg-yellow/10 border border-yellow/30 rounded-full px-4 py-1.5">
             <span className="w-2 h-2 rounded-full bg-yellow animate-pulse" />
-            Disponible para nuevos proyectos
+            Consultame para nuevos proyectos
           </span>
 
           <h1 className="mt-6 text-5xl md:text-6xl font-extrabold leading-[1.05] tracking-tight">
@@ -63,7 +63,7 @@ export default function Hero() {
             <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full ring-4 ring-yellow overflow-hidden bg-secundary">
               {/* TODO: reemplazá por tu foto real en /public/portafolio/gino.jpg */}
               <img
-                src="/portafolio/icons/me.png"
+                src="/portafolio/me.jpeg"
                 alt="Gino Pietrobon"
                 className="w-full h-full object-cover"
               />

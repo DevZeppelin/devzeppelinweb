@@ -21,7 +21,7 @@ export default function Nav() {
             rel="noreferrer"
             className="bg-yellow text-primary font-bold px-4 py-2 rounded-full hover:scale-105 transition-transform"
           >
-            Contratame
+            Contactame
           </a>
         </div>
       </div>
