@@ -88,7 +88,7 @@ const Footer = () => {
 
           <div className="flex space-x-5 mb-6 text-3xl text-lightGray">
             <a
-              href="https://www.instagram.com/devzeppelin.ar/"
+              href="https://www.instagram.com/devzeppelin.com.ar/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"

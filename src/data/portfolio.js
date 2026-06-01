@@ -21,7 +21,7 @@ export const experiencia = [
   {
     rol: "Analista & Desarrollador Python",
     empresa: "Coca-Cola Andina",
-    periodo: "4 años",
+    periodo: "2021 - Actualidad",
     descripcion:
       "Desarrollo de automatizaciones (RPA) con Python y Automation Anywhere, integraciones con SAP y optimización de procesos de negocio críticos a gran escala.",
   },

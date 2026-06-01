@@ -265,6 +265,24 @@ h2 {
   text-shadow: 0 0 4px black, 0 0 12px rgba(245, 210, 68, 0.25);
 }
 
+/* ─── Top ticker (cinta consola) ─────────────────────── */
+
+@keyframes tickerScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  display: inline-flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: tickerScroll 40s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
 /* ─── Tourist section (unchanged) ────────────────────── */
 
 .tourist-body h1 {

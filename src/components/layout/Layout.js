@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TopTicker from "./TopTicker";
 import TopLeyend from "./TopLeyend";
 import TopMainScreen from "./TopMainScreen";
 import Footer from "./Footer";
@@ -17,6 +18,7 @@ export default function Layout({ children, classHome, classQuienesSomos, classSe
 
   return (
     <div className="bg-secundary">
+      <TopTicker />
       <TopLeyend toggleNav={toggleNav} />
       <MobileNavBar open={open} />
       <TopMainScreen />

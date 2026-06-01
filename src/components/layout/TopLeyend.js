@@ -18,7 +18,7 @@ const TopLeyend = ({ toggleNav }) => {
           className="text-xs font-bold tracking-widest text-yellow uppercase"
           style={{ fontFamily: 'Orbitron, sans-serif', letterSpacing: '0.18em' }}
         >
-          Repensemos tu marca frente al nuevo mundo
+          Tu marca, tu estilo, tu web
         </p>
       </div>
 
@@ -60,7 +60,7 @@ const TopLeyend = ({ toggleNav }) => {
           <FaFacebook />
         </a>
         <a
-          href="https://www.instagram.com/devzeppelin.ar/"
+          href="https://www.instagram.com/devzeppelin.com.ar/"
           target="_blank"
           rel="noreferrer"
           aria-label="Instagram"
