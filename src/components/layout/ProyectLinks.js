@@ -4,12 +4,12 @@ import { FaSchool } from "react-icons/fa";
 import { FiRadio } from "react-icons/fi";
 import { GiBattleGear } from "react-icons/gi";
 import { BsBriefcaseFill } from "react-icons/bs";
-
+import { DiAndroid } from "react-icons/di";
 
 const ProyectLinks = ({ classAdd }) => {
   return (
     <div
-      className={`grid grid-cols-5 ${classAdd} gap-2 text-center justify-between mx-auto px-2 md:px-0  py-2 md:py-2 text-white text-sm`}
+      className={`grid grid-cols-6 ${classAdd} gap-2 text-center justify-between mx-auto px-2 md:px-0  py-2 md:py-2 text-white text-sm`}
     >
       <ProyectLinksComponent file={<GiMonkey />} name="Blog" dir="/blog" />
       <ProyectLinksComponent
@@ -21,6 +21,11 @@ const ProyectLinks = ({ classAdd }) => {
         file={<BsBriefcaseFill />}
         name="Portafolio"
         dir="/portafolio"
+      />
+      <ProyectLinksComponent
+        file={<DiAndroid />}
+        name="Webs"
+        dir="/webs"
       />
       <ProyectLinksComponent
         file={<GiBattleGear />}

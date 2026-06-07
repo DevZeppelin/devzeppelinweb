@@ -25,8 +25,8 @@ const Webs = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <SectionWorkComponent
                     src="/responsiveImages/01.png"
-                    description="Empresa de tecnología"
-                    web="www.tecnicosya.com.ar"
+                    description="Web Tecnológica (último trabajo)"
+                    web="www.anexalinks.ar"
                   />
 
                   <SectionWorkComponent
