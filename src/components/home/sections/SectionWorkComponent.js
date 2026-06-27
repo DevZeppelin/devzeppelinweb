@@ -8,7 +8,7 @@ const SectionWorkComponent = ({ description, web, src }) => {
         href={`https://${web}`}
         rel="noreferrer"
         target="_blank"
-        className="group flex h-full flex-col rounded-2xl border border-yellow/15 bg-primary/40 p-5 transition-all duration-300 hover:border-yellow/50 hover:bg-primary/60"
+        className="group flex h-full flex-col rounded-2xl border border-yellow/15 bg-slate-800 p-5 transition-all duration-300 hover:border-yellow/50 hover:bg-slate-800/60"
       >
         <div className="relative h-44 w-full">
           <Image
