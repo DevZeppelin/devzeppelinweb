@@ -25,34 +25,39 @@ const Webs = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <SectionWorkComponent
                     src="/responsiveImages/01.png"
-                    description="Web Tecnológica (último trabajo)"
+                    description="Anexa Links Kiosko Web"
                     web="www.anexalinks.ar"
                   />
 
                   <SectionWorkComponent
-                    src="/responsiveImages/03.png"
-                    description="Tarjeta de invitación Web"
-                    web="invitaweb.vercel.app/gabi_y_pablo_out"
+                    src="/responsiveImages/cuchillos.png"
+                    description="Web de cuchillos con catálogo"
+                    web="https://cuchillosgalucho.vercel.app/"
                   />
                   <SectionWorkComponent
-                    src="/responsiveImages/jeans.png"
-                    description="Venta de Jeans"
-                    web="indianajeans-ar.vercel.app/"
+                    src="/responsiveImages/miami.png"
+                    description="Catálogo simple de iphones"
+                    web="https://www.miamiphones.com.ar/"
                   />
                   <SectionWorkComponent
-                    src="/responsiveImages/cercos.png"
-                    description="Web de cercos perimetrales"
-                    web="cercos-san-nicolas-n8ij8okes-devzeppelin.vercel.app/"
+                    src="/responsiveImages/iguazu.png"
+                    description="Web de apart hotel en Iguazú"
+                    web="https://apart-flores.vercel.app/"
+                  />
+                  <SectionWorkComponent
+                    src="/responsiveImages/monoblanco.png"
+                    description="Web de cine, minimalista"
+                    web="https://www.monoblancofilms.com/"
                   />
                   <SectionWorkComponent
                     src="/responsiveImages/04.png"
                     description="Blog personal"
-                    web="devzeppelinweb.vercel.app/blog"
+                    web="devzeppelinweb.com.ar/blog"
                   />
                   <SectionWorkComponent
                     src="/responsiveImages/portafolio.png"
                     description="Radio Web"
-                    web="devzeppelinweb.vercel.app/almarockera"
+                    web="devzeppelinweb.com.ar/almarockera"
 
                   />
                 </div>
