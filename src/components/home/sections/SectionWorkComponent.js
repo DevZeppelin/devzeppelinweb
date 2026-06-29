@@ -5,7 +5,7 @@ const SectionWorkComponent = ({ description, web, src }) => {
   return (
     <div className="p-3 md:p-4">
       <Link
-        href={`https://${web}`}
+        href={`${web}`}
         rel="noreferrer"
         target="_blank"
         className="group flex h-full flex-col rounded-2xl border border-yellow/15 bg-slate-800 p-5 transition-all duration-300 hover:border-yellow/50 hover:bg-slate-800/60"

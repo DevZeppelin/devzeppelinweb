@@ -52,12 +52,12 @@ const Webs = () => {
                   <SectionWorkComponent
                     src="/responsiveImages/04.png"
                     description="Blog personal"
-                    web="devzeppelinweb.com.ar/blog"
+                    web="devzeppelin.com.ar/blog"
                   />
                   <SectionWorkComponent
                     src="/responsiveImages/portafolio.png"
                     description="Radio Web"
-                    web="devzeppelinweb.com.ar/almarockera"
+                    web="devzeppelin.com.ar/almarockera"
 
                   />
                 </div>
