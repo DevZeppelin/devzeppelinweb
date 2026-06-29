@@ -50,6 +50,11 @@ const Webs = () => {
                     web="https://www.monoblancofilms.com/"
                   />
                   <SectionWorkComponent
+                    src="/responsiveImages/vivachile.png"
+                    description="Reservas para actividades"
+                    web="https://www.vivachile.shop/"
+                  />
+                  <SectionWorkComponent
                     src="/responsiveImages/04.png"
                     description="Blog personal"
                     web="devzeppelin.com.ar/blog"
@@ -58,6 +63,12 @@ const Webs = () => {
                     src="/responsiveImages/portafolio.png"
                     description="Radio Web"
                     web="devzeppelin.com.ar/almarockera"
+
+                  />
+                  <SectionWorkComponent
+                    src="/responsiveImages/mdzsuena.png"
+                    description="Radio Web con manejo de contenido"
+                    web="https://mendozasuena.com.ar"
 
                   />
                 </div>
