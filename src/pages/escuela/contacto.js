@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/escuela/Layout";
+import Seo from "@/components/Seo";
+import { contactPageJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export default function Contacto() {
   return (
@@ -7,6 +9,19 @@ export default function Contacto() {
       MainTitle="Contacto"
       Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
     >
+      <Seo
+        title="Contacto | codeObrero"
+        description="Contactá a Gino Pietrobon de codeObrero por mail, WhatsApp o redes sociales para consultas sobre programación y tus primeros pasos como developer."
+        path="/escuela/contacto"
+        image="/escuela/logo.webp"
+        jsonLd={[
+          contactPageJsonLd(),
+          breadcrumbJsonLd([
+            { name: "Escuela", path: "/escuela" },
+            { name: "Contacto", path: "/escuela/contacto" },
+          ]),
+        ]}
+      />
       <div className="container">
         <img
           className="icon"
@@ -65,30 +80,30 @@ export default function Contacto() {
           flex-wrap: wrap;          
         }
 
-        .contacto span {
-          font-size: 1.2em;
-          margin-top: 0.2em;
-          margin-bottom: 1em;
-        }
-
         h2 {
           margin-top: 1em;
           margin-bottom: 1em;
-          font-size: 1.5rem
+          font-size: 1.5rem;
         }
 
-        span>img {
-          width: 64px;
-          height: 64px; 
+        .contactNetworks img {
+          width: 56px;
+          height: 56px;
+          margin: 0 4px;
+          filter: drop-shadow(0 0 8px rgba(245, 210, 68, 0.3));
+          transition: transform 0.3s ease, filter 0.3s ease;
         }
 
-        @media(max-width: 750px){
-          
-        span>img {
-          width: 36px;
-          height: 36px;          
+        .contactNetworks img:hover {
+          transform: scale(1.15);
+          filter: drop-shadow(0 0 14px rgba(245, 210, 68, 0.6));
         }
 
+        @media (max-width: 750px) {
+          .contactNetworks img {
+            width: 40px;
+            height: 40px;
+          }
         }
 
       `}</style>

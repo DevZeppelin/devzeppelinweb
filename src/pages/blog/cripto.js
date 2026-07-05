@@ -1,32 +1,19 @@
-import Head from "next/head";
-import Layout from "@/components/blog/Layout";
 import Prismic from "prismic-javascript";
 import { Client } from "@/lib/prismic";
-import BlogLayout from "@/components/blog/BlogLayout";
+import CategoryPage from "@/components/blog/CategoryPage";
 
-export default function Cripto({blogs}) {
-  return (
-    <div>
-      <Head>
-        <title>¡moonwatcher`s cripto!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
-          <BlogLayout tag="cripto" title="Blog Cripto 💎" blogs={blogs} />          
-      </Layout>
-    </div>
-  );
+export default function Cripto({ blogs }) {
+  return <CategoryPage category="cripto" blogs={blogs} />;
 }
 
 export async function getServerSideProps() {
-    const blogs = await Client().query(
-      Prismic.Predicates.at("document.tags", ["cripto"])
-    );
-      
-    return {
-      props: {
-        blogs: blogs,       
-      },
-    };
-  }
- 
+  const blogs = await Client().query(
+    Prismic.Predicates.at("document.tags", ["cripto"])
+  );
+
+  return {
+    props: {
+      blogs: blogs,
+    },
+  };
+}

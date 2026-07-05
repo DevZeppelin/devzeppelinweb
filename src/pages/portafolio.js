@@ -1,5 +1,6 @@
-import Head from "next/head";
 import { Poppins } from "next/font/google";
+import Seo from "@/components/Seo";
+import { profilePageJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import Nav from "@/components/portafolio/Nav";
 import Hero from "@/components/portafolio/Hero";
 import Stats from "@/components/portafolio/Stats";
@@ -19,14 +20,16 @@ export default function Portafolio() {
     <div
       className={`${poppins.className} bg-primary text-white min-h-screen antialiased`}
     >
-      <Head>
-        <title>Gino Pietrobon · Portfolio</title>
-        <meta
-          name="description"
-          content="Gino Pietrobon — CEO de Dev Zeppelin, CTO de Anexa Links. Desarrollador Python, automatización (RPA), SAP e integraciones con IA."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo
+        title="Gino Pietrobon · Portfolio | Dev Zeppelin"
+        description="Gino Pietrobon — CEO de Dev Zeppelin, CTO de Anexa Links. Desarrollador Python, automatización (RPA), SAP e integraciones con IA."
+        path="/portafolio"
+        image="/portafolio/me.jpeg"
+        jsonLd={[
+          profilePageJsonLd(),
+          breadcrumbJsonLd([{ name: "Portafolio", path: "/portafolio" }]),
+        ]}
+      />
 
       <Nav />
       <main>
@@ -40,7 +43,7 @@ export default function Portafolio() {
 
       <style global jsx>{`
         html {
-          background: #0d0d0d;
+          background: #080808;
           scroll-behavior: smooth;
         }
         body {

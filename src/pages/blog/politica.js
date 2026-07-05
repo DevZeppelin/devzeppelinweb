@@ -1,34 +1,19 @@
-import Head from "next/head";
-import Layout from "@/components/blog/Layout";
 import Prismic from "prismic-javascript";
 import { Client } from "@/lib/prismic";
-import BlogLayout from "@/components/blog/BlogLayout";
+import CategoryPage from "@/components/blog/CategoryPage";
 
-export default function Politica({blogs}) {
-  return (
-    <div>
-      <Head>
-        <title>¡moonwatcher`s politics!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
-          <BlogLayout tag="politica" title="Blog de Política 💼" blogs={blogs} />          
-      </Layout>
-    </div>
-  );
+export default function Politica({ blogs }) {
+  return <CategoryPage category="politica" blogs={blogs} />;
 }
 
 export async function getServerSideProps() {
-    const blogs = await Client().query(
-      Prismic.Predicates.at("document.tags", ["politica"])
-    );     
+  const blogs = await Client().query(
+    Prismic.Predicates.at("document.tags", ["politica"])
+  );
 
-       
-    return {
-      props: {
-        blogs: blogs,
-        
-      },
-    };
-  }
- 
+  return {
+    props: {
+      blogs: blogs,
+    },
+  };
+}

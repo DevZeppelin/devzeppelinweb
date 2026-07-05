@@ -1,7 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+const links = [
+  { href: "/escuela/primeros-pasos-dev", label: "1ros pasos", emoji: "👆" },
+  { href: "/escuela/consejos", label: "Consejos", emoji: "🗣" },
+  { href: "/escuela/criptomonedas", label: "Criptomonedas", emoji: "💎" },
+  { href: "/escuela/acerca-de", label: "About", emoji: "❔" },
+  { href: "/escuela/contacto", label: "Contacto", emoji: "📬" },
+  { href: "/blog", label: "Blog", emoji: "🐵" },
+  { href: "/", label: "Volver a DevZeppelin.com.ar", emoji: "🦅" },
+];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -12,135 +22,57 @@ export default function Nav() {
   };
 
   return (
-    <div className="nav-container" id="nav-container">
-      <Link href="/escuela/" passHref>
-        <img className="logo" src="/escuela/logo.webp" alt="logo code-obrero" />
-      </Link>
+    <div
+      className="glass-dark sticky top-0 z-50 border-b border-yellow/10"
+      id="nav-container"
+    >
+      <nav
+        aria-label="Navegación de codeObrero"
+        className="flex items-center justify-between px-3 md:px-8"
+      >
+        <Link href="/escuela/" passHref>
+          <span className="cursor-pointer p-2">
+            <Image
+              src="/escuela/logo.webp"
+              alt="logo code-obrero"
+              width={64}
+              height={64}
+              className="drop-shadow-[0_0_10px_rgba(245,210,68,0.4)] transition hover:scale-105"
+            />
+          </span>
+        </Link>
 
-      <div className="nav-titles">
-        <span>•</span>
-        <Link href="/escuela/primeros-pasos-dev">
-          <span>1ros pasos</span>
-        </Link>
-        <span>•</span>
-        <Link href="/escuela/consejos">
-          <span>Consejos</span>
-        </Link>
-
-        <span>•</span>
-        <Link href="/escuela/criptomonedas">
-          <span>Criptomonedas</span>
-        </Link>
-
-        <span>•</span>
-        <Link href="/escuela/acerca-de">
-          <span>About</span>
-        </Link>
-        <span>•</span>
-        <Link href="/escuela/contacto">
-          <span>Contacto</span>
-        </Link>
-        <span>•</span>
-        <Link href="/blog">
-          <span>Blog</span>
-        </Link>
-        <span>•</span>
-        <Link href="/">
-          <span>Volver a DevZeppelin.com.ar</span>
-        </Link>
-      </div>
-
-      <div>
-        <div className="hamburguer-icon">
-          <button
-            onClick={toggleNav}
-            aria-label="Hamburguer Button of Main Content"
-            className="buttonSchool"
-          >
-            <GiHamburgerMenu />
-          </button>
+        <div className="hidden items-center gap-1 md:flex">
+          {links.map(({ href, label }) => (
+            <Link key={href} href={href}>
+              <span className="nav-link cursor-pointer px-3 py-2 font-heading text-xs uppercase tracking-wide text-lightGray transition hover:text-yellow">
+                {label}
+              </span>
+            </Link>
+          ))}
         </div>
-        <div
-          className="nav-titles-mobile"
-          style={{ display: open ? "flex" : "none" }}
+
+        <button
+          onClick={toggleNav}
+          aria-label="Abrir menú de navegación"
+          aria-expanded={open}
+          className="p-3 text-2xl text-yellow md:hidden"
         >
-          <Link href="/escuela/primeros-pasos-dev">
-            <span>👆 1ros pasos</span>
-          </Link>
+          <GiHamburgerMenu />
+        </button>
+      </nav>
 
-          <Link href="/escuela/consejos">
-            <span>🗣 Consejos</span>
-          </Link>
-
-          <Link href="/escuela/criptomonedas">
-            <span>💎 Criptomonedas</span>
-          </Link>
-
-          <Link href="/escuela/acerca-de">
-            <span>❔ About</span>
-          </Link>
-
-          <Link href="/escuela/contacto">
-            <span>📬 Contacto</span>
-          </Link>
-          <Link href="/blog/">
-            <span>🐵 Blog</span>
-          </Link>
-          <Link href="/">
-            <span>🦅 Volver a DevZeppelin.com.ar</span>
-          </Link>
+      {open && (
+        <div className="glass-dark fadeIn fixed right-2 top-20 z-50 flex flex-col rounded-2xl border border-yellow/20 p-4 md:hidden">
+          {links.map(({ href, label, emoji }) => (
+            <Link key={href} href={href}>
+              <span className="cursor-pointer px-3 py-2 text-sm text-lightGray transition hover:text-yellow">
+                {emoji} {label}
+              </span>
+            </Link>
+          ))}
         </div>
-      </div>
-      <style jsx>{`
-        .logo {
-          cursor: pointer;
-        }
-        .nav-container {
-          display: flex;
-          align-items: center;
-          list-style: none;
-          /*padding: 0;
-          margin: 0;
-          display: grid;
-          grid-auto-columns: 100px;
-          grid-auto-flow: column;
-          justify-content: space-around;*/
-        }
-        .nav-container span {
-          font-family: "Rokkitt", serif;
-        }
-        .hamburguer-icon {
-          padding-right: 40px;
-          font-size: 22px;
-          display: none;
-        }
-        .nav-titles-mobile {
-          display: none;
-        }
-        @media screen and (max-width: 700px) {
-          .nav-container {
-            justify-content: space-between;
-          }
-
-          .hamburguer-icon {
-            display: flex;
-          }
-          .nav-titles {
-            display: none;
-          }
-
-          .nav-titles-mobile {
-            position: fixed;
-            right: 0;
-            flex-direction: column;
-            padding: 10px;
-            margin-right: 10px;
-            background: var(--orange-hard);
-            border-radius: 10px;
-            border: 2px solid black;
-          }
-        }
-      `}</style>
+      )}
     </div>
   );
 }

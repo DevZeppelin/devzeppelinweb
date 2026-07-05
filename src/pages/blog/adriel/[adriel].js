@@ -1,19 +1,8 @@
 import { Client } from "@/lib/prismic";
-import Layout from "@/components/blog/Layout";
-import Head from "next/head";
-import SlugLayout from "@/components/blog/SlugLayout";
+import ArticlePage from "@/components/blog/ArticlePage";
 
 export default function AdrielSlug({ article }) {
-  return (
-    <div>
-      <Head>
-        <title>¡adriel`s escritos!</title>
-      </Head>
-      <Layout>
-        <SlugLayout article={article}/>
-      </Layout>
-    </div>
-  );
+  return <ArticlePage tag="adriel" article={article} />;
 }
 
 // this gets called on each request

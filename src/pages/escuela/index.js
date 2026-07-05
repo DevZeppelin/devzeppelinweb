@@ -1,15 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
+import Seo from "@/components/Seo";
+import { useInView } from "@/hooks/useInView";
+import { educationalOrgJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export default function Index() {
+  const [headerRef, headerVisible] = useInView(0.1);
+
   return (
     <Layout
       ID="main-index"
       MainTitle=""
       Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
     >
-      <header>
+      <Seo
+        title="codeObrero | Escuela gratuita de programación para principiantes"
+        description="codeObrero: consejos, recomendaciones y guía gratuita en español para dar tus primeros pasos en el mundo de la programación. Por Gino Pietrobon (DevZeppelin)."
+        path="/escuela"
+        image="/escuela/logo.webp"
+        jsonLd={[
+          educationalOrgJsonLd(),
+          breadcrumbJsonLd([{ name: "Escuela", path: "/escuela" }]),
+        ]}
+      />
+      <header
+        ref={headerRef}
+        className={`reveal from-bottom ${headerVisible ? "visible" : ""}`}
+      >
         <h1 className="mainTitle">codeObrero</h1>
         <h4>by Gino Pietrobon</h4>
 
@@ -19,7 +37,11 @@ export default function Index() {
       </header>
 
       <div className="container index" id="index">
-        <img className="icon" src="/escuela/robot.webp" alt="robot png" />
+        <img
+          className="icon"
+          src="/escuela/robot.webp"
+          alt="Ícono retro de un robot"
+        />
         <p>
           <strong>codeObrero</strong> es un lugar creado para todos aquellos que
           están comenzando en el mundo de la programación.
@@ -33,18 +55,18 @@ export default function Index() {
         <h2>¿Realmente querés ser programador?</h2>
         <p>
           Si tu respuesta es <strong>SI</strong> y si realmente lo deseas, un
-          mundo mágico de oportunidades espera por vos. Dejame ayudarte span{" "}
+          mundo mágico de oportunidades espera por vos. Dejame ayudarte a{" "}
           <i>comenzar este camino</i> infinito.
         </p>
         <img
           className="icon"
           src="/escuela/dinosaurio.webp"
-          alt="dinosaurio png"
+          alt="Ícono retro de un dinosaurio"
         />
 
         <p>
           Cuando quise comenzar a estudiar <strong>programación</strong> me
-          sentí abrumado y desconsertado por tanta información. Me estanqué y
+          sentí abrumado y desconcertado por tanta información. Me estanqué y
           sentía que necesitaba <i>algo o alguien</i> que me ayudara y
           acompañara en mis primeros pasos.
         </p>
@@ -56,14 +78,14 @@ export default function Index() {
 
         <p>
           Estoy seguro de poder ayudarte en este <b>primer pasito</b>. Una vez
-          que te decidas que quieres ser progrmador, mil puertas se abrirán y tu
+          que te decidas que quieres ser programador, mil puertas se abrirán y tu
           vida cambiará, porque una llama interior te hará querer
           <i>saber y aprender</i> cosas nuevas cada día.
         </p>
         <img
           className="icon"
           src="/escuela/videojuego.webp"
-          alt="videojuego png"
+          alt="Ícono retro de una consola de videojuegos"
         />
         <p>
           Quiero ser ese amigo que te dió un valioso consejo y unas palabras de
@@ -83,50 +105,45 @@ export default function Index() {
         </p>
 
         <Link href="/escuela/primeros-pasos-dev" passHref>
-          <button className="buttonSchool">Primeros pasos del futuro programador</button>
+          <button className="buttonSchool">
+            Primeros pasos del futuro programador
+          </button>
         </Link>
       </div>
       <style jsx>{`
-
         * {
-          text-align: center
-        }      
+          text-align: center;
+        }
 
         h2 {
-          padding-top: 2em
+          padding-top: 2em;
         }
 
         header {
           display: flex;
-          flex-direction: column;          
-          margin-bottom: 6em;
+          flex-direction: column;
+          margin-bottom: 4em;
           text-align: center;
           z-index: 100;
         }
 
         header button {
           font-size: 1em;
-          margin-bottom: 9em;
+          margin-bottom: 6em;
         }
 
         .mainTitle {
-          font-family: "Fruktur", cursive;
-          font-size: 5em;
-          font-weight: normal;
-          -webkit-text-stroke: 2.5px black;
-          color: transparent
-          
+          font-size: 3.4em;
+          margin-top: 1.2em;
         }
 
         @media screen and (max-width: 700px) {
           .mainTitle {
-          font-size: 4em;          
-        }
+            font-size: 2.6em;
+          }
 
           h4 {
-            font-size: 1.4em
-            
-            
+            font-size: 1.1em;
           }
         }
       `}</style>

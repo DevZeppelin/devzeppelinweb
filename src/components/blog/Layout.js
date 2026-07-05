@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import IconLinksLayout from "./IconLinksLayout";
+import { blogCategories, navCategories } from "@/data/blogCategories";
+import { contact, social } from "@/lib/site";
 
-import { GiMonkey } from "react-icons/gi";
+import { GiMonkey, GiHamburgerMenu } from "react-icons/gi";
 import { FiMail, FiTwitter } from "react-icons/fi";
-import { GiHamburgerMenu } from "react-icons/gi";
 import {
   FaWhatsapp,
   FaInstagram,
@@ -11,7 +13,16 @@ import {
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
-import Link from "next/link";
+
+const socialLinks = [
+  { href: contact.whatsapp, label: "WhatsApp de Gino", Icon: FaWhatsapp },
+  { href: social.instagram, label: "Instagram de moonwatcher.dev", Icon: FaInstagram },
+  { href: "https://www.twitter.com/moonwatcher73/", label: "Twitter de moonwatcher", Icon: FiTwitter },
+  { href: "https://www.facebook.com/Gini77o", label: "Facebook de Gino", Icon: FaFacebook },
+  { href: social.github, label: "GitHub de DevZeppelin", Icon: FaGithub },
+  { href: "https://www.linkedin.com/in/gino-pietrobon", label: "LinkedIn de Gino", Icon: FaLinkedinIn },
+  { href: contact.mailto, label: "Enviar un mail a Gino", Icon: FiMail },
+];
 
 export default function Layout({ children }) {
   const [open, setOpen] = useState(false);
@@ -22,218 +33,147 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div>
-      <div className="px-2 md:px-24 bg-primaryBlog text-white flex justify-between h-16">
-        <Link href="/blog/">
-          <span className="text-background text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundaryBlog">
-            <GiMonkey className="inline text-4xl mr-4" /> moonwatcher.dev
-          </span>
-        </Link>
+    <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-primary font-body text-lightGray">
+      {/* Orbes ambientales */}
+      <div
+        className="cyber-orb cyber-orb-a -top-20 right-0 h-72 w-72"
+        style={{ background: "rgba(245, 210, 68, 0.10)" }}
+      />
+      <div
+        className="cyber-orb cyber-orb-b bottom-40 -left-24 h-80 w-80"
+        style={{ background: "rgba(0, 212, 255, 0.07)" }}
+      />
 
-        <IconLinksLayout state={"hidden md:flex items-center"} />
+      <header className="glass-dark sticky top-0 z-50 border-b border-yellow/10">
+        <div className="flex h-16 items-center justify-between px-3 md:px-12">
+          <Link href="/blog/">
+            <span className="glow-text flex items-center font-heading text-lg text-yellow transition hover:scale-105 md:text-xl">
+              <GiMonkey className="mr-2 inline text-3xl" aria-hidden="true" />
+              moonwatcher.dev
+            </span>
+          </Link>
 
-        <div className="p-2 md:p-4 md:hidden flex justify-center w-10 text-2xl">
-          <button onClick={toggleNav} aria-label="Hamburguer Button of Main Content">
+          <IconLinksLayout state="hidden md:flex items-center text-lightGray" />
+
+          <button
+            onClick={toggleNav}
+            aria-label="Abrir menú de navegación"
+            aria-expanded={open}
+            className="p-2 text-2xl text-yellow md:hidden"
+          >
             <GiHamburgerMenu />
           </button>
         </div>
-      </div>
-      <div
-        className="absolute z-20 right-0 bg-primaryBlog text-background w-1/2 rounded-b-3xl"
-        style={{ display: open ? "block" : "none" }}
-      >
-        <div className="flex text-right flex-col text-base p-2 text-backgroundBlog mb-5">
+
+        {/* Nav desktop de categorías */}
+        <nav
+          aria-label="Categorías del blog"
+          className="hidden justify-center gap-1 border-t border-yellow/10 pb-2 pt-1 text-sm md:flex"
+        >
           <Link href="/blog">
-            <span className="mr-2  mt-2 px-3 hover:border-black">Home 🏠</span>
-          </Link>
-          <Link href="/news">
-            <span className="mr-2 mt-5 px-3 hover:border-black">
-              Noticias &#128240;
+            <span className="nav-link cursor-pointer px-3 py-2 uppercase tracking-wide transition hover:text-yellow">
+              Home
             </span>
           </Link>
-          <Link href="/blog/blog">
-            <span className="mr-2 mt-5 px-3 hover:border-black">Blog &#128053;</span>
-          </Link>
-          <Link href="/blog/dev">
-            <span className="mr-2 mt-5 px-3 hover:border-black">Programación &#128187;</span>
-          </Link>
-          <Link href="/blog/cripto">
-            <span className="mr-2 mt-5 px-3 hover:border-black">
-              Criptomonedas &#128184;
-            </span>
-          </Link>
-          <Link href="/blog/politica">
-            <span className="mr-2 mt-5 px-3 hover:border-black">
-              Política &#128188;
-            </span>
-          </Link>
-          <Link href="/blog/escritos">
-            <span className="mr-2 mt-5 px-3 hover:border-black">
-              Escritos &#9997;
-            </span>
-          </Link>
-          <Link href="/blog/rock">
-            <span className="mr-2 mt-5 px-3 hover:border-black">Rock &#127928;</span>
-          </Link>
-          <Link href="/blog/river">
-            <span className="mr-2 mt-5 px-3 hover:border-black">River 🐔</span>
-          </Link>
-        </div>
+          {navCategories.map((tag) => (
+            <Link key={tag} href={`/blog/${tag}`}>
+              <span className="nav-link cursor-pointer px-3 py-2 uppercase tracking-wide transition hover:text-yellow">
+                {blogCategories[tag].label}
+              </span>
+            </Link>
+          ))}
+        </nav>
+      </header>
+
+      {/* Menú móvil */}
+      {open && (
+        <nav
+          aria-label="Menú móvil del blog"
+          className="glass-dark fadeIn fixed right-0 top-16 z-50 w-64 rounded-bl-2xl border border-yellow/20 md:hidden"
+        >
+          <div className="flex flex-col p-4 text-right">
+            <Link href="/blog">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Home 🏠
+              </span>
+            </Link>
+            <Link href="/blog/news">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Noticias &#128240;
+              </span>
+            </Link>
+            <Link href="/blog/blog">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Blog &#128053;
+              </span>
+            </Link>
+            <Link href="/blog/dev">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Programación &#128187;
+              </span>
+            </Link>
+            <Link href="/blog/cripto">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Criptomonedas &#128184;
+              </span>
+            </Link>
+            <Link href="/blog/politica">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Política &#128188;
+              </span>
+            </Link>
+            <Link href="/blog/escritos">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Escritos &#9997;
+              </span>
+            </Link>
+            <Link href="/blog/rock">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                Rock &#127928;
+              </span>
+            </Link>
+            <Link href="/blog/river">
+              <span className="cursor-pointer px-3 py-2 hover:text-yellow">
+                River 🐔
+              </span>
+            </Link>
+          </div>
+        </nav>
+      )}
+
+      {/* Links secundarios en móvil */}
+      <div className="md:hidden">
+        <IconLinksLayout state="flex md:hidden text-center flex-col mt-4 pl-6 text-lightGray text-sm align-middle" />
       </div>
 
-      <div className="hidden md:flex justify-center px-2 md:px-24 bg-backgroundSecundaryBlog text-backgroundBlog border-b border-black text-base">
-        <Link href="/blog">
-          <span className="mr-6  mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Home
-          </span>
-        </Link>
-        <Link href="/blog/news">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Noticias
-          </span>
-        </Link>
-        <Link href="/blog/blog">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Blog
-          </span>
-        </Link>
-        <Link href="/blog/dev">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Programación
-          </span>
-        </Link>
-        <Link href="/blog/cripto">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Criptomonedas
-          </span>
-        </Link>
-        <Link href="/blog/politica">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Política
-          </span>
-        </Link>
-        <Link href="/blog/escritos">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Escritos
-          </span>
-        </Link>
-        <Link href="/blog/rock">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-secundaryBlog">
-            Rock
-          </span>
-        </Link>
-        <Link href="/blog/river">
-          <span className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
-            River
-          </span>
-        </Link>
-      </div>
+      <main className="relative z-10 flex-1">{children}</main>
 
-      <div className="md:hidden flex flex-col mx-auto">
-
-        <div>
-          <IconLinksLayout
-            state={"flex md:hidden text-center flex-col mt-4 pl-6 text-primaryBlog text-sm align-middle"}
-          />
-        </div>
-      </div>
-
-      {children}
-
-
-      <div id="footer" className="bg-primaryBlog text-white text-xl px-6 md:px-24 flex flex-col py-10 mt-8">
-
+      <footer className="relative z-10 mt-16 border-t border-yellow/10 bg-secundary px-6 py-10 md:px-24">
+        <div className="cyber-line mx-auto mb-8 max-w-xl" />
         <div
           id="contacto"
-          className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center"
+          className="flex justify-center space-x-5 text-2xl md:space-x-10 md:text-3xl"
         >
-          <a
-            href="https://api.whatsapp.com/send?phone=5492616708100"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button
-              aria-label="go to my whatsapp"
+          {socialLinks.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
               target="_blank"
-              rel="noopener"
-              alt="whatsapp-logo"
+              rel="noreferrer"
+              aria-label={label}
+              className="transition hover:scale-110 hover:text-yellow"
+              style={{ transitionDuration: "300ms" }}
             >
-              <FaWhatsapp className="hover:text-green-700" />
-            </button>
-          </a>
-
-          <a href="https://www.instagram.com/moonwatcher.dev/">
-            <button
-              aria-label="go to my instagram"
-              target="_blank"
-              rel="noopener"
-              alt="instagram-logo"
-            >
-              <FaInstagram className="hover:text-purple-700" />
-            </button>
-          </a>
-
-          <a href="https://www.twitter.com/moonwatcher73/">
-            <button
-              aria-label="go to my twitter"
-              target="_blank"
-              rel="noopener"
-              alt="twitter-logo"
-            >
-              <FiTwitter className="hover:text-blue-500" />
-            </button>
-          </a>
-
-          <a href="https://www.facebook.com/Gini77o">
-            <button
-              aria-label="go to my fabecook"
-              target="_blank"
-              rel="noopener"
-              alt="facebook-logo"
-            >
-              <FaFacebook className="hover:text-blue-800" />
-            </button>
-          </a>
-
-          <a href="https://github.com/DevZeppelin">
-            <button
-              aria-label="go to my github"
-              target="_blank"
-              rel="noopener"
-              alt="github-logo"
-            >
-              <FaGithub className="hover:text-red-400" />
-            </button>
-          </a>
-
-          <a href="https://www.linkedin.com/in/gino-pietrobon">
-            <button
-              aria-label="go to my linked in"
-              target="_blank"
-              rel="noopener"
-              alt="linkedin-logo"
-            >
-              <FaLinkedinIn className="hover:text-green-400" />
-            </button>
-          </a>
-
-          <a href="mailto:gino.b.pietrobon@gmail.com">
-            <button
-              aria-label="send me a mail"
-              target="_blank"
-              rel="noopener"
-              alt="gmail-logo"
-            >
-              <FiMail className="hover:text-red-600" />
-            </button>
-          </a>
+              <Icon className="hover:drop-shadow-[0_0_10px_rgba(245,210,68,0.7)]" />
+            </a>
+          ))}
         </div>
 
-        <div className="mt-10 text-sm max-w-2xl">
-          Make with &#128153; in Mendoza, Argentina, by Gino Pietrobon. All
-          rights reserved. &copy; &nbsp; {new Date().getFullYear()}
-        </div>
-      </div>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-lightGray/70">
+          Hecho con &#128155; en Mendoza, Argentina, por Gino Pietrobon. Todos
+          los derechos reservados. &copy; {new Date().getFullYear()}
+        </p>
+      </footer>
     </div>
   );
 }

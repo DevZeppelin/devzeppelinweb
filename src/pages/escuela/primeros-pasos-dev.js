@@ -1,12 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
+import Seo from "@/components/Seo";
+import { learningResourceJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 const PrimerosPasosDev = () => (
   <Layout
     MainTitle="Mis primeros pasos en programación"
     Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
   >
+    <Seo
+      title="Primeros pasos en programación | codeObrero"
+      description="Guía gratuita para empezar a programar desde cero: qué lenguaje elegir, ruta de aprendizaje con cursos gratis, HTML, CSS, JavaScript y frameworks."
+      path="/escuela/primeros-pasos-dev"
+      image="/escuela/logo.webp"
+      jsonLd={[
+        learningResourceJsonLd({
+          title: "Mis primeros pasos en programación",
+          description:
+            "Guía para empezar a programar desde cero: qué lenguaje elegir, ruta de aprendizaje con cursos gratis, HTML, CSS, JavaScript y frameworks.",
+          path: "/escuela/primeros-pasos-dev",
+        }),
+        breadcrumbJsonLd([
+          { name: "Escuela", path: "/escuela" },
+          { name: "Primeros pasos", path: "/escuela/primeros-pasos-dev" },
+        ]),
+      ]}
+    />
     <div className="container" id="top">
       <img className="icon" src="/escuela/diamante.webp" alt="diamante png" />
       <nav className="secondaryNav">
@@ -124,7 +144,7 @@ const PrimerosPasosDev = () => (
         </li>
         <li>
           Aprender CSS básico (Cascading Style Sheets, es decir, hojas de estilo
-          en cascada): Este lenguaje sirve para dar estilo, colores y diseño span
+          en cascada): Este lenguaje sirve para dar estilo, colores y diseño a
           nuestra página o aplicación. Si te gusta el diseño te va a encantar,
           sino también es necesario aprenderlo porque éste definirá el formato y
           la belleza de tus trabajos.
@@ -148,13 +168,13 @@ const PrimerosPasosDev = () => (
 
       <p>
         En primer lugar te recomendaría hacer el curso gratuito de ED.team ya
-        que explica términos importatnes de manera fácil y digerible. Es corto y
+        que explica términos importantes de manera fácil y digerible. Es corto y
         de buena calidad. Esto nos dará los primeros conceptos e idea de lo que
         es la programación
       </p>
       <p>
         <b>Recomendación: </b> Busca una carpetita linda o un cuaderno y de
-        manera prolija andá tomando nota de lo que vas aprendiendo. Esto te va span
+        manera prolija andá tomando nota de lo que vas aprendiendo. Esto te va a
         servir para repasar conceptos en cualquier momento en el que no estás
         enfrente de la pantalla.
       </p>
@@ -199,8 +219,8 @@ const PrimerosPasosDev = () => (
           el que nos podemos encontrar.
         </li>
         <li>
-          Los ejercicios que hicimos mal, aanotarlos en un apartado del
-          cuaderno, y a medida que vayamos avanzando en nuestro camino vamos span
+          Los ejercicios que hicimos mal, anotarlos en un apartado del
+          cuaderno, y a medida que vayamos avanzando en nuestro camino vamos a
           notar que los vamos entendiendo mejor hasta que logramos resolverlo.
         </li>
       </ul>
@@ -220,7 +240,7 @@ const PrimerosPasosDev = () => (
         cosas cotidianas.
       </p>
       <p>
-        Cuidado: Cuando empezamos a saltar entre videos podemos comenzar span
+        Cuidado: Cuando empezamos a saltar entre videos podemos comenzar a
         desorientarnos al escuchar tanta cantidad de información y tecnologías
         diferentes.
       </p>

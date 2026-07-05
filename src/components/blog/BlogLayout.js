@@ -1,90 +1,157 @@
-/* eslint-disable @next/next/no-img-element */
 import { RichText } from "prismic-reactjs";
 import Link from "next/link";
+import Image from "next/image";
+import { useInView } from "@/hooks/useInView";
+import { formatDate } from "@/lib/seo";
+
+const delays = ["d1", "d2", "d3", "d4", "d5"];
+
+function IndexLinks({ blogs, tag }) {
+  return (
+    <ul className="space-y-3">
+      {blogs.results.map((article) => (
+        <li key={article.uid}>
+          <Link href={`/blog/${article.tags?.[0] || tag}/${article.uid}`}>
+            <span className="block cursor-pointer border-l-2 border-yellow/20 pl-3 text-sm leading-snug text-lightGray transition hover:border-yellow hover:text-yellow">
+              {RichText.asText(article.data["blog-title"] || [])}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default function BlogLayout({ tag, title, blogs, extra }) {
+  const [listRef, listVisible] = useInView(0.05);
+
+  const hasPosts = blogs?.results?.length > 0;
+
   return (
-    <div>
-      <div className="flex bg-white">
-        <div className="flex flex-col md:w-2/3 ml-4 md:ml-24 mr-4 md:mr-20 text-center">
-          <h1 className=" text-2xl font-bold md:text-3xl text-center my-8 mb-4 md:mb-16">
-            {title}
-          </h1>
+    <section className="mx-auto w-full max-w-6xl px-4 pt-10 md:px-8">
+      <header className="mb-10 text-center">
+        <h1
+          className="mx-auto font-heading text-2xl font-bold md:text-4xl"
+          style={{
+            background: "linear-gradient(90deg, #F5D244, #f0e870, #F5D244)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            filter: "drop-shadow(0 0 14px rgba(245, 210, 68, 0.35))",
+          }}
+        >
+          {title}
+        </h1>
+        <div className="cyber-line mx-auto mt-6 max-w-md" />
+      </header>
 
-          <div className="md:hidden mb-2 block text-left mx-12">
-            <h1 className=" text-base uppercase font-bold opacity-60 text-primaryBlog text-center">
-              Índice
-            </h1>
-
-            {blogs.results.map((article, index) => (
-              <div key={article.uid}>
-                <Link href={`${article.tags[0]}/${article.uid}`} passHref>
-                  <span className="flex bold text-xs opacity-60 cursor-pointer">
-                    •{RichText.render(article.data["blog-title"])}
-                  </span>
-                </Link>
-              </div>
-            ))}
-            <hr />
-            <div className="mt-4"> {extra} </div>
-          </div>
-
-          <div className="md:hidden mb-6">
-            <h1 className=" text-xl uppercase">Entradas</h1>
-            <p> 👇</p>
-          </div>
-
-          {blogs.results.map((article, index) => (
-            <div className=" mb-4 md:mb-10" key={article.uid}>
-              <Link href={`${tag}/${article.uid}`} passHref>
-                <h1 className="bold uppercase text-xl md:text-2xl text-lowContrastBlog cursor-pointer mb-4">
-                  {RichText.render(article.data["blog-title"])}
-                </h1>
-              </Link>
-
-              <Link href={`${tag}/${article.uid}`} passHref>
-                <img
-                  className="w-2/3 flex  mx-auto cursor-pointer border-gray-800 border-2 mb-2"
-                  src={article.data["image"].url}
-                  alt="img"
-                />
-              </Link>
-              <span className="opacity-50">
-                {blogs.results[index].data["blog-date"]}
-              </span>
-
-              <h1 className="mt-2 mb-6 px-8">
-                {" "}
-                {RichText.render(article.data["preview-info"])}
-              </h1>
-
-              <hr className="mt-5" />
-            </div>
-          ))}
-        </div>
-        <div className="hidden md:flex flex-col w-1/3">
-          <div className="mr-10 mt-16"> {extra} </div>
-
-          <h1
-            className="text-xl uppercase font-bold text-primaryBlog mb-10 ml-24"
-
-          >
+      {/* Índice colapsable en móvil */}
+      {hasPosts && (
+        <details className="glass-dark mb-8 rounded-xl p-4 md:hidden">
+          <summary className="cursor-pointer font-heading text-sm uppercase tracking-widest text-yellow">
             Índice
-          </h1>
+          </summary>
+          <div className="mt-4">
+            {extra && <div className="mb-4">{extra}</div>}
+            <IndexLinks blogs={blogs} tag={tag} />
+          </div>
+        </details>
+      )}
 
-          {blogs.results.map((article, index) => (
-            <div key={article.uid}>
-              <Link href={`${article.tags[0]}/${article.uid}`} passHref>
-                <h1 className="flex bold text-base mr-10 opacity-60 cursor-pointer">
-                  {RichText.render(article.data["blog-title"])}
-                </h1>
-              </Link>
+      <div className="md:grid md:grid-cols-[1fr_280px] md:gap-10">
+        {/* Entradas */}
+        <div ref={listRef} className="space-y-8">
+          {!hasPosts && (
+            <p className="glass rounded-xl p-8 text-center text-lightGray">
+              Todavía no hay entradas en esta categoría. ¡Volvé pronto! 🚀
+            </p>
+          )}
 
-              <hr className="mt-5" />
-            </div>
-          ))}
+          {hasPosts &&
+            blogs.results.map((article, index) => {
+              const articleTitle = RichText.asText(
+                article.data["blog-title"] || []
+              );
+              const preview = RichText.asText(
+                article.data["preview-info"] || []
+              );
+              const date = article.data["blog-date"];
+              const href = `/blog/${tag}/${article.uid}`;
+
+              return (
+                <article
+                  key={article.uid}
+                  className={`reveal from-bottom ${delays[index % 5]} ${
+                    listVisible ? "visible" : ""
+                  } glass group overflow-hidden rounded-xl transition hover:-translate-y-1`}
+                  style={{ transitionProperty: "opacity, transform, box-shadow" }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow =
+                      "0 0 32px rgba(245, 210, 68, 0.18)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = "";
+                  }}
+                >
+                  <Link href={href}>
+                    <div className="cursor-pointer">
+                      {article.data.image?.url && (
+                        <div className="relative aspect-video w-full overflow-hidden">
+                          <Image
+                            src={article.data.image.url}
+                            alt={articleTitle || "Imagen del artículo"}
+                            fill
+                            sizes="(max-width: 850px) 100vw, 700px"
+                            className="object-cover transition-transform duration-400 group-hover:scale-105"
+                          />
+                        </div>
+                      )}
+                      <div className="space-y-3 p-6">
+                        <h2 className="font-heading text-lg text-yellow transition group-hover:text-lowContrast md:text-xl">
+                          {articleTitle}
+                        </h2>
+                        {date && (
+                          <time
+                            dateTime={date}
+                            className="inline-block rounded-full border border-yellow/30 px-3 py-1 text-xs uppercase tracking-wide text-lightGray/80"
+                          >
+                            {formatDate(date)}
+                          </time>
+                        )}
+                        {preview && (
+                          <p className="clamp-3 leading-relaxed text-lightGray">
+                            {preview}
+                          </p>
+                        )}
+                        <span className="inline-block font-heading text-sm uppercase tracking-widest text-yellow">
+                          Leer más →
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </article>
+              );
+            })}
         </div>
+
+        {/* Índice lateral (desktop) */}
+        {hasPosts && (
+          <aside className="hidden md:block">
+            <div className="sticky top-36">
+              {extra && <div className="mb-6">{extra}</div>}
+              <nav
+                aria-label="Índice de artículos"
+                className="glass-dark rounded-xl p-5"
+              >
+                <h2 className="mb-4 font-heading text-sm uppercase tracking-widest text-yellow">
+                  Índice
+                </h2>
+                <IndexLinks blogs={blogs} tag={tag} />
+              </nav>
+            </div>
+          </aside>
+        )}
       </div>
-    </div>
+    </section>
   );
 }

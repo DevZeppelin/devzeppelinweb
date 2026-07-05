@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/escuela/Layout";
+import Seo from "@/components/Seo";
+import { learningResourceJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 export default function Criptomonedas() {
   return (
@@ -8,6 +10,24 @@ export default function Criptomonedas() {
       MainTitle="Criptomonedas"
       Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
     >
+      <Seo
+        title="Introducción a Bitcoin y Criptomonedas | codeObrero"
+        description="Introducción gratuita al mundo cripto: qué es Bitcoin, la blockchain, altcoins como Ethereum y Cardano, recursos útiles y preguntas frecuentes."
+        path="/escuela/criptomonedas"
+        image="/escuela/logo.webp"
+        jsonLd={[
+          learningResourceJsonLd({
+            title: "Introducción a Bitcoin y Criptomonedas",
+            description:
+              "Introducción al mundo cripto: qué es Bitcoin, la blockchain, altcoins como Ethereum y Cardano, recursos útiles y preguntas frecuentes.",
+            path: "/escuela/criptomonedas",
+          }),
+          breadcrumbJsonLd([
+            { name: "Escuela", path: "/escuela" },
+            { name: "Criptomonedas", path: "/escuela/criptomonedas" },
+          ]),
+        ]}
+      />
       <div className="container">
         <img
           className="icon"
@@ -41,7 +61,7 @@ export default function Criptomonedas() {
         <p>
           <b>INTRODUCCIÓN:</b> El mundo Cripto es inmenso, interesante y es todo
           un cambio de paradigma de cómo funciona el mundo financiero como lo
-          conocemos. Hoy existen alrededor de 4000 criptomonedas alternativas span
+          conocemos. Hoy existen alrededor de 4000 criptomonedas alternativas a
           Bitcoin conocidas como “Altcoins”, pero para comprenderlas primero
           necesitamos saber lo básico de la criptomoneda madre, <b>Bitcoin</b>.
         </p>
@@ -69,7 +89,7 @@ export default function Criptomonedas() {
           datos gigante (50 GB aproximadamente) como si fuera una hoja de Exel
           en donde se relaciona la cantidad de monedas transferidas con la
           billetera (wallet) a la que le pertenecen. Luego de 10 años en
-          funcionamiento, Bitcoin ha demostrado ser segurro, transparente,
+          funcionamiento, Bitcoin ha demostrado ser seguro, transparente,
           efectivo, descentralizado y anónimo.
         </p>
         <p>
@@ -274,12 +294,6 @@ export default function Criptomonedas() {
         </a>
       </div>
       <style jsx>{`
-        h1 {
-          font-size: 2.6em;
-          padding-top: 1.8;
-          padding-bottom: 1.1em;
-        }
-
         button.main {
           margin-top: 4em;
           margin-bottom: 3em;

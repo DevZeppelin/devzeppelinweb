@@ -1,12 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
+import Seo from "@/components/Seo";
+import { learningResourceJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 const Consejos = () => (
   <Layout
     MainTitle="Consejos para iniciar y Preguntas frecuentes"
     Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
   >
+    <Seo
+      title="Consejos y preguntas frecuentes para nuevos devs | codeObrero"
+      description="Consejos prácticos para quienes empiezan a programar: qué lenguaje elegir, cómo estudiar, portfolio, trabajo remoto y respuestas a preguntas frecuentes."
+      path="/escuela/consejos"
+      image="/escuela/logo.webp"
+      jsonLd={[
+        learningResourceJsonLd({
+          title: "Consejos para iniciar y preguntas frecuentes",
+          description:
+            "Consejos prácticos para quienes empiezan a programar: qué lenguaje elegir, cómo estudiar, portfolio, trabajo remoto y preguntas frecuentes.",
+          path: "/escuela/consejos",
+        }),
+        breadcrumbJsonLd([
+          { name: "Escuela", path: "/escuela" },
+          { name: "Consejos", path: "/escuela/consejos" },
+        ]),
+      ]}
+    />
     <div className="container">
       <img className="icon" src="/escuela/arcade.webp" alt="arcade png" />
       <nav className="secondaryNav">
@@ -48,7 +68,7 @@ const Consejos = () => (
         </li>
         <li>
           Navega en YouTube, escucha <b>podcasts</b> de programación, sigue{" "}
-          <i>developers</i> en Instagram, Twitter, etc. NEcesitas estar
+          <i>developers</i> en Instagram, Twitter, etc. Necesitas estar
           actualizado y saber de qué se está hablando.
         </li>
         <li>
@@ -91,13 +111,13 @@ const Consejos = () => (
         </li>
         <li>
           Si te gustan las matemáticas, física, álgebra, cálculo, y soñás con
-          ser cietfifico, te recomiendo comenzar con el lenguaje <b>Phyton</b>{" "}
+          ser científico, te recomiendo comenzar con el lenguaje <b>Python</b>{" "}
           que posee una gran comunidad y es el más utilizado para ciencia de
           datos, inteligencia artificial y <i>machine learning</i>.
         </li>
         <li>
           Si querés apuntar al futuro, últimas encuentas confiables han dado
-          como mejores lenguajes de programación span: <b>RUST, GOLANG y SWIFT</b>
+          como mejores lenguajes de programación: <b>RUST, GOLANG y SWIFT</b>
           (IOS)
         </li>
         <li>

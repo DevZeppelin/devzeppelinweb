@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Link from "next/dist/client/link";
+import Link from "next/link";
 import { BiCodeAlt } from "react-icons/bi";
 import { FiSearch } from "react-icons/fi";
 import { GiZeppelin } from "react-icons/gi";
@@ -10,25 +10,25 @@ export default function IconLinksLayout({ state }) {
       <div className={`${state}`}>
         <div className="flex">
           <Link href="/blog/tecnoticiero">
-            <div className="flex hover:text-secundaryBlog">
+            <div className="flex transition hover:text-yellow">
               <abbr title="¡Potente buscador de noticias!">
-                <FiSearch className=" text-3xl cursor-pointer" />
+                <FiSearch className="cursor-pointer text-3xl" />
               </abbr>
-              <span className="my-auto cursor-pointer mr-4 ml-1">
+              <span className="my-auto ml-1 mr-4 cursor-pointer">
                 Buscador de Noticias
               </span>
             </div>
           </Link>
         </div>
 
-        <div className="flex hover:text-secundaryBlog">
+        <div className="flex">
           <Link href="/escuela" passHref>
-            <div className="flex hover:text-secundaryBlog">
+            <div className="flex transition hover:text-yellow">
               <abbr title="CodeObrero. Escuela de programación">
-                <BiCodeAlt className=" text-3xl cursor-pointer " />
+                <BiCodeAlt className="cursor-pointer text-3xl" />
               </abbr>
 
-              <span className="my-auto cursor-pointer mr-4 ml-1 ">
+              <span className="my-auto ml-1 mr-4 cursor-pointer">
                 Escuela Dev
               </span>
             </div>
@@ -37,11 +37,11 @@ export default function IconLinksLayout({ state }) {
 
         <div className="flex">
           <Link href="/">
-            <div className="flex hover:text-secundaryBlog">
-              <abbr title="DevZeppelin. Webs 100% perfomance">
-                <GiZeppelin className="text-3xl cursor-pointer " />
+            <div className="flex transition hover:text-yellow">
+              <abbr title="DevZeppelin. Webs 100% performance">
+                <GiZeppelin className="cursor-pointer text-3xl" />
               </abbr>
-              <span className="ml-1 my-auto cursor-pointer font-bold">
+              <span className="my-auto ml-1 cursor-pointer font-bold">
                 Volver a DevZeppelin.com.ar{" "}
               </span>
             </div>

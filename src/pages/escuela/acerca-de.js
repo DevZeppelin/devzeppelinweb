@@ -1,16 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/components/escuela/Layout";
 import Link from "next/link";
+import Seo from "@/components/Seo";
+import { personJsonLd, breadcrumbJsonLd, absoluteUrl } from "@/lib/seo";
 
 const AcercaDe = () => (
   <Layout
     MainTitle="Sobre Mi"
     Footer={`Gino Pietrobon. Copyright ${new Date().getFullYear()}`}
   >
+    <Seo
+      title="Sobre mí: Gino Pietrobon | codeObrero"
+      description="Conocé la historia detrás de codeObrero: por qué Gino Pietrobon creó esta escuela gratuita para acompañar a quienes dan sus primeros pasos como programadores."
+      path="/escuela/acerca-de"
+      image="/escuela/logo.webp"
+      jsonLd={[
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          url: absoluteUrl("/escuela/acerca-de"),
+          mainEntity: personJsonLd(),
+        },
+        breadcrumbJsonLd([
+          { name: "Escuela", path: "/escuela" },
+          { name: "Sobre mí", path: "/escuela/acerca-de" },
+        ]),
+      ]}
+    />
     <div className="container">
       <img className="icon" src="/escuela/arco-iris.webp" alt="arcoiris png" />
       <p>
-        Mi nombre es Gino Pietrobon, soy de Argentina. En noviembre de 2019 comencé a estudiar programación (Javascript), pero no fue fácil comenzar porque no encontraba un hilo coherente que me asegurara que estaba transitando el camino correcto. Fue hablando con un amigo programador cuando comprendí un poco el contexto de este mundo y sus consejos me ayudaron mucho para podr empezar.
+        Mi nombre es Gino Pietrobon, soy de Argentina. En noviembre de 2019 comencé a estudiar programación (Javascript), pero no fue fácil comenzar porque no encontraba un hilo coherente que me asegurara que estaba transitando el camino correcto. Fue hablando con un amigo programador cuando comprendí un poco el contexto de este mundo y sus consejos me ayudaron mucho para poder empezar.
 
       </p>
       <p>
@@ -27,7 +47,7 @@ const AcercaDe = () => (
 
       <p>
         Sueño con un futuro para mi país y continente, en donde existiendo muchos
-        programadores logremos implementar excelentes tecnologías que ayuden span
+        programadores logremos implementar excelentes tecnologías que ayuden a
         mejorar la calidad de vida de las personas y la gestión de un
         país. Poder plasmar excelentes sistemas que permitan aplicar políticas
         justas y efectivas. Creo que los programadores tendrán un lugar importante en cada país, y el poder será usar todo el capital intelectual de los programadores en mejorar el mundo.

@@ -1,36 +1,28 @@
-import Link from "next/link"
-import Head from "next/head";
-import Layout from "@/components/blog/Layout";
 import Prismic from "prismic-javascript";
 import { Client } from "@/lib/prismic";
-import BlogLayout from "@/components/blog/BlogLayout";
+import CategoryPage from "@/components/blog/CategoryPage";
 import { AiFillFacebook } from "react-icons/ai";
 
 export default function Rock({ blogs }) {
   return (
-    <div>
-      <Head>
-        <title>¡moonwatcher`s rock!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
-        <BlogLayout
-          tag="rock"
-          title="Alma Rockera 100% 🎸"
-          blogs={blogs}
-          extra={
-            <Link href="https://www.facebook.com/almarockera100">
-              <span target="_blank">
-                <div className="text-4xl flex align-bottom justify-center pb-10 -mt-1.5 text-blue-600">
-                  <span className=" text-lg md:text-2xl">Ir a Facebook Oficial •</span>
-                  <AiFillFacebook />{" "}
-                </div>
-              </span>
-            </Link>
-          }
-        />
-      </Layout>
-    </div>
+    <CategoryPage
+      category="rock"
+      blogs={blogs}
+      extra={
+        <a
+          href="https://www.facebook.com/almarockera100"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="glass group flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-3 text-yellow transition hover:-translate-y-0.5">
+            <span className="font-heading text-sm uppercase tracking-wide md:text-base">
+              Facebook Oficial
+            </span>
+            <AiFillFacebook className="text-2xl transition group-hover:scale-110" />
+          </div>
+        </a>
+      }
+    />
   );
 }
 
