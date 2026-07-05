@@ -59,6 +59,19 @@ const Webs = () => {
                     description="Blog personal"
                     web="devzeppelin.com.ar/blog"
                   />
+
+                  <SectionWorkComponent
+                    src="/responsiveImages/gym-kromm.png"
+                    description="Tienda de máquinas para gimnasio"
+                    web="https://kromm.vercel.app/"
+
+                  />
+                  <SectionWorkComponent
+                    src="/responsiveImages/envasadora-agua.png"
+                    description="Embotellador de aguas"
+                    web="https://agua-talise.vercel.app/"
+
+                  />
                   <SectionWorkComponent
                     src="/responsiveImages/portafolio.png"
                     description="Radio Web"
