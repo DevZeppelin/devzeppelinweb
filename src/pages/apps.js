@@ -22,41 +22,41 @@ const Apps = () => {
             <section id="apps">
               <div className="p-4 md:px-16 mx-auto pt-16 max-w-7xl">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                   <SectionWorkComponent
+                  <SectionWorkComponent
                     src="/apps/anime-math.png"
                     description="App para practicar las tablas, con recompensas ánime"
-                    web="anime-math.vercel.app"
+                    web="https://anime-math.vercel.app"
                   />
                   <SectionWorkComponent
                     src="/apps/ccu.png"
                     description="App para sacar la cuenta en los asados"
-                    web="cuantocadauno.vercel.app"
+                    web="https://cuantocadauno.vercel.app"
                   />
                   <SectionWorkComponent
                     src="/apps/turnon.png"
                     description="App de Turnos"
-                    web="barber-app-psi.vercel.app"
+                    web="https://barber-app-psi.vercel.app"
                   />
 
                   <SectionWorkComponent
                     src="/apps/carta-qr.png"
                     description="Carta QR (Restaurant)"
-                    web="ejemplo-carta-qr.vercel.app/"
+                    web="https://ejemplo-carta-qr.vercel.app/"
                   />
                   <SectionWorkComponent
                     src="/apps/turist.png"
                     description="App Ayuda a turistas"
-                    web="devzeppelinweb.vercel.app/tourist"
+                    web="https://devzeppelinweb.vercel.app/tourist"
                   />
                   <SectionWorkComponent
                     src="/apps/winehouse.png"
                     description="App catálogo de cabañas"
-                    web="winehouse.vercel.app"
+                    web="https://winehouse.vercel.app"
                   />
                   <SectionWorkComponent
                     src="/apps/gastapp.png"
                     description="App de calcular gastos personales"
-                    web="presupuesto-app-psi.vercel.app"
+                    web="https://presupuesto-app-psi.vercel.app"
                   />
 
 

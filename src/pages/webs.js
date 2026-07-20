@@ -26,7 +26,7 @@ const Webs = () => {
                   <SectionWorkComponent
                     src="/responsiveImages/01.png"
                     description="Anexa Links Kiosko Web"
-                    web="www.anexalinks.ar"
+                    web="https://www.anexalinks.ar"
                   />
 
                   <SectionWorkComponent
