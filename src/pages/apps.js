@@ -46,7 +46,7 @@ const Apps = () => {
                   <SectionWorkComponent
                     src="/apps/carta-qr.png"
                     description="Carta QR (Restaurant)"
-                    web="https://ejemplo-carta-qr.vercel.app/"
+                    web="https://carta-qr-opal.vercel.app/"
                   />
                   <SectionWorkComponent
                     src="/apps/turist.png"
@@ -61,7 +61,7 @@ const Apps = () => {
                   <SectionWorkComponent
                     src="/apps/gastapp.png"
                     description="App de calcular gastos personales"
-                    web="https://presupuesto-app-psi.vercel.app"
+                    web="https://bailandoenunapata.vercel.app"
                   />
                   <SectionWorkComponent
                     src="/apps/app-recetas.png"
