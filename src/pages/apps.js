@@ -28,6 +28,11 @@ const Apps = () => {
                     web="https://anime-math.vercel.app"
                   />
                   <SectionWorkComponent
+                    src="/apps/wolfwarrior.png"
+                    description="juego RPG medieval crónico"
+                    web="https://wolfwarrior.vercel.app/"
+                  />
+                  <SectionWorkComponent
                     src="/apps/ccu.png"
                     description="App para sacar la cuenta en los asados"
                     web="https://cuantocadauno.vercel.app"
@@ -46,7 +51,7 @@ const Apps = () => {
                   <SectionWorkComponent
                     src="/apps/turist.png"
                     description="App Ayuda a turistas"
-                    web="https://devzeppelinweb.vercel.app/tourist"
+                    web="https://turistapp-kappa.vercel.app/"
                   />
                   <SectionWorkComponent
                     src="/apps/winehouse.png"
@@ -58,8 +63,11 @@ const Apps = () => {
                     description="App de calcular gastos personales"
                     web="https://presupuesto-app-psi.vercel.app"
                   />
-
-
+                  <SectionWorkComponent
+                    src="/apps/app-recetas.png"
+                    description="Asistente de cocina, recetas e ingredientes"
+                    web="https://app-recetas-seven.vercel.app/"
+                  />
 
                 </div>
               </div>

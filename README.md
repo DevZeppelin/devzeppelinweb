@@ -33,7 +33,6 @@ src/
     portafolio/     Componentes del portfolio (Hero, Experience, Skills, ...)
     blog/           Componentes del blog (Prismic)
     escuela/        Componentes de codeObrero / escuela
-    tourist/        Componentes de la página tourist
     alma/           Componentes de Alma Rockera
   lib/
     prismic.js      Cliente de Prismic CMS
