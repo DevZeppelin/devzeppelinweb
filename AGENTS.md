@@ -68,7 +68,9 @@ Al tocar un sub-sitio, usar su Layout y su paleta — no mezclar colores de una 
 * Ambas listan tarjetas `<SectionWorkComponent src="..." title="..." description="..." web="..." />` dentro de un grid.
   * `src` es una imagen en `public/apps/` o `public/responsiveImages/`.
   * `web` es el link externo (se abre en `target="_blank"`).
-  * `title` (opcional) es el nombre del proyecto, se muestra destacado arriba de `description`. Si se omite, la card solo muestra `description` (comportamiento previo).
+  * `title` (opcional) es el nombre del proyecto: se muestra en mayúsculas arriba de `description`. Si se omite, la card solo muestra `description` (comportamiento previo).
+  * `description` se renderiza en itálica, estilo más liviano/moderno que el título.
+  * El fondo de la card y del contenedor de la imagen usa `bg-primary` (`#080808`, el mismo negro de fondo de todas las páginas) a propósito: así los thumbnails con fondo transparente/negro quedan integrados sin tener que editar cada imagen.
   * `description` es una descripción breve.
 * Para agregar un proyecto nuevo: subir el thumbnail a `public/apps/` (o `public/responsiveImages/` para webs) y sumar un `<SectionWorkComponent>` en el archivo correspondiente. El orden de aparición es el orden en el JSX.
 

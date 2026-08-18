@@ -8,9 +8,9 @@ const SectionWorkComponent = ({ title, description, web, src }) => {
         href={`${web}`}
         rel="noreferrer"
         target="_blank"
-        className="group flex h-full flex-col rounded-2xl border border-yellow/15 bg-slate-800 p-5 transition-all duration-300 hover:border-yellow/50 hover:bg-slate-800/60"
+        className="group flex h-full flex-col rounded-2xl border border-yellow/15 bg-primary p-5 transition-all duration-300 hover:-translate-y-1 hover:border-yellow/40 hover:shadow-[0_0_30px_-8px_rgba(245,210,68,0.25)]"
       >
-        <div className="relative h-44 w-full">
+        <div className="relative h-44 w-full overflow-hidden rounded-xl bg-black ring-1 ring-white/5">
           <Image
             src={src}
             alt={title || description}
@@ -20,14 +20,13 @@ const SectionWorkComponent = ({ title, description, web, src }) => {
           />
         </div>
         {title && (
-          <p className="mt-5 text-center text-lg font-bold text-yellow">
+          <p className="mt-5 text-center text-lg font-extrabold uppercase tracking-widest text-yellow">
             {title}
           </p>
         )}
         <p
-          className={`text-center text-base font-semibold text-yellow/90 ${
-            title ? "mt-1" : "mt-5"
-          }`}
+          className={`text-center text-sm font-normal italic text-yellow/60 ${title ? "mt-1" : "mt-5 text-base"
+            }`}
         >
           {description}
         </p>
