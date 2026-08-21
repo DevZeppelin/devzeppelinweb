@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaBookOpen, FaHeadphones, FaMusic, FaQuoteRight } from "react-icons/fa";
 import { BANDS } from "@/data/almaBands";
 import { ANECDOTAS } from "@/data/almaAnecdotas";
+import { site } from "@/lib/site";
 import Button from "./Button";
 
 const NAV_LINKS = [
@@ -41,6 +42,14 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={site.url}
+              target="_blank"
+              rel="noreferrer"
+              className="nav-link shrink-0 px-1 py-1 text-zinc-500 transition hover:text-white"
+            >
+              Dev Zeppelin ↗
+            </a>
           </div>
         </div>
       </nav>

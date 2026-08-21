@@ -1,4 +1,4 @@
-const RadioCard = ({ nombre, descripcion, embedId, embedSrc, height, fullWidth, principal }) => (
+const RadioCard = ({ nombre, descripcion, embedId, embedSrc, height, fullWidth, principal, web }) => (
   <div
     className={`flex flex-col items-center gap-4 rounded-2xl border bg-gradient-to-b from-zinc-900 to-zinc-800 p-6 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 ${
       principal ? "border-alma2/60 hover:shadow-[0_12px_30px_rgba(255,67,1,0.2)]" : "border-zinc-800 hover:border-alma2/40"
@@ -13,6 +13,16 @@ const RadioCard = ({ nombre, descripcion, embedId, embedSrc, height, fullWidth, 
       <h3 className="text-xl font-bold">{nombre}</h3>
     </div>
     {descripcion && <p className="max-w-sm text-sm text-zinc-400">{descripcion}</p>}
+    {web && (
+      <a
+        href={web}
+        target="_blank"
+        rel="noreferrer"
+        className="text-xs font-bold uppercase tracking-wide text-alma1 transition hover:text-white"
+      >
+        Visitar sitio de {nombre} ↗
+      </a>
+    )}
     <iframe
       className={`rounded-2xl border-none ${fullWidth ? "w-full" : "mx-auto w-full max-w-xs md:max-w-sm"}`}
       id={embedId}

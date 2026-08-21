@@ -2,16 +2,18 @@
  * Emisoras que Alma Rockera retransmite. El primer objeto con `principal: true`
  * es el reproductor principal del sitio; el resto son emisoras alternativas.
  * Para sumar una nueva radio, agregar un objeto con su propio `embedSrc`.
+ * `web` es opcional: si se conoce el sitio oficial de la emisora, se muestra un link.
  */
 export const RADIOS = [
   {
     id: "alma-rockera",
-    nombre: "Alma Rockera Radio",
-    descripcion: "Nuestra señal en vivo: rock las 24 horas.",
+    nombre: "Mendoza Suena Radio",
+    descripcion: "Nuestra señal amniga en vivo: rock las 24 horas.",
     principal: true,
     fullWidth: true,
     height: 110,
     embedSrc: "https://radio17.servidorderadio.net/cp/widgets/player/single/?p=8034",
+    web: "https://mendozasuena.com.ar",
   },
   {
     id: "undinamo-rock",
