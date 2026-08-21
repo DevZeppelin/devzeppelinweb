@@ -13,7 +13,7 @@ export default function Nav() {
             href="/"
             className="hidden sm:inline text-white/60 hover:text-white transition-colors"
           >
-            DevZeppelin.com.ar
+            DevZeppelin.ar
           </Link>
           <a
             href={contact.whatsapp}

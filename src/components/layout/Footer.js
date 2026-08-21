@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import MainBarButton from "@/components/ui/MainBarButton";
 import { FiMail } from "react-icons/fi";
-import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import Link from "next/dist/client/link";
 import ProyectLinks from "./ProyectLinks";
+import { contact, companySocial } from "@/lib/site";
 
 const Footer = () => {
   return (
@@ -50,14 +51,14 @@ const Footer = () => {
           <div className="cyber-line mb-4" />
 
           <a
-            href="https://api.whatsapp.com/send?phone=5492616708100"
+            href={contact.whatsapp}
             target="_blank"
             rel="noreferrer"
           >
             <MainBarButton
               logo={<FaWhatsapp className="text-yellow text-2xl flex my-auto m-2" />}
               text="Whatsapp, SMS o llamadas"
-              description2="+5492616708100"
+              description2={`+${contact.whatsappNumber}`}
               classType="text-yellow text-sm"
             />
           </a>
@@ -88,7 +89,7 @@ const Footer = () => {
 
           <div className="flex space-x-5 mb-6 text-3xl text-lightGray">
             <a
-              href="https://www.instagram.com/devzeppelin.com.ar/"
+              href={companySocial.instagram}
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -99,7 +100,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://www.facebook.com/devzeppelin/"
+              href={companySocial.facebook}
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
@@ -108,6 +109,28 @@ const Footer = () => {
               onMouseLeave={e => e.currentTarget.style.filter = 'none'}
             >
               <FaFacebook />
+            </a>
+            <a
+              href={companySocial.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              className="transition-all duration-300 hover:text-yellow"
+              onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(245,210,68,0.8))'}
+              onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href={companySocial.youtube}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+              className="transition-all duration-300 hover:text-yellow"
+              onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(245,210,68,0.8))'}
+              onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+            >
+              <FaYoutube />
             </a>
           </div>
 

@@ -81,7 +81,7 @@ export default function Home() {
                 !
               </h1>
               <h2 className="mt-6 font-body text-lg font-normal normal-case text-lightGray md:text-xl">
-                Soy <b className="text-yellow">Gino</b> de DevZeppelin.com.ar y
+                Soy <b className="text-yellow">Gino</b> de DevZeppelin.ar y
                 éste es mi Blog, donde encontrarás cosas como:
               </h2>
             </div>

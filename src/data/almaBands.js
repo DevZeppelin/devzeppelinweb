@@ -1,0 +1,145 @@
+/**
+ * Rockomendaciones: bandas que la comunidad de Alma Rockera va sumando.
+ * `categoria` es libre (under, muy under, conocidos, de galpon, ...) y alimenta
+ * el filtro de la sección — no hace falta declararla en ningún otro lado.
+ */
+export const BANDS = [
+  {
+    name: "Maldita Suerte",
+    recomienda: "adriel",
+    categoria: "conocidos",
+    local: "Buenos Aires",
+    text: "Banda de mataderos. Suenan como los hijos oficiales de La Renga.",
+    src: "/alma/maldita.png",
+    url: "https://www.youtube.com/watch?v=HJ8qv2gnAjI",
+  },
+  {
+    name: "Tallando el elefante",
+    recomienda: "javi (general)",
+    categoria: "conocidos",
+    local: "Buenos Aires",
+    src: "/alma/tallando.png",
+    url: "https://www.youtube.com/watch?v=A5C5-VsHZwk&list=PL2r6j3Ysf-6iz8tDPm1FXbqDl4v0U-FEf&index=12",
+  },
+  {
+    name: "Guillermina",
+    recomienda: "adriel",
+    categoria: "conocidos",
+    local: "Buenos Aires",
+    src: "/alma/guillermina.png",
+    url: "https://www.youtube.com/watch?v=jMGEwWuz0CM",
+  },
+  {
+    name: "Joistick",
+    recomienda: "genaro",
+    categoria: "under",
+    local: "Rosario",
+    src: "/alma/joistick.png",
+    url: "https://www.youtube.com/watch?v=hYUotHWycH8&list=RDhYUotHWycH8&start_radio=1",
+  },
+  {
+    name: "El Andamio",
+    recomienda: "adriel",
+    categoria: "muy under",
+    local: "Mendoza",
+    text: "Banda local mendocina de jovenes estudiantes manufactuando Rock",
+    src: "/alma/andamio.png",
+    url: "https://www.youtube.com/watch?v=X_PqP4muRos&list=RDX_PqP4muRos&start_radio=1",
+  },
+  {
+    name: "Arido",
+    recomienda: "adriel",
+    categoria: "muy under",
+    local: "Mendoza",
+    text:
+      "Banda de Metal muy potente, si uno no sabe que es mendocina diría que es una banda internacional. El cantante y líder tristemente falleció.",
+    src: "/alma/arido.png",
+    url: "https://www.youtube.com/watch?v=kzoy0808YF4&list=RDkzoy0808YF4&start_radio=1",
+  },
+  {
+    name: "Chantas",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Mendoza",
+    text:
+      "Banda activa, rocanrolera y popular. Con más de 20 años desde su fundación, hoy se encuentran tocando mucho y movilizando a sus seguidores.",
+    src: "/alma/chantas.png",
+    url: "https://youtu.be/_DuSYXKUuXk?si=yVcM75VVsQvqXkZQ",
+  },
+  {
+    name: "Nagual",
+    recomienda: "gino",
+    categoria: "conocidos",
+    local: "Buenos Aires",
+    text:
+      "Banda emergente de rock poderoso, buenas letras y con un público que cada vez se expande más.",
+    src: "/alma/nagual.png",
+    url: "https://youtu.be/STqO1sEvMfU?si=pJwpzrGtpe4uEVs4",
+  },
+  {
+    name: "La chancha muda",
+    categoria: "conocidos",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text:
+      "La Chancha Muda se formó en 'Parque Chacabuco' a inicios del 2000. 'Somos un grupo de amigos que ama hacer música, una banda de locos hermandados', dice el batero.",
+    src: "/alma/lachancha.png",
+    url: "https://www.youtube.com/watch?v=QyBMBotKKSw&list=PLjdp01j6sK4gxLMYsaYxuAltWaaZ1sr7d",
+  },
+  {
+    name: "Heroicos Sobrevivientes",
+    categoria: "conocidos",
+    recomienda: "adriel",
+    local: "Buenos Aires",
+    text: "Rocanroll andrajoso anteriores a Viejas Locas. Excelente banda.",
+    src: "/alma/heroicos.png",
+    url: "https://www.youtube.com/watch?v=jQ5kCasSQlo&list=RDjQ5kCasSQlo&start_radio=1",
+  },
+  {
+    name: "Autos Robados",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text:
+      "Nueva banda porteña rocanrolera que la está rompiendo. Dicen que agotó entradas en 30 minutos. ¿Nueva banda revelación?",
+    src: "/alma/autosrobados.png",
+    url: "https://www.youtube.com/watch?v=CtB-A-vBryM&list=RDEMcQ1rSH9wxLSlQVaCObphZA&start_radio=1",
+  },
+  {
+    name: "La Condena de Caín",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text: "",
+    src: "/alma/lacondena.png",
+    url: "https://www.youtube.com/watch?v=dHbuLVHvWkY&list=RDdHbuLVHvWkY&start_radio=1",
+  },
+  {
+    name: "Perro Indio",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text: "",
+    src: "/alma/perroindio.png",
+    url: "https://www.youtube.com/watch?v=z5VHK4FP8s4&list=RDz5VHK4FP8s4&start_radio=1",
+  },
+  {
+    name: "Más sola que Carola",
+    categoria: "under",
+    recomienda: "gino",
+    local: "Buenos Aires",
+    text: "",
+    src: "/alma/massola.png",
+    url: "https://www.youtube.com/watch?v=DezPrdtSBvk&list=RDDezPrdtSBvk&start_radio=1",
+  },
+  {
+    name: "La Máquina del Tío Pedro",
+    recomienda: "adriel",
+    categoria: "de galpon",
+    local: "Mendoza",
+    text:
+      "Rock de galpón. Solo una vez tocaron en un bar. Mal sonido en sus temas. Mucho cariño de su comunidad.",
+    src: "/alma/lmdtp.png",
+    url: "https://www.youtube.com/watch?v=LaBBheQH8hs&list=RDLaBBheQH8hs&start_radio=1&pp=ygUYbGEgbWFxdWluYSBkbGUgdGlvIHBlZHJvoAcB",
+  },
+];

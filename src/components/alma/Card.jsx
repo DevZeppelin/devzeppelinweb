@@ -3,20 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 
-const Card = ({ name, src, alt, text, url, local, recomienda }) => {
+const Card = ({ name, src, alt, text, url, local, recomienda, categoria }) => {
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-b from-zinc-900 to-zinc-800 text-white shadow-lg">
+    <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-b from-zinc-900 to-zinc-800 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-alma2/40 hover:shadow-[0_12px_30px_rgba(255,67,1,0.15)]">
       {/* Título + Local */}
       <header className="px-4 pt-5 md:px-6">
         <h2 className="text-2xl font-bold uppercase tracking-wide">{name}</h2>
-        <p className="text-xs text-slate-600">Recomendado por {recomienda}</p>
+        <p className="text-xs text-zinc-400">Recomendado por {recomienda}</p>
 
-        {local && (
-          <div className="mt-2 inline-flex items-center gap-2 rounded-full bg-zinc-700/50 px-3 py-1 text-xs text-zinc-200">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            <i className="not-italic">{local}</i>
-          </div>
-        )}
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          {local && (
+            <div className="inline-flex items-center gap-2 rounded-full bg-zinc-700/50 px-3 py-1 text-xs text-zinc-200">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              <i className="not-italic">{local}</i>
+            </div>
+          )}
+          {categoria && (
+            <div className="inline-flex items-center rounded-full border border-alma2/40 bg-alma2/10 px-3 py-1 text-xs capitalize text-alma1">
+              {categoria}
+            </div>
+          )}
+        </div>
       </header>
 
       {/* Imagen: sin márgenes en mobile, contenida en desktop */}

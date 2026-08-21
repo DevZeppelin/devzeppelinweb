@@ -10,6 +10,7 @@ const STATIC_PATHS = [
   "/contacto",
   "/quienesSomos",
   "/portafolio",
+  "/almarockera",
   "/blog",
   "/blog/dev",
   "/blog/news",

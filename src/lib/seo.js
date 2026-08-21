@@ -3,7 +3,7 @@
  * Funciones puras, sin React. La marca sale de src/lib/site.js.
  */
 import { RichText } from "prismic-reactjs";
-import { site, social, contact } from "@/lib/site";
+import { site, social, companySocial, contact } from "@/lib/site";
 
 export const absoluteUrl = (path = "/") =>
   path.startsWith("http") ? path : `${site.url}${path}`;
@@ -37,7 +37,12 @@ export const organizationJsonLd = () => ({
   url: site.url,
   logo: absoluteUrl("/logo.webp"),
   founder: { "@type": "Person", name: site.author },
-  sameAs: [social.linkedin, social.instagram, social.github],
+  sameAs: [
+    companySocial.linkedin,
+    companySocial.instagram,
+    companySocial.facebook,
+    companySocial.youtube,
+  ],
 });
 
 export const breadcrumbJsonLd = (items) => ({

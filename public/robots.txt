@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devzeppelin.com.ar/sitemap.xml
+Sitemap: https://devzeppelin.ar/sitemap.xml

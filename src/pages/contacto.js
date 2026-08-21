@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout";
 import MainBarButton from "@/components/ui/MainBarButton";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { contact } from "@/lib/site";
 
 const Contacto = () => {
 
@@ -25,7 +26,7 @@ const Contacto = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2 md:p-8 ">
             <div>
               <a
-                href="https://api.whatsapp.com/send?phone=5492616708100"
+                href={contact.whatsapp}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -34,7 +35,7 @@ const Contacto = () => {
                     <FaWhatsapp className="text-yellow text-2xl md:text-6xl flex my-auto m-4" />
                   }
                   text="Whatsapp SMS y llamadas"
-                  description2="+5492616708100"
+                  description2={`+${contact.whatsappNumber}`}
                   classType="text-yellow text-2xl my-2"
                 />
               </a>

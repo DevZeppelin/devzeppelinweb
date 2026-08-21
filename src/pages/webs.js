@@ -57,7 +57,7 @@ const Webs = () => {
                   <SectionWorkComponent
                     src="/responsiveImages/04.png"
                     description="Blog personal"
-                    web="devzeppelin.com.ar/blog"
+                    web="devzeppelin.ar/blog"
                   />
 
                   <SectionWorkComponent
@@ -75,7 +75,7 @@ const Webs = () => {
                   <SectionWorkComponent
                     src="/responsiveImages/portafolio.png"
                     description="Radio Web"
-                    web="devzeppelin.com.ar/almarockera"
+                    web="devzeppelin.ar/almarockera"
 
                   />
                   <SectionWorkComponent

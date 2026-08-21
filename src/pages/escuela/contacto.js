@@ -2,6 +2,7 @@
 import Layout from "@/components/escuela/Layout";
 import Seo from "@/components/Seo";
 import { contactPageJsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { contact } from "@/lib/site";
 
 export default function Contacto() {
   return (
@@ -37,7 +38,7 @@ export default function Contacto() {
 
           <div className="contactNetworks">
             <a
-              href="https://api.whatsapp.com/send?phone=5492616708100"
+              href={contact.whatsapp}
               target="_blank" rel="noreferrer"
             >
               <img src="..//escuela/social/whatsapp.webp" alt="whatsapp logo" />

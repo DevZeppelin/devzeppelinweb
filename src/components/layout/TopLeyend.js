@@ -1,6 +1,7 @@
 import { FiMail } from "react-icons/fi";
-import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { contact, companySocial } from "@/lib/site";
 
 const TopLeyend = ({ toggleNav }) => {
   return (
@@ -37,7 +38,7 @@ const TopLeyend = ({ toggleNav }) => {
       {/* Social icons */}
       <div className="flex items-center space-x-4 text-lg text-lightGray">
         <a
-          href="https://api.whatsapp.com/send?phone=5492616708100"
+          href={contact.whatsapp}
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp"
@@ -49,7 +50,7 @@ const TopLeyend = ({ toggleNav }) => {
           <FaWhatsapp />
         </a>
         <a
-          href="https://www.facebook.com/devzeppelin/"
+          href={companySocial.facebook}
           target="_blank"
           rel="noreferrer"
           aria-label="Facebook"
@@ -60,7 +61,7 @@ const TopLeyend = ({ toggleNav }) => {
           <FaFacebook />
         </a>
         <a
-          href="https://www.instagram.com/devzeppelin.com.ar/"
+          href={companySocial.instagram}
           target="_blank"
           rel="noreferrer"
           aria-label="Instagram"
@@ -69,6 +70,28 @@ const TopLeyend = ({ toggleNav }) => {
           onMouseLeave={e => e.currentTarget.style.filter = 'none'}
         >
           <FaInstagram />
+        </a>
+        <a
+          href={companySocial.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          className="transition-all duration-300 hover:text-yellow"
+          onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(245,210,68,0.8))'}
+          onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href={companySocial.youtube}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="YouTube"
+          className="transition-all duration-300 hover:text-yellow"
+          onMouseEnter={e => e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(245,210,68,0.8))'}
+          onMouseLeave={e => e.currentTarget.style.filter = 'none'}
+        >
+          <FaYoutube />
         </a>
         <a
           href="mailto:devzeppelin.ar@gmail.com"

@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import { contact } from "@/lib/site";
 
 const WhatsappIcon = () => {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=5492616708100"
+      href={contact.whatsapp}
       target="_blank"
       rel="noreferrer"
     >

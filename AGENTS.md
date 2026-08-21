@@ -56,7 +56,7 @@ Varias "marcas" conviven en este repo, cada una con su propio Layout y paleta Ta
 * **Sitio principal (Dev Zeppelin)** — `pages/index.js`, `webs.js`, `apps.js`, `servicios.js`, `quienesSomos.js`, `contacto.js`. Usa `components/layout/` y los colores `primary/secundary/yellow/gray/...` (paleta "Cyberpunk").
 * **Blog / Tecnoticiero** (`pages/blog.js` y `pages/blog/*`) — agregador de noticias/artículos por categoría (dev, rock, river, política, cripto, news, escritos, adriel), usa Prismic como CMS headless vía `src/lib/prismic.js`. Rutas dinámicas bajo `pages/blog/<categoria>/[slug].js`. Colores `*Blog`.
 * **codeObrero / Escuela** (`pages/escuela/*`) — sub-sitio educativo gratuito de programación (consejos, primeros pasos, criptomonedas). Layout propio en `components/escuela/`.
-* **Alma Rockera** (`pages/almarockera.js`) — radio web con listado/recomendaciones de bandas (array `BANDS` hardcodeado en la propia página). Componentes en `components/alma/`, colores `alma1..4`.
+* **Alma Rockera** (`pages/almarockera.js`) — blog/radio de rock, 100% aislado del chrome principal (propio Header/Footer en `components/alma/`, sin `components/layout/`). Secciones: Radio (retransmite emisoras, `data/almaRadios.js`), Rockomendaciones (bandas con filtros, `data/almaBands.js`), Anécdotas de Recitales (blog de historias trágicas/divertidas/sorprendentes compartidas por la comunidad, `data/almaAnecdotas.js`) y Renzo Frases. Colores `alma1..4` sobre fondo `alma3`.
 * **Portafolio personal** (`pages/portafolio.js`) — CV/portfolio de Gino Pietrobon, datos en `src/data/portfolio.js`. Colores "legacy" (`green`, `dark`, `bluePF`, etc.).
 
 Al tocar un sub-sitio, usar su Layout y su paleta — no mezclar colores de una marca en otra.

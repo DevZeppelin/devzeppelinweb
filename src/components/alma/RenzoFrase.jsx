@@ -33,19 +33,19 @@ const RenzoFrase = () => {
   };
 
   return (
-    <div className="text-center my-6 mx-4 md:mx-64 rounded-lg py-4">
+    <div className="text-center my-6 mx-4 md:mx-32 rounded-lg py-4">
       <button
-        className="px-6 py-2 border-2 bg-black hover:from-alma1 to-alma2 hover:to-alma3 hover:scale-125 transition-transform rounded-lg text-white font-bold"
+        className="px-6 py-2 border-2 border-alma2 bg-black hover:bg-alma2 hover:scale-105 transition-all rounded-lg text-white font-bold"
         onClick={() => getFrase()}
       >
         Oye, quiero mi frase diaria
       </button>
       {error ? (
-        <div className="m-6 italic font-bold p-16 bg-red-500 rounded-2xl border-2 border-black">
+        <div className="m-6 italic font-bold p-8 md:p-16 bg-red-500 rounded-2xl border-2 border-black">
           Lo siento... no podés pedir más Renzo frases por hoy... ☹
         </div>
       ) : frase ? (
-        <div className="m-6 italic font-bold p-16 bg-white rounded-2xl border-2 border-black">
+        <div className="m-6 italic font-bold p-8 md:p-16 bg-white rounded-2xl border-2 border-black">
           {frase}
         </div>
       ) : null}

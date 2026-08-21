@@ -10,7 +10,7 @@ const links = [
   { href: "/escuela/acerca-de", label: "About", emoji: "❔" },
   { href: "/escuela/contacto", label: "Contacto", emoji: "📬" },
   { href: "/blog", label: "Blog", emoji: "🐵" },
-  { href: "/", label: "Volver a DevZeppelin.com.ar", emoji: "🦅" },
+  { href: "/", label: "Volver a DevZeppelin.ar", emoji: "🦅" },
 ];
 
 export default function Nav() {
