@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "@/components/layout/Layout";
 import { BiCheckShield } from "react-icons/bi";
 import { FaEye } from "react-icons/fa";
@@ -22,17 +23,21 @@ const QuienesSomos = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="text-center space-y-8 md:space-y-4 p-8 md:p-16">
               <h2 className="text-2xl font-extrabold text-yellow">
-                Tecnología par aun mundo mejor
+                Tecnología para un mundo mejor
               </h2>
               <div className="bg-yellow w-32 h-1 mx-auto"></div>
               <p>
-                Dev Zeppelin es mi proyecto como estudiante de programación y tecnología, comprometido con proyectos reales que solucionen problemas a personas y emprendedores comunes.
+                Dev Zeppelin ayuda a negocios y empresas a mejorar su presencia digital y a trabajar mejor con tecnología. Nace de mi camino como programador, con foco en proyectos reales que le solucionan problemas concretos a personas y emprendedores comunes.
               </p>
               <p>
-                Creo firmemente que a través de la tecnología se pueden cambiar muchas cosas, por eso creé este proyecto para poder volcar mis esfuerzos y estudios en crear soluciones aplicando mis conocimientos en programación y tecnología.
+                Hacemos <strong>páginas web</strong>, mantenemos <strong>redes activas</strong>, producimos <strong>reels</strong>, desarrollamos <strong>sistemas y automatizaciones</strong> y <strong>capacitamos equipos</strong> en tecnología e IA. Cada propuesta responde a algo puntual de tu negocio, no a un mensaje genérico.
               </p>
               <p>
-                <strong>Dev Zeppelin</strong> utiliza lo más nuevo en tecnología y lo más orginal del diseño para marcar la diferencia de quienes me dan la oportunidad de ayudarlos.
+                Lo que no hacemos: prometer ventas o posiciones en Google, ni comprometer plazos y funciones sin evaluar antes la viabilidad. Preferimos expectativas claras.{" "}
+                <Link href="/servicios">
+                  <span className="text-yellow underline underline-offset-4 cursor-pointer">Mirá qué incluye cada servicio</span>
+                </Link>
+                .
               </p>
 
             </div>

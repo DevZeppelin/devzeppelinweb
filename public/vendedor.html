@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Guía comercial de Dev Zeppelin: qué vendemos y qué no, cómo prospectar y cómo pasar de la consulta a la propuesta.">
+<title>Dev Zeppelin · Guía del vendedor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:20px}
+  body{margin:0;background:#f4f3ee;color:#23261f;font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  a{color:#6a5d00;text-underline-offset:3px}
+  h1,h2,h3{font-family:"Orbitron",system-ui,sans-serif;letter-spacing:-.4px}
+  button,input,select,textarea{font:inherit;font-size:max(16px,1rem)}
+  button{cursor:pointer;border:0;border-radius:8px;background:#f3d634;color:#171912;padding:10px 16px;font-weight:700}
+  button:hover{filter:brightness(.95)}
+  button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #958100;outline-offset:3px}
+
+  .layout{display:grid;grid-template-columns:280px minmax(0,1fr)}
+  aside{background:#16161e;color:#eee;position:sticky;top:0;height:100vh;padding:26px 22px;overflow:auto}
+  .brand{display:block;font-size:20px;font-weight:900;letter-spacing:-.6px;color:#f5d244;text-decoration:none}
+  a.brand:hover{color:#ffe457}
+  .brand small{display:block;font-size:10px;letter-spacing:2px;color:#9aa094;margin:6px 0 4px}
+  .brand .home-hint{display:block;font-size:10px;letter-spacing:1px;color:#6f7669;margin-bottom:20px}
+  aside label{font-size:12px;color:#9aa094}
+  aside input{width:100%;padding:10px;margin-top:6px;background:#0d0d12;color:#fff;border:1px solid #3a3a46;border-radius:8px}
+  #searchStatus{font-size:12px;color:#9aa094;min-height:18px;margin-top:6px}
+  nav{margin-top:16px;display:flex;flex-direction:column;gap:2px}
+  nav a{display:block;text-decoration:none;color:#c7cdc2;font-size:13px;padding:8px;border-radius:6px}
+  nav a:hover{color:#ffe457;background:#23232e}
+  .side-note{font-size:11px;color:#9aa094;margin-top:24px;line-height:1.6}
+
+  main{max-width:1160px;padding:36px 52px 90px;min-width:0}
+  .hero{background:#16161e;border-radius:20px;padding:44px;color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 100% 0%,rgba(245,210,68,.14),transparent 55%);pointer-events:none}
+  .eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:#f3d634;text-transform:uppercase}
+  h1{font-size:clamp(30px,4.2vw,54px);line-height:1.08;margin:18px 0}
+  h1 span{color:#f3d634}
+  .hero p{max-width:640px;color:#d3d9ce;font-size:17px}
+  .hero .meta{font-size:12px;color:#9aa094;margin-top:22px}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .pills span{font-size:12px;border:1px solid #55564f;padding:5px 10px;border-radius:30px;color:#e4e8df}
+
+  section{margin-top:26px;background:#fff;border:1px solid #dedfd6;border-radius:16px;padding:30px 34px}
+  h2{font-size:24px;line-height:1.25;margin:0 0 6px}
+  h3{font-size:17px;line-height:1.4;margin:24px 0 6px}
+  section>.subtitle{color:#6f7669;margin:0 0 22px}
+  p{margin:10px 0}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+  .quick-links{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+  .quick-links a{background:#f3d634;color:#20251c;padding:11px 15px;border-radius:8px;text-decoration:none;font-weight:750}
+  .quick-links a.ghost{background:transparent;border:1px solid #cfd0c6;color:#3a3d34}
+
+  .service{padding:22px 0;border-bottom:1px solid #e4e7de}
+  .service:last-child{border:0}
+  .service-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.5px;color:#69600e;background:#fff2a8;padding:3px 9px;border-radius:20px;text-transform:uppercase}
+  .service h3{margin:8px 0 4px}
+  .yn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+  .yn>div{border:1px solid #e0e3da;border-radius:10px;padding:12px 14px;background:#fafbf7}
+  .yn h4{margin:0 0 6px;font:700 12px/1.4 "Orbitron",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.4px}
+  .yn .si h4{color:#3c7d33}
+  .yn .no h4{color:#9a6a1a}
+  .yn ul{margin:0;padding-left:18px}
+  .yn li{margin:5px 0;font-size:14px}
+  .ask{font-size:14px;background:#f0f3eb;border-radius:8px;padding:10px 14px;margin:10px 0}
+
+  .callout{background:#fff9d7;border-left:4px solid #e3c327;padding:16px 20px;border-radius:0 10px 10px 0;margin:20px 0}
+  .note{font-size:13px;color:#69715f}
+  .table-wrap{overflow-x:auto;margin:16px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+  th{text-align:left;background:#edf0e8;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+  td,th{padding:12px 13px;vertical-align:top;border-bottom:1px solid #dfe3d8}
+  td:first-child{font-weight:600;width:26%}
+  tr:nth-child(even) td{background:#fafbf8}
+  ul,ol{padding-left:22px}
+  li{margin:6px 0}
+
+  .script{padding:16px 18px;background:#f0f3eb;border-radius:10px;margin:12px 0}
+  .script p{margin:0 0 10px}
+  .copy{font-size:12px;background:#dfe6d3;padding:6px 12px}
+
+  form label{font-size:14px;font-weight:650;display:block}
+  form input,form textarea,form select{display:block;width:100%;border:1px solid #bdc6b5;border-radius:7px;padding:10px;margin-top:6px;background:#fff;color:#23261f}
+  form textarea{min-height:90px;resize:vertical}
+  #briefStatus{font-size:13px;color:#3c7d33}
+
+  .quiz{list-style:none;padding:0;margin:18px 0}
+  .quiz>li{border:1px solid #e0e3da;border-radius:12px;padding:16px 18px;margin:12px 0;background:#fafbf7;transition:background .3s ease,border-color .3s ease}
+  .quiz .q{font-weight:700;margin:0 0 10px}
+  .quiz label{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:400;padding:6px 0;cursor:pointer}
+  .quiz label input{margin-top:3px;width:18px;height:18px;flex-shrink:0;accent-color:#827214}
+  .quiz>li.ok{border-color:#7fbd74;background:#f1faee}
+  .quiz>li.bad{border-color:#e0b36a;background:#fdf6ea}
+  .quiz .explain{font-size:13px;color:#4a4d42;margin:10px 0 0;padding-top:10px;border-top:1px dashed #d7dccf}
+  .quiz>li.ok .explain{color:#2f6b28}
+  .quiz>li.bad .explain{color:#8a5a10}
+  .quiz-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+  .quiz-score{font-family:"Orbitron",system-ui,sans-serif;font-size:22px;margin:0 0 6px;color:#171912}
+  #quizResult{margin-top:18px;padding:16px 20px;border-radius:0 10px 10px 0;border-left:4px solid #e3c327;background:#fff9d7}
+
+  footer{padding:26px 0;font-size:12px;color:#6f7669}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:20px;top:20px;z-index:10;background:#fff;padding:12px}
+  [hidden]{display:none!important}
+
+  @media(max-width:1050px){.layout{grid-template-columns:240px minmax(0,1fr)}main{padding:24px}section{padding:24px}}
+  @media(max-width:760px){
+    .layout{display:block}
+    aside{position:static;height:auto;padding:18px}
+    nav{flex-flow:row wrap;gap:6px}
+    nav a{font-size:12px;padding:6px 8px;background:#23232e}
+    .side-note{display:none}
+    main{padding:14px}
+    .hero{padding:26px}
+    section{padding:20px 16px}
+    .grid2,.yn,.form-grid{grid-template-columns:1fr}
+  }
+  @media print{
+    body{background:#fff;font-size:11pt}
+    .layout{display:block}
+    aside,.copy,.hero button,#downloadBrief,#briefStatus,.quick-links,#test{display:none!important}
+    main{max-width:none;padding:0}
+    .hero{background:#fff;color:#111;border:2px solid #222}
+    .hero::after{display:none}
+    .hero p,.hero .meta,.eyebrow,h1 span{color:#222}
+    .pills span{color:#222}
+    section{border:0;padding:16px 0;margin:0;break-inside:avoid}
+    table{min-width:0;font-size:10pt}
+    .table-wrap{overflow:visible}
+    tr,.service,.script,.callout,.yn>div{break-inside:avoid}
+    h2,h3{break-after:avoid}
+    a{color:#222}
+    footer{display:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<div class="layout">
+  <aside>
+    <a class="brand" href="https://devzeppelin.ar">DEV ZEPPELIN<small>GUÍA DEL VENDEDOR</small><span class="home-hint">↖ volver al sitio</span></a>
+    <label for="search">Buscar en la guía</label>
+    <input id="search" type="search" placeholder="Web, redes, reels, sistemas…">
+    <div id="searchStatus" role="status"></div>
+    <nav aria-label="Secciones">
+      <a href="#propuesta">01 · Qué hacemos y qué no</a>
+      <a href="#prospeccion">02 · Buscar y analizar clientes</a>
+      <a href="#servicios">03 · Servicios, incluye y no incluye</a>
+      <a href="#conversacion">04 · De la consulta a la propuesta</a>
+      <a href="#herramientas">05 · Herramientas y trabajos de apoyo</a>
+      <a href="#ficha">06 · Ficha rápida del cliente</a>
+      <a href="#test">07 · Test: ¿estás listo?</a>
+    </nav>
+    <p class="side-note">Uso interno · Investigar · Escuchar · Proponer<br><br>WhatsApp Dev Zeppelin:<br>+54 9 261 247 3147</p>
+  </aside>
+
+  <main id="contenido">
+    <header class="hero">
+      <div class="eyebrow">Guía práctica del vendedor</div>
+      <h1>Conocé al cliente.<br><span>Proponé algo útil.</span></h1>
+      <p>Todo lo que vende Dev Zeppelin, con lo que incluye y lo que no, más una forma simple de encontrar oportunidades, conversar y preparar propuestas.</p>
+      <div class="pills"><span>7 secciones</span><span>Mensajes copiables</span><span>Diagnóstico para el cliente</span><span>Ficha descargable</span><span>Test con puntaje</span></div>
+      <p class="meta"><button id="print" type="button">Imprimir / guardar como PDF</button></p>
+    </header>
+
+    <section id="propuesta">
+      <h2>01 · Qué hacemos y qué no</h2>
+      <p class="subtitle">La explicación que el vendedor tiene que poder dar en pocas palabras.</p>
+      <div class="script">
+        <p>En Dev Zeppelin ayudamos a negocios y empresas a mejorar su presencia digital y a trabajar mejor con tecnología. Hacemos páginas web, mantenemos redes, producimos reels, desarrollamos sistemas y automatizaciones, y capacitamos equipos para que aprovechen sus herramientas.</p>
+        <button class="copy" type="button">Copiar mensaje</button>
+      </div>
+      <p><strong>Qué vendemos:</strong> una solución a una necesidad concreta. Puede ser mostrar mejor el negocio, mantener las redes activas, ordenar un proceso o enseñarle al equipo a usar una herramienta.</p>
+      <p><strong>Tu función:</strong> investigar, escuchar, recomendar y coordinar el siguiente paso. No necesitás saber programar; sí entender qué incluye cada servicio y cuándo consultar al equipo técnico.</p>
+      <div class="callout">
+        <strong>Lo que no hacemos ni prometemos:</strong>
+        <ul>
+          <li>No garantizamos ventas ni posiciones en Google.</li>
+          <li>No prometemos plazos, funciones ni integraciones sin que Gino evalúe la viabilidad.</li>
+          <li>No trabajamos con mensajes genéricos: cada propuesta responde a algo puntual del negocio.</li>
+          <li>No incluimos extras "de onda" (más piezas, campañas pagas, atención de mensajes) si no están pactados.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="prospeccion">
+      <h2>02 · Buscar y analizar clientes</h2>
+      <p class="subtitle">Antes de escribir o enviar una propuesta, conocé la presencia digital de la marca.</p>
+      <div class="callout">
+        <strong>Google Maps es un buen punto de partida para detectar oportunidades.</strong>
+        <p>Buscá negocios por rubro y zona. Revisá su ficha y después investigá sus redes y su web. La propuesta tiene que responder a algo que observaste, no ser un mensaje igual para todos.</p>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Dónde mirar</th><th>Qué revisar</th><th>Qué oportunidad puede aparecer</th></tr></thead>
+        <tbody>
+          <tr><td>Google Maps</td><td>Fotos, reseñas, respuestas, horarios, datos de contacto y enlace al sitio.</td><td>Información poco clara o falta de un lugar donde conocer los servicios.</td></tr>
+          <tr><td>Instagram y Facebook</td><td>Si tiene perfiles, cuándo publicó, claridad de la descripción, destacadas y calidad del contenido.</td><td>Redes Activas, piezas visuales o reels para explicar mejor su oferta.</td></tr>
+          <tr><td>Página web</td><td>Si existe, si abre bien en el celular, si se entiende qué vende y si es fácil consultar.</td><td>Crear una web o mejorar la presentación y el recorrido hacia el contacto.</td></tr>
+          <tr><td>Presencia general</td><td>Coherencia entre nombre, logo, información y contactos en los distintos canales.</td><td>Ordenar la presencia digital y priorizar lo más importante.</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>Antes de sacar conclusiones:</strong> si no aparece una web o una red en Maps, buscá también el nombre de la marca. Que no esté enlazada no significa que no exista. No supongas que un negocio vende poco por cómo se ve su perfil. Las automatizaciones internas se detectan conversando: los procesos no se conocen solo mirando las redes.</p>
+      <h3>Registrá solo lo útil</h3>
+      <ul>
+        <li>Negocio, rubro y enlaces que revisaste.</li>
+        <li>Una observación concreta y comprobable.</li>
+        <li>Una mejora posible y el servicio que podría ayudar.</li>
+        <li>Canal de contacto público y próximo paso.</li>
+      </ul>
+      <h3>Ejemplo de primer contacto</h3>
+      <div class="script">
+        <p>¡Hola! Soy de Dev Zeppelin. Encontré su negocio en Google Maps y estuve mirando cómo se presentan online. Vi que [observación real]. Podemos ayudarlos a [mejora concreta]. ¿Les interesa que les cuente una idea?</p>
+        <button class="copy" type="button">Copiar mensaje</button>
+      </div>
+      <p class="note">Personalizá el mensaje y evitá criticar. Si querés un pantallazo ordenado del negocio, pasale el enlace <strong>devzeppelin.ar/diagnostico</strong> y te llega el resumen por WhatsApp.</p>
+    </section>
+
+    <section id="servicios">
+      <h2>03 · Servicios, incluye y no incluye</h2>
+      <p class="subtitle">Qué ofrecer, para qué sirve, qué preguntar y qué acordar antes de vender.</p>
+
+      <article class="service">
+        <span class="service-tag">Presencia digital</span>
+        <h3>Páginas web</h3>
+        <p><strong>Para qué sirven:</strong> presentar el negocio, mostrar servicios o productos, generar confianza y facilitar consultas.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Webs adaptadas al celular, con foco en claridad y velocidad.</li>
+            <li>Optimización básica para buscadores.</li>
+            <li>Recorrido pensado hacia el contacto; según el proyecto, catálogos y funciones a medida.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Tienda con pagos, panel editable, correo corporativo o área de usuarios: se definen y cotizan aparte.</li>
+            <li>Garantía de posiciones en Google.</li>
+          </ul></div>
+        </div>
+        <p class="ask"><strong>Preguntá:</strong> ¿Qué querés que haga el visitante? ¿Qué secciones necesitás? ¿Tenés fotos, textos y dominio? ¿Quién actualizará el contenido?</p>
+        <p class="note"><strong>Acordar antes de vender:</strong> secciones, contenido, dominio, hosting, revisiones y plazo.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Continuidad</span>
+        <h3>Redes Activas</h3>
+        <p><strong>Para quién:</strong> negocios que quieren mantener Instagram y Facebook presentes y prolijos sin encargarse de todo el contenido.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Inicio: refresh de logo, grid y destacadas; 7 historias iniciales y 4 publicaciones (2 imágenes, 1 carrusel, 1 reel).</li>
+            <li>Continuidad: historias diarias con contenido rotativo; renovación de 2 historias y 1 publicación por mes.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Diseños nuevos todos los días: la presencia diaria funciona con rotación.</li>
+            <li>Responder mensajes, atender ventas, campañas pagas o filmar en el local.</li>
+          </ul></div>
+        </div>
+        <p class="ask"><strong>Preguntá:</strong> ¿Qué querés promocionar? ¿Quién aporta fotos y novedades? ¿Quién aprueba? ¿Tenés acceso a las cuentas?</p>
+        <p class="note"><strong>Acordar antes de vender:</strong> cómo se integra el grid con las piezas iniciales y el formato de la pieza mensual.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Contenido</span>
+        <h3>Reels personalizados</h3>
+        <p><strong>Para qué sirven:</strong> mostrar un producto, explicar un servicio o comunicar una idea de forma breve y atractiva.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Edición de fotos y videos del cliente, o escenas con IA / animación.</li>
+            <li>Pieza adaptada a la marca y a un objetivo concreto, con revisiones acordadas.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Promesa de viralidad o de una cantidad de ventas.</li>
+            <li>Producción ilimitada de versiones: se define cantidad y formato.</li>
+          </ul></div>
+        </div>
+        <p class="ask"><strong>Preguntá:</strong> ¿Qué mensaje querés transmitir? ¿A quién? ¿Tenés material? ¿Qué estilo buscás? ¿Qué debería hacer la persona después de verlo?</p>
+        <p class="note"><strong>Acordar antes de vender:</strong> duración, formato, guion, voz, versiones y revisiones. Aprobar la idea antes de producir.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Eficiencia</span>
+        <h3>Sistemas personalizados y automatizaciones</h3>
+        <p><strong>Para qué sirven:</strong> ordenar información, reducir tareas repetitivas y ayudar a gestionar mejor el trabajo.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Ejemplos a evaluar: turnos y reservas, seguimiento de pedidos, registros de clientes, reportes, procesamiento de planillas, tareas administrativas.</li>
+            <li>Análisis previo de funciones, integraciones, costos de terceros, mantenimiento y plazo.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Comprometer una solución sin ver un ejemplo real del proceso y el resultado esperado.</li>
+            <li>Licencias o servicios de terceros, salvo que se aclaren en la propuesta.</li>
+          </ul></div>
+        </div>
+        <p class="ask"><strong>Preguntá:</strong> ¿Cómo lo hacen hoy? ¿Qué lleva más tiempo? ¿Dónde aparecen errores? ¿Quiénes lo usan? ¿Con qué archivos o sistemas trabajan?</p>
+        <p class="note"><strong>Acordar antes de vender:</strong> Gino evalúa y confirma alcance, plazo y costos antes de comprometer nada.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Aprendizaje</span>
+        <h3>Capacitaciones tecnológicas para empresas</h3>
+        <p><strong>Para qué sirven:</strong> que los equipos aprendan a usar mejor sus herramientas y las apliquen a su trabajo cotidiano.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Temario a medida: IA, planillas y reportes, productividad digital, herramientas colaborativas, uso de sistemas implementados.</li>
+            <li>Objetivo práctico, ejercicios y materiales; temario validado con el equipo.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Certificaciones ni acompañamiento posterior, salvo que se pacte.</li>
+            <li>Licencias o accesos que deba proveer la empresa.</li>
+          </ul></div>
+        </div>
+        <p class="ask"><strong>Preguntá:</strong> ¿Qué herramientas usan? ¿Qué tareas necesitan resolver? ¿Qué nivel tiene el equipo? ¿Cuántas personas participarían? ¿Qué deberían poder hacer al terminar?</p>
+        <p class="note"><strong>Acordar antes de vender:</strong> objetivo, temario, modalidad, duración, ejercicios, materiales y requisitos de acceso.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Productos digitales</span>
+        <h3>Apps y ebook</h3>
+        <p><strong>Para qué sirven:</strong> mostrar ejemplos reales de lo que podemos desarrollar y acercar conceptos digitales a personas sin formación técnica.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Catálogo de apps construidas como muestra (My Agenda, Fidelizapp, ¿Cuánto cada uno?, Academia Aventura).</li>
+            <li>Ebook <em>Tecnología para no técnicos</em>.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Una app de muestra no implica que todas sus adaptaciones estén incluidas.</li>
+            <li>El ebook no equivale a una capacitación personalizada.</li>
+          </ul></div>
+        </div>
+        <p class="ask"><strong>Preguntá / confirmá:</strong> disponibilidad, funciones y modalidad de acceso antes de ofrecer.</p>
+      </article>
+    </section>
+
+    <section id="conversacion">
+      <h2>04 · De la consulta a la propuesta</h2>
+      <p class="subtitle">Un recorrido simple para vender con claridad.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Paso</th><th>Qué hacer</th></tr></thead>
+        <tbody>
+          <tr><td>1. Investigar</td><td>Mirar Maps, redes y web. Identificar una oportunidad concreta.</td></tr>
+          <tr><td>2. Conversar</td><td>Confirmar si esa mejora es una prioridad y entender cómo trabaja el cliente.</td></tr>
+          <tr><td>3. Recomendar</td><td>Elegir el servicio que mejor resuelve el problema. No ofrecer todo el catálogo de entrada.</td></tr>
+          <tr><td>4. Mostrar</td><td>Usar un trabajo real de Dev Zeppelin relacionado con la necesidad.</td></tr>
+          <tr><td>5. Proponer</td><td>Enviar un alcance personalizado con entregables, materiales necesarios y próximos pasos.</td></tr>
+          <tr><td>6. Dar seguimiento</td><td>Acordar cuándo retomar y resolver dudas sin presionar.</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Antes de enviar la propuesta</h3>
+      <ul>
+        <li>¿Qué problema concreto vamos a resolver?</li>
+        <li>¿Qué se entrega y qué queda fuera?</li>
+        <li>¿Qué tiene que aportar el cliente?</li>
+        <li>¿Quién decide y quién aprueba?</li>
+        <li>¿Se validó la viabilidad y el plazo con Gino?</li>
+      </ul>
+      <div class="callout">
+        <strong>Regla de oro: si no está confirmado, consultalo antes de prometerlo.</strong>
+        <p>Una buena venta deja expectativas claras. Evitá resultados garantizados, urgencias inventadas y extras que el equipo todavía no evaluó.</p>
+      </div>
+      <h3>Cómo responder dudas comunes</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Si dice…</th><th>Podés responder…</th></tr></thead>
+        <tbody>
+          <tr><td>«Con Instagram me alcanza»</td><td>«Puede ser. ¿Tus clientes encuentran ahí toda la información? Veamos si hay algo que te convendría resolver».</td></tr>
+          <tr><td>«Quiero contenido nuevo todos los días»</td><td>«Redes Activas funciona con rotación y una renovación mensual definida. Podemos evaluar otro alcance si necesitás más producción».</td></tr>
+          <tr><td>«¿Me garantizás ventas?»</td><td>«Te ayudamos a presentar mejor tu propuesta y a facilitar consultas. Las ventas también dependen de tu oferta y de cómo se atiendan».</td></tr>
+          <tr><td>«No sé qué herramienta necesito»</td><td>«Contame qué querés lograr o qué tarea te cuesta. A partir de eso vemos una solución o una capacitación».</td></tr>
+        </tbody>
+      </table></div>
+      <div class="script">
+        <p>¡Hola! ¿Pudiste ver la propuesta? Si te quedó alguna duda sobre lo que incluye o querés revisar qué priorizar, te ayudo.</p>
+        <button class="copy" type="button">Copiar mensaje</button>
+      </div>
+    </section>
+
+    <section id="herramientas">
+      <h2>05 · Herramientas y trabajos de apoyo</h2>
+      <p class="subtitle">Usá estos recursos durante la conversación.</p>
+
+      <h3>Diagnóstico para el cliente</h3>
+      <p>Enviale <strong>devzeppelin.ar/diagnostico</strong>. Completa en 2 minutos cómo está su negocio (web, redes, qué le falta, propósito) y al terminar se abre un WhatsApp hacia Dev Zeppelin con el resumen ordenado. Ninguna respuesta es obligatoria: sirve igual para tener un pantallazo y sugerir una propuesta.</p>
+      <div class="script">
+        <p>Te paso un mini test para conocer mejor tu negocio: https://devzeppelin.ar/diagnostico . Son 2 minutos, no hace falta que completes todo. Al final te abre un WhatsApp con el resumen para enviarnos y te devolvemos una propuesta.</p>
+        <button class="copy" type="button">Copiar mensaje</button>
+      </div>
+
+      <h3>Apoyate en nuestros trabajos</h3>
+      <div class="quick-links">
+        <a href="https://devzeppelin.ar" target="_blank" rel="noopener">Dev Zeppelin ↗</a>
+        <a href="https://devzeppelin.ar/webs" target="_blank" rel="noopener">Páginas web realizadas ↗</a>
+        <a href="https://devzeppelin.ar/apps" target="_blank" rel="noopener">Aplicaciones construidas ↗</a>
+        <a class="ghost" href="https://devzeppelin.ar/servicios" target="_blank" rel="noopener">Servicios (qué incluye y qué no) ↗</a>
+      </div>
+      <p><strong>Cómo usarlos:</strong> elegí uno o dos ejemplos relacionados con el negocio del cliente. Explicá qué problema resuelven y qué podría servirle de ese enfoque. Revisá el ejemplo antes de enviarlo y no atribuyas funciones o resultados que no comprobaste.</p>
+      <div class="script">
+        <p>Te comparto nuestra web para que nos conozcas: https://devzeppelin.ar . Podés ver páginas que construimos en https://devzeppelin.ar/webs y aplicaciones en https://devzeppelin.ar/apps . Por lo que me contaste, te voy a señalar el ejemplo más parecido a lo que necesitás.</p>
+        <button class="copy" type="button">Copiar mensaje</button>
+      </div>
+    </section>
+
+    <section id="ficha">
+      <h2>06 · Ficha rápida del cliente</h2>
+      <p class="subtitle">Un resumen breve para pasar de la observación a una propuesta.</p>
+      <p>Completá lo importante y descargala para compartirla con Gino. Esta ficha no envía datos; se conserva solo mientras la página está abierta.</p>
+      <form id="briefForm">
+        <div class="grid2">
+          <label>Negocio y contacto<input name="Negocio y contacto" placeholder="Nombre, rubro y persona"></label>
+          <label>Enlaces revisados<input name="Enlaces revisados" placeholder="Maps, Instagram, Facebook, web"></label>
+          <label>Qué observaste<textarea name="Qué observaste" placeholder="Una oportunidad concreta y comprobable"></textarea></label>
+          <label>Qué necesita el cliente<textarea name="Qué necesita el cliente" placeholder="Problema y resultado que busca"></textarea></label>
+          <label>Servicio recomendado
+            <select name="Servicio recomendado">
+              <option>Por definir</option>
+              <option>Página web</option>
+              <option>Redes Activas</option>
+              <option>Reel personalizado</option>
+              <option>Sistemas y automatizaciones</option>
+              <option>Capacitación tecnológica</option>
+              <option>App / ebook</option>
+            </select>
+          </label>
+          <label>Próximo paso<input name="Próximo paso" placeholder="Acción, responsable y fecha"></label>
+          <label>Qué falta confirmar<textarea name="Qué falta confirmar" placeholder="Alcance, materiales, accesos o plazo"></textarea></label>
+        </div>
+        <button type="button" id="downloadBrief">Descargar ficha .txt</button>
+        <p id="briefStatus" role="status"></p>
+      </form>
+    </section>
+
+    <section id="test">
+      <h2>07 · Test: ¿estás listo para vender?</h2>
+      <p class="subtitle">10 situaciones reales con clientes. Elegí la mejor respuesta según lo que hacemos y lo que no. Al final te decimos si estás listo para salir a vender solo.</p>
+
+      <form id="quizForm">
+        <ol class="quiz">
+          <li data-answer="b">
+            <p class="q">1. El cliente dice: «No solo necesito un reel, necesito una miniproducción de 5 minutos».</p>
+            <label><input type="radio" name="q1" value="a"> No hacemos videos largos, solo reels cortos.</label>
+            <label><input type="radio" name="q1" value="b"> La podemos hacer, pero es una producción aparte: se presupuesta según la necesidad. Lo evalúo con el equipo.</label>
+            <label><input type="radio" name="q1" value="c"> Sí, sin problema, entra en el mismo precio de un reel.</label>
+            <p class="explain" hidden>Lo hacemos, pero no es "un reel más": una producción de esa duración cambia el alcance y se cotiza acorde.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">2. «Más que un sitio web necesito un sistema conectado a un catálogo que maneje stock y me defina precios».</p>
+            <label><input type="radio" name="q2" value="a"> Eso es un ecommerce con carrito y pagos, te armo la tienda.</label>
+            <label><input type="radio" name="q2" value="b"> Sí lo hacemos: un sitio conectado a un Google Sheet que maneja catálogo, stock y precios, por ahora sin pagos online. Lo valido con el equipo.</label>
+            <label><input type="radio" name="q2" value="c"> No hacemos sistemas, solo webs de presentación.</label>
+            <p class="explain" hidden>Sí lo resolvemos, pero hoy es una web conectada a una planilla, no un ecommerce con carrito y pagos.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">3. «¿Tienen un pack de diseño (logo, papelería, piezas) como producto cerrado?»</p>
+            <label><input type="radio" name="q3" value="a"> Sí, tenemos un pack de diseño con precio fijo de catálogo.</label>
+            <label><input type="radio" name="q3" value="b"> No como producto aparte: el diseño va dentro de una web, de Redes Activas, un reel o una renovación de marca. Contame qué necesitás y lo encuadro.</label>
+            <label><input type="radio" name="q3" value="c"> No, no hacemos nada de diseño.</label>
+            <p class="explain" hidden>No vendemos "diseño" suelto: siempre va dentro de uno de los seis servicios.</p>
+          </li>
+
+          <li data-answer="a">
+            <p class="q">4. «¿Hacen Redes Activas?»</p>
+            <label><input type="radio" name="q4" value="a"> Sí. Mantenemos Instagram y Facebook con historias rotativas y una renovación mensual definida.</label>
+            <label><input type="radio" name="q4" value="b"> Sí, con diseños nuevos y originales todos los días.</label>
+            <label><input type="radio" name="q4" value="c"> No, solo hacemos el diseño inicial del perfil.</label>
+            <p class="explain" hidden>Sí, pero funciona con rotación y una renovación mensual acordada — no es contenido 100% nuevo cada día.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">5. «Con Redes Activas, ¿ustedes me responden los mensajes de clientes? ¿Son mi community manager?»</p>
+            <label><input type="radio" name="q5" value="a"> Sí, incluye atender mensajes y comentarios.</label>
+            <label><input type="radio" name="q5" value="b"> No. Redes Activas es presencia y contenido; responder mensajes, atender ventas o campañas pagas no está incluido salvo que se acuerde aparte.</label>
+            <label><input type="radio" name="q5" value="c"> Sí, pero solo los comentarios, no los mensajes privados.</label>
+            <p class="explain" hidden>No somos community manager: Redes Activas es contenido y presencia, no atención al cliente.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">6. El cliente pregunta: «¿Me garantizás salir primero en Google?»</p>
+            <label><input type="radio" name="q6" value="a"> Sí, te garantizo el primer puesto.</label>
+            <label><input type="radio" name="q6" value="b"> No garantizamos posiciones en Google. Hacemos optimización básica; el resto depende de muchos factores.</label>
+            <label><input type="radio" name="q6" value="c"> Sí, si contratás el plan más caro.</label>
+            <p class="explain" hidden>Nunca prometemos posicionamiento garantizado, en ningún plan.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">7. «Necesito la web con tienda, carrito y pagos con tarjeta.»</p>
+            <label><input type="radio" name="q7" value="a"> Perfecto, eso ya viene incluido en cualquier web.</label>
+            <label><input type="radio" name="q7" value="b"> Una tienda con pagos es un alcance aparte: se define y cotiza por separado. Lo confirmo con el equipo antes de darte precio.</label>
+            <label><input type="radio" name="q7" value="c"> No, nunca trabajamos con pagos online.</label>
+            <p class="explain" hidden>Se puede evaluar, pero no es parte de una web "estándar": requiere definición propia.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">8. ¿Cuál es tu función como vendedor de Dev Zeppelin?</p>
+            <label><input type="radio" name="q8" value="a"> Cerrar precio final y plazo en la primera charla.</label>
+            <label><input type="radio" name="q8" value="b"> Investigar, escuchar, recomendar el servicio adecuado y coordinar el próximo paso; consultar lo que no está confirmado.</label>
+            <label><input type="radio" name="q8" value="c"> Ofrecer todo el catálogo de entrada para que el cliente elija.</label>
+            <p class="explain" hidden>No cerrás precios ni plazos sin validar: tu rol es investigar, escuchar y recomendar un servicio puntual.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">9. «Quiero un sistema de turnos para mañana.»</p>
+            <label><input type="radio" name="q9" value="a"> Listo, mañana lo tenés.</label>
+            <label><input type="radio" name="q9" value="b"> Necesito ver cómo lo hacen hoy y un ejemplo real del proceso. El equipo evalúa funciones, integraciones, costos y plazo antes de comprometer una fecha.</label>
+            <label><input type="radio" name="q9" value="c"> Los sistemas siempre tardan mínimo 6 meses.</label>
+            <p class="explain" hidden>Nunca comprometemos plazo ni alcance sin ver el proceso real primero.</p>
+          </li>
+
+          <li data-answer="b">
+            <p class="q">10. Antes de enviar una propuesta, ¿qué no puede faltar?</p>
+            <label><input type="radio" name="q10" value="a"> Un descuento por tiempo limitado para apurar la decisión.</label>
+            <label><input type="radio" name="q10" value="b"> Qué problema resolvemos, qué se entrega y qué queda afuera, qué aporta el cliente, y la viabilidad validada con el equipo.</label>
+            <label><input type="radio" name="q10" value="c"> La lista completa de todos nuestros servicios.</label>
+            <p class="explain" hidden>Nada de urgencias inventadas: una propuesta clara dice qué se hace, qué no, y qué falta confirmar.</p>
+          </li>
+        </ol>
+
+        <div class="quiz-actions">
+          <button type="button" id="quizSubmit">Ver mi puntaje</button>
+          <button type="button" id="quizReset" class="copy" hidden>Reintentar</button>
+        </div>
+        <div id="quizResult" role="status" hidden></div>
+      </form>
+    </section>
+
+    <footer>Dev Zeppelin · Guía interna de capacitación comercial · Funciona sin conexión, excepto los enlaces a sitios externos.</footer>
+  </main>
+</div>
+
+<script>
+  const sections = [...document.querySelectorAll('main section')];
+  const norm = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+  document.querySelector('#search').addEventListener('input', e => {
+    const q = norm(e.target.value.trim());
+    let n = 0;
+    sections.forEach(s => {
+      const show = !q || norm(s.textContent).includes(q);
+      s.hidden = !show;
+      const link = document.querySelector('nav a[href="#' + s.id + '"]');
+      if (link) link.hidden = !show;
+      if (show) n++;
+    });
+    document.querySelector('#searchStatus').textContent = q ? n + ' secciones encontradas' : '';
+  });
+
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', async () => {
+    const text = b.previousElementSibling.textContent.trim();
+    try {
+      await navigator.clipboard.writeText(text);
+      b.textContent = 'Copiado';
+      setTimeout(() => b.textContent = 'Copiar mensaje', 1800);
+    } catch (e) {
+      const r = document.createRange();
+      r.selectNodeContents(b.previousElementSibling);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(r);
+      b.textContent = 'Seleccionado: copiá manualmente';
+    }
+  }));
+
+  document.querySelector('#print').addEventListener('click', () => window.print());
+
+  document.querySelector('#downloadBrief').addEventListener('click', () => {
+    const data = new FormData(document.querySelector('#briefForm'));
+    const t = 'DEV ZEPPELIN · FICHA DEL CLIENTE\n\n' +
+      [...data].map(([k, v]) => k.toUpperCase() + '\n' + (v.trim() || 'Pendiente') + '\n').join('\n');
+    const url = URL.createObjectURL(new Blob([t], { type: 'text/plain;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'devzeppelin-ficha-cliente.txt';
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    document.querySelector('#briefStatus').textContent = 'Ficha preparada para descargar.';
+  });
+
+  // ── Test: ¿estás listo para vender? ──────────────────────
+  const quizForm = document.querySelector('#quizForm');
+  if (quizForm) {
+    const items = [...quizForm.querySelectorAll('.quiz > li')];
+    const result = document.querySelector('#quizResult');
+    const submitBtn = document.querySelector('#quizSubmit');
+    const resetBtn = document.querySelector('#quizReset');
+
+    submitBtn.addEventListener('click', () => {
+      let score = 0;
+      let sinResponder = 0;
+
+      items.forEach(li => {
+        const picked = li.querySelector('input:checked');
+        const explain = li.querySelector('.explain');
+        li.classList.remove('ok', 'bad');
+        if (picked && picked.value === li.dataset.answer) {
+          li.classList.add('ok');
+          score++;
+        } else {
+          li.classList.add('bad');
+          if (!picked) sinResponder++;
+        }
+        if (explain) explain.hidden = false;
+      });
+
+      const total = items.length;
+      let band;
+      if (score >= 9) band = '🚀 Listo para salir a vender: manejás bien qué hacemos y qué no.';
+      else if (score >= 7) band = '👍 Casi. Repasá las secciones 01 y 03 antes de salir solo.';
+      else if (score >= 5) band = '⚠️ A medias. Volvé a leer «Qué hacemos y qué no» y «Servicios» completas.';
+      else band = '⛔ Todavía no. Leé la guía de nuevo desde el principio y reintentá el test.';
+
+      result.innerHTML =
+        '<p class="quiz-score">Puntaje: ' + score + ' / ' + total + '</p><p>' + band +
+        (sinResponder ? ' (' + sinResponder + ' sin responder)' : '') + '</p>';
+      result.hidden = false;
+      resetBtn.hidden = false;
+      result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    resetBtn.addEventListener('click', () => {
+      quizForm.reset();
+      items.forEach(li => {
+        li.classList.remove('ok', 'bad');
+        const explain = li.querySelector('.explain');
+        if (explain) explain.hidden = true;
+      });
+      result.hidden = true;
+      resetBtn.hidden = true;
+      quizForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+</script>
+</body>
+</html>

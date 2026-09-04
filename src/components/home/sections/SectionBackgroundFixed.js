@@ -76,7 +76,10 @@ const SectionBackgroundFixed = () => {
             </p>
           </div>
 
-          <div className={`reveal from-bottom d5 ${visible ? 'visible' : ''} pt-2`}>
+          <div className={`reveal from-bottom d5 ${visible ? 'visible' : ''} pt-2 flex flex-wrap gap-3`}>
+            <Link href="/diagnostico">
+              <button className="btn">Hacé tu diagnóstico</button>
+            </Link>
             <Link href="/contacto">
               <button className="btn">Contactame</button>
             </Link>

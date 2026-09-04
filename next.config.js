@@ -9,5 +9,11 @@ module.exports = {
                 hostname: "**.prismic.io"
             }
         ]
-    }
+    },
+    async rewrites() {
+        return [
+            // Guía interna del vendedor: HTML estático autocontenido en /public.
+            { source: "/vendedor", destination: "/vendedor.html" },
+        ];
+    },
 }

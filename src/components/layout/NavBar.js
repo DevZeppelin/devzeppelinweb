@@ -1,6 +1,6 @@
 import Link from "next/dist/client/link";
 
-const NavBar = ({ classHome, classQuienesSomos, classWebs, classApps, classServicios, classContacto }) => {
+const NavBar = ({ classHome, classQuienesSomos, classWebs, classApps, classServicios, classContacto, classDiagnostico }) => {
   return (
     <nav
       className="hidden md:flex justify-between items-center px-0 bg-primary"
@@ -37,6 +37,14 @@ const NavBar = ({ classHome, classQuienesSomos, classWebs, classApps, classServi
             style={{ fontFamily: 'Orbitron, sans-serif', fontSize: '0.72rem', letterSpacing: '0.1em' }}>
             SERVICIOS
             {classServicios && <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-4/5 bg-yellow" style={{ boxShadow: '0 0 8px rgba(245,210,68,0.8)' }} />}
+          </span>
+        </Link>
+
+        <Link href="/diagnostico">
+          <span className={`nav-link relative px-5 py-5 text-sm font-bold tracking-widest transition-colors duration-300 cursor-pointer ${classDiagnostico ? 'text-yellow glow-text' : 'text-lightGray hover:text-yellow'}`}
+            style={{ fontFamily: 'Orbitron, sans-serif', fontSize: '0.72rem', letterSpacing: '0.1em' }}>
+            DIAGNÓSTICO
+            {classDiagnostico && <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-4/5 bg-yellow" style={{ boxShadow: '0 0 8px rgba(245,210,68,0.8)' }} />}
           </span>
         </Link>
 

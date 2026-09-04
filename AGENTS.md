@@ -47,7 +47,11 @@ src/
   styles/            globals.css + tailwind.css
 ```
 
-Rutas de navegación principal (ver `NavBar.js` / `MobileNavBar.js`): `/`, `/webs`, `/apps`, `/servicios`, `/quienesSomos`, `/contacto`. El blog, "escuela" y "alma" viven en sus propias subcarpetas/páginas y tienen su propio Layout y paleta de colores (ver abajo) — no reusan el chrome de `components/layout/`.
+Rutas de navegación principal (ver `NavBar.js` / `MobileNavBar.js`): `/`, `/webs`, `/apps`, `/servicios`, `/diagnostico`, `/quienesSomos`, `/contacto`. El blog, "escuela" y "alma" viven en sus propias subcarpetas/páginas y tienen su propio Layout y paleta de colores (ver abajo) — no reusan el chrome de `components/layout/`.
+
+* `/servicios` (`pages/servicios.js`): catálogo real con "qué incluye / qué queda afuera" por servicio (páginas web, Redes Activas, reels, sistemas y automatizaciones, capacitaciones, apps/ebook). La fuente de la verdad del discurso comercial es la guía interna del vendedor.
+* `/diagnostico` (`pages/diagnostico.js`): autodiagnóstico para prospectos. Form 100% client-side; al enviar arma un texto estructurado y abre WhatsApp (`contact.whatsappNumber`) con el resumen. Ningún campo es obligatorio, no se manda nada a un servidor.
+* `/vendedor`: guía comercial interna. HTML estático autocontenido en `public/vendedor.html` (tema claro, imprimible, `noindex`), servido en `/vendedor` vía `rewrites()` en `next.config.js`. No usa el chrome de Next; editar el `.html` directo.
 
 ## Sub-sitios dentro del mismo repo
 

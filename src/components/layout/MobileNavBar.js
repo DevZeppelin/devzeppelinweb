@@ -22,6 +22,7 @@ const MobileNavBar = ({ open }) => {
           { href: '/webs', label: 'Webs', emoji: '⬡' },
           { href: '/apps', label: 'Apps', emoji: '⬡' },
           { href: '/servicios', label: 'Servicios', emoji: '⬡' },
+          { href: '/diagnostico', label: 'Diagnóstico', emoji: '⬡' },
           { href: '/quienesSomos', label: 'Acerca de DZ', emoji: '⬡' },
           { href: '/contacto', label: 'Contactame', emoji: '⬡' },
         ].map(({ href, label, emoji }) => (
