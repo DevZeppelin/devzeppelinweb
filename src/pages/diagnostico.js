@@ -31,12 +31,14 @@ const ACTIVIDAD_OPTIONS = [
 const REDES = ["Instagram", "Facebook", "TikTok", "YouTube", "LinkedIn", "Ninguna"];
 
 const NECESIDADES = [
-  "Una página web",
+  "Renovar mi imagen / marca en redes (branding)",
+  "Una página web nueva o renovada",
   "Mantener mis redes activas y prolijas",
-  "Reels o videos para mostrar lo que hago",
-  "Un sistema o automatización para ordenar el trabajo",
+  "Reels o videos con IA para mostrar lo que hago",
+  "Mejorar mi presencia (o la de mi empresa) en LinkedIn",
+  "Un sistema o app a medida para ordenar el trabajo",
+  "Automatizar tareas repetitivas que hago a mano",
   "Capacitar a mi equipo en tecnología / IA",
-  "Renovar mi imagen / logo",
   "Todavía no lo tengo claro",
 ];
 
@@ -49,6 +51,7 @@ export default function Diagnostico() {
     redes: [],
     actividad: "",
     necesidades: [],
+    tareaManual: "",
     proposito: "",
     comentario: "",
     contacto: "",
@@ -87,6 +90,7 @@ export default function Diagnostico() {
     add("Actividad en redes", form.actividad);
     if (form.necesidades.length)
       add("Qué siente que le falta", form.necesidades.join(" · "));
+    add("Tarea que hoy hace a mano", form.tareaManual);
     add("Propósito / objetivo del año", form.proposito);
     add("Comentario", form.comentario);
     add("Contacto", form.contacto);
@@ -289,6 +293,20 @@ export default function Diagnostico() {
                   </button>
                 ))}
               </div>
+            </div>
+
+            {/* Tarea manual */}
+            <div>
+              <label className={labelCls} htmlFor="tareaManual">
+                ¿Hay alguna tarea que hoy hagas todo a mano y te quite tiempo?
+              </label>
+              <textarea
+                id="tareaManual"
+                className={`${inputCls} min-h-[90px] resize-y`}
+                value={form.tareaManual}
+                onChange={set("tareaManual")}
+                placeholder="Ej.: cargo pedidos en un Excel, coordino turnos por WhatsApp, armo el mismo informe cada semana… (opcional)"
+              />
             </div>
 
             {/* Propósito */}

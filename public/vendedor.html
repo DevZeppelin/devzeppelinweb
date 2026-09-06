@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Guía comercial de Dev Zeppelin: qué vendemos y qué no, cómo prospectar y cómo pasar de la consulta a la propuesta.">
+<meta name="description" content="Guía comercial de Dev Zeppelin: qué vendemos y qué no, cómo prospectar, los 8 servicios en detalle, venta cruzada y cómo pasar de la consulta a la propuesta.">
 <title>Dev Zeppelin · Guía del vendedor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,10 +56,11 @@
   .quick-links a{background:#f3d634;color:#20251c;padding:11px 15px;border-radius:8px;text-decoration:none;font-weight:750}
   .quick-links a.ghost{background:transparent;border:1px solid #cfd0c6;color:#3a3d34}
 
-  .service{padding:22px 0;border-bottom:1px solid #e4e7de}
+  .service{padding:24px 0;border-bottom:1px solid #e4e7de}
   .service:last-child{border:0}
   .service-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.5px;color:#69600e;background:#fff2a8;padding:3px 9px;border-radius:20px;text-transform:uppercase}
-  .service h3{margin:8px 0 4px}
+  .service h3{margin:10px 0 2px}
+  .service .price{font:700 14px/1 "Orbitron",system-ui,sans-serif;color:#6a5d00;margin:0 0 10px}
   .yn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
   .yn>div{border:1px solid #e0e3da;border-radius:10px;padding:12px 14px;background:#fafbf7}
   .yn h4{margin:0 0 6px;font:700 12px/1.4 "Orbitron",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.4px}
@@ -67,7 +68,9 @@
   .yn .no h4{color:#9a6a1a}
   .yn ul{margin:0;padding-left:18px}
   .yn li{margin:5px 0;font-size:14px}
+  .ideal{font-size:14px;background:#fafbf7;border:1px solid #e0e3da;border-radius:10px;padding:12px 14px;margin:12px 0}
   .ask{font-size:14px;background:#f0f3eb;border-radius:8px;padding:10px 14px;margin:10px 0}
+  .detect{font-size:14px;background:#fff9d7;border-left:4px solid #e3c327;border-radius:0 8px 8px 0;padding:10px 14px;margin:10px 0}
 
   .callout{background:#fff9d7;border-left:4px solid #e3c327;padding:16px 20px;border-radius:0 10px 10px 0;margin:20px 0}
   .note{font-size:13px;color:#69715f}
@@ -88,6 +91,24 @@
   form input,form textarea,form select{display:block;width:100%;border:1px solid #bdc6b5;border-radius:7px;padding:10px;margin-top:6px;background:#fff;color:#23261f}
   form textarea{min-height:90px;resize:vertical}
   #briefStatus{font-size:13px;color:#3c7d33}
+
+  /* ── Preguntas interactivas ── */
+  .disco{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px}
+  .disco>li{border:1px solid #e0e3da;border-radius:12px;padding:16px 18px;background:#fafbf7;transition:border-color .25s ease,background .25s ease}
+  .disco>li.answered{border-color:#7fbd74;background:#f1faee}
+  .disco .q{font-weight:700;margin:0 0 10px}
+  .disco .opts{display:flex;flex-wrap:wrap;gap:8px}
+  .disco .opts button{background:#fff;border:1px solid #cfd0c6;color:#2f3229;font-weight:600;font-size:13px;padding:8px 12px;border-radius:20px}
+  .disco .opts button[aria-pressed="true"]{background:#f3d634;border-color:#e3c327;color:#171912}
+  .disco .read{font-size:13px;color:#4a4d42;margin:12px 0 0;padding-top:10px;border-top:1px dashed #d7dccf}
+  .disco .read b{color:#69600e}
+  .disco-progress{font-size:13px;color:#6f7669;margin:14px 0 0}
+  .disco-panel{margin-top:18px;border-left:4px solid #e3c327;background:#fff9d7;border-radius:0 10px 10px 0;padding:16px 20px}
+  .disco-panel h3{margin:0 0 10px}
+  .disco-panel ol{margin:0;padding-left:20px}
+  .disco-panel li{margin:9px 0;font-size:14px}
+  .disco-panel li b{color:#69600e}
+  .disco-panel .empty{font-size:13px;color:#69715f;margin:0}
 
   .quiz{list-style:none;padding:0;margin:18px 0}
   .quiz>li{border:1px solid #e0e3da;border-radius:12px;padding:16px 18px;margin:12px 0;background:#fafbf7;transition:background .3s ease,border-color .3s ease}
@@ -123,7 +144,7 @@
   @media print{
     body{background:#fff;font-size:11pt}
     .layout{display:block}
-    aside,.copy,.hero button,#downloadBrief,#briefStatus,.quick-links,#test{display:none!important}
+    aside,.copy,.hero button,#downloadBrief,#briefStatus,.quick-links,#test,#discoReset,#discoCopy,.disco .opts{display:none!important}
     main{max-width:none;padding:0}
     .hero{background:#fff;color:#111;border:2px solid #222}
     .hero::after{display:none}
@@ -132,7 +153,7 @@
     section{border:0;padding:16px 0;margin:0;break-inside:avoid}
     table{min-width:0;font-size:10pt}
     .table-wrap{overflow:visible}
-    tr,.service,.script,.callout,.yn>div{break-inside:avoid}
+    tr,.service,.script,.callout,.yn>div,.disco>li{break-inside:avoid}
     h2,h3{break-after:avoid}
     a{color:#222}
     footer{display:none}
@@ -145,38 +166,62 @@
   <aside>
     <a class="brand" href="https://devzeppelin.ar">DEV ZEPPELIN<small>GUÍA DEL VENDEDOR</small><span class="home-hint">↖ volver al sitio</span></a>
     <label for="search">Buscar en la guía</label>
-    <input id="search" type="search" placeholder="Web, redes, reels, sistemas…">
+    <input id="search" type="search" placeholder="Web, redes, reels, branding, sistemas…">
     <div id="searchStatus" role="status"></div>
     <nav aria-label="Secciones">
-      <a href="#propuesta">01 · Qué hacemos y qué no</a>
-      <a href="#prospeccion">02 · Buscar y analizar clientes</a>
-      <a href="#servicios">03 · Servicios, incluye y no incluye</a>
-      <a href="#conversacion">04 · De la consulta a la propuesta</a>
-      <a href="#herramientas">05 · Herramientas y trabajos de apoyo</a>
-      <a href="#ficha">06 · Ficha rápida del cliente</a>
-      <a href="#test">07 · Test: ¿estás listo?</a>
+      <a href="#idea">01 · La idea central</a>
+      <a href="#previo">02 · Mini diagnóstico digital</a>
+      <a href="#servicios">03 · Los 8 servicios en detalle</a>
+      <a href="#oportunidades">04 · Detectar oportunidades</a>
+      <a href="#cruzada">05 · Venta cruzada</a>
+      <a href="#conversacion">06 · De la consulta a la propuesta</a>
+      <a href="#preguntas">07 · Preguntas que abren oportunidades</a>
+      <a href="#herramientas">08 · Herramientas, recursos y precios</a>
+      <a href="#ficha">09 · Ficha rápida del cliente</a>
+      <a href="#test">10 · Test: ¿estás listo?</a>
     </nav>
     <p class="side-note">Uso interno · Investigar · Escuchar · Proponer<br><br>WhatsApp Dev Zeppelin:<br>+54 9 261 247 3147</p>
   </aside>
 
   <main id="contenido">
     <header class="hero">
-      <div class="eyebrow">Guía práctica del vendedor</div>
+      <div class="eyebrow">Manual de mano del vendedor</div>
       <h1>Conocé al cliente.<br><span>Proponé algo útil.</span></h1>
-      <p>Todo lo que vende Dev Zeppelin, con lo que incluye y lo que no, más una forma simple de encontrar oportunidades, conversar y preparar propuestas.</p>
-      <div class="pills"><span>7 secciones</span><span>Mensajes copiables</span><span>Diagnóstico para el cliente</span><span>Ficha descargable</span><span>Test con puntaje</span></div>
+      <p>Todo lo que vende Dev Zeppelin, con precios de referencia, lo que incluye y lo que no, más una forma simple de encontrar oportunidades, conversar y preparar propuestas.</p>
+      <div class="pills"><span>8 servicios en detalle</span><span>Mensajes copiables</span><span>Preguntas interactivas</span><span>Venta cruzada</span><span>Ficha descargable</span><span>Test con puntaje</span></div>
       <p class="meta"><button id="print" type="button">Imprimir / guardar como PDF</button></p>
     </header>
 
-    <section id="propuesta">
-      <h2>01 · Qué hacemos y qué no</h2>
-      <p class="subtitle">La explicación que el vendedor tiene que poder dar en pocas palabras.</p>
+    <section id="idea">
+      <h2>01 · La idea central</h2>
+      <p class="subtitle">Lo que tenés que tener claro antes de escribirle a nadie.</p>
       <div class="script">
-        <p>En Dev Zeppelin ayudamos a negocios y empresas a mejorar su presencia digital y a trabajar mejor con tecnología. Hacemos páginas web, mantenemos redes, producimos reels, desarrollamos sistemas y automatizaciones, y capacitamos equipos para que aprovechen sus herramientas.</p>
+        <p>Dev Zeppelin funciona como un engranaje tecnológico para empresas y emprendedores. El cliente se dedica a su negocio; nosotros lo ayudamos con diseño, web, contenido, inteligencia artificial, sistemas y automatización. No vendemos tecnología porque sí: detectamos dónde puede aportar valor.</p>
         <button class="copy" type="button">Copiar mensaje</button>
       </div>
-      <p><strong>Qué vendemos:</strong> una solución a una necesidad concreta. Puede ser mostrar mejor el negocio, mantener las redes activas, ordenar un proceso o enseñarle al equipo a usar una herramienta.</p>
-      <p><strong>Tu función:</strong> investigar, escuchar, recomendar y coordinar el siguiente paso. No necesitás saber programar; sí entender qué incluye cada servicio y cuándo consultar al equipo técnico.</p>
+      <p><strong>Un vendedor de Dev Zeppelin no necesita saber programar.</strong> Necesita aprender a detectar <strong>problemas + oportunidades + necesidades digitales</strong> y coordinar el siguiente paso con el equipo.</p>
+      <p><strong>Tu función:</strong> investigar, escuchar, recomendar el servicio adecuado y coordinar el próximo paso. Cuando algo no está confirmado (precio final, plazo, una función), lo consultás con Gino antes de prometerlo.</p>
+
+      <h3>Señales de que hay una oportunidad</h3>
+      <p>Si un negocio…</p>
+      <div class="grid2">
+        <ul>
+          <li>se ve poco profesional</li>
+          <li>no aparece bien en internet</li>
+          <li>no tiene web o tiene una web antigua</li>
+          <li>no genera contenido propio</li>
+          <li>publica siempre lo mismo</li>
+        </ul>
+        <ul>
+          <li>hace procesos manuales</li>
+          <li>usa demasiados Excel</li>
+          <li>administra todo por WhatsApp</li>
+          <li>pierde tiempo en tareas repetitivas</li>
+          <li>no sabe cómo aplicar inteligencia artificial</li>
+        </ul>
+      </div>
+      <p>…probablemente exista una solución que Dev Zeppelin pueda desarrollar.</p>
+
       <div class="callout">
         <strong>Lo que no hacemos ni prometemos:</strong>
         <ul>
@@ -188,153 +233,240 @@
       </div>
     </section>
 
-    <section id="prospeccion">
-      <h2>02 · Buscar y analizar clientes</h2>
-      <p class="subtitle">Antes de escribir o enviar una propuesta, conocé la presencia digital de la marca.</p>
-      <div class="callout">
-        <strong>Google Maps es un buen punto de partida para detectar oportunidades.</strong>
-        <p>Buscá negocios por rubro y zona. Revisá su ficha y después investigá sus redes y su web. La propuesta tiene que responder a algo que observaste, no ser un mensaje igual para todos.</p>
-      </div>
+    <section id="previo">
+      <h2>02 · Mini diagnóstico digital</h2>
+      <p class="subtitle">La mejor venta empieza antes de enviar el primer mensaje. Antes de contactar un negocio, hacé este pantallazo.</p>
       <div class="table-wrap"><table>
-        <thead><tr><th>Dónde mirar</th><th>Qué revisar</th><th>Qué oportunidad puede aparecer</th></tr></thead>
+        <thead><tr><th>Paso</th><th>Qué analizar</th><th>Qué oportunidad puede aparecer</th></tr></thead>
         <tbody>
-          <tr><td>Google Maps</td><td>Fotos, reseñas, respuestas, horarios, datos de contacto y enlace al sitio.</td><td>Información poco clara o falta de un lugar donde conocer los servicios.</td></tr>
-          <tr><td>Instagram y Facebook</td><td>Si tiene perfiles, cuándo publicó, claridad de la descripción, destacadas y calidad del contenido.</td><td>Redes Activas, piezas visuales o reels para explicar mejor su oferta.</td></tr>
-          <tr><td>Página web</td><td>Si existe, si abre bien en el celular, si se entiende qué vende y si es fácil consultar.</td><td>Crear una web o mejorar la presentación y el recorrido hacia el contacto.</td></tr>
-          <tr><td>Presencia general</td><td>Coherencia entre nombre, logo, información y contactos en los distintos canales.</td><td>Ordenar la presencia digital y priorizar lo más importante.</td></tr>
+          <tr><td>1. Google Maps</td><td>Cantidad y calificación de reseñas, fotos, información, teléfono, enlace a la web, presencia general en Google.</td><td>Ficha pobre o falta de un lugar propio para mostrar los servicios → Página web, Google Maps ordenado.</td></tr>
+          <tr><td>2. Redes sociales</td><td>Calidad visual, frecuencia de publicación, descripción, historias destacadas, cantidad y calidad del contenido, identidad de marca.</td><td>Imagen inconsistente, perfil abandonado o contenido repetitivo → Branding, Redes Activas, Reels con IA.</td></tr>
+          <tr><td>3. Página web</td><td>Diseño, velocidad, versión móvil, claridad del mensaje, botón de WhatsApp, formularios, posicionamiento, antigüedad aparente.</td><td>Sin web, web vieja o difícil de usar desde el celular → Página web profesional.</td></tr>
         </tbody>
       </table></div>
-      <p><strong>Antes de sacar conclusiones:</strong> si no aparece una web o una red en Maps, buscá también el nombre de la marca. Que no esté enlazada no significa que no exista. No supongas que un negocio vende poco por cómo se ve su perfil. Las automatizaciones internas se detectan conversando: los procesos no se conocen solo mirando las redes.</p>
-      <h3>Registrá solo lo útil</h3>
-      <ul>
-        <li>Negocio, rubro y enlaces que revisaste.</li>
-        <li>Una observación concreta y comprobable.</li>
-        <li>Una mejora posible y el servicio que podría ayudar.</li>
-        <li>Canal de contacto público y próximo paso.</li>
-      </ul>
-      <h3>Ejemplo de primer contacto</h3>
+      <p class="note"><strong>Antes de sacar conclusiones:</strong> si no aparece una web o una red en Maps, buscá también el nombre de la marca. Que no esté enlazada no significa que no exista. Y no supongas que un negocio vende poco por cómo se ve su perfil. Las automatizaciones y procesos internos solo se detectan conversando.</p>
+      <div class="callout">
+        <strong>Pasale el diagnóstico al cliente:</strong>
+        <p>Enviale <strong>devzeppelin.ar/diagnostico</strong>. En 2 minutos responde cómo está su negocio (web, redes, qué le falta, propósito) y al terminar se abre un WhatsApp hacia Dev Zeppelin con el resumen ordenado. Ninguna respuesta es obligatoria.</p>
+      </div>
       <div class="script">
-        <p>¡Hola! Soy de Dev Zeppelin. Encontré su negocio en Google Maps y estuve mirando cómo se presentan online. Vi que [observación real]. Podemos ayudarlos a [mejora concreta]. ¿Les interesa que les cuente una idea?</p>
+        <p>Te paso un mini test para conocer mejor tu negocio: https://devzeppelin.ar/diagnostico . Son 2 minutos, no hace falta que completes todo. Al final te abre un WhatsApp con el resumen para enviarnos y te devolvemos una propuesta.</p>
         <button class="copy" type="button">Copiar mensaje</button>
       </div>
-      <p class="note">Personalizá el mensaje y evitá criticar. Si querés un pantallazo ordenado del negocio, pasale el enlace <strong>devzeppelin.ar/diagnostico</strong> y te llega el resumen por WhatsApp.</p>
     </section>
 
     <section id="servicios">
-      <h2>03 · Servicios, incluye y no incluye</h2>
-      <p class="subtitle">Qué ofrecer, para qué sirve, qué preguntar y qué acordar antes de vender.</p>
+      <h2>03 · Los 8 servicios en detalle</h2>
+      <p class="subtitle">Para qué sirve cada uno, precio de referencia, qué incluye, para quién es ideal y qué tenés que detectar para ofrecerlo.</p>
 
       <article class="service">
         <span class="service-tag">Presencia digital</span>
-        <h3>Páginas web</h3>
-        <p><strong>Para qué sirven:</strong> presentar el negocio, mostrar servicios o productos, generar confianza y facilitar consultas.</p>
+        <h3>1 · Branding profesional para redes</h3>
+        <p class="price">$129.000</p>
+        <p><strong>Para qué sirve:</strong> transformar la imagen digital de un negocio para que se vea moderno, profesional y confiable.</p>
         <div class="yn">
           <div class="si"><h4>Incluye</h4><ul>
-            <li>Webs adaptadas al celular, con foco en claridad y velocidad.</li>
-            <li>Optimización básica para buscadores.</li>
-            <li>Recorrido pensado hacia el contacto; según el proyecto, catálogos y funciones a medida.</li>
+            <li>Diseño o mejora de foto de perfil.</li>
+            <li>Diseño de historias destacadas.</li>
+            <li>3 diseños iniciales para el feed / grid.</li>
+            <li>7 flyers para historias y estados.</li>
+            <li>Texto profesional para la biografía.</li>
+            <li>Definición de estilo visual, paleta de colores y criterio gráfico.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>El mantenimiento continuo de las redes: eso es Redes Activas.</li>
+            <li>Filmación o sesión de fotos en el local.</li>
+          </ul></div>
+        </div>
+        <p class="ideal"><strong>Ideal para:</strong> negocios que ya tienen Instagram o Facebook pero cuya imagen se ve improvisada, antigua, poco profesional, inconsistente o diferente en cada publicación.</p>
+        <p class="detect"><strong>Qué debe detectar el vendedor:</strong> entrá al Instagram del potencial cliente y preguntate <em>«¿la imagen transmite la calidad real del negocio?»</em>. Si la respuesta es no, existe una oportunidad.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Contenido</span>
+        <h3>2 · Reels y cortometrajes con IA</h3>
+        <p class="price">Desde $99.000</p>
+        <p><strong>Para qué sirve:</strong> crear piezas audiovisuales originales para presentar negocios, productos, servicios o campañas. Podemos transformar prácticamente cualquier idea en contenido audiovisual.</p>
+        <div class="yn">
+          <div class="si"><h4>Podemos crear</h4><ul>
+            <li>Videos cinematográficos, animaciones y personajes 3D.</li>
+            <li>Mascotas virtuales y avatares IA.</li>
+            <li>Publicidades creativas e historias de marca.</li>
+            <li>Videos de productos y contenido para campañas.</li>
+            <li>Verticales para Reels, TikTok y Shorts.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Promesa de viralidad ni de una cantidad de ventas.</li>
+            <li>Versiones ilimitadas: se define cantidad y formato.</li>
+            <li>Producir sin aprobar antes la idea o el guion.</li>
+          </ul></div>
+        </div>
+        <p class="ideal"><strong>Ideal para:</strong> marcas que necesitan llamar la atención, lanzar un producto, diferenciarse, explicar un servicio, generar contenido original o crear publicidad más impactante.</p>
+        <p class="detect"><strong>Qué debe detectar el vendedor:</strong> negocios que publican siempre fotografías simples, flyers tradicionales, imágenes de catálogo o contenido repetitivo. Ahí hay una oportunidad para ofrecer algo audiovisual diferente.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Marca personal / B2B</span>
+        <h3>3 · LinkedIn Activo</h3>
+        <p class="price">$99.000</p>
+        <p><strong>Para qué sirve:</strong> construir o mejorar la presencia profesional de una persona o empresa en LinkedIn. El objetivo es transmitir autoridad, generar contactos y abrir nuevas oportunidades comerciales.</p>
+        <div class="yn">
+          <div class="si"><h4>Incluye</h4><ul>
+            <li>Optimización del perfil personal o página de empresa.</li>
+            <li>Mejora de textos y presentación.</li>
+            <li>Estrategia orientada al nicho e ideas de contenido.</li>
+            <li>Creación de textos e imágenes.</li>
+            <li>Plan inicial de publicaciones.</li>
+            <li>Recomendaciones para aumentar la presencia profesional.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Gestión diaria de la cuenta ni respuesta de mensajes, salvo que se pacte.</li>
+          </ul></div>
+        </div>
+        <p class="ideal"><strong>Ideal para:</strong> profesionales, consultores, empresas B2B, empresarios, estudios profesionales, desarrolladores, vendedores y marcas personales.</p>
+        <p class="detect"><strong>Qué debe detectar el vendedor:</strong> la persona o la empresa vende a otras empresas o vive de su reputación profesional, pero su LinkedIn está vacío, desactualizado o no comunica lo que hace.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Presencia digital</span>
+        <h3>4 · Página web profesional</h3>
+        <p class="price">Desde $199.000</p>
+        <p><strong>Para qué sirve:</strong> una web moderna, rápida y adaptada a celulares. No debe ser solo una tarjeta digital: tiene que transmitir confianza, explicar claramente lo que hace el negocio y facilitar el contacto con potenciales clientes.</p>
+        <div class="yn">
+          <div class="si"><h4>Puede incluir</h4><ul>
+            <li>Diseño moderno y adaptación a celulares.</li>
+            <li>Optimización de velocidad y SEO básico para Google.</li>
+            <li>Botón directo de WhatsApp y formularios de contacto.</li>
+            <li>Integración con redes, Google Maps y galerías.</li>
+            <li>Catálogo de productos o servicios y preguntas frecuentes.</li>
+            <li>Dominio personalizado e identidad visual.</li>
           </ul></div>
           <div class="no"><h4>No incluye</h4><ul>
             <li>Tienda con pagos, panel editable, correo corporativo o área de usuarios: se definen y cotizan aparte.</li>
             <li>Garantía de posiciones en Google.</li>
           </ul></div>
         </div>
-        <p class="ask"><strong>Preguntá:</strong> ¿Qué querés que haga el visitante? ¿Qué secciones necesitás? ¿Tenés fotos, textos y dominio? ¿Quién actualizará el contenido?</p>
-        <p class="note"><strong>Acordar antes de vender:</strong> secciones, contenido, dominio, hosting, revisiones y plazo.</p>
-      </article>
-
-      <article class="service">
-        <span class="service-tag">Continuidad</span>
-        <h3>Redes Activas</h3>
-        <p><strong>Para quién:</strong> negocios que quieren mantener Instagram y Facebook presentes y prolijos sin encargarse de todo el contenido.</p>
-        <div class="yn">
-          <div class="si"><h4>Incluye</h4><ul>
-            <li>Inicio: refresh de logo, grid y destacadas; 7 historias iniciales y 4 publicaciones (2 imágenes, 1 carrusel, 1 reel).</li>
-            <li>Continuidad: historias diarias con contenido rotativo; renovación de 2 historias y 1 publicación por mes.</li>
-          </ul></div>
-          <div class="no"><h4>No incluye</h4><ul>
-            <li>Diseños nuevos todos los días: la presencia diaria funciona con rotación.</li>
-            <li>Responder mensajes, atender ventas, campañas pagas o filmar en el local.</li>
-          </ul></div>
-        </div>
-        <p class="ask"><strong>Preguntá:</strong> ¿Qué querés promocionar? ¿Quién aporta fotos y novedades? ¿Quién aprueba? ¿Tenés acceso a las cuentas?</p>
-        <p class="note"><strong>Acordar antes de vender:</strong> cómo se integra el grid con las piezas iniciales y el formato de la pieza mensual.</p>
-      </article>
-
-      <article class="service">
-        <span class="service-tag">Contenido</span>
-        <h3>Reels personalizados</h3>
-        <p><strong>Para qué sirven:</strong> mostrar un producto, explicar un servicio o comunicar una idea de forma breve y atractiva.</p>
-        <div class="yn">
-          <div class="si"><h4>Incluye</h4><ul>
-            <li>Edición de fotos y videos del cliente, o escenas con IA / animación.</li>
-            <li>Pieza adaptada a la marca y a un objetivo concreto, con revisiones acordadas.</li>
-          </ul></div>
-          <div class="no"><h4>No incluye</h4><ul>
-            <li>Promesa de viralidad o de una cantidad de ventas.</li>
-            <li>Producción ilimitada de versiones: se define cantidad y formato.</li>
-          </ul></div>
-        </div>
-        <p class="ask"><strong>Preguntá:</strong> ¿Qué mensaje querés transmitir? ¿A quién? ¿Tenés material? ¿Qué estilo buscás? ¿Qué debería hacer la persona después de verlo?</p>
-        <p class="note"><strong>Acordar antes de vender:</strong> duración, formato, guion, voz, versiones y revisiones. Aprobar la idea antes de producir.</p>
+        <p class="ideal"><strong>Ideal para:</strong> negocios que no tienen web, tienen una web antigua, dependen exclusivamente de Instagram, necesitan transmitir más confianza, quieren aparecer en búsquedas o mostrar productos y servicios de forma profesional.</p>
+        <p class="detect"><strong>Herramienta para vendedores:</strong> antes de contactar, buscá el negocio en Google y preguntate: ¿tiene página web? ¿se ve moderna? ¿funciona bien desde el celular? ¿explica claramente qué vende? ¿es fácil contactarlos? Si alguna respuesta es negativa, existe una oportunidad comercial.</p>
+        <p class="note"><strong>Portfolio:</strong> ejemplos de páginas desarrolladas en <strong>devzeppelin.ar/webs</strong>.</p>
       </article>
 
       <article class="service">
         <span class="service-tag">Eficiencia</span>
-        <h3>Sistemas personalizados y automatizaciones</h3>
-        <p><strong>Para qué sirven:</strong> ordenar información, reducir tareas repetitivas y ayudar a gestionar mejor el trabajo.</p>
+        <h3>5 · Sistemas personalizados y aplicaciones</h3>
+        <p class="price">Presupuesto según proyecto</p>
+        <p><strong>Para qué sirve:</strong> cuando una empresa tiene un problema que no se resuelve con una página web, desarrollamos una herramienta específica, adaptada al funcionamiento real del negocio.</p>
         <div class="yn">
-          <div class="si"><h4>Incluye</h4><ul>
-            <li>Ejemplos a evaluar: turnos y reservas, seguimiento de pedidos, registros de clientes, reportes, procesamiento de planillas, tareas administrativas.</li>
-            <li>Análisis previo de funciones, integraciones, costos de terceros, mantenimiento y plazo.</li>
+          <div class="si"><h4>Algunos ejemplos</h4><ul>
+            <li>Sistemas de turnos y reservas.</li>
+            <li>Gestión de clientes y paneles administrativos.</li>
+            <li>Sistemas internos y formularios inteligentes.</li>
+            <li>Catálogos administrables y sistemas de fidelización.</li>
+            <li>Aplicaciones para empleados y portales para clientes.</li>
+            <li>Aplicaciones web, dashboards y gestión de información.</li>
           </ul></div>
           <div class="no"><h4>No incluye</h4><ul>
-            <li>Comprometer una solución sin ver un ejemplo real del proceso y el resultado esperado.</li>
+            <li>Comprometer una solución, un plazo o un costo sin ver un ejemplo real del proceso y el resultado esperado.</li>
             <li>Licencias o servicios de terceros, salvo que se aclaren en la propuesta.</li>
           </ul></div>
         </div>
-        <p class="ask"><strong>Preguntá:</strong> ¿Cómo lo hacen hoy? ¿Qué lleva más tiempo? ¿Dónde aparecen errores? ¿Quiénes lo usan? ¿Con qué archivos o sistemas trabajan?</p>
-        <p class="note"><strong>Acordar antes de vender:</strong> Gino evalúa y confirma alcance, plazo y costos antes de comprometer nada.</p>
+        <p class="detect"><strong>Concepto clave para vendedores:</strong> no intentes vender un sistema. Primero detectá un problema. Preguntá: ¿qué tarea repetitiva les hace perder tiempo? ¿qué información llevan en Excel o WhatsApp? ¿qué proceso les gustaría simplificar? ¿qué tarea realizan manualmente todos los días? De esas respuestas aparecen las oportunidades.</p>
+        <p class="note"><strong>Ejemplos:</strong> aplicaciones y sistemas en <strong>devzeppelin.ar/apps</strong>.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Eficiencia</span>
+        <h3>6 · Automatizaciones</h3>
+        <p class="price">Presupuesto según necesidad</p>
+        <p><strong>Para qué sirve:</strong> automatizar tareas repetitivas usando tecnología. El objetivo es reducir trabajo manual, errores y tiempo operativo.</p>
+        <div class="yn">
+          <div class="si"><h4>Ejemplos</h4><ul>
+            <li>Automatización de formularios y generación automática de documentos.</li>
+            <li>Procesamiento de datos y automatización con Excel.</li>
+            <li>Integraciones entre sistemas y con APIs.</li>
+            <li>Automatización de reportes y envíos automáticos.</li>
+            <li>Flujos administrativos y automatizaciones empresariales.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Comprometer un flujo sin ver antes el proceso real.</li>
+          </ul></div>
+        </div>
+        <p class="detect"><strong>Qué debe buscar el vendedor:</strong> la frase más importante es <em>«esto lo hacemos siempre a mano»</em>. Cuando aparece esa frase, probablemente exista una oportunidad de automatización.</p>
+      </article>
+
+      <article class="service">
+        <span class="service-tag">Continuidad</span>
+        <h3>7 · Redes Activas</h3>
+        <p class="price">A consultar</p>
+        <p><strong>Para quién:</strong> negocios que quieren mantener una presencia digital profesional en Instagram y Facebook sin contratar una estructura completa de community management. Creamos una base visual y mantenemos contenido activo.</p>
+        <div class="yn">
+          <div class="si"><h4>Podemos trabajar sobre</h4><ul>
+            <li>Historias, publicaciones y reels.</li>
+            <li>Diseño gráfico e identidad de marca.</li>
+            <li>Grid inicial e historias destacadas.</li>
+            <li>Material promocional.</li>
+          </ul></div>
+          <div class="no"><h4>No incluye</h4><ul>
+            <li>Responder mensajes, atender ventas o campañas pagas.</li>
+            <li>Filmar en el local.</li>
+            <li>Contenido 100% nuevo cada día: funciona con rotación y una renovación mensual definida.</li>
+          </ul></div>
+        </div>
+        <p class="ideal"><strong>Ideal para:</strong> negocios que tienen buenas redes pero publican poco, no tienen tiempo, abandonaron sus perfiles, tienen una imagen inconsistente o necesitan mantener presencia.</p>
+        <p class="detect"><strong>Qué debe detectar el vendedor:</strong> un perfil con seguidores y buen material, pero cuya última publicación es de hace semanas o meses, o cuyo grid se ve despareja.</p>
       </article>
 
       <article class="service">
         <span class="service-tag">Aprendizaje</span>
-        <h3>Capacitaciones tecnológicas para empresas</h3>
-        <p><strong>Para qué sirven:</strong> que los equipos aprendan a usar mejor sus herramientas y las apliquen a su trabajo cotidiano.</p>
+        <h3>8 · Capacitaciones tecnológicas</h3>
+        <p class="price">A medida</p>
+        <p><strong>Para qué sirve:</strong> ayudar a empresas y equipos a utilizar mejor las herramientas digitales disponibles. Realizamos capacitaciones adaptadas a cada organización.</p>
         <div class="yn">
-          <div class="si"><h4>Incluye</h4><ul>
-            <li>Temario a medida: IA, planillas y reportes, productividad digital, herramientas colaborativas, uso de sistemas implementados.</li>
-            <li>Objetivo práctico, ejercicios y materiales; temario validado con el equipo.</li>
+          <div class="si"><h4>Algunos temas</h4><ul>
+            <li>Inteligencia artificial aplicada al trabajo y uso profesional de IA.</li>
+            <li>Herramientas digitales y colaborativas.</li>
+            <li>Automatización y productividad.</li>
+            <li>Redes sociales y presencia digital.</li>
+            <li>Tecnología aplicada a negocios.</li>
           </ul></div>
           <div class="no"><h4>No incluye</h4><ul>
             <li>Certificaciones ni acompañamiento posterior, salvo que se pacte.</li>
             <li>Licencias o accesos que deba proveer la empresa.</li>
           </ul></div>
         </div>
-        <p class="ask"><strong>Preguntá:</strong> ¿Qué herramientas usan? ¿Qué tareas necesitan resolver? ¿Qué nivel tiene el equipo? ¿Cuántas personas participarían? ¿Qué deberían poder hacer al terminar?</p>
-        <p class="note"><strong>Acordar antes de vender:</strong> objetivo, temario, modalidad, duración, ejercicios, materiales y requisitos de acceso.</p>
-      </article>
-
-      <article class="service">
-        <span class="service-tag">Productos digitales</span>
-        <h3>Apps y ebook</h3>
-        <p><strong>Para qué sirven:</strong> mostrar ejemplos reales de lo que podemos desarrollar y acercar conceptos digitales a personas sin formación técnica.</p>
-        <div class="yn">
-          <div class="si"><h4>Incluye</h4><ul>
-            <li>Catálogo de apps construidas como muestra (My Agenda, Fidelizapp, ¿Cuánto cada uno?, Academia Aventura).</li>
-            <li>Ebook <em>Tecnología para no técnicos</em>.</li>
-          </ul></div>
-          <div class="no"><h4>No incluye</h4><ul>
-            <li>Una app de muestra no implica que todas sus adaptaciones estén incluidas.</li>
-            <li>El ebook no equivale a una capacitación personalizada.</li>
-          </ul></div>
-        </div>
-        <p class="ask"><strong>Preguntá / confirmá:</strong> disponibilidad, funciones y modalidad de acceso antes de ofrecer.</p>
+        <p class="ideal"><strong>Ideal para:</strong> empresas y equipos que ya tienen herramientas pero no las aprovechan, o que quieren empezar a usar IA en el trabajo cotidiano. El contenido se adapta a las necesidades de cada empresa.</p>
+        <p class="detect"><strong>Qué debe detectar el vendedor:</strong> un equipo que hace todo «como siempre», que no usa IA, o un dueño que dice que su gente «no sabe usar bien las herramientas que ya pagan».</p>
       </article>
     </section>
 
+    <section id="oportunidades">
+      <h2>04 · Detectar oportunidades, no vender servicios</h2>
+      <p class="subtitle">La diferencia entre que te lean y que te ignoren.</p>
+      <p>En lugar de escribir <em>«Hola, hacemos páginas web»</em>, conviene detectar primero qué podría mejorar el negocio y arrancar por ahí.</p>
+      <div class="script">
+        <p>Estuve viendo su negocio y vi que tienen muy buenas reseñas en Google, pero actualmente no cuentan con una web donde mostrar todos sus servicios. Nosotros trabajamos justamente ayudando a empresas a mejorar esa presencia digital.</p>
+        <button class="copy" type="button">Copiar mensaje</button>
+      </div>
+      <p>La diferencia es enorme: el cliente entiende que <strong>analizamos su negocio antes de contactarlo</strong>. Personalizá siempre el mensaje y evitá criticar.</p>
+    </section>
+
+    <section id="cruzada">
+      <h2>05 · Venta cruzada</h2>
+      <p class="subtitle">Una de las mayores oportunidades de Dev Zeppelin es combinar servicios. Escuchá más allá de lo que el cliente vino a pedir.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>El cliente entra por…</th><th>Y al conversar aparece…</th><th>Propuesta combinada</th></tr></thead>
+        <tbody>
+          <tr><td>Una página web</td><td>Marca despareja, sin reel de presentación, redes abandonadas</td><td>Web + Branding + Reel + Redes Activas (+ Google Maps + sistema interno)</td></tr>
+          <tr><td>Una consulta por Instagram</td><td>No tiene web</td><td>Branding + Página web</td></tr>
+          <tr><td>Una página web</td><td>Administra reservas con WhatsApp y Excel</td><td>Página web + Sistema de reservas</td></tr>
+          <tr><td>Redes Activas</td><td>El equipo no usa IA y pierde horas en tareas manuales</td><td>Redes Activas + Capacitación + Automatización</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">No ofrezcas todo junto de entrada. Cerrá la necesidad principal y planteá el resto como próximos pasos.</p>
+    </section>
+
     <section id="conversacion">
-      <h2>04 · De la consulta a la propuesta</h2>
+      <h2>06 · De la consulta a la propuesta</h2>
       <p class="subtitle">Un recorrido simple para vender con claridad.</p>
       <div class="table-wrap"><table>
         <thead><tr><th>Paso</th><th>Qué hacer</th></tr></thead>
@@ -353,7 +485,7 @@
         <li>¿Qué se entrega y qué queda fuera?</li>
         <li>¿Qué tiene que aportar el cliente?</li>
         <li>¿Quién decide y quién aprueba?</li>
-        <li>¿Se validó la viabilidad y el plazo con Gino?</li>
+        <li>¿Se validó la viabilidad, el precio y el plazo con Gino?</li>
       </ul>
       <div class="callout">
         <strong>Regla de oro: si no está confirmado, consultalo antes de prometerlo.</strong>
@@ -367,6 +499,7 @@
           <tr><td>«Quiero contenido nuevo todos los días»</td><td>«Redes Activas funciona con rotación y una renovación mensual definida. Podemos evaluar otro alcance si necesitás más producción».</td></tr>
           <tr><td>«¿Me garantizás ventas?»</td><td>«Te ayudamos a presentar mejor tu propuesta y a facilitar consultas. Las ventas también dependen de tu oferta y de cómo se atiendan».</td></tr>
           <tr><td>«No sé qué herramienta necesito»</td><td>«Contame qué querés lograr o qué tarea te cuesta. A partir de eso vemos una solución o una capacitación».</td></tr>
+          <tr><td>«¿Cuánto sale?»</td><td>«Te paso un precio de referencia y lo confirmo con el equipo según lo que necesites. Ahora puede haber una promoción activa, la chequeo».</td></tr>
         </tbody>
       </table></div>
       <div class="script">
@@ -375,54 +508,86 @@
       </div>
     </section>
 
-    <section id="herramientas">
-      <h2>05 · Herramientas y trabajos de apoyo</h2>
-      <p class="subtitle">Usá estos recursos durante la conversación.</p>
-
-      <h3>Diagnóstico para el cliente</h3>
-      <p>Enviale <strong>devzeppelin.ar/diagnostico</strong>. Completa en 2 minutos cómo está su negocio (web, redes, qué le falta, propósito) y al terminar se abre un WhatsApp hacia Dev Zeppelin con el resumen ordenado. Ninguna respuesta es obligatoria: sirve igual para tener un pantallazo y sugerir una propuesta.</p>
-      <div class="script">
-        <p>Te paso un mini test para conocer mejor tu negocio: https://devzeppelin.ar/diagnostico . Son 2 minutos, no hace falta que completes todo. Al final te abre un WhatsApp con el resumen para enviarnos y te devolvemos una propuesta.</p>
-        <button class="copy" type="button">Copiar mensaje</button>
+    <section id="preguntas">
+      <h2>07 · Preguntas que abren oportunidades</h2>
+      <p class="subtitle">Herramienta interactiva. Durante la charla con el cliente, marcá lo que te responde: abajo se arma solo la lista de oportunidades para pasarle a Gino.</p>
+      <ol class="disco" id="discoList"></ol>
+      <p class="disco-progress" id="discoProgress"></p>
+      <div class="disco-panel" id="discoPanel">
+        <h3>Oportunidades detectadas</h3>
+        <p class="empty">Todavía no marcaste respuestas. Elegí una opción en cada pregunta que hayas podido hacer.</p>
+        <ol hidden></ol>
       </div>
+      <div class="quiz-actions">
+        <button type="button" id="discoCopy" hidden>Copiar oportunidades</button>
+        <button type="button" id="discoReset" class="copy">Reiniciar</button>
+      </div>
+    </section>
 
-      <h3>Apoyate en nuestros trabajos</h3>
+    <section id="herramientas">
+      <h2>08 · Herramientas, recursos y precios</h2>
+      <p class="subtitle">Lo que usás durante la conversación.</p>
+
+      <h3>Recursos para mostrar trabajos reales</h3>
       <div class="quick-links">
         <a href="https://devzeppelin.ar" target="_blank" rel="noopener">Dev Zeppelin ↗</a>
         <a href="https://devzeppelin.ar/webs" target="_blank" rel="noopener">Páginas web realizadas ↗</a>
         <a href="https://devzeppelin.ar/apps" target="_blank" rel="noopener">Aplicaciones construidas ↗</a>
         <a class="ghost" href="https://devzeppelin.ar/servicios" target="_blank" rel="noopener">Servicios (qué incluye y qué no) ↗</a>
+        <a class="ghost" href="https://devzeppelin.ar/diagnostico" target="_blank" rel="noopener">Diagnóstico para el cliente ↗</a>
       </div>
       <p><strong>Cómo usarlos:</strong> elegí uno o dos ejemplos relacionados con el negocio del cliente. Explicá qué problema resuelven y qué podría servirle de ese enfoque. Revisá el ejemplo antes de enviarlo y no atribuyas funciones o resultados que no comprobaste.</p>
       <div class="script">
         <p>Te comparto nuestra web para que nos conozcas: https://devzeppelin.ar . Podés ver páginas que construimos en https://devzeppelin.ar/webs y aplicaciones en https://devzeppelin.ar/apps . Por lo que me contaste, te voy a señalar el ejemplo más parecido a lo que necesitás.</p>
         <button class="copy" type="button">Copiar mensaje</button>
       </div>
+
+      <h3>Precios de referencia</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Servicio</th><th>Desde</th></tr></thead>
+        <tbody>
+          <tr><td>Branding profesional para redes</td><td>$129.000</td></tr>
+          <tr><td>Reels y cortometrajes con IA</td><td>$99.000</td></tr>
+          <tr><td>LinkedIn Activo</td><td>$99.000</td></tr>
+          <tr><td>Página web profesional</td><td>$199.000</td></tr>
+          <tr><td>Sistemas personalizados y aplicaciones</td><td>Presupuesto según proyecto</td></tr>
+          <tr><td>Automatizaciones</td><td>Presupuesto según necesidad</td></tr>
+          <tr><td>Redes Activas</td><td>A consultar</td></tr>
+          <tr><td>Capacitaciones tecnológicas</td><td>A medida</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout">
+        <strong>Precios promocionales:</strong>
+        <p>Algunos servicios pueden ofrecerse con precios promocionales según la campaña vigente. Verificá siempre con Gino la promoción activa antes de confirmar un precio definitivo. El objetivo de las promos es incorporar nuevos clientes, generar casos de éxito y ampliar el portfolio.</p>
+      </div>
     </section>
 
     <section id="ficha">
-      <h2>06 · Ficha rápida del cliente</h2>
+      <h2>09 · Ficha rápida del cliente</h2>
       <p class="subtitle">Un resumen breve para pasar de la observación a una propuesta.</p>
       <p>Completá lo importante y descargala para compartirla con Gino. Esta ficha no envía datos; se conserva solo mientras la página está abierta.</p>
       <form id="briefForm">
         <div class="grid2">
           <label>Negocio y contacto<input name="Negocio y contacto" placeholder="Nombre, rubro y persona"></label>
-          <label>Enlaces revisados<input name="Enlaces revisados" placeholder="Maps, Instagram, Facebook, web"></label>
+          <label>Enlaces revisados<input name="Enlaces revisados" placeholder="Maps, Instagram, Facebook, LinkedIn, web"></label>
           <label>Qué observaste<textarea name="Qué observaste" placeholder="Una oportunidad concreta y comprobable"></textarea></label>
           <label>Qué necesita el cliente<textarea name="Qué necesita el cliente" placeholder="Problema y resultado que busca"></textarea></label>
           <label>Servicio recomendado
             <select name="Servicio recomendado">
               <option>Por definir</option>
-              <option>Página web</option>
+              <option>Branding profesional para redes</option>
+              <option>Reels y cortometrajes con IA</option>
+              <option>LinkedIn Activo</option>
+              <option>Página web profesional</option>
+              <option>Sistemas personalizados y aplicaciones</option>
+              <option>Automatizaciones</option>
               <option>Redes Activas</option>
-              <option>Reel personalizado</option>
-              <option>Sistemas y automatizaciones</option>
               <option>Capacitación tecnológica</option>
-              <option>App / ebook</option>
             </select>
           </label>
+          <label>Venta cruzada posible<input name="Venta cruzada posible" placeholder="Otro servicio que podría sumarse más adelante"></label>
           <label>Próximo paso<input name="Próximo paso" placeholder="Acción, responsable y fecha"></label>
-          <label>Qué falta confirmar<textarea name="Qué falta confirmar" placeholder="Alcance, materiales, accesos o plazo"></textarea></label>
+          <label>Qué falta confirmar<textarea name="Qué falta confirmar" placeholder="Alcance, precio, materiales, accesos o plazo"></textarea></label>
         </div>
         <button type="button" id="downloadBrief">Descargar ficha .txt</button>
         <p id="briefStatus" role="status"></p>
@@ -430,7 +595,7 @@
     </section>
 
     <section id="test">
-      <h2>07 · Test: ¿estás listo para vender?</h2>
+      <h2>10 · Test: ¿estás listo para vender?</h2>
       <p class="subtitle">10 situaciones reales con clientes. Elegí la mejor respuesta según lo que hacemos y lo que no. Al final te decimos si estás listo para salir a vender solo.</p>
 
       <form id="quizForm">
@@ -454,9 +619,9 @@
           <li data-answer="b">
             <p class="q">3. «¿Tienen un pack de diseño (logo, papelería, piezas) como producto cerrado?»</p>
             <label><input type="radio" name="q3" value="a"> Sí, tenemos un pack de diseño con precio fijo de catálogo.</label>
-            <label><input type="radio" name="q3" value="b"> No como producto aparte: el diseño va dentro de una web, de Redes Activas, un reel o una renovación de marca. Contame qué necesitás y lo encuadro.</label>
+            <label><input type="radio" name="q3" value="b"> El diseño para redes va en Branding profesional ($129.000): perfil, destacadas, grid y flyers. Contame qué necesitás y lo encuadro.</label>
             <label><input type="radio" name="q3" value="c"> No, no hacemos nada de diseño.</label>
-            <p class="explain" hidden>No vendemos "diseño" suelto: siempre va dentro de uno de los seis servicios.</p>
+            <p class="explain" hidden>El branding para redes sí es un servicio con precio: foto de perfil, destacadas, 3 diseños de grid, 7 flyers, bio y criterio visual.</p>
           </li>
 
           <li data-answer="a">
@@ -488,7 +653,7 @@
             <label><input type="radio" name="q7" value="a"> Perfecto, eso ya viene incluido en cualquier web.</label>
             <label><input type="radio" name="q7" value="b"> Una tienda con pagos es un alcance aparte: se define y cotiza por separado. Lo confirmo con el equipo antes de darte precio.</label>
             <label><input type="radio" name="q7" value="c"> No, nunca trabajamos con pagos online.</label>
-            <p class="explain" hidden>Se puede evaluar, pero no es parte de una web "estándar": requiere definición propia.</p>
+            <p class="explain" hidden>Se puede evaluar, pero no es parte de una web "estándar" ($199.000): requiere definición propia.</p>
           </li>
 
           <li data-answer="b">
@@ -510,7 +675,7 @@
           <li data-answer="b">
             <p class="q">10. Antes de enviar una propuesta, ¿qué no puede faltar?</p>
             <label><input type="radio" name="q10" value="a"> Un descuento por tiempo limitado para apurar la decisión.</label>
-            <label><input type="radio" name="q10" value="b"> Qué problema resolvemos, qué se entrega y qué queda afuera, qué aporta el cliente, y la viabilidad validada con el equipo.</label>
+            <label><input type="radio" name="q10" value="b"> Qué problema resolvemos, qué se entrega y qué queda afuera, qué aporta el cliente, y la viabilidad y el precio validados con el equipo.</label>
             <label><input type="radio" name="q10" value="c"> La lista completa de todos nuestros servicios.</label>
             <p class="explain" hidden>Nada de urgencias inventadas: una propuesta clara dice qué se hace, qué no, y qué falta confirmar.</p>
           </li>
@@ -546,6 +711,7 @@
   });
 
   document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', async () => {
+    if (!b.previousElementSibling || b.id === 'discoReset' || b.id === 'quizReset') return;
     const text = b.previousElementSibling.textContent.trim();
     try {
       await navigator.clipboard.writeText(text);
@@ -578,6 +744,187 @@
     document.querySelector('#briefStatus').textContent = 'Ficha preparada para descargar.';
   });
 
+  // ── Preguntas que abren oportunidades (interactivo) ──────
+  const DISCOVERY = [
+    {
+      q: "¿Cómo consiguen clientes actualmente?",
+      opts: [
+        { a: "Solo boca en boca / recomendación", read: "Dependen de terceros para crecer. Una web y una presencia propia les dan un canal que controlan ellos.", svc: "Página web · Branding" },
+        { a: "Redes sociales", read: "Ya entienden lo digital. Revisá si las redes están prolijas y activas, y si hay una web que las respalde.", svc: "Redes Activas · Página web" },
+        { a: "Publicidad paga", read: "Invierten en tráfico, pero ¿a dónde llega? Si no hay una web sólida, se pierde plata.", svc: "Página web" },
+      ],
+    },
+    {
+      q: "¿Tienen página web?",
+      opts: [
+        { a: "No", read: "Oportunidad directa. Hoy dependen de Instagram o Google Maps para mostrarse.", svc: "Página web profesional" },
+        { a: "Sí, pero está vieja o incompleta", read: "Revisá móvil, velocidad y claridad del mensaje. Renovar suele ser más rápido que rehacer.", svc: "Página web profesional" },
+        { a: "Sí, y funciona bien", read: "Descartá web. Buscá la oportunidad en contenido, redes o sistemas.", svc: "—" },
+      ],
+    },
+    {
+      q: "¿Les llegan consultas desde Google?",
+      opts: [
+        { a: "No / no sabemos", read: "No están apareciendo o no lo miden. SEO básico y Google Maps ordenado dentro de la web.", svc: "Página web (SEO básico)" },
+        { a: "Sí, bastantes", read: "Ya hay demanda entrando. El foco pasa a convertir mejor esa visita.", svc: "Página web · Reels con IA" },
+      ],
+    },
+    {
+      q: "¿Quién maneja sus redes?",
+      opts: [
+        { a: "Nadie, están abandonadas", read: "Presencia inconsistente. Redes Activas mantiene el perfil vivo sin que ellos carguen con todo.", svc: "Redes Activas · Branding" },
+        { a: "Alguien del negocio sin tiempo", read: "Publican salteado y sin criterio visual. Primero branding, después rotación de contenido.", svc: "Branding · Redes Activas" },
+        { a: "Una agencia", read: "Ya tercerizan redes. Buscá la oportunidad en web, reels con IA o sistemas internos.", svc: "Reels con IA · Sistemas" },
+      ],
+    },
+    {
+      q: "¿La imagen de sus redes transmite la calidad real del negocio?",
+      opts: [
+        { a: "No, se ve improvisada o despareja", read: "Branding profesional para redes: foto de perfil, destacadas, grid, flyers y criterio visual.", svc: "Branding profesional" },
+        { a: "Está bien", read: "Descartá branding. Mirá contenido audiovisual o web.", svc: "—" },
+      ],
+    },
+    {
+      q: "¿Qué publican habitualmente?",
+      opts: [
+        { a: "Fotos simples y flyers de catálogo", read: "Contenido repetitivo. Reels y cortos con IA para diferenciarse y explicar mejor la oferta.", svc: "Reels y cortometrajes con IA" },
+        { a: "Ya hacen video", read: "Revisá la calidad y si necesitan más volumen o mejor producción.", svc: "Reels con IA" },
+      ],
+    },
+    {
+      q: "¿Tienen algún proceso que hagan manualmente todos los días?",
+      opts: [
+        { a: "Sí («esto lo hacemos siempre a mano»)", read: "Frase clave. Pedí un ejemplo real del proceso; el equipo evalúa la automatización.", svc: "Automatizaciones" },
+        { a: "No, ya está bastante ordenado", read: "Descartá automatización por ahora.", svc: "—" },
+      ],
+    },
+    {
+      q: "¿Con qué administran clientes, turnos o pedidos?",
+      opts: [
+        { a: "Excel y WhatsApp", read: "Información dispersa. Sistema a medida: turnos, reservas o gestión de clientes.", svc: "Sistemas personalizados" },
+        { a: "Un sistema que ya tienen", read: "Ver si les falta integrarlo con otras herramientas o automatizar partes.", svc: "Automatizaciones" },
+        { a: "Nada formal", read: "Oportunidad de ordenar con un panel simple hecho a su medida.", svc: "Sistemas personalizados" },
+      ],
+    },
+    {
+      q: "¿Están usando inteligencia artificial dentro del negocio?",
+      opts: [
+        { a: "No / no saben cómo empezar", read: "Capacitación tecnológica: IA aplicada al trabajo, productividad y herramientas digitales.", svc: "Capacitaciones tecnológicas" },
+        { a: "Un poco, de forma informal", read: "Capacitación para ordenar el uso y que todo el equipo lo aproveche.", svc: "Capacitaciones tecnológicas" },
+      ],
+    },
+    {
+      q: "¿Necesitan mostrar autoridad y contactos profesionales (venta a empresas)?",
+      opts: [
+        { a: "Sí, venden a empresas o son consultores", read: "LinkedIn Activo: perfil, textos, estrategia de nicho y plan de contenido.", svc: "LinkedIn Activo" },
+        { a: "No, venden a consumidor final", read: "Descartá LinkedIn. Foco en Instagram/Facebook y web.", svc: "—" },
+      ],
+    },
+    {
+      q: "¿Qué parte digital del negocio sienten que podrían mejorar?",
+      opts: [
+        { a: "La imagen / cómo se ven", read: "Branding y, según el caso, una web que acompañe.", svc: "Branding profesional · Página web" },
+        { a: "Aparecer y que los encuentren", read: "Página web con SEO básico y Google Maps ordenado.", svc: "Página web profesional" },
+        { a: "El trabajo interno / la organización", read: "Sistemas a medida o automatizaciones, según el proceso.", svc: "Sistemas · Automatizaciones" },
+      ],
+    },
+  ];
+
+  const discoRoot = document.querySelector('#discoList');
+  if (discoRoot) {
+    const answers = {};
+    const panel = document.querySelector('#discoPanel');
+    const panelList = panel.querySelector('ol');
+    const panelEmpty = panel.querySelector('.empty');
+    const progress = document.querySelector('#discoProgress');
+    const copyBtn = document.querySelector('#discoCopy');
+    const resetBtn = document.querySelector('#discoReset');
+
+    DISCOVERY.forEach((item, i) => {
+      const li = document.createElement('li');
+      const q = document.createElement('p');
+      q.className = 'q';
+      q.textContent = (i + 1) + '. ' + item.q;
+      const opts = document.createElement('div');
+      opts.className = 'opts';
+      const read = document.createElement('p');
+      read.className = 'read';
+      read.hidden = true;
+
+      item.opts.forEach(o => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = o.a;
+        b.setAttribute('aria-pressed', 'false');
+        b.addEventListener('click', () => {
+          [...opts.children].forEach(c => c.setAttribute('aria-pressed', 'false'));
+          b.setAttribute('aria-pressed', 'true');
+          li.classList.add('answered');
+          answers[i] = { q: item.q, a: o.a, read: o.read, svc: o.svc };
+          const arrow = (o.svc && o.svc !== '—') ? ' <b>&rarr; ' + o.svc + '</b>' : '';
+          read.innerHTML = '<b>Qué escuchás:</b> ' + o.read + arrow;
+          read.hidden = false;
+          render();
+        });
+        opts.append(b);
+      });
+
+      li.append(q, opts, read);
+      discoRoot.append(li);
+    });
+
+    function detected() {
+      return Object.keys(answers)
+        .sort((a, b) => a - b)
+        .map(k => answers[k])
+        .filter(a => a.svc && a.svc !== '—');
+    }
+
+    function render() {
+      const count = Object.keys(answers).length;
+      progress.textContent = 'Respondiste ' + count + ' de ' + DISCOVERY.length + ' preguntas.';
+      const ops = detected();
+      if (!ops.length) {
+        panelList.hidden = true;
+        panelList.innerHTML = '';
+        panelEmpty.hidden = false;
+        copyBtn.hidden = true;
+      } else {
+        panelList.innerHTML = ops.map(a =>
+          '<li><b>' + a.svc + '</b> &mdash; ' + a.read + '<br><span style="color:#6f7669">Surge de: ' + a.q + ' (&laquo;' + a.a + '&raquo;)</span></li>'
+        ).join('');
+        panelList.hidden = false;
+        panelEmpty.hidden = true;
+        copyBtn.hidden = false;
+      }
+    }
+
+    copyBtn.addEventListener('click', async () => {
+      const ops = detected();
+      const text = 'DEV ZEPPELIN · OPORTUNIDADES DETECTADAS\n\n' +
+        ops.map(a => '• ' + a.svc + '\n  Pregunta: ' + a.q + '\n  Respuesta: ' + a.a + '\n  Lectura: ' + a.read).join('\n\n');
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = 'Copiado';
+        setTimeout(() => copyBtn.textContent = 'Copiar oportunidades', 1800);
+      } catch (e) {
+        copyBtn.textContent = 'No se pudo copiar';
+        setTimeout(() => copyBtn.textContent = 'Copiar oportunidades', 1800);
+      }
+    });
+
+    resetBtn.addEventListener('click', () => {
+      for (const k in answers) delete answers[k];
+      discoRoot.querySelectorAll('li').forEach(li => li.classList.remove('answered'));
+      discoRoot.querySelectorAll('.opts button').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      discoRoot.querySelectorAll('.read').forEach(r => { r.hidden = true; r.innerHTML = ''; });
+      render();
+      document.querySelector('#preguntas').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    render();
+  }
+
   // ── Test: ¿estás listo para vender? ──────────────────────
   const quizForm = document.querySelector('#quizForm');
   if (quizForm) {
@@ -608,7 +955,7 @@
       let band;
       if (score >= 9) band = '🚀 Listo para salir a vender: manejás bien qué hacemos y qué no.';
       else if (score >= 7) band = '👍 Casi. Repasá las secciones 01 y 03 antes de salir solo.';
-      else if (score >= 5) band = '⚠️ A medias. Volvé a leer «Qué hacemos y qué no» y «Servicios» completas.';
+      else if (score >= 5) band = '⚠️ A medias. Volvé a leer «La idea central» y «Los 8 servicios» completas.';
       else band = '⛔ Todavía no. Leé la guía de nuevo desde el principio y reintentá el test.';
 
       result.innerHTML =
